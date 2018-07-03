@@ -1,0 +1,66 @@
+activate does not accept more than one argument:
+('--stage', '1', '--batchsize', '40')
+
+utils/combine_data.sh data/tr_babel10_org data/tr_babel_cantonese data/tr_babel_bengali data/tr_babel_pashto data/tr_babel_turkish data/tr_babel_vietnamese data/tr_babel_haitian data/tr_babel_tamil data/tr_babel_kurmanji data/tr_babel_tokpisin data/tr_babel_georgian
+activate does not accept more than one argument:
+('data/tr_babel10_org', 'data/tr_babel_cantonese', 'data/tr_babel_bengali', 'data/tr_babel_pashto', 'data/tr_babel_turkish', 'data/tr_babel_vietnamese', 'data/tr_babel_haitian', 'data/tr_babel_tamil', 'data/tr_babel_kurmanji', 'data/tr_babel_tokpisin', 'data/tr_babel_georgian')
+
+utils/combine_data.sh [info]: not combining utt2uniq as it does not exist
+utils/combine_data.sh: combined segments
+utils/combine_data.sh: combined utt2spk
+utils/combine_data.sh [info]: not combining utt2lang as it does not exist
+utils/combine_data.sh [info]: not combining utt2dur as it does not exist
+utils/combine_data.sh: combined feats.scp
+utils/combine_data.sh: combined text
+utils/combine_data.sh [info]: not combining cmvn.scp as it does not exist
+utils/combine_data.sh [info]: not combining vad.scp as it does not exist
+utils/combine_data.sh [info]: not combining reco2file_and_channel as it does not exist
+utils/combine_data.sh: combined wav.scp
+utils/combine_data.sh [info]: not combining spk2gender as it does not exist
+fix_data_dir.sh: kept all 557363 utterances.
+fix_data_dir.sh: old files are kept in data/tr_babel10_org/.backup
+utils/combine_data.sh data/dt_babel10_org data/dt_babel_cantonese data/dt_babel_bengali data/dt_babel_pashto data/dt_babel_turkish data/dt_babel_vietnamese data/dt_babel_haitian data/dt_babel_tamil data/dt_babel_kurmanji data/dt_babel_tokpisin data/dt_babel_georgian
+activate does not accept more than one argument:
+('data/dt_babel10_org', 'data/dt_babel_cantonese', 'data/dt_babel_bengali', 'data/dt_babel_pashto', 'data/dt_babel_turkish', 'data/dt_babel_vietnamese', 'data/dt_babel_haitian', 'data/dt_babel_tamil', 'data/dt_babel_kurmanji', 'data/dt_babel_tokpisin', 'data/dt_babel_georgian')
+
+utils/combine_data.sh [info]: not combining utt2uniq as it does not exist
+utils/combine_data.sh: combined segments
+utils/combine_data.sh: combined utt2spk
+utils/combine_data.sh [info]: not combining utt2lang as it does not exist
+utils/combine_data.sh [info]: not combining utt2dur as it does not exist
+utils/combine_data.sh: combined feats.scp
+utils/combine_data.sh: combined text
+utils/combine_data.sh [info]: not combining cmvn.scp as it does not exist
+utils/combine_data.sh [info]: not combining vad.scp as it does not exist
+utils/combine_data.sh [info]: not combining reco2file_and_channel as it does not exist
+utils/combine_data.sh: combined wav.scp
+utils/combine_data.sh [info]: not combining spk2gender as it does not exist
+fix_data_dir.sh: kept all 61923 utterances.
+fix_data_dir.sh: old files are kept in data/dt_babel10_org/.backup
+activate does not accept more than one argument:
+('--maxframes', '3000', '--maxchars', '400', 'data/tr_babel10_org', 'data/tr_babel10')
+
+remove utterances having more than 3000 or less than 10 frames
+feat-to-len scp:data/tr_babel10_org/feats.scp ark,t:- 
+remove utterances having more than 400 or less than -1 characters
+Reduced #utt from 557363 to 557030
+fix_data_dir.sh: kept all 557030 utterances.
+fix_data_dir.sh: old files are kept in data/tr_babel10/.backup
+change from 557363 to 557030
+activate does not accept more than one argument:
+('--maxframes', '3000', '--maxchars', '400', 'data/dt_babel10_org', 'data/dt_babel10')
+
+remove utterances having more than 3000 or less than 10 frames
+feat-to-len scp:data/dt_babel10_org/feats.scp ark,t:- 
+remove utterances having more than 400 or less than -1 characters
+Reduced #utt from 61923 to 61889
+fix_data_dir.sh: kept all 61889 utterances.
+fix_data_dir.sh: old files are kept in data/dt_babel10/.backup
+change from 61923 to 61889
+compute-cmvn-stats scp:data/tr_babel10/feats.scp data/tr_babel10/cmvn.ark 
+LOG (compute-cmvn-stats[5.4.114~1-fb54]:main():compute-cmvn-stats.cc:168) Wrote global CMVN stats to data/tr_babel10/cmvn.ark
+LOG (compute-cmvn-stats[5.4.114~1-fb54]:main():compute-cmvn-stats.cc:171) Done accumulating CMVN stats for 557030 utterances; 0 had errors.
+activate does not accept more than one argument:
+('--cmd', 'run.pl --mem 2G', '--nj', '40', '--do_delta', 'false', 'data/tr_babel10/feats.scp', 'data/tr_babel10/cmvn.ark', 'exp/dump_feats/train', 'dump/tr_babel10/deltafalse')
+
+run.pl: 40 / 40 failed, log is in exp/dump_feats/train/dump_feature.*.log

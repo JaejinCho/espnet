@@ -1,0 +1,5 @@
+activate does not accept more than one argument:
+('--lm_lang', 'tagalog', '--ngpu', '1')
+
+stage 3: LM Preparation
+queue.pl: job failed with status 1, log is in exp/train_rnnlm_2layer_bs256_mono_mlasrdict_tagalog_diffsgd/train.log

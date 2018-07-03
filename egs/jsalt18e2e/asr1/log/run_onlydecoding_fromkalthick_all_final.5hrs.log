@@ -1,0 +1,1106 @@
+activate does not accept more than one argument:
+('--hrs', '5', '--stage', '5')
+
+dictionary: data/lang_1char/train_units.txt
+stage 5: Decoding
+activate does not accept more than one argument:
+('--feat', 'dump/et_babel_zulu/deltafalse/feats.scp', '--nlsyms', 'data/lang_1char/non_lang_syms.txt', 'data/et_babel_zulu/split32utt/1', 'data/lang_1char/train_units.txt')
+
+activate does not accept more than one argument:
+('--feat', 'dump/dt_babel_swahili/deltafalse/feats.scp', '--nlsyms', 'data/lang_1char/non_lang_syms.txt', 'data/dt_babel_swahili/split32utt/1', 'data/lang_1char/train_units.txt')
+
+activate does not accept more than one argument:
+('--feat', 'dump/et_babel_swahili/deltafalse/feats.scp', '--nlsyms', 'data/lang_1char/non_lang_syms.txt', 'data/et_babel_swahili/split32utt/1', 'data/lang_1char/train_units.txt')
+
+activate does not accept more than one argument:
+('--feat', 'dump/et_babel_tagalog/deltafalse/feats.scp', '--nlsyms', 'data/lang_1char/non_lang_syms.txt', 'data/et_babel_tagalog/split32utt/1', 'data/lang_1char/train_units.txt')
+
+activate does not accept more than one argument:
+('--feat', 'dump/et_babel_lao/deltafalse/feats.scp', '--nlsyms', 'data/lang_1char/non_lang_syms.txt', 'data/et_babel_lao/split32utt/1', 'data/lang_1char/train_units.txt')
+
+activate does not accept more than one argument:
+('--feat', 'dump/et_babel_assamese/deltafalse/feats.scp', '--nlsyms', 'data/lang_1char/non_lang_syms.txt', 'data/et_babel_assamese/split32utt/1', 'data/lang_1char/train_units.txt')
+
+activate does not accept more than one argument:
+('--feat', 'dump/dt_babel_lao/deltafalse/feats.scp', '--nlsyms', 'data/lang_1char/non_lang_syms.txt', 'data/dt_babel_lao/split32utt/1', 'data/lang_1char/train_units.txt')
+
+activate does not accept more than one argument:
+('--feat', 'dump/dt_babel_tagalog/deltafalse/feats.scp', '--nlsyms', 'data/lang_1char/non_lang_syms.txt', 'data/dt_babel_tagalog/split32utt/1', 'data/lang_1char/train_units.txt')
+
+activate does not accept more than one argument:
+('--feat', 'dump/dt_babel_zulu/deltafalse/feats.scp', '--nlsyms', 'data/lang_1char/non_lang_syms.txt', 'data/dt_babel_zulu/split32utt/1', 'data/lang_1char/train_units.txt')
+
+activate does not accept more than one argument:
+('--feat', 'dump/dt_babel_assamese/deltafalse/feats.scp', '--nlsyms', 'data/lang_1char/non_lang_syms.txt', 'data/dt_babel_assamese/split32utt/1', 'data/lang_1char/train_units.txt')
+
+activate does not accept more than one argument:
+('--feat', 'dump/dt_babel_zulu/deltafalse/feats.scp', '--nlsyms', 'data/lang_1char/non_lang_syms.txt', 'data/dt_babel_zulu/split32utt/2', 'data/lang_1char/train_units.txt')
+
+activate does not accept more than one argument:
+('--feat', 'dump/dt_babel_swahili/deltafalse/feats.scp', '--nlsyms', 'data/lang_1char/non_lang_syms.txt', 'data/dt_babel_swahili/split32utt/2', 'data/lang_1char/train_units.txt')
+
+activate does not accept more than one argument:
+('--feat', 'dump/dt_babel_zulu/deltafalse/feats.scp', '--nlsyms', 'data/lang_1char/non_lang_syms.txt', 'data/dt_babel_zulu/split32utt/3', 'data/lang_1char/train_units.txt')
+
+activate does not accept more than one argument:
+('--feat', 'dump/dt_babel_assamese/deltafalse/feats.scp', '--nlsyms', 'data/lang_1char/non_lang_syms.txt', 'data/dt_babel_assamese/split32utt/2', 'data/lang_1char/train_units.txt')
+
+activate does not accept more than one argument:
+('--feat', 'dump/dt_babel_swahili/deltafalse/feats.scp', '--nlsyms', 'data/lang_1char/non_lang_syms.txt', 'data/dt_babel_swahili/split32utt/3', 'data/lang_1char/train_units.txt')
+
+activate does not accept more than one argument:
+('--feat', 'dump/dt_babel_lao/deltafalse/feats.scp', '--nlsyms', 'data/lang_1char/non_lang_syms.txt', 'data/dt_babel_lao/split32utt/2', 'data/lang_1char/train_units.txt')
+
+activate does not accept more than one argument:
+('--feat', 'dump/dt_babel_zulu/deltafalse/feats.scp', '--nlsyms', 'data/lang_1char/non_lang_syms.txt', 'data/dt_babel_zulu/split32utt/4', 'data/lang_1char/train_units.txt')
+
+activate does not accept more than one argument:
+('--feat', 'dump/dt_babel_swahili/deltafalse/feats.scp', '--nlsyms', 'data/lang_1char/non_lang_syms.txt', 'data/dt_babel_swahili/split32utt/4', 'data/lang_1char/train_units.txt')
+
+activate does not accept more than one argument:
+('--feat', 'dump/dt_babel_assamese/deltafalse/feats.scp', '--nlsyms', 'data/lang_1char/non_lang_syms.txt', 'data/dt_babel_assamese/split32utt/3', 'data/lang_1char/train_units.txt')
+
+activate does not accept more than one argument:
+('--feat', 'dump/dt_babel_lao/deltafalse/feats.scp', '--nlsyms', 'data/lang_1char/non_lang_syms.txt', 'data/dt_babel_lao/split32utt/3', 'data/lang_1char/train_units.txt')
+
+activate does not accept more than one argument:
+('--feat', 'dump/dt_babel_zulu/deltafalse/feats.scp', '--nlsyms', 'data/lang_1char/non_lang_syms.txt', 'data/dt_babel_zulu/split32utt/5', 'data/lang_1char/train_units.txt')
+
+activate does not accept more than one argument:
+('--feat', 'dump/dt_babel_swahili/deltafalse/feats.scp', '--nlsyms', 'data/lang_1char/non_lang_syms.txt', 'data/dt_babel_swahili/split32utt/5', 'data/lang_1char/train_units.txt')
+
+activate does not accept more than one argument:
+('--feat', 'dump/dt_babel_assamese/deltafalse/feats.scp', '--nlsyms', 'data/lang_1char/non_lang_syms.txt', 'data/dt_babel_assamese/split32utt/4', 'data/lang_1char/train_units.txt')
+
+activate does not accept more than one argument:
+('--feat', 'dump/dt_babel_lao/deltafalse/feats.scp', '--nlsyms', 'data/lang_1char/non_lang_syms.txt', 'data/dt_babel_lao/split32utt/4', 'data/lang_1char/train_units.txt')
+
+activate does not accept more than one argument:
+('--feat', 'dump/dt_babel_tagalog/deltafalse/feats.scp', '--nlsyms', 'data/lang_1char/non_lang_syms.txt', 'data/dt_babel_tagalog/split32utt/2', 'data/lang_1char/train_units.txt')
+
+activate does not accept more than one argument:
+('--feat', 'dump/dt_babel_swahili/deltafalse/feats.scp', '--nlsyms', 'data/lang_1char/non_lang_syms.txt', 'data/dt_babel_swahili/split32utt/6', 'data/lang_1char/train_units.txt')
+
+activate does not accept more than one argument:
+('--feat', 'dump/dt_babel_zulu/deltafalse/feats.scp', '--nlsyms', 'data/lang_1char/non_lang_syms.txt', 'data/dt_babel_zulu/split32utt/6', 'data/lang_1char/train_units.txt')
+
+activate does not accept more than one argument:
+('--feat', 'dump/et_babel_assamese/deltafalse/feats.scp', '--nlsyms', 'data/lang_1char/non_lang_syms.txt', 'data/et_babel_assamese/split32utt/2', 'data/lang_1char/train_units.txt')
+
+activate does not accept more than one argument:
+('--feat', 'dump/et_babel_zulu/deltafalse/feats.scp', '--nlsyms', 'data/lang_1char/non_lang_syms.txt', 'data/et_babel_zulu/split32utt/2', 'data/lang_1char/train_units.txt')
+
+activate does not accept more than one argument:
+('--feat', 'dump/et_babel_tagalog/deltafalse/feats.scp', '--nlsyms', 'data/lang_1char/non_lang_syms.txt', 'data/et_babel_tagalog/split32utt/2', 'data/lang_1char/train_units.txt')
+
+activate does not accept more than one argument:
+('--feat', 'dump/dt_babel_assamese/deltafalse/feats.scp', '--nlsyms', 'data/lang_1char/non_lang_syms.txt', 'data/dt_babel_assamese/split32utt/5', 'data/lang_1char/train_units.txt')
+
+activate does not accept more than one argument:
+('--feat', 'dump/dt_babel_lao/deltafalse/feats.scp', '--nlsyms', 'data/lang_1char/non_lang_syms.txt', 'data/dt_babel_lao/split32utt/5', 'data/lang_1char/train_units.txt')
+
+activate does not accept more than one argument:
+('--feat', 'dump/et_babel_lao/deltafalse/feats.scp', '--nlsyms', 'data/lang_1char/non_lang_syms.txt', 'data/et_babel_lao/split32utt/2', 'data/lang_1char/train_units.txt')
+
+activate does not accept more than one argument:
+('--feat', 'dump/et_babel_swahili/deltafalse/feats.scp', '--nlsyms', 'data/lang_1char/non_lang_syms.txt', 'data/et_babel_swahili/split32utt/2', 'data/lang_1char/train_units.txt')
+
+activate does not accept more than one argument:
+('--feat', 'dump/dt_babel_swahili/deltafalse/feats.scp', '--nlsyms', 'data/lang_1char/non_lang_syms.txt', 'data/dt_babel_swahili/split32utt/7', 'data/lang_1char/train_units.txt')
+
+activate does not accept more than one argument:
+('--feat', 'dump/dt_babel_zulu/deltafalse/feats.scp', '--nlsyms', 'data/lang_1char/non_lang_syms.txt', 'data/dt_babel_zulu/split32utt/7', 'data/lang_1char/train_units.txt')
+
+activate does not accept more than one argument:
+('--feat', 'dump/dt_babel_tagalog/deltafalse/feats.scp', '--nlsyms', 'data/lang_1char/non_lang_syms.txt', 'data/dt_babel_tagalog/split32utt/3', 'data/lang_1char/train_units.txt')
+
+activate does not accept more than one argument:
+('--feat', 'dump/dt_babel_assamese/deltafalse/feats.scp', '--nlsyms', 'data/lang_1char/non_lang_syms.txt', 'data/dt_babel_assamese/split32utt/6', 'data/lang_1char/train_units.txt')
+
+activate does not accept more than one argument:
+('--feat', 'dump/dt_babel_lao/deltafalse/feats.scp', '--nlsyms', 'data/lang_1char/non_lang_syms.txt', 'data/dt_babel_lao/split32utt/6', 'data/lang_1char/train_units.txt')
+
+activate does not accept more than one argument:
+('--feat', 'dump/dt_babel_swahili/deltafalse/feats.scp', '--nlsyms', 'data/lang_1char/non_lang_syms.txt', 'data/dt_babel_swahili/split32utt/8', 'data/lang_1char/train_units.txt')
+
+activate does not accept more than one argument:
+('--feat', 'dump/dt_babel_zulu/deltafalse/feats.scp', '--nlsyms', 'data/lang_1char/non_lang_syms.txt', 'data/dt_babel_zulu/split32utt/8', 'data/lang_1char/train_units.txt')
+
+activate does not accept more than one argument:
+('--feat', 'dump/dt_babel_swahili/deltafalse/feats.scp', '--nlsyms', 'data/lang_1char/non_lang_syms.txt', 'data/dt_babel_swahili/split32utt/9', 'data/lang_1char/train_units.txt')
+
+activate does not accept more than one argument:
+('--feat', 'dump/dt_babel_assamese/deltafalse/feats.scp', '--nlsyms', 'data/lang_1char/non_lang_syms.txt', 'data/dt_babel_assamese/split32utt/7', 'data/lang_1char/train_units.txt')
+
+activate does not accept more than one argument:
+('--feat', 'dump/et_babel_assamese/deltafalse/feats.scp', '--nlsyms', 'data/lang_1char/non_lang_syms.txt', 'data/et_babel_assamese/split32utt/3', 'data/lang_1char/train_units.txt')
+
+activate does not accept more than one argument:
+('--feat', 'dump/et_babel_swahili/deltafalse/feats.scp', '--nlsyms', 'data/lang_1char/non_lang_syms.txt', 'data/et_babel_swahili/split32utt/3', 'data/lang_1char/train_units.txt')
+
+activate does not accept more than one argument:
+('--feat', 'dump/dt_babel_tagalog/deltafalse/feats.scp', '--nlsyms', 'data/lang_1char/non_lang_syms.txt', 'data/dt_babel_tagalog/split32utt/4', 'data/lang_1char/train_units.txt')
+
+activate does not accept more than one argument:
+('--feat', 'dump/et_babel_zulu/deltafalse/feats.scp', '--nlsyms', 'data/lang_1char/non_lang_syms.txt', 'data/et_babel_zulu/split32utt/3', 'data/lang_1char/train_units.txt')
+
+activate does not accept more than one argument:
+('--feat', 'dump/et_babel_tagalog/deltafalse/feats.scp', '--nlsyms', 'data/lang_1char/non_lang_syms.txt', 'data/et_babel_tagalog/split32utt/3', 'data/lang_1char/train_units.txt')
+
+activate does not accept more than one argument:
+('--feat', 'dump/et_babel_lao/deltafalse/feats.scp', '--nlsyms', 'data/lang_1char/non_lang_syms.txt', 'data/et_babel_lao/split32utt/3', 'data/lang_1char/train_units.txt')
+
+activate does not accept more than one argument:
+('--feat', 'dump/dt_babel_lao/deltafalse/feats.scp', '--nlsyms', 'data/lang_1char/non_lang_syms.txt', 'data/dt_babel_lao/split32utt/7', 'data/lang_1char/train_units.txt')
+
+activate does not accept more than one argument:
+('--feat', 'dump/dt_babel_zulu/deltafalse/feats.scp', '--nlsyms', 'data/lang_1char/non_lang_syms.txt', 'data/dt_babel_zulu/split32utt/9', 'data/lang_1char/train_units.txt')
+
+activate does not accept more than one argument:
+('--feat', 'dump/dt_babel_swahili/deltafalse/feats.scp', '--nlsyms', 'data/lang_1char/non_lang_syms.txt', 'data/dt_babel_swahili/split32utt/10', 'data/lang_1char/train_units.txt')
+
+activate does not accept more than one argument:
+('--feat', 'dump/dt_babel_assamese/deltafalse/feats.scp', '--nlsyms', 'data/lang_1char/non_lang_syms.txt', 'data/dt_babel_assamese/split32utt/8', 'data/lang_1char/train_units.txt')
+
+activate does not accept more than one argument:
+('--feat', 'dump/dt_babel_lao/deltafalse/feats.scp', '--nlsyms', 'data/lang_1char/non_lang_syms.txt', 'data/dt_babel_lao/split32utt/8', 'data/lang_1char/train_units.txt')
+
+activate does not accept more than one argument:
+('--feat', 'dump/dt_babel_tagalog/deltafalse/feats.scp', '--nlsyms', 'data/lang_1char/non_lang_syms.txt', 'data/dt_babel_tagalog/split32utt/5', 'data/lang_1char/train_units.txt')
+
+activate does not accept more than one argument:
+('--feat', 'dump/et_babel_assamese/deltafalse/feats.scp', '--nlsyms', 'data/lang_1char/non_lang_syms.txt', 'data/et_babel_assamese/split32utt/4', 'data/lang_1char/train_units.txt')
+
+activate does not accept more than one argument:
+('--feat', 'dump/et_babel_zulu/deltafalse/feats.scp', '--nlsyms', 'data/lang_1char/non_lang_syms.txt', 'data/et_babel_zulu/split32utt/4', 'data/lang_1char/train_units.txt')
+
+activate does not accept more than one argument:
+('--feat', 'dump/dt_babel_swahili/deltafalse/feats.scp', '--nlsyms', 'data/lang_1char/non_lang_syms.txt', 'data/dt_babel_swahili/split32utt/11', 'data/lang_1char/train_units.txt')
+
+activate does not accept more than one argument:
+('--feat', 'dump/et_babel_swahili/deltafalse/feats.scp', '--nlsyms', 'data/lang_1char/non_lang_syms.txt', 'data/et_babel_swahili/split32utt/4', 'data/lang_1char/train_units.txt')
+
+activate does not accept more than one argument:
+('--feat', 'dump/et_babel_lao/deltafalse/feats.scp', '--nlsyms', 'data/lang_1char/non_lang_syms.txt', 'data/et_babel_lao/split32utt/4', 'data/lang_1char/train_units.txt')
+
+activate does not accept more than one argument:
+('--feat', 'dump/et_babel_tagalog/deltafalse/feats.scp', '--nlsyms', 'data/lang_1char/non_lang_syms.txt', 'data/et_babel_tagalog/split32utt/4', 'data/lang_1char/train_units.txt')
+
+activate does not accept more than one argument:
+('--feat', 'dump/dt_babel_zulu/deltafalse/feats.scp', '--nlsyms', 'data/lang_1char/non_lang_syms.txt', 'data/dt_babel_zulu/split32utt/10', 'data/lang_1char/train_units.txt')
+
+activate does not accept more than one argument:
+('--feat', 'dump/dt_babel_assamese/deltafalse/feats.scp', '--nlsyms', 'data/lang_1char/non_lang_syms.txt', 'data/dt_babel_assamese/split32utt/9', 'data/lang_1char/train_units.txt')
+
+activate does not accept more than one argument:
+('--feat', 'dump/dt_babel_lao/deltafalse/feats.scp', '--nlsyms', 'data/lang_1char/non_lang_syms.txt', 'data/dt_babel_lao/split32utt/9', 'data/lang_1char/train_units.txt')
+
+activate does not accept more than one argument:
+('--feat', 'dump/dt_babel_swahili/deltafalse/feats.scp', '--nlsyms', 'data/lang_1char/non_lang_syms.txt', 'data/dt_babel_swahili/split32utt/12', 'data/lang_1char/train_units.txt')
+
+activate does not accept more than one argument:
+('--feat', 'dump/dt_babel_tagalog/deltafalse/feats.scp', '--nlsyms', 'data/lang_1char/non_lang_syms.txt', 'data/dt_babel_tagalog/split32utt/6', 'data/lang_1char/train_units.txt')
+
+activate does not accept more than one argument:
+('--feat', 'dump/dt_babel_zulu/deltafalse/feats.scp', '--nlsyms', 'data/lang_1char/non_lang_syms.txt', 'data/dt_babel_zulu/split32utt/11', 'data/lang_1char/train_units.txt')
+
+activate does not accept more than one argument:
+('--feat', 'dump/dt_babel_assamese/deltafalse/feats.scp', '--nlsyms', 'data/lang_1char/non_lang_syms.txt', 'data/dt_babel_assamese/split32utt/10', 'data/lang_1char/train_units.txt')
+
+activate does not accept more than one argument:
+('--feat', 'dump/et_babel_assamese/deltafalse/feats.scp', '--nlsyms', 'data/lang_1char/non_lang_syms.txt', 'data/et_babel_assamese/split32utt/5', 'data/lang_1char/train_units.txt')
+
+activate does not accept more than one argument:
+('--feat', 'dump/dt_babel_swahili/deltafalse/feats.scp', '--nlsyms', 'data/lang_1char/non_lang_syms.txt', 'data/dt_babel_swahili/split32utt/13', 'data/lang_1char/train_units.txt')
+
+activate does not accept more than one argument:
+('--feat', 'dump/et_babel_zulu/deltafalse/feats.scp', '--nlsyms', 'data/lang_1char/non_lang_syms.txt', 'data/et_babel_zulu/split32utt/5', 'data/lang_1char/train_units.txt')
+
+activate does not accept more than one argument:
+('--feat', 'dump/dt_babel_lao/deltafalse/feats.scp', '--nlsyms', 'data/lang_1char/non_lang_syms.txt', 'data/dt_babel_lao/split32utt/10', 'data/lang_1char/train_units.txt')
+
+activate does not accept more than one argument:
+('--feat', 'dump/et_babel_lao/deltafalse/feats.scp', '--nlsyms', 'data/lang_1char/non_lang_syms.txt', 'data/et_babel_lao/split32utt/5', 'data/lang_1char/train_units.txt')
+
+activate does not accept more than one argument:
+('--feat', 'dump/et_babel_tagalog/deltafalse/feats.scp', '--nlsyms', 'data/lang_1char/non_lang_syms.txt', 'data/et_babel_tagalog/split32utt/5', 'data/lang_1char/train_units.txt')
+
+activate does not accept more than one argument:
+('--feat', 'dump/et_babel_swahili/deltafalse/feats.scp', '--nlsyms', 'data/lang_1char/non_lang_syms.txt', 'data/et_babel_swahili/split32utt/5', 'data/lang_1char/train_units.txt')
+
+activate does not accept more than one argument:
+('--feat', 'dump/dt_babel_swahili/deltafalse/feats.scp', '--nlsyms', 'data/lang_1char/non_lang_syms.txt', 'data/dt_babel_swahili/split32utt/14', 'data/lang_1char/train_units.txt')
+
+activate does not accept more than one argument:
+('--feat', 'dump/dt_babel_zulu/deltafalse/feats.scp', '--nlsyms', 'data/lang_1char/non_lang_syms.txt', 'data/dt_babel_zulu/split32utt/12', 'data/lang_1char/train_units.txt')
+
+activate does not accept more than one argument:
+('--feat', 'dump/dt_babel_tagalog/deltafalse/feats.scp', '--nlsyms', 'data/lang_1char/non_lang_syms.txt', 'data/dt_babel_tagalog/split32utt/7', 'data/lang_1char/train_units.txt')
+
+activate does not accept more than one argument:
+('--feat', 'dump/dt_babel_assamese/deltafalse/feats.scp', '--nlsyms', 'data/lang_1char/non_lang_syms.txt', 'data/dt_babel_assamese/split32utt/11', 'data/lang_1char/train_units.txt')
+
+activate does not accept more than one argument:
+('--feat', 'dump/dt_babel_lao/deltafalse/feats.scp', '--nlsyms', 'data/lang_1char/non_lang_syms.txt', 'data/dt_babel_lao/split32utt/11', 'data/lang_1char/train_units.txt')
+
+activate does not accept more than one argument:
+('--feat', 'dump/et_babel_assamese/deltafalse/feats.scp', '--nlsyms', 'data/lang_1char/non_lang_syms.txt', 'data/et_babel_assamese/split32utt/6', 'data/lang_1char/train_units.txt')
+
+activate does not accept more than one argument:
+('--feat', 'dump/dt_babel_swahili/deltafalse/feats.scp', '--nlsyms', 'data/lang_1char/non_lang_syms.txt', 'data/dt_babel_swahili/split32utt/15', 'data/lang_1char/train_units.txt')
+
+activate does not accept more than one argument:
+('--feat', 'dump/et_babel_zulu/deltafalse/feats.scp', '--nlsyms', 'data/lang_1char/non_lang_syms.txt', 'data/et_babel_zulu/split32utt/6', 'data/lang_1char/train_units.txt')
+
+activate does not accept more than one argument:
+('--feat', 'dump/dt_babel_zulu/deltafalse/feats.scp', '--nlsyms', 'data/lang_1char/non_lang_syms.txt', 'data/dt_babel_zulu/split32utt/13', 'data/lang_1char/train_units.txt')
+
+activate does not accept more than one argument:
+('--feat', 'dump/dt_babel_assamese/deltafalse/feats.scp', '--nlsyms', 'data/lang_1char/non_lang_syms.txt', 'data/dt_babel_assamese/split32utt/12', 'data/lang_1char/train_units.txt')
+
+activate does not accept more than one argument:
+('--feat', 'dump/et_babel_tagalog/deltafalse/feats.scp', '--nlsyms', 'data/lang_1char/non_lang_syms.txt', 'data/et_babel_tagalog/split32utt/6', 'data/lang_1char/train_units.txt')
+
+activate does not accept more than one argument:
+('--feat', 'dump/et_babel_lao/deltafalse/feats.scp', '--nlsyms', 'data/lang_1char/non_lang_syms.txt', 'data/et_babel_lao/split32utt/6', 'data/lang_1char/train_units.txt')
+
+activate does not accept more than one argument:
+('--feat', 'dump/et_babel_swahili/deltafalse/feats.scp', '--nlsyms', 'data/lang_1char/non_lang_syms.txt', 'data/et_babel_swahili/split32utt/6', 'data/lang_1char/train_units.txt')
+
+activate does not accept more than one argument:
+('--feat', 'dump/dt_babel_tagalog/deltafalse/feats.scp', '--nlsyms', 'data/lang_1char/non_lang_syms.txt', 'data/dt_babel_tagalog/split32utt/8', 'data/lang_1char/train_units.txt')
+
+activate does not accept more than one argument:
+('--feat', 'dump/dt_babel_lao/deltafalse/feats.scp', '--nlsyms', 'data/lang_1char/non_lang_syms.txt', 'data/dt_babel_lao/split32utt/12', 'data/lang_1char/train_units.txt')
+
+activate does not accept more than one argument:
+('--feat', 'dump/dt_babel_swahili/deltafalse/feats.scp', '--nlsyms', 'data/lang_1char/non_lang_syms.txt', 'data/dt_babel_swahili/split32utt/16', 'data/lang_1char/train_units.txt')
+
+activate does not accept more than one argument:
+('--feat', 'dump/dt_babel_zulu/deltafalse/feats.scp', '--nlsyms', 'data/lang_1char/non_lang_syms.txt', 'data/dt_babel_zulu/split32utt/14', 'data/lang_1char/train_units.txt')
+
+activate does not accept more than one argument:
+('--feat', 'dump/dt_babel_assamese/deltafalse/feats.scp', '--nlsyms', 'data/lang_1char/non_lang_syms.txt', 'data/dt_babel_assamese/split32utt/13', 'data/lang_1char/train_units.txt')
+
+activate does not accept more than one argument:
+('--feat', 'dump/et_babel_assamese/deltafalse/feats.scp', '--nlsyms', 'data/lang_1char/non_lang_syms.txt', 'data/et_babel_assamese/split32utt/7', 'data/lang_1char/train_units.txt')
+
+activate does not accept more than one argument:
+('--feat', 'dump/dt_babel_swahili/deltafalse/feats.scp', '--nlsyms', 'data/lang_1char/non_lang_syms.txt', 'data/dt_babel_swahili/split32utt/17', 'data/lang_1char/train_units.txt')
+
+activate does not accept more than one argument:
+('--feat', 'dump/et_babel_zulu/deltafalse/feats.scp', '--nlsyms', 'data/lang_1char/non_lang_syms.txt', 'data/et_babel_zulu/split32utt/7', 'data/lang_1char/train_units.txt')
+
+activate does not accept more than one argument:
+('--feat', 'dump/dt_babel_lao/deltafalse/feats.scp', '--nlsyms', 'data/lang_1char/non_lang_syms.txt', 'data/dt_babel_lao/split32utt/13', 'data/lang_1char/train_units.txt')
+
+activate does not accept more than one argument:
+('--feat', 'dump/et_babel_tagalog/deltafalse/feats.scp', '--nlsyms', 'data/lang_1char/non_lang_syms.txt', 'data/et_babel_tagalog/split32utt/7', 'data/lang_1char/train_units.txt')
+
+activate does not accept more than one argument:
+('--feat', 'dump/dt_babel_tagalog/deltafalse/feats.scp', '--nlsyms', 'data/lang_1char/non_lang_syms.txt', 'data/dt_babel_tagalog/split32utt/9', 'data/lang_1char/train_units.txt')
+
+activate does not accept more than one argument:
+('--feat', 'dump/et_babel_lao/deltafalse/feats.scp', '--nlsyms', 'data/lang_1char/non_lang_syms.txt', 'data/et_babel_lao/split32utt/7', 'data/lang_1char/train_units.txt')
+
+activate does not accept more than one argument:
+('--feat', 'dump/et_babel_swahili/deltafalse/feats.scp', '--nlsyms', 'data/lang_1char/non_lang_syms.txt', 'data/et_babel_swahili/split32utt/7', 'data/lang_1char/train_units.txt')
+
+activate does not accept more than one argument:
+('--feat', 'dump/dt_babel_zulu/deltafalse/feats.scp', '--nlsyms', 'data/lang_1char/non_lang_syms.txt', 'data/dt_babel_zulu/split32utt/15', 'data/lang_1char/train_units.txt')
+
+activate does not accept more than one argument:
+('--feat', 'dump/dt_babel_swahili/deltafalse/feats.scp', '--nlsyms', 'data/lang_1char/non_lang_syms.txt', 'data/dt_babel_swahili/split32utt/18', 'data/lang_1char/train_units.txt')
+
+activate does not accept more than one argument:
+('--feat', 'dump/dt_babel_assamese/deltafalse/feats.scp', '--nlsyms', 'data/lang_1char/non_lang_syms.txt', 'data/dt_babel_assamese/split32utt/14', 'data/lang_1char/train_units.txt')
+
+activate does not accept more than one argument:
+('--feat', 'dump/dt_babel_lao/deltafalse/feats.scp', '--nlsyms', 'data/lang_1char/non_lang_syms.txt', 'data/dt_babel_lao/split32utt/14', 'data/lang_1char/train_units.txt')
+
+activate does not accept more than one argument:
+('--feat', 'dump/et_babel_assamese/deltafalse/feats.scp', '--nlsyms', 'data/lang_1char/non_lang_syms.txt', 'data/et_babel_assamese/split32utt/8', 'data/lang_1char/train_units.txt')
+
+activate does not accept more than one argument:
+('--feat', 'dump/dt_babel_swahili/deltafalse/feats.scp', '--nlsyms', 'data/lang_1char/non_lang_syms.txt', 'data/dt_babel_swahili/split32utt/19', 'data/lang_1char/train_units.txt')
+
+activate does not accept more than one argument:
+('--feat', 'dump/dt_babel_zulu/deltafalse/feats.scp', '--nlsyms', 'data/lang_1char/non_lang_syms.txt', 'data/dt_babel_zulu/split32utt/16', 'data/lang_1char/train_units.txt')
+
+activate does not accept more than one argument:
+('--feat', 'dump/et_babel_zulu/deltafalse/feats.scp', '--nlsyms', 'data/lang_1char/non_lang_syms.txt', 'data/et_babel_zulu/split32utt/8', 'data/lang_1char/train_units.txt')
+
+activate does not accept more than one argument:
+('--feat', 'dump/dt_babel_tagalog/deltafalse/feats.scp', '--nlsyms', 'data/lang_1char/non_lang_syms.txt', 'data/dt_babel_tagalog/split32utt/10', 'data/lang_1char/train_units.txt')
+
+activate does not accept more than one argument:
+('--feat', 'dump/dt_babel_assamese/deltafalse/feats.scp', '--nlsyms', 'data/lang_1char/non_lang_syms.txt', 'data/dt_babel_assamese/split32utt/15', 'data/lang_1char/train_units.txt')
+
+activate does not accept more than one argument:
+('--feat', 'dump/et_babel_tagalog/deltafalse/feats.scp', '--nlsyms', 'data/lang_1char/non_lang_syms.txt', 'data/et_babel_tagalog/split32utt/8', 'data/lang_1char/train_units.txt')
+
+activate does not accept more than one argument:
+('--feat', 'dump/et_babel_lao/deltafalse/feats.scp', '--nlsyms', 'data/lang_1char/non_lang_syms.txt', 'data/et_babel_lao/split32utt/8', 'data/lang_1char/train_units.txt')
+
+activate does not accept more than one argument:
+('--feat', 'dump/et_babel_swahili/deltafalse/feats.scp', '--nlsyms', 'data/lang_1char/non_lang_syms.txt', 'data/et_babel_swahili/split32utt/8', 'data/lang_1char/train_units.txt')
+
+activate does not accept more than one argument:
+('--feat', 'dump/dt_babel_swahili/deltafalse/feats.scp', '--nlsyms', 'data/lang_1char/non_lang_syms.txt', 'data/dt_babel_swahili/split32utt/20', 'data/lang_1char/train_units.txt')
+
+activate does not accept more than one argument:
+('--feat', 'dump/dt_babel_lao/deltafalse/feats.scp', '--nlsyms', 'data/lang_1char/non_lang_syms.txt', 'data/dt_babel_lao/split32utt/15', 'data/lang_1char/train_units.txt')
+
+activate does not accept more than one argument:
+('--feat', 'dump/dt_babel_zulu/deltafalse/feats.scp', '--nlsyms', 'data/lang_1char/non_lang_syms.txt', 'data/dt_babel_zulu/split32utt/17', 'data/lang_1char/train_units.txt')
+
+activate does not accept more than one argument:
+('--feat', 'dump/dt_babel_assamese/deltafalse/feats.scp', '--nlsyms', 'data/lang_1char/non_lang_syms.txt', 'data/dt_babel_assamese/split32utt/16', 'data/lang_1char/train_units.txt')
+
+activate does not accept more than one argument:
+('--feat', 'dump/et_babel_assamese/deltafalse/feats.scp', '--nlsyms', 'data/lang_1char/non_lang_syms.txt', 'data/et_babel_assamese/split32utt/9', 'data/lang_1char/train_units.txt')
+
+activate does not accept more than one argument:
+('--feat', 'dump/dt_babel_swahili/deltafalse/feats.scp', '--nlsyms', 'data/lang_1char/non_lang_syms.txt', 'data/dt_babel_swahili/split32utt/21', 'data/lang_1char/train_units.txt')
+
+activate does not accept more than one argument:
+('--feat', 'dump/dt_babel_tagalog/deltafalse/feats.scp', '--nlsyms', 'data/lang_1char/non_lang_syms.txt', 'data/dt_babel_tagalog/split32utt/11', 'data/lang_1char/train_units.txt')
+
+activate does not accept more than one argument:
+('--feat', 'dump/et_babel_zulu/deltafalse/feats.scp', '--nlsyms', 'data/lang_1char/non_lang_syms.txt', 'data/et_babel_zulu/split32utt/9', 'data/lang_1char/train_units.txt')
+
+activate does not accept more than one argument:
+('--feat', 'dump/dt_babel_lao/deltafalse/feats.scp', '--nlsyms', 'data/lang_1char/non_lang_syms.txt', 'data/dt_babel_lao/split32utt/16', 'data/lang_1char/train_units.txt')
+
+activate does not accept more than one argument:
+('--feat', 'dump/dt_babel_zulu/deltafalse/feats.scp', '--nlsyms', 'data/lang_1char/non_lang_syms.txt', 'data/dt_babel_zulu/split32utt/18', 'data/lang_1char/train_units.txt')
+
+activate does not accept more than one argument:
+('--feat', 'dump/et_babel_tagalog/deltafalse/feats.scp', '--nlsyms', 'data/lang_1char/non_lang_syms.txt', 'data/et_babel_tagalog/split32utt/9', 'data/lang_1char/train_units.txt')
+
+activate does not accept more than one argument:
+('--feat', 'dump/et_babel_lao/deltafalse/feats.scp', '--nlsyms', 'data/lang_1char/non_lang_syms.txt', 'data/et_babel_lao/split32utt/9', 'data/lang_1char/train_units.txt')
+
+activate does not accept more than one argument:
+('--feat', 'dump/et_babel_swahili/deltafalse/feats.scp', '--nlsyms', 'data/lang_1char/non_lang_syms.txt', 'data/et_babel_swahili/split32utt/9', 'data/lang_1char/train_units.txt')
+
+activate does not accept more than one argument:
+('--feat', 'dump/dt_babel_swahili/deltafalse/feats.scp', '--nlsyms', 'data/lang_1char/non_lang_syms.txt', 'data/dt_babel_swahili/split32utt/22', 'data/lang_1char/train_units.txt')
+
+activate does not accept more than one argument:
+('--feat', 'dump/dt_babel_assamese/deltafalse/feats.scp', '--nlsyms', 'data/lang_1char/non_lang_syms.txt', 'data/dt_babel_assamese/split32utt/17', 'data/lang_1char/train_units.txt')
+
+activate does not accept more than one argument:
+('--feat', 'dump/dt_babel_lao/deltafalse/feats.scp', '--nlsyms', 'data/lang_1char/non_lang_syms.txt', 'data/dt_babel_lao/split32utt/17', 'data/lang_1char/train_units.txt')
+
+activate does not accept more than one argument:
+('--feat', 'dump/dt_babel_swahili/deltafalse/feats.scp', '--nlsyms', 'data/lang_1char/non_lang_syms.txt', 'data/dt_babel_swahili/split32utt/23', 'data/lang_1char/train_units.txt')
+
+activate does not accept more than one argument:
+('--feat', 'dump/dt_babel_zulu/deltafalse/feats.scp', '--nlsyms', 'data/lang_1char/non_lang_syms.txt', 'data/dt_babel_zulu/split32utt/19', 'data/lang_1char/train_units.txt')
+
+activate does not accept more than one argument:
+('--feat', 'dump/et_babel_assamese/deltafalse/feats.scp', '--nlsyms', 'data/lang_1char/non_lang_syms.txt', 'data/et_babel_assamese/split32utt/10', 'data/lang_1char/train_units.txt')
+
+activate does not accept more than one argument:
+('--feat', 'dump/dt_babel_assamese/deltafalse/feats.scp', '--nlsyms', 'data/lang_1char/non_lang_syms.txt', 'data/dt_babel_assamese/split32utt/18', 'data/lang_1char/train_units.txt')
+
+activate does not accept more than one argument:
+('--feat', 'dump/dt_babel_tagalog/deltafalse/feats.scp', '--nlsyms', 'data/lang_1char/non_lang_syms.txt', 'data/dt_babel_tagalog/split32utt/12', 'data/lang_1char/train_units.txt')
+
+activate does not accept more than one argument:
+('--feat', 'dump/et_babel_zulu/deltafalse/feats.scp', '--nlsyms', 'data/lang_1char/non_lang_syms.txt', 'data/et_babel_zulu/split32utt/10', 'data/lang_1char/train_units.txt')
+
+activate does not accept more than one argument:
+('--feat', 'dump/dt_babel_swahili/deltafalse/feats.scp', '--nlsyms', 'data/lang_1char/non_lang_syms.txt', 'data/dt_babel_swahili/split32utt/24', 'data/lang_1char/train_units.txt')
+
+activate does not accept more than one argument:
+('--feat', 'dump/et_babel_lao/deltafalse/feats.scp', '--nlsyms', 'data/lang_1char/non_lang_syms.txt', 'data/et_babel_lao/split32utt/10', 'data/lang_1char/train_units.txt')
+
+activate does not accept more than one argument:
+('--feat', 'dump/et_babel_tagalog/deltafalse/feats.scp', '--nlsyms', 'data/lang_1char/non_lang_syms.txt', 'data/et_babel_tagalog/split32utt/10', 'data/lang_1char/train_units.txt')
+
+activate does not accept more than one argument:
+('--feat', 'dump/dt_babel_lao/deltafalse/feats.scp', '--nlsyms', 'data/lang_1char/non_lang_syms.txt', 'data/dt_babel_lao/split32utt/18', 'data/lang_1char/train_units.txt')
+
+activate does not accept more than one argument:
+('--feat', 'dump/dt_babel_zulu/deltafalse/feats.scp', '--nlsyms', 'data/lang_1char/non_lang_syms.txt', 'data/dt_babel_zulu/split32utt/20', 'data/lang_1char/train_units.txt')
+
+activate does not accept more than one argument:
+('--feat', 'dump/et_babel_swahili/deltafalse/feats.scp', '--nlsyms', 'data/lang_1char/non_lang_syms.txt', 'data/et_babel_swahili/split32utt/10', 'data/lang_1char/train_units.txt')
+
+activate does not accept more than one argument:
+('--feat', 'dump/dt_babel_assamese/deltafalse/feats.scp', '--nlsyms', 'data/lang_1char/non_lang_syms.txt', 'data/dt_babel_assamese/split32utt/19', 'data/lang_1char/train_units.txt')
+
+activate does not accept more than one argument:
+('--feat', 'dump/dt_babel_swahili/deltafalse/feats.scp', '--nlsyms', 'data/lang_1char/non_lang_syms.txt', 'data/dt_babel_swahili/split32utt/25', 'data/lang_1char/train_units.txt')
+
+activate does not accept more than one argument:
+('--feat', 'dump/dt_babel_tagalog/deltafalse/feats.scp', '--nlsyms', 'data/lang_1char/non_lang_syms.txt', 'data/dt_babel_tagalog/split32utt/13', 'data/lang_1char/train_units.txt')
+
+activate does not accept more than one argument:
+('--feat', 'dump/et_babel_assamese/deltafalse/feats.scp', '--nlsyms', 'data/lang_1char/non_lang_syms.txt', 'data/et_babel_assamese/split32utt/11', 'data/lang_1char/train_units.txt')
+
+activate does not accept more than one argument:
+('--feat', 'dump/dt_babel_lao/deltafalse/feats.scp', '--nlsyms', 'data/lang_1char/non_lang_syms.txt', 'data/dt_babel_lao/split32utt/19', 'data/lang_1char/train_units.txt')
+
+activate does not accept more than one argument:
+('--feat', 'dump/dt_babel_zulu/deltafalse/feats.scp', '--nlsyms', 'data/lang_1char/non_lang_syms.txt', 'data/dt_babel_zulu/split32utt/21', 'data/lang_1char/train_units.txt')
+
+activate does not accept more than one argument:
+('--feat', 'dump/et_babel_zulu/deltafalse/feats.scp', '--nlsyms', 'data/lang_1char/non_lang_syms.txt', 'data/et_babel_zulu/split32utt/11', 'data/lang_1char/train_units.txt')
+
+activate does not accept more than one argument:
+('--feat', 'dump/dt_babel_swahili/deltafalse/feats.scp', '--nlsyms', 'data/lang_1char/non_lang_syms.txt', 'data/dt_babel_swahili/split32utt/26', 'data/lang_1char/train_units.txt')
+
+activate does not accept more than one argument:
+('--feat', 'dump/dt_babel_assamese/deltafalse/feats.scp', '--nlsyms', 'data/lang_1char/non_lang_syms.txt', 'data/dt_babel_assamese/split32utt/20', 'data/lang_1char/train_units.txt')
+
+activate does not accept more than one argument:
+('--feat', 'dump/et_babel_lao/deltafalse/feats.scp', '--nlsyms', 'data/lang_1char/non_lang_syms.txt', 'data/et_babel_lao/split32utt/11', 'data/lang_1char/train_units.txt')
+
+activate does not accept more than one argument:
+('--feat', 'dump/et_babel_tagalog/deltafalse/feats.scp', '--nlsyms', 'data/lang_1char/non_lang_syms.txt', 'data/et_babel_tagalog/split32utt/11', 'data/lang_1char/train_units.txt')
+
+activate does not accept more than one argument:
+('--feat', 'dump/et_babel_swahili/deltafalse/feats.scp', '--nlsyms', 'data/lang_1char/non_lang_syms.txt', 'data/et_babel_swahili/split32utt/11', 'data/lang_1char/train_units.txt')
+
+activate does not accept more than one argument:
+('--feat', 'dump/dt_babel_tagalog/deltafalse/feats.scp', '--nlsyms', 'data/lang_1char/non_lang_syms.txt', 'data/dt_babel_tagalog/split32utt/14', 'data/lang_1char/train_units.txt')
+
+activate does not accept more than one argument:
+('--feat', 'dump/dt_babel_swahili/deltafalse/feats.scp', '--nlsyms', 'data/lang_1char/non_lang_syms.txt', 'data/dt_babel_swahili/split32utt/27', 'data/lang_1char/train_units.txt')
+
+activate does not accept more than one argument:
+('--feat', 'dump/dt_babel_lao/deltafalse/feats.scp', '--nlsyms', 'data/lang_1char/non_lang_syms.txt', 'data/dt_babel_lao/split32utt/20', 'data/lang_1char/train_units.txt')
+
+activate does not accept more than one argument:
+('--feat', 'dump/dt_babel_zulu/deltafalse/feats.scp', '--nlsyms', 'data/lang_1char/non_lang_syms.txt', 'data/dt_babel_zulu/split32utt/22', 'data/lang_1char/train_units.txt')
+
+activate does not accept more than one argument:
+('--feat', 'dump/dt_babel_assamese/deltafalse/feats.scp', '--nlsyms', 'data/lang_1char/non_lang_syms.txt', 'data/dt_babel_assamese/split32utt/21', 'data/lang_1char/train_units.txt')
+
+activate does not accept more than one argument:
+('--feat', 'dump/et_babel_assamese/deltafalse/feats.scp', '--nlsyms', 'data/lang_1char/non_lang_syms.txt', 'data/et_babel_assamese/split32utt/12', 'data/lang_1char/train_units.txt')
+
+activate does not accept more than one argument:
+('--feat', 'dump/dt_babel_swahili/deltafalse/feats.scp', '--nlsyms', 'data/lang_1char/non_lang_syms.txt', 'data/dt_babel_swahili/split32utt/28', 'data/lang_1char/train_units.txt')
+
+activate does not accept more than one argument:
+('--feat', 'dump/et_babel_zulu/deltafalse/feats.scp', '--nlsyms', 'data/lang_1char/non_lang_syms.txt', 'data/et_babel_zulu/split32utt/12', 'data/lang_1char/train_units.txt')
+
+activate does not accept more than one argument:
+('--feat', 'dump/dt_babel_zulu/deltafalse/feats.scp', '--nlsyms', 'data/lang_1char/non_lang_syms.txt', 'data/dt_babel_zulu/split32utt/23', 'data/lang_1char/train_units.txt')
+
+activate does not accept more than one argument:
+('--feat', 'dump/dt_babel_lao/deltafalse/feats.scp', '--nlsyms', 'data/lang_1char/non_lang_syms.txt', 'data/dt_babel_lao/split32utt/21', 'data/lang_1char/train_units.txt')
+
+activate does not accept more than one argument:
+('--feat', 'dump/et_babel_lao/deltafalse/feats.scp', '--nlsyms', 'data/lang_1char/non_lang_syms.txt', 'data/et_babel_lao/split32utt/12', 'data/lang_1char/train_units.txt')
+
+activate does not accept more than one argument:
+('--feat', 'dump/et_babel_tagalog/deltafalse/feats.scp', '--nlsyms', 'data/lang_1char/non_lang_syms.txt', 'data/et_babel_tagalog/split32utt/12', 'data/lang_1char/train_units.txt')
+
+activate does not accept more than one argument:
+('--feat', 'dump/dt_babel_assamese/deltafalse/feats.scp', '--nlsyms', 'data/lang_1char/non_lang_syms.txt', 'data/dt_babel_assamese/split32utt/22', 'data/lang_1char/train_units.txt')
+
+activate does not accept more than one argument:
+('--feat', 'dump/dt_babel_tagalog/deltafalse/feats.scp', '--nlsyms', 'data/lang_1char/non_lang_syms.txt', 'data/dt_babel_tagalog/split32utt/15', 'data/lang_1char/train_units.txt')
+
+activate does not accept more than one argument:
+('--feat', 'dump/dt_babel_swahili/deltafalse/feats.scp', '--nlsyms', 'data/lang_1char/non_lang_syms.txt', 'data/dt_babel_swahili/split32utt/29', 'data/lang_1char/train_units.txt')
+
+activate does not accept more than one argument:
+('--feat', 'dump/et_babel_swahili/deltafalse/feats.scp', '--nlsyms', 'data/lang_1char/non_lang_syms.txt', 'data/et_babel_swahili/split32utt/12', 'data/lang_1char/train_units.txt')
+
+activate does not accept more than one argument:
+('--feat', 'dump/et_babel_assamese/deltafalse/feats.scp', '--nlsyms', 'data/lang_1char/non_lang_syms.txt', 'data/et_babel_assamese/split32utt/13', 'data/lang_1char/train_units.txt')
+
+activate does not accept more than one argument:
+('--feat', 'dump/dt_babel_zulu/deltafalse/feats.scp', '--nlsyms', 'data/lang_1char/non_lang_syms.txt', 'data/dt_babel_zulu/split32utt/24', 'data/lang_1char/train_units.txt')
+
+activate does not accept more than one argument:
+('--feat', 'dump/dt_babel_swahili/deltafalse/feats.scp', '--nlsyms', 'data/lang_1char/non_lang_syms.txt', 'data/dt_babel_swahili/split32utt/30', 'data/lang_1char/train_units.txt')
+
+activate does not accept more than one argument:
+('--feat', 'dump/dt_babel_assamese/deltafalse/feats.scp', '--nlsyms', 'data/lang_1char/non_lang_syms.txt', 'data/dt_babel_assamese/split32utt/23', 'data/lang_1char/train_units.txt')
+
+activate does not accept more than one argument:
+('--feat', 'dump/dt_babel_lao/deltafalse/feats.scp', '--nlsyms', 'data/lang_1char/non_lang_syms.txt', 'data/dt_babel_lao/split32utt/22', 'data/lang_1char/train_units.txt')
+
+activate does not accept more than one argument:
+('--feat', 'dump/et_babel_zulu/deltafalse/feats.scp', '--nlsyms', 'data/lang_1char/non_lang_syms.txt', 'data/et_babel_zulu/split32utt/13', 'data/lang_1char/train_units.txt')
+
+activate does not accept more than one argument:
+('--feat', 'dump/dt_babel_tagalog/deltafalse/feats.scp', '--nlsyms', 'data/lang_1char/non_lang_syms.txt', 'data/dt_babel_tagalog/split32utt/16', 'data/lang_1char/train_units.txt')
+
+activate does not accept more than one argument:
+('--feat', 'dump/et_babel_lao/deltafalse/feats.scp', '--nlsyms', 'data/lang_1char/non_lang_syms.txt', 'data/et_babel_lao/split32utt/13', 'data/lang_1char/train_units.txt')
+
+activate does not accept more than one argument:
+('--feat', 'dump/dt_babel_swahili/deltafalse/feats.scp', '--nlsyms', 'data/lang_1char/non_lang_syms.txt', 'data/dt_babel_swahili/split32utt/31', 'data/lang_1char/train_units.txt')
+
+activate does not accept more than one argument:
+('--feat', 'dump/et_babel_tagalog/deltafalse/feats.scp', '--nlsyms', 'data/lang_1char/non_lang_syms.txt', 'data/et_babel_tagalog/split32utt/13', 'data/lang_1char/train_units.txt')
+
+activate does not accept more than one argument:
+('--feat', 'dump/dt_babel_zulu/deltafalse/feats.scp', '--nlsyms', 'data/lang_1char/non_lang_syms.txt', 'data/dt_babel_zulu/split32utt/25', 'data/lang_1char/train_units.txt')
+
+activate does not accept more than one argument:
+('--feat', 'dump/dt_babel_assamese/deltafalse/feats.scp', '--nlsyms', 'data/lang_1char/non_lang_syms.txt', 'data/dt_babel_assamese/split32utt/24', 'data/lang_1char/train_units.txt')
+
+activate does not accept more than one argument:
+('--feat', 'dump/et_babel_swahili/deltafalse/feats.scp', '--nlsyms', 'data/lang_1char/non_lang_syms.txt', 'data/et_babel_swahili/split32utt/13', 'data/lang_1char/train_units.txt')
+
+activate does not accept more than one argument:
+('--feat', 'dump/dt_babel_lao/deltafalse/feats.scp', '--nlsyms', 'data/lang_1char/non_lang_syms.txt', 'data/dt_babel_lao/split32utt/23', 'data/lang_1char/train_units.txt')
+
+activate does not accept more than one argument:
+('--feat', 'dump/et_babel_assamese/deltafalse/feats.scp', '--nlsyms', 'data/lang_1char/non_lang_syms.txt', 'data/et_babel_assamese/split32utt/14', 'data/lang_1char/train_units.txt')
+
+activate does not accept more than one argument:
+('--feat', 'dump/dt_babel_swahili/deltafalse/feats.scp', '--nlsyms', 'data/lang_1char/non_lang_syms.txt', 'data/dt_babel_swahili/split32utt/32', 'data/lang_1char/train_units.txt')
+
+activate does not accept more than one argument:
+('--feat', 'dump/dt_babel_tagalog/deltafalse/feats.scp', '--nlsyms', 'data/lang_1char/non_lang_syms.txt', 'data/dt_babel_tagalog/split32utt/17', 'data/lang_1char/train_units.txt')
+
+activate does not accept more than one argument:
+('--feat', 'dump/et_babel_zulu/deltafalse/feats.scp', '--nlsyms', 'data/lang_1char/non_lang_syms.txt', 'data/et_babel_zulu/split32utt/14', 'data/lang_1char/train_units.txt')
+
+activate does not accept more than one argument:
+('--feat', 'dump/dt_babel_zulu/deltafalse/feats.scp', '--nlsyms', 'data/lang_1char/non_lang_syms.txt', 'data/dt_babel_zulu/split32utt/26', 'data/lang_1char/train_units.txt')
+
+activate does not accept more than one argument:
+('--feat', 'dump/dt_babel_assamese/deltafalse/feats.scp', '--nlsyms', 'data/lang_1char/non_lang_syms.txt', 'data/dt_babel_assamese/split32utt/25', 'data/lang_1char/train_units.txt')
+
+activate does not accept more than one argument:
+('--feat', 'dump/dt_babel_lao/deltafalse/feats.scp', '--nlsyms', 'data/lang_1char/non_lang_syms.txt', 'data/dt_babel_lao/split32utt/24', 'data/lang_1char/train_units.txt')
+
+activate does not accept more than one argument:
+('--feat', 'dump/et_babel_lao/deltafalse/feats.scp', '--nlsyms', 'data/lang_1char/non_lang_syms.txt', 'data/et_babel_lao/split32utt/14', 'data/lang_1char/train_units.txt')
+
+activate does not accept more than one argument:
+('--feat', 'dump/et_babel_tagalog/deltafalse/feats.scp', '--nlsyms', 'data/lang_1char/non_lang_syms.txt', 'data/et_babel_tagalog/split32utt/14', 'data/lang_1char/train_units.txt')
+
+activate does not accept more than one argument:
+('--feat', 'dump/et_babel_swahili/deltafalse/feats.scp', '--nlsyms', 'data/lang_1char/non_lang_syms.txt', 'data/et_babel_swahili/split32utt/14', 'data/lang_1char/train_units.txt')
+
+activate does not accept more than one argument:
+('--feat', 'dump/et_babel_assamese/deltafalse/feats.scp', '--nlsyms', 'data/lang_1char/non_lang_syms.txt', 'data/et_babel_assamese/split32utt/15', 'data/lang_1char/train_units.txt')
+
+activate does not accept more than one argument:
+('--feat', 'dump/dt_babel_zulu/deltafalse/feats.scp', '--nlsyms', 'data/lang_1char/non_lang_syms.txt', 'data/dt_babel_zulu/split32utt/27', 'data/lang_1char/train_units.txt')
+
+activate does not accept more than one argument:
+('--feat', 'dump/dt_babel_assamese/deltafalse/feats.scp', '--nlsyms', 'data/lang_1char/non_lang_syms.txt', 'data/dt_babel_assamese/split32utt/26', 'data/lang_1char/train_units.txt')
+
+activate does not accept more than one argument:
+('--feat', 'dump/dt_babel_tagalog/deltafalse/feats.scp', '--nlsyms', 'data/lang_1char/non_lang_syms.txt', 'data/dt_babel_tagalog/split32utt/18', 'data/lang_1char/train_units.txt')
+
+activate does not accept more than one argument:
+('--feat', 'dump/dt_babel_lao/deltafalse/feats.scp', '--nlsyms', 'data/lang_1char/non_lang_syms.txt', 'data/dt_babel_lao/split32utt/25', 'data/lang_1char/train_units.txt')
+
+activate does not accept more than one argument:
+('--feat', 'dump/et_babel_zulu/deltafalse/feats.scp', '--nlsyms', 'data/lang_1char/non_lang_syms.txt', 'data/et_babel_zulu/split32utt/15', 'data/lang_1char/train_units.txt')
+
+activate does not accept more than one argument:
+('--feat', 'dump/dt_babel_zulu/deltafalse/feats.scp', '--nlsyms', 'data/lang_1char/non_lang_syms.txt', 'data/dt_babel_zulu/split32utt/28', 'data/lang_1char/train_units.txt')
+
+activate does not accept more than one argument:
+('--feat', 'dump/et_babel_lao/deltafalse/feats.scp', '--nlsyms', 'data/lang_1char/non_lang_syms.txt', 'data/et_babel_lao/split32utt/15', 'data/lang_1char/train_units.txt')
+
+activate does not accept more than one argument:
+('--feat', 'dump/dt_babel_assamese/deltafalse/feats.scp', '--nlsyms', 'data/lang_1char/non_lang_syms.txt', 'data/dt_babel_assamese/split32utt/27', 'data/lang_1char/train_units.txt')
+
+activate does not accept more than one argument:
+('--feat', 'dump/et_babel_tagalog/deltafalse/feats.scp', '--nlsyms', 'data/lang_1char/non_lang_syms.txt', 'data/et_babel_tagalog/split32utt/15', 'data/lang_1char/train_units.txt')
+
+activate does not accept more than one argument:
+('--feat', 'dump/et_babel_assamese/deltafalse/feats.scp', '--nlsyms', 'data/lang_1char/non_lang_syms.txt', 'data/et_babel_assamese/split32utt/16', 'data/lang_1char/train_units.txt')
+
+activate does not accept more than one argument:
+('--feat', 'dump/dt_babel_lao/deltafalse/feats.scp', '--nlsyms', 'data/lang_1char/non_lang_syms.txt', 'data/dt_babel_lao/split32utt/26', 'data/lang_1char/train_units.txt')
+
+activate does not accept more than one argument:
+('--feat', 'dump/et_babel_swahili/deltafalse/feats.scp', '--nlsyms', 'data/lang_1char/non_lang_syms.txt', 'data/et_babel_swahili/split32utt/15', 'data/lang_1char/train_units.txt')
+
+activate does not accept more than one argument:
+('--feat', 'dump/dt_babel_tagalog/deltafalse/feats.scp', '--nlsyms', 'data/lang_1char/non_lang_syms.txt', 'data/dt_babel_tagalog/split32utt/19', 'data/lang_1char/train_units.txt')
+
+activate does not accept more than one argument:
+('--feat', 'dump/dt_babel_zulu/deltafalse/feats.scp', '--nlsyms', 'data/lang_1char/non_lang_syms.txt', 'data/dt_babel_zulu/split32utt/29', 'data/lang_1char/train_units.txt')
+
+activate does not accept more than one argument:
+('--feat', 'dump/dt_babel_assamese/deltafalse/feats.scp', '--nlsyms', 'data/lang_1char/non_lang_syms.txt', 'data/dt_babel_assamese/split32utt/28', 'data/lang_1char/train_units.txt')
+
+activate does not accept more than one argument:
+('--feat', 'dump/et_babel_zulu/deltafalse/feats.scp', '--nlsyms', 'data/lang_1char/non_lang_syms.txt', 'data/et_babel_zulu/split32utt/16', 'data/lang_1char/train_units.txt')
+
+activate does not accept more than one argument:
+('--feat', 'dump/dt_babel_lao/deltafalse/feats.scp', '--nlsyms', 'data/lang_1char/non_lang_syms.txt', 'data/dt_babel_lao/split32utt/27', 'data/lang_1char/train_units.txt')
+
+activate does not accept more than one argument:
+('--feat', 'dump/et_babel_lao/deltafalse/feats.scp', '--nlsyms', 'data/lang_1char/non_lang_syms.txt', 'data/et_babel_lao/split32utt/16', 'data/lang_1char/train_units.txt')
+
+activate does not accept more than one argument:
+('--feat', 'dump/et_babel_tagalog/deltafalse/feats.scp', '--nlsyms', 'data/lang_1char/non_lang_syms.txt', 'data/et_babel_tagalog/split32utt/16', 'data/lang_1char/train_units.txt')
+
+activate does not accept more than one argument:
+('--feat', 'dump/dt_babel_tagalog/deltafalse/feats.scp', '--nlsyms', 'data/lang_1char/non_lang_syms.txt', 'data/dt_babel_tagalog/split32utt/20', 'data/lang_1char/train_units.txt')
+
+activate does not accept more than one argument:
+('--feat', 'dump/et_babel_assamese/deltafalse/feats.scp', '--nlsyms', 'data/lang_1char/non_lang_syms.txt', 'data/et_babel_assamese/split32utt/17', 'data/lang_1char/train_units.txt')
+
+activate does not accept more than one argument:
+('--feat', 'dump/dt_babel_zulu/deltafalse/feats.scp', '--nlsyms', 'data/lang_1char/non_lang_syms.txt', 'data/dt_babel_zulu/split32utt/30', 'data/lang_1char/train_units.txt')
+
+activate does not accept more than one argument:
+('--feat', 'dump/dt_babel_assamese/deltafalse/feats.scp', '--nlsyms', 'data/lang_1char/non_lang_syms.txt', 'data/dt_babel_assamese/split32utt/29', 'data/lang_1char/train_units.txt')
+
+activate does not accept more than one argument:
+('--feat', 'dump/et_babel_swahili/deltafalse/feats.scp', '--nlsyms', 'data/lang_1char/non_lang_syms.txt', 'data/et_babel_swahili/split32utt/16', 'data/lang_1char/train_units.txt')
+
+activate does not accept more than one argument:
+('--feat', 'dump/dt_babel_lao/deltafalse/feats.scp', '--nlsyms', 'data/lang_1char/non_lang_syms.txt', 'data/dt_babel_lao/split32utt/28', 'data/lang_1char/train_units.txt')
+
+activate does not accept more than one argument:
+('--feat', 'dump/et_babel_zulu/deltafalse/feats.scp', '--nlsyms', 'data/lang_1char/non_lang_syms.txt', 'data/et_babel_zulu/split32utt/17', 'data/lang_1char/train_units.txt')
+
+activate does not accept more than one argument:
+('--feat', 'dump/dt_babel_zulu/deltafalse/feats.scp', '--nlsyms', 'data/lang_1char/non_lang_syms.txt', 'data/dt_babel_zulu/split32utt/31', 'data/lang_1char/train_units.txt')
+
+activate does not accept more than one argument:
+('--feat', 'dump/dt_babel_assamese/deltafalse/feats.scp', '--nlsyms', 'data/lang_1char/non_lang_syms.txt', 'data/dt_babel_assamese/split32utt/30', 'data/lang_1char/train_units.txt')
+
+activate does not accept more than one argument:
+('--feat', 'dump/dt_babel_tagalog/deltafalse/feats.scp', '--nlsyms', 'data/lang_1char/non_lang_syms.txt', 'data/dt_babel_tagalog/split32utt/21', 'data/lang_1char/train_units.txt')
+
+activate does not accept more than one argument:
+('--feat', 'dump/et_babel_lao/deltafalse/feats.scp', '--nlsyms', 'data/lang_1char/non_lang_syms.txt', 'data/et_babel_lao/split32utt/17', 'data/lang_1char/train_units.txt')
+
+activate does not accept more than one argument:
+('--feat', 'dump/et_babel_tagalog/deltafalse/feats.scp', '--nlsyms', 'data/lang_1char/non_lang_syms.txt', 'data/et_babel_tagalog/split32utt/17', 'data/lang_1char/train_units.txt')
+
+activate does not accept more than one argument:
+('--feat', 'dump/et_babel_assamese/deltafalse/feats.scp', '--nlsyms', 'data/lang_1char/non_lang_syms.txt', 'data/et_babel_assamese/split32utt/18', 'data/lang_1char/train_units.txt')
+
+activate does not accept more than one argument:
+('--feat', 'dump/dt_babel_lao/deltafalse/feats.scp', '--nlsyms', 'data/lang_1char/non_lang_syms.txt', 'data/dt_babel_lao/split32utt/29', 'data/lang_1char/train_units.txt')
+
+activate does not accept more than one argument:
+('--feat', 'dump/et_babel_swahili/deltafalse/feats.scp', '--nlsyms', 'data/lang_1char/non_lang_syms.txt', 'data/et_babel_swahili/split32utt/17', 'data/lang_1char/train_units.txt')
+
+activate does not accept more than one argument:
+('--feat', 'dump/dt_babel_zulu/deltafalse/feats.scp', '--nlsyms', 'data/lang_1char/non_lang_syms.txt', 'data/dt_babel_zulu/split32utt/32', 'data/lang_1char/train_units.txt')
+
+activate does not accept more than one argument:
+('--feat', 'dump/dt_babel_assamese/deltafalse/feats.scp', '--nlsyms', 'data/lang_1char/non_lang_syms.txt', 'data/dt_babel_assamese/split32utt/31', 'data/lang_1char/train_units.txt')
+
+activate does not accept more than one argument:
+('--feat', 'dump/et_babel_zulu/deltafalse/feats.scp', '--nlsyms', 'data/lang_1char/non_lang_syms.txt', 'data/et_babel_zulu/split32utt/18', 'data/lang_1char/train_units.txt')
+
+activate does not accept more than one argument:
+('--feat', 'dump/dt_babel_lao/deltafalse/feats.scp', '--nlsyms', 'data/lang_1char/non_lang_syms.txt', 'data/dt_babel_lao/split32utt/30', 'data/lang_1char/train_units.txt')
+
+activate does not accept more than one argument:
+('--feat', 'dump/dt_babel_tagalog/deltafalse/feats.scp', '--nlsyms', 'data/lang_1char/non_lang_syms.txt', 'data/dt_babel_tagalog/split32utt/22', 'data/lang_1char/train_units.txt')
+
+activate does not accept more than one argument:
+('--feat', 'dump/et_babel_assamese/deltafalse/feats.scp', '--nlsyms', 'data/lang_1char/non_lang_syms.txt', 'data/et_babel_assamese/split32utt/19', 'data/lang_1char/train_units.txt')
+
+activate does not accept more than one argument:
+('--feat', 'dump/et_babel_lao/deltafalse/feats.scp', '--nlsyms', 'data/lang_1char/non_lang_syms.txt', 'data/et_babel_lao/split32utt/18', 'data/lang_1char/train_units.txt')
+
+activate does not accept more than one argument:
+('--feat', 'dump/et_babel_tagalog/deltafalse/feats.scp', '--nlsyms', 'data/lang_1char/non_lang_syms.txt', 'data/et_babel_tagalog/split32utt/18', 'data/lang_1char/train_units.txt')
+
+activate does not accept more than one argument:
+('--feat', 'dump/dt_babel_assamese/deltafalse/feats.scp', '--nlsyms', 'data/lang_1char/non_lang_syms.txt', 'data/dt_babel_assamese/split32utt/32', 'data/lang_1char/train_units.txt')
+
+activate does not accept more than one argument:
+('--feat', 'dump/et_babel_swahili/deltafalse/feats.scp', '--nlsyms', 'data/lang_1char/non_lang_syms.txt', 'data/et_babel_swahili/split32utt/18', 'data/lang_1char/train_units.txt')
+
+activate does not accept more than one argument:
+('--feat', 'dump/dt_babel_lao/deltafalse/feats.scp', '--nlsyms', 'data/lang_1char/non_lang_syms.txt', 'data/dt_babel_lao/split32utt/31', 'data/lang_1char/train_units.txt')
+
+activate does not accept more than one argument:
+('--feat', 'dump/dt_babel_tagalog/deltafalse/feats.scp', '--nlsyms', 'data/lang_1char/non_lang_syms.txt', 'data/dt_babel_tagalog/split32utt/23', 'data/lang_1char/train_units.txt')
+
+activate does not accept more than one argument:
+('--feat', 'dump/et_babel_zulu/deltafalse/feats.scp', '--nlsyms', 'data/lang_1char/non_lang_syms.txt', 'data/et_babel_zulu/split32utt/19', 'data/lang_1char/train_units.txt')
+
+activate does not accept more than one argument:
+('--feat', 'dump/et_babel_assamese/deltafalse/feats.scp', '--nlsyms', 'data/lang_1char/non_lang_syms.txt', 'data/et_babel_assamese/split32utt/20', 'data/lang_1char/train_units.txt')
+
+activate does not accept more than one argument:
+('--feat', 'dump/dt_babel_lao/deltafalse/feats.scp', '--nlsyms', 'data/lang_1char/non_lang_syms.txt', 'data/dt_babel_lao/split32utt/32', 'data/lang_1char/train_units.txt')
+
+activate does not accept more than one argument:
+('--feat', 'dump/et_babel_tagalog/deltafalse/feats.scp', '--nlsyms', 'data/lang_1char/non_lang_syms.txt', 'data/et_babel_tagalog/split32utt/19', 'data/lang_1char/train_units.txt')
+
+activate does not accept more than one argument:
+('--feat', 'dump/et_babel_lao/deltafalse/feats.scp', '--nlsyms', 'data/lang_1char/non_lang_syms.txt', 'data/et_babel_lao/split32utt/19', 'data/lang_1char/train_units.txt')
+
+activate does not accept more than one argument:
+('--feat', 'dump/et_babel_swahili/deltafalse/feats.scp', '--nlsyms', 'data/lang_1char/non_lang_syms.txt', 'data/et_babel_swahili/split32utt/19', 'data/lang_1char/train_units.txt')
+
+activate does not accept more than one argument:
+('--feat', 'dump/dt_babel_tagalog/deltafalse/feats.scp', '--nlsyms', 'data/lang_1char/non_lang_syms.txt', 'data/dt_babel_tagalog/split32utt/24', 'data/lang_1char/train_units.txt')
+
+activate does not accept more than one argument:
+('--feat', 'dump/et_babel_zulu/deltafalse/feats.scp', '--nlsyms', 'data/lang_1char/non_lang_syms.txt', 'data/et_babel_zulu/split32utt/20', 'data/lang_1char/train_units.txt')
+
+activate does not accept more than one argument:
+('--feat', 'dump/et_babel_assamese/deltafalse/feats.scp', '--nlsyms', 'data/lang_1char/non_lang_syms.txt', 'data/et_babel_assamese/split32utt/21', 'data/lang_1char/train_units.txt')
+
+activate does not accept more than one argument:
+('--feat', 'dump/et_babel_tagalog/deltafalse/feats.scp', '--nlsyms', 'data/lang_1char/non_lang_syms.txt', 'data/et_babel_tagalog/split32utt/20', 'data/lang_1char/train_units.txt')
+
+activate does not accept more than one argument:
+('--feat', 'dump/et_babel_lao/deltafalse/feats.scp', '--nlsyms', 'data/lang_1char/non_lang_syms.txt', 'data/et_babel_lao/split32utt/20', 'data/lang_1char/train_units.txt')
+
+activate does not accept more than one argument:
+('--feat', 'dump/et_babel_swahili/deltafalse/feats.scp', '--nlsyms', 'data/lang_1char/non_lang_syms.txt', 'data/et_babel_swahili/split32utt/20', 'data/lang_1char/train_units.txt')
+
+activate does not accept more than one argument:
+('--feat', 'dump/dt_babel_tagalog/deltafalse/feats.scp', '--nlsyms', 'data/lang_1char/non_lang_syms.txt', 'data/dt_babel_tagalog/split32utt/25', 'data/lang_1char/train_units.txt')
+
+activate does not accept more than one argument:
+('--feat', 'dump/et_babel_zulu/deltafalse/feats.scp', '--nlsyms', 'data/lang_1char/non_lang_syms.txt', 'data/et_babel_zulu/split32utt/21', 'data/lang_1char/train_units.txt')
+
+activate does not accept more than one argument:
+('--feat', 'dump/et_babel_assamese/deltafalse/feats.scp', '--nlsyms', 'data/lang_1char/non_lang_syms.txt', 'data/et_babel_assamese/split32utt/22', 'data/lang_1char/train_units.txt')
+
+activate does not accept more than one argument:
+('--feat', 'dump/et_babel_lao/deltafalse/feats.scp', '--nlsyms', 'data/lang_1char/non_lang_syms.txt', 'data/et_babel_lao/split32utt/21', 'data/lang_1char/train_units.txt')
+
+activate does not accept more than one argument:
+('--feat', 'dump/et_babel_tagalog/deltafalse/feats.scp', '--nlsyms', 'data/lang_1char/non_lang_syms.txt', 'data/et_babel_tagalog/split32utt/21', 'data/lang_1char/train_units.txt')
+
+activate does not accept more than one argument:
+('--feat', 'dump/dt_babel_tagalog/deltafalse/feats.scp', '--nlsyms', 'data/lang_1char/non_lang_syms.txt', 'data/dt_babel_tagalog/split32utt/26', 'data/lang_1char/train_units.txt')
+
+activate does not accept more than one argument:
+('--feat', 'dump/et_babel_swahili/deltafalse/feats.scp', '--nlsyms', 'data/lang_1char/non_lang_syms.txt', 'data/et_babel_swahili/split32utt/21', 'data/lang_1char/train_units.txt')
+
+activate does not accept more than one argument:
+('--feat', 'dump/et_babel_zulu/deltafalse/feats.scp', '--nlsyms', 'data/lang_1char/non_lang_syms.txt', 'data/et_babel_zulu/split32utt/22', 'data/lang_1char/train_units.txt')
+
+activate does not accept more than one argument:
+('--feat', 'dump/et_babel_assamese/deltafalse/feats.scp', '--nlsyms', 'data/lang_1char/non_lang_syms.txt', 'data/et_babel_assamese/split32utt/23', 'data/lang_1char/train_units.txt')
+
+activate does not accept more than one argument:
+('--feat', 'dump/dt_babel_tagalog/deltafalse/feats.scp', '--nlsyms', 'data/lang_1char/non_lang_syms.txt', 'data/dt_babel_tagalog/split32utt/27', 'data/lang_1char/train_units.txt')
+
+activate does not accept more than one argument:
+('--feat', 'dump/et_babel_lao/deltafalse/feats.scp', '--nlsyms', 'data/lang_1char/non_lang_syms.txt', 'data/et_babel_lao/split32utt/22', 'data/lang_1char/train_units.txt')
+
+activate does not accept more than one argument:
+('--feat', 'dump/et_babel_tagalog/deltafalse/feats.scp', '--nlsyms', 'data/lang_1char/non_lang_syms.txt', 'data/et_babel_tagalog/split32utt/22', 'data/lang_1char/train_units.txt')
+
+activate does not accept more than one argument:
+('--feat', 'dump/et_babel_swahili/deltafalse/feats.scp', '--nlsyms', 'data/lang_1char/non_lang_syms.txt', 'data/et_babel_swahili/split32utt/22', 'data/lang_1char/train_units.txt')
+
+activate does not accept more than one argument:
+('--feat', 'dump/et_babel_zulu/deltafalse/feats.scp', '--nlsyms', 'data/lang_1char/non_lang_syms.txt', 'data/et_babel_zulu/split32utt/23', 'data/lang_1char/train_units.txt')
+
+activate does not accept more than one argument:
+('--feat', 'dump/dt_babel_tagalog/deltafalse/feats.scp', '--nlsyms', 'data/lang_1char/non_lang_syms.txt', 'data/dt_babel_tagalog/split32utt/28', 'data/lang_1char/train_units.txt')
+
+activate does not accept more than one argument:
+('--feat', 'dump/et_babel_assamese/deltafalse/feats.scp', '--nlsyms', 'data/lang_1char/non_lang_syms.txt', 'data/et_babel_assamese/split32utt/24', 'data/lang_1char/train_units.txt')
+
+activate does not accept more than one argument:
+('--feat', 'dump/et_babel_lao/deltafalse/feats.scp', '--nlsyms', 'data/lang_1char/non_lang_syms.txt', 'data/et_babel_lao/split32utt/23', 'data/lang_1char/train_units.txt')
+
+activate does not accept more than one argument:
+('--feat', 'dump/et_babel_tagalog/deltafalse/feats.scp', '--nlsyms', 'data/lang_1char/non_lang_syms.txt', 'data/et_babel_tagalog/split32utt/23', 'data/lang_1char/train_units.txt')
+
+activate does not accept more than one argument:
+('--feat', 'dump/et_babel_swahili/deltafalse/feats.scp', '--nlsyms', 'data/lang_1char/non_lang_syms.txt', 'data/et_babel_swahili/split32utt/23', 'data/lang_1char/train_units.txt')
+
+activate does not accept more than one argument:
+('--feat', 'dump/dt_babel_tagalog/deltafalse/feats.scp', '--nlsyms', 'data/lang_1char/non_lang_syms.txt', 'data/dt_babel_tagalog/split32utt/29', 'data/lang_1char/train_units.txt')
+
+activate does not accept more than one argument:
+('--feat', 'dump/et_babel_zulu/deltafalse/feats.scp', '--nlsyms', 'data/lang_1char/non_lang_syms.txt', 'data/et_babel_zulu/split32utt/24', 'data/lang_1char/train_units.txt')
+
+activate does not accept more than one argument:
+('--feat', 'dump/et_babel_assamese/deltafalse/feats.scp', '--nlsyms', 'data/lang_1char/non_lang_syms.txt', 'data/et_babel_assamese/split32utt/25', 'data/lang_1char/train_units.txt')
+
+activate does not accept more than one argument:
+('--feat', 'dump/et_babel_lao/deltafalse/feats.scp', '--nlsyms', 'data/lang_1char/non_lang_syms.txt', 'data/et_babel_lao/split32utt/24', 'data/lang_1char/train_units.txt')
+
+activate does not accept more than one argument:
+('--feat', 'dump/et_babel_tagalog/deltafalse/feats.scp', '--nlsyms', 'data/lang_1char/non_lang_syms.txt', 'data/et_babel_tagalog/split32utt/24', 'data/lang_1char/train_units.txt')
+
+activate does not accept more than one argument:
+('--feat', 'dump/et_babel_swahili/deltafalse/feats.scp', '--nlsyms', 'data/lang_1char/non_lang_syms.txt', 'data/et_babel_swahili/split32utt/24', 'data/lang_1char/train_units.txt')
+
+activate does not accept more than one argument:
+('--feat', 'dump/dt_babel_tagalog/deltafalse/feats.scp', '--nlsyms', 'data/lang_1char/non_lang_syms.txt', 'data/dt_babel_tagalog/split32utt/30', 'data/lang_1char/train_units.txt')
+
+activate does not accept more than one argument:
+('--feat', 'dump/et_babel_zulu/deltafalse/feats.scp', '--nlsyms', 'data/lang_1char/non_lang_syms.txt', 'data/et_babel_zulu/split32utt/25', 'data/lang_1char/train_units.txt')
+
+activate does not accept more than one argument:
+('--feat', 'dump/et_babel_assamese/deltafalse/feats.scp', '--nlsyms', 'data/lang_1char/non_lang_syms.txt', 'data/et_babel_assamese/split32utt/26', 'data/lang_1char/train_units.txt')
+
+activate does not accept more than one argument:
+('--feat', 'dump/et_babel_lao/deltafalse/feats.scp', '--nlsyms', 'data/lang_1char/non_lang_syms.txt', 'data/et_babel_lao/split32utt/25', 'data/lang_1char/train_units.txt')
+
+activate does not accept more than one argument:
+('--feat', 'dump/dt_babel_tagalog/deltafalse/feats.scp', '--nlsyms', 'data/lang_1char/non_lang_syms.txt', 'data/dt_babel_tagalog/split32utt/31', 'data/lang_1char/train_units.txt')
+
+activate does not accept more than one argument:
+('--feat', 'dump/et_babel_swahili/deltafalse/feats.scp', '--nlsyms', 'data/lang_1char/non_lang_syms.txt', 'data/et_babel_swahili/split32utt/25', 'data/lang_1char/train_units.txt')
+
+activate does not accept more than one argument:
+('--feat', 'dump/et_babel_tagalog/deltafalse/feats.scp', '--nlsyms', 'data/lang_1char/non_lang_syms.txt', 'data/et_babel_tagalog/split32utt/25', 'data/lang_1char/train_units.txt')
+
+activate does not accept more than one argument:
+('--feat', 'dump/et_babel_zulu/deltafalse/feats.scp', '--nlsyms', 'data/lang_1char/non_lang_syms.txt', 'data/et_babel_zulu/split32utt/26', 'data/lang_1char/train_units.txt')
+
+activate does not accept more than one argument:
+('--feat', 'dump/et_babel_assamese/deltafalse/feats.scp', '--nlsyms', 'data/lang_1char/non_lang_syms.txt', 'data/et_babel_assamese/split32utt/27', 'data/lang_1char/train_units.txt')
+
+activate does not accept more than one argument:
+('--feat', 'dump/dt_babel_tagalog/deltafalse/feats.scp', '--nlsyms', 'data/lang_1char/non_lang_syms.txt', 'data/dt_babel_tagalog/split32utt/32', 'data/lang_1char/train_units.txt')
+
+activate does not accept more than one argument:
+('--feat', 'dump/et_babel_lao/deltafalse/feats.scp', '--nlsyms', 'data/lang_1char/non_lang_syms.txt', 'data/et_babel_lao/split32utt/26', 'data/lang_1char/train_units.txt')
+
+activate does not accept more than one argument:
+('--feat', 'dump/et_babel_swahili/deltafalse/feats.scp', '--nlsyms', 'data/lang_1char/non_lang_syms.txt', 'data/et_babel_swahili/split32utt/26', 'data/lang_1char/train_units.txt')
+
+activate does not accept more than one argument:
+('--feat', 'dump/et_babel_tagalog/deltafalse/feats.scp', '--nlsyms', 'data/lang_1char/non_lang_syms.txt', 'data/et_babel_tagalog/split32utt/26', 'data/lang_1char/train_units.txt')
+
+activate does not accept more than one argument:
+('--feat', 'dump/et_babel_assamese/deltafalse/feats.scp', '--nlsyms', 'data/lang_1char/non_lang_syms.txt', 'data/et_babel_assamese/split32utt/28', 'data/lang_1char/train_units.txt')
+
+activate does not accept more than one argument:
+('--feat', 'dump/et_babel_zulu/deltafalse/feats.scp', '--nlsyms', 'data/lang_1char/non_lang_syms.txt', 'data/et_babel_zulu/split32utt/27', 'data/lang_1char/train_units.txt')
+
+activate does not accept more than one argument:
+('--feat', 'dump/et_babel_lao/deltafalse/feats.scp', '--nlsyms', 'data/lang_1char/non_lang_syms.txt', 'data/et_babel_lao/split32utt/27', 'data/lang_1char/train_units.txt')
+
+activate does not accept more than one argument:
+('--feat', 'dump/et_babel_swahili/deltafalse/feats.scp', '--nlsyms', 'data/lang_1char/non_lang_syms.txt', 'data/et_babel_swahili/split32utt/27', 'data/lang_1char/train_units.txt')
+
+activate does not accept more than one argument:
+('--feat', 'dump/et_babel_tagalog/deltafalse/feats.scp', '--nlsyms', 'data/lang_1char/non_lang_syms.txt', 'data/et_babel_tagalog/split32utt/27', 'data/lang_1char/train_units.txt')
+
+activate does not accept more than one argument:
+('--feat', 'dump/et_babel_assamese/deltafalse/feats.scp', '--nlsyms', 'data/lang_1char/non_lang_syms.txt', 'data/et_babel_assamese/split32utt/29', 'data/lang_1char/train_units.txt')
+
+activate does not accept more than one argument:
+('--feat', 'dump/et_babel_zulu/deltafalse/feats.scp', '--nlsyms', 'data/lang_1char/non_lang_syms.txt', 'data/et_babel_zulu/split32utt/28', 'data/lang_1char/train_units.txt')
+
+activate does not accept more than one argument:
+('--feat', 'dump/et_babel_lao/deltafalse/feats.scp', '--nlsyms', 'data/lang_1char/non_lang_syms.txt', 'data/et_babel_lao/split32utt/28', 'data/lang_1char/train_units.txt')
+
+activate does not accept more than one argument:
+('--feat', 'dump/et_babel_swahili/deltafalse/feats.scp', '--nlsyms', 'data/lang_1char/non_lang_syms.txt', 'data/et_babel_swahili/split32utt/28', 'data/lang_1char/train_units.txt')
+
+activate does not accept more than one argument:
+('--feat', 'dump/et_babel_tagalog/deltafalse/feats.scp', '--nlsyms', 'data/lang_1char/non_lang_syms.txt', 'data/et_babel_tagalog/split32utt/28', 'data/lang_1char/train_units.txt')
+
+activate does not accept more than one argument:
+('--feat', 'dump/et_babel_assamese/deltafalse/feats.scp', '--nlsyms', 'data/lang_1char/non_lang_syms.txt', 'data/et_babel_assamese/split32utt/30', 'data/lang_1char/train_units.txt')
+
+activate does not accept more than one argument:
+('--feat', 'dump/et_babel_zulu/deltafalse/feats.scp', '--nlsyms', 'data/lang_1char/non_lang_syms.txt', 'data/et_babel_zulu/split32utt/29', 'data/lang_1char/train_units.txt')
+
+activate does not accept more than one argument:
+('--feat', 'dump/et_babel_lao/deltafalse/feats.scp', '--nlsyms', 'data/lang_1char/non_lang_syms.txt', 'data/et_babel_lao/split32utt/29', 'data/lang_1char/train_units.txt')
+
+activate does not accept more than one argument:
+('--feat', 'dump/et_babel_swahili/deltafalse/feats.scp', '--nlsyms', 'data/lang_1char/non_lang_syms.txt', 'data/et_babel_swahili/split32utt/29', 'data/lang_1char/train_units.txt')
+
+activate does not accept more than one argument:
+('--feat', 'dump/et_babel_tagalog/deltafalse/feats.scp', '--nlsyms', 'data/lang_1char/non_lang_syms.txt', 'data/et_babel_tagalog/split32utt/29', 'data/lang_1char/train_units.txt')
+
+activate does not accept more than one argument:
+('--feat', 'dump/et_babel_assamese/deltafalse/feats.scp', '--nlsyms', 'data/lang_1char/non_lang_syms.txt', 'data/et_babel_assamese/split32utt/31', 'data/lang_1char/train_units.txt')
+
+activate does not accept more than one argument:
+('--feat', 'dump/et_babel_zulu/deltafalse/feats.scp', '--nlsyms', 'data/lang_1char/non_lang_syms.txt', 'data/et_babel_zulu/split32utt/30', 'data/lang_1char/train_units.txt')
+
+activate does not accept more than one argument:
+('--feat', 'dump/et_babel_lao/deltafalse/feats.scp', '--nlsyms', 'data/lang_1char/non_lang_syms.txt', 'data/et_babel_lao/split32utt/30', 'data/lang_1char/train_units.txt')
+
+activate does not accept more than one argument:
+('--feat', 'dump/et_babel_assamese/deltafalse/feats.scp', '--nlsyms', 'data/lang_1char/non_lang_syms.txt', 'data/et_babel_assamese/split32utt/32', 'data/lang_1char/train_units.txt')
+
+activate does not accept more than one argument:
+('--feat', 'dump/et_babel_tagalog/deltafalse/feats.scp', '--nlsyms', 'data/lang_1char/non_lang_syms.txt', 'data/et_babel_tagalog/split32utt/30', 'data/lang_1char/train_units.txt')
+
+activate does not accept more than one argument:
+('--feat', 'dump/et_babel_swahili/deltafalse/feats.scp', '--nlsyms', 'data/lang_1char/non_lang_syms.txt', 'data/et_babel_swahili/split32utt/30', 'data/lang_1char/train_units.txt')
+
+activate does not accept more than one argument:
+('--feat', 'dump/et_babel_zulu/deltafalse/feats.scp', '--nlsyms', 'data/lang_1char/non_lang_syms.txt', 'data/et_babel_zulu/split32utt/31', 'data/lang_1char/train_units.txt')
+
+activate does not accept more than one argument:
+('--feat', 'dump/et_babel_lao/deltafalse/feats.scp', '--nlsyms', 'data/lang_1char/non_lang_syms.txt', 'data/et_babel_lao/split32utt/31', 'data/lang_1char/train_units.txt')
+
+activate does not accept more than one argument:
+('--feat', 'dump/et_babel_swahili/deltafalse/feats.scp', '--nlsyms', 'data/lang_1char/non_lang_syms.txt', 'data/et_babel_swahili/split32utt/31', 'data/lang_1char/train_units.txt')
+
+activate does not accept more than one argument:
+('--feat', 'dump/et_babel_tagalog/deltafalse/feats.scp', '--nlsyms', 'data/lang_1char/non_lang_syms.txt', 'data/et_babel_tagalog/split32utt/31', 'data/lang_1char/train_units.txt')
+
+activate does not accept more than one argument:
+('--feat', 'dump/et_babel_zulu/deltafalse/feats.scp', '--nlsyms', 'data/lang_1char/non_lang_syms.txt', 'data/et_babel_zulu/split32utt/32', 'data/lang_1char/train_units.txt')
+
+activate does not accept more than one argument:
+('--feat', 'dump/et_babel_lao/deltafalse/feats.scp', '--nlsyms', 'data/lang_1char/non_lang_syms.txt', 'data/et_babel_lao/split32utt/32', 'data/lang_1char/train_units.txt')
+
+activate does not accept more than one argument:
+('--feat', 'dump/et_babel_swahili/deltafalse/feats.scp', '--nlsyms', 'data/lang_1char/non_lang_syms.txt', 'data/et_babel_swahili/split32utt/32', 'data/lang_1char/train_units.txt')
+
+activate does not accept more than one argument:
+('--feat', 'dump/et_babel_tagalog/deltafalse/feats.scp', '--nlsyms', 'data/lang_1char/non_lang_syms.txt', 'data/et_babel_tagalog/split32utt/32', 'data/lang_1char/train_units.txt')
+
+activate does not accept more than one argument:
+('--nlsyms', 'data/lang_1char/non_lang_syms.txt', '--wer', 'true', 'exp/tr_babel10_blstmp_e8_subsample1_2_2_1_1_unit320_proj320_d1_unit300_location_aconvc10_aconvf100_mtlalpha0.5_adadelta_bs50_mli800_mlo150_karthick_5hrs_transfer_rnnlm_added/decode_dt_babel_swahili_beam20_eacc.best_p0.0_len0.0-0.0_ctcw0.3_rnnlm0.4', 'data/lang_1char/train_units.txt')
+
+2018-07-01 01:45:29,163 (concatjson:28) INFO: new json has 4450 utterances
+2018-07-01 01:45:29,527 (json2trn:22) INFO: reading exp/tr_babel10_blstmp_e8_subsample1_2_2_1_1_unit320_proj320_d1_unit300_location_aconvc10_aconvf100_mtlalpha0.5_adadelta_bs50_mli800_mlo150_karthick_5hrs_transfer_rnnlm_added/decode_dt_babel_swahili_beam20_eacc.best_p0.0_len0.0-0.0_ctcw0.3_rnnlm0.4/data.json
+2018-07-01 01:45:29,582 (json2trn:26) INFO: reading data/lang_1char/train_units.txt
+2018-07-01 01:45:29,588 (json2trn:34) INFO: writing hyp trn to exp/tr_babel10_blstmp_e8_subsample1_2_2_1_1_unit320_proj320_d1_unit300_location_aconvc10_aconvf100_mtlalpha0.5_adadelta_bs50_mli800_mlo150_karthick_5hrs_transfer_rnnlm_added/decode_dt_babel_swahili_beam20_eacc.best_p0.0_len0.0-0.0_ctcw0.3_rnnlm0.4/hyp.trn
+2018-07-01 01:45:29,588 (json2trn:35) INFO: writing ref trn to exp/tr_babel10_blstmp_e8_subsample1_2_2_1_1_unit320_proj320_d1_unit300_location_aconvc10_aconvf100_mtlalpha0.5_adadelta_bs50_mli800_mlo150_karthick_5hrs_transfer_rnnlm_added/decode_dt_babel_swahili_beam20_eacc.best_p0.0_len0.0-0.0_ctcw0.3_rnnlm0.4/ref.trn
+write a CER (or TER) result in exp/tr_babel10_blstmp_e8_subsample1_2_2_1_1_unit320_proj320_d1_unit300_location_aconvc10_aconvf100_mtlalpha0.5_adadelta_bs50_mli800_mlo150_karthick_5hrs_transfer_rnnlm_added/decode_dt_babel_swahili_beam20_eacc.best_p0.0_len0.0-0.0_ctcw0.3_rnnlm0.4/result.txt
+|           SPKR                   |           # Snt                     # Wrd            |           Corr                         Sub                        Del                         Ins                         Err                      S.Err            |
+|           Sum/Avg                |           4450                      153838           |           74.0                        15.3                       10.7                        10.2                        36.2                       75.8            |
+write a WER result in exp/tr_babel10_blstmp_e8_subsample1_2_2_1_1_unit320_proj320_d1_unit300_location_aconvc10_aconvf100_mtlalpha0.5_adadelta_bs50_mli800_mlo150_karthick_5hrs_transfer_rnnlm_added/decode_dt_babel_swahili_beam20_eacc.best_p0.0_len0.0-0.0_ctcw0.3_rnnlm0.4/result.wrd.txt
+|           SPKR                   |           # Snt                      # Wrd            |           Corr                          Sub                         Del                         Ins                         Err                       S.Err            |
+|           Sum/Avg                |           4450                       26156            |           43.8                         51.2                         4.9                        16.5                        72.7                        70.9            |
+activate does not accept more than one argument:
+('--nlsyms', 'data/lang_1char/non_lang_syms.txt', '--wer', 'true', 'exp/tr_babel10_blstmp_e8_subsample1_2_2_1_1_unit320_proj320_d1_unit300_location_aconvc10_aconvf100_mtlalpha0.5_adadelta_bs50_mli800_mlo150_karthick_5hrs_transfer_rnnlm_added/decode_dt_babel_zulu_beam20_eacc.best_p0.0_len0.0-0.0_ctcw0.3_rnnlm0.4', 'data/lang_1char/train_units.txt')
+
+2018-07-01 02:28:05,894 (concatjson:28) INFO: new json has 6083 utterances
+2018-07-01 02:28:06,324 (json2trn:22) INFO: reading exp/tr_babel10_blstmp_e8_subsample1_2_2_1_1_unit320_proj320_d1_unit300_location_aconvc10_aconvf100_mtlalpha0.5_adadelta_bs50_mli800_mlo150_karthick_5hrs_transfer_rnnlm_added/decode_dt_babel_zulu_beam20_eacc.best_p0.0_len0.0-0.0_ctcw0.3_rnnlm0.4/data.json
+2018-07-01 02:28:06,415 (json2trn:26) INFO: reading data/lang_1char/train_units.txt
+2018-07-01 02:28:06,421 (json2trn:34) INFO: writing hyp trn to exp/tr_babel10_blstmp_e8_subsample1_2_2_1_1_unit320_proj320_d1_unit300_location_aconvc10_aconvf100_mtlalpha0.5_adadelta_bs50_mli800_mlo150_karthick_5hrs_transfer_rnnlm_added/decode_dt_babel_zulu_beam20_eacc.best_p0.0_len0.0-0.0_ctcw0.3_rnnlm0.4/hyp.trn
+2018-07-01 02:28:06,421 (json2trn:35) INFO: writing ref trn to exp/tr_babel10_blstmp_e8_subsample1_2_2_1_1_unit320_proj320_d1_unit300_location_aconvc10_aconvf100_mtlalpha0.5_adadelta_bs50_mli800_mlo150_karthick_5hrs_transfer_rnnlm_added/decode_dt_babel_zulu_beam20_eacc.best_p0.0_len0.0-0.0_ctcw0.3_rnnlm0.4/ref.trn
+write a CER (or TER) result in exp/tr_babel10_blstmp_e8_subsample1_2_2_1_1_unit320_proj320_d1_unit300_location_aconvc10_aconvf100_mtlalpha0.5_adadelta_bs50_mli800_mlo150_karthick_5hrs_transfer_rnnlm_added/decode_dt_babel_zulu_beam20_eacc.best_p0.0_len0.0-0.0_ctcw0.3_rnnlm0.4/result.txt
+|           SPKR                  |           # Snt                      # Wrd           |           Corr                        Sub                         Del                        Ins                        Err                       S.Err           |
+|           Sum/Avg               |           6083                       249622          |           51.3                       28.9                        19.8                       15.2                       63.9                        90.0           |
+write a WER result in exp/tr_babel10_blstmp_e8_subsample1_2_2_1_1_unit320_proj320_d1_unit300_location_aconvc10_aconvf100_mtlalpha0.5_adadelta_bs50_mli800_mlo150_karthick_5hrs_transfer_rnnlm_added/decode_dt_babel_zulu_beam20_eacc.best_p0.0_len0.0-0.0_ctcw0.3_rnnlm0.4/result.wrd.txt
+|           SPKR                   |           # Snt                      # Wrd           |           Corr                         Sub                         Del                         Ins                        Err                       S.Err            |
+|           Sum/Avg                |           6083                       35707           |           14.1                        75.4                        10.5                        16.8                      102.7                        87.4            |
+activate does not accept more than one argument:
+('--nlsyms', 'data/lang_1char/non_lang_syms.txt', '--wer', 'true', 'exp/tr_babel10_blstmp_e8_subsample1_2_2_1_1_unit320_proj320_d1_unit300_location_aconvc10_aconvf100_mtlalpha0.5_adadelta_bs50_mli800_mlo150_karthick_5hrs_transfer_rnnlm_added/decode_dt_babel_assamese_beam20_eacc.best_p0.0_len0.0-0.0_ctcw0.3_rnnlm0.4', 'data/lang_1char/train_units.txt')
+
+2018-07-01 02:59:36,998 (concatjson:28) INFO: new json has 6346 utterances
+2018-07-01 02:59:37,504 (json2trn:22) INFO: reading exp/tr_babel10_blstmp_e8_subsample1_2_2_1_1_unit320_proj320_d1_unit300_location_aconvc10_aconvf100_mtlalpha0.5_adadelta_bs50_mli800_mlo150_karthick_5hrs_transfer_rnnlm_added/decode_dt_babel_assamese_beam20_eacc.best_p0.0_len0.0-0.0_ctcw0.3_rnnlm0.4/data.json
+2018-07-01 02:59:37,623 (json2trn:26) INFO: reading data/lang_1char/train_units.txt
+2018-07-01 02:59:37,634 (json2trn:34) INFO: writing hyp trn to exp/tr_babel10_blstmp_e8_subsample1_2_2_1_1_unit320_proj320_d1_unit300_location_aconvc10_aconvf100_mtlalpha0.5_adadelta_bs50_mli800_mlo150_karthick_5hrs_transfer_rnnlm_added/decode_dt_babel_assamese_beam20_eacc.best_p0.0_len0.0-0.0_ctcw0.3_rnnlm0.4/hyp.trn
+2018-07-01 02:59:37,635 (json2trn:35) INFO: writing ref trn to exp/tr_babel10_blstmp_e8_subsample1_2_2_1_1_unit320_proj320_d1_unit300_location_aconvc10_aconvf100_mtlalpha0.5_adadelta_bs50_mli800_mlo150_karthick_5hrs_transfer_rnnlm_added/decode_dt_babel_assamese_beam20_eacc.best_p0.0_len0.0-0.0_ctcw0.3_rnnlm0.4/ref.trn
+write a CER (or TER) result in exp/tr_babel10_blstmp_e8_subsample1_2_2_1_1_unit320_proj320_d1_unit300_location_aconvc10_aconvf100_mtlalpha0.5_adadelta_bs50_mli800_mlo150_karthick_5hrs_transfer_rnnlm_added/decode_dt_babel_assamese_beam20_eacc.best_p0.0_len0.0-0.0_ctcw0.3_rnnlm0.4/result.txt
+|           SPKR                   |           # Snt                      # Wrd           |           Corr                         Sub                         Del                         Ins                        Err                       S.Err            |
+|           Sum/Avg                |           6346                       199879          |           65.7                        20.6                        13.8                        12.4                       46.7                        88.3            |
+write a WER result in exp/tr_babel10_blstmp_e8_subsample1_2_2_1_1_unit320_proj320_d1_unit300_location_aconvc10_aconvf100_mtlalpha0.5_adadelta_bs50_mli800_mlo150_karthick_5hrs_transfer_rnnlm_added/decode_dt_babel_assamese_beam20_eacc.best_p0.0_len0.0-0.0_ctcw0.3_rnnlm0.4/result.wrd.txt
+|           SPKR                   |           # Snt                       # Wrd            |           Corr                         Sub                         Del                          Ins                         Err                       S.Err            |
+|           Sum/Avg                |           6346                        40553            |           40.5                        52.6                         7.0                         14.2                        73.7                        78.8            |
+activate does not accept more than one argument:
+('--nlsyms', 'data/lang_1char/non_lang_syms.txt', '--wer', 'true', 'exp/tr_babel10_blstmp_e8_subsample1_2_2_1_1_unit320_proj320_d1_unit300_location_aconvc10_aconvf100_mtlalpha0.5_adadelta_bs50_mli800_mlo150_karthick_5hrs_transfer_rnnlm_added/decode_dt_babel_lao_beam20_eacc.best_p0.0_len0.0-0.0_ctcw0.3_rnnlm0.4', 'data/lang_1char/train_units.txt')
+
+2018-07-01 04:05:17,798 (concatjson:28) INFO: new json has 6623 utterances
+2018-07-01 04:05:18,281 (json2trn:22) INFO: reading exp/tr_babel10_blstmp_e8_subsample1_2_2_1_1_unit320_proj320_d1_unit300_location_aconvc10_aconvf100_mtlalpha0.5_adadelta_bs50_mli800_mlo150_karthick_5hrs_transfer_rnnlm_added/decode_dt_babel_lao_beam20_eacc.best_p0.0_len0.0-0.0_ctcw0.3_rnnlm0.4/data.json
+2018-07-01 04:05:18,380 (json2trn:26) INFO: reading data/lang_1char/train_units.txt
+2018-07-01 04:05:18,386 (json2trn:34) INFO: writing hyp trn to exp/tr_babel10_blstmp_e8_subsample1_2_2_1_1_unit320_proj320_d1_unit300_location_aconvc10_aconvf100_mtlalpha0.5_adadelta_bs50_mli800_mlo150_karthick_5hrs_transfer_rnnlm_added/decode_dt_babel_lao_beam20_eacc.best_p0.0_len0.0-0.0_ctcw0.3_rnnlm0.4/hyp.trn
+2018-07-01 04:05:18,386 (json2trn:35) INFO: writing ref trn to exp/tr_babel10_blstmp_e8_subsample1_2_2_1_1_unit320_proj320_d1_unit300_location_aconvc10_aconvf100_mtlalpha0.5_adadelta_bs50_mli800_mlo150_karthick_5hrs_transfer_rnnlm_added/decode_dt_babel_lao_beam20_eacc.best_p0.0_len0.0-0.0_ctcw0.3_rnnlm0.4/ref.trn
+write a CER (or TER) result in exp/tr_babel10_blstmp_e8_subsample1_2_2_1_1_unit320_proj320_d1_unit300_location_aconvc10_aconvf100_mtlalpha0.5_adadelta_bs50_mli800_mlo150_karthick_5hrs_transfer_rnnlm_added/decode_dt_babel_lao_beam20_eacc.best_p0.0_len0.0-0.0_ctcw0.3_rnnlm0.4/result.txt
+|           SPKR                  |           # Snt                     # Wrd            |           Corr                        Sub                        Del                        Ins                         Err                      S.Err           |
+|           Sum/Avg               |           6623                      242345           |           64.7                       23.6                       11.6                       12.0                        47.3                       86.8           |
+write a WER result in exp/tr_babel10_blstmp_e8_subsample1_2_2_1_1_unit320_proj320_d1_unit300_location_aconvc10_aconvf100_mtlalpha0.5_adadelta_bs50_mli800_mlo150_karthick_5hrs_transfer_rnnlm_added/decode_dt_babel_lao_beam20_eacc.best_p0.0_len0.0-0.0_ctcw0.3_rnnlm0.4/result.wrd.txt
+|           SPKR                   |           # Snt                     # Wrd            |           Corr                         Sub                        Del                         Ins                         Err                      S.Err            |
+|           Sum/Avg                |           6623                      55847            |           41.8                        52.2                        6.0                        12.7                        70.9                       85.5            |
+activate does not accept more than one argument:
+('--nlsyms', 'data/lang_1char/non_lang_syms.txt', '--wer', 'true', 'exp/tr_babel10_blstmp_e8_subsample1_2_2_1_1_unit320_proj320_d1_unit300_location_aconvc10_aconvf100_mtlalpha0.5_adadelta_bs50_mli800_mlo150_karthick_5hrs_transfer_rnnlm_added/decode_dt_babel_tagalog_beam20_eacc.best_p0.0_len0.0-0.0_ctcw0.3_rnnlm0.4', 'data/lang_1char/train_units.txt')
+
+2018-07-01 05:05:38,001 (concatjson:28) INFO: new json has 9310 utterances
+2018-07-01 05:05:38,649 (json2trn:22) INFO: reading exp/tr_babel10_blstmp_e8_subsample1_2_2_1_1_unit320_proj320_d1_unit300_location_aconvc10_aconvf100_mtlalpha0.5_adadelta_bs50_mli800_mlo150_karthick_5hrs_transfer_rnnlm_added/decode_dt_babel_tagalog_beam20_eacc.best_p0.0_len0.0-0.0_ctcw0.3_rnnlm0.4/data.json
+2018-07-01 05:05:38,761 (json2trn:26) INFO: reading data/lang_1char/train_units.txt
+2018-07-01 05:05:38,767 (json2trn:34) INFO: writing hyp trn to exp/tr_babel10_blstmp_e8_subsample1_2_2_1_1_unit320_proj320_d1_unit300_location_aconvc10_aconvf100_mtlalpha0.5_adadelta_bs50_mli800_mlo150_karthick_5hrs_transfer_rnnlm_added/decode_dt_babel_tagalog_beam20_eacc.best_p0.0_len0.0-0.0_ctcw0.3_rnnlm0.4/hyp.trn
+2018-07-01 05:05:38,767 (json2trn:35) INFO: writing ref trn to exp/tr_babel10_blstmp_e8_subsample1_2_2_1_1_unit320_proj320_d1_unit300_location_aconvc10_aconvf100_mtlalpha0.5_adadelta_bs50_mli800_mlo150_karthick_5hrs_transfer_rnnlm_added/decode_dt_babel_tagalog_beam20_eacc.best_p0.0_len0.0-0.0_ctcw0.3_rnnlm0.4/ref.trn
+write a CER (or TER) result in exp/tr_babel10_blstmp_e8_subsample1_2_2_1_1_unit320_proj320_d1_unit300_location_aconvc10_aconvf100_mtlalpha0.5_adadelta_bs50_mli800_mlo150_karthick_5hrs_transfer_rnnlm_added/decode_dt_babel_tagalog_beam20_eacc.best_p0.0_len0.0-0.0_ctcw0.3_rnnlm0.4/result.txt
+|           SPKR                   |           # Snt                     # Wrd            |           Corr                         Sub                        Del                         Ins                         Err                      S.Err            |
+|           Sum/Avg                |           9310                      274890           |           69.3                        17.2                       13.5                        11.3                        42.1                       82.2            |
+write a WER result in exp/tr_babel10_blstmp_e8_subsample1_2_2_1_1_unit320_proj320_d1_unit300_location_aconvc10_aconvf100_mtlalpha0.5_adadelta_bs50_mli800_mlo150_karthick_5hrs_transfer_rnnlm_added/decode_dt_babel_tagalog_beam20_eacc.best_p0.0_len0.0-0.0_ctcw0.3_rnnlm0.4/result.wrd.txt
+|           SPKR                   |           # Snt                      # Wrd            |           Corr                          Sub                         Del                         Ins                         Err                       S.Err            |
+|           Sum/Avg                |           9310                       52767            |           41.0                         52.5                         6.5                        14.8                        73.8                        77.9            |
+activate does not accept more than one argument:
+('--nlsyms', 'data/lang_1char/non_lang_syms.txt', '--wer', 'true', 'exp/tr_babel10_blstmp_e8_subsample1_2_2_1_1_unit320_proj320_d1_unit300_location_aconvc10_aconvf100_mtlalpha0.5_adadelta_bs50_mli800_mlo150_karthick_5hrs_transfer_rnnlm_added/decode_et_babel_assamese_beam20_eacc.best_p0.0_len0.0-0.0_ctcw0.3_rnnlm0.4', 'data/lang_1char/train_units.txt')
+
+2018-07-01 07:48:12,593 (concatjson:28) INFO: new json has 10299 utterances
+2018-07-01 07:48:13,335 (json2trn:22) INFO: reading exp/tr_babel10_blstmp_e8_subsample1_2_2_1_1_unit320_proj320_d1_unit300_location_aconvc10_aconvf100_mtlalpha0.5_adadelta_bs50_mli800_mlo150_karthick_5hrs_transfer_rnnlm_added/decode_et_babel_assamese_beam20_eacc.best_p0.0_len0.0-0.0_ctcw0.3_rnnlm0.4/data.json
+2018-07-01 07:48:13,488 (json2trn:26) INFO: reading data/lang_1char/train_units.txt
+2018-07-01 07:48:13,495 (json2trn:34) INFO: writing hyp trn to exp/tr_babel10_blstmp_e8_subsample1_2_2_1_1_unit320_proj320_d1_unit300_location_aconvc10_aconvf100_mtlalpha0.5_adadelta_bs50_mli800_mlo150_karthick_5hrs_transfer_rnnlm_added/decode_et_babel_assamese_beam20_eacc.best_p0.0_len0.0-0.0_ctcw0.3_rnnlm0.4/hyp.trn
+2018-07-01 07:48:13,495 (json2trn:35) INFO: writing ref trn to exp/tr_babel10_blstmp_e8_subsample1_2_2_1_1_unit320_proj320_d1_unit300_location_aconvc10_aconvf100_mtlalpha0.5_adadelta_bs50_mli800_mlo150_karthick_5hrs_transfer_rnnlm_added/decode_et_babel_assamese_beam20_eacc.best_p0.0_len0.0-0.0_ctcw0.3_rnnlm0.4/ref.trn
+write a CER (or TER) result in exp/tr_babel10_blstmp_e8_subsample1_2_2_1_1_unit320_proj320_d1_unit300_location_aconvc10_aconvf100_mtlalpha0.5_adadelta_bs50_mli800_mlo150_karthick_5hrs_transfer_rnnlm_added/decode_et_babel_assamese_beam20_eacc.best_p0.0_len0.0-0.0_ctcw0.3_rnnlm0.4/result.txt
+|           SPKR                   |           # Snt                      # Wrd            |           Corr                         Sub                        Del                         Ins                         Err                      S.Err            |
+|           Sum/Avg                |          10299                      328506            |           65.6                        20.5                       13.9                        14.5                        48.9                       89.0            |
+write a WER result in exp/tr_babel10_blstmp_e8_subsample1_2_2_1_1_unit320_proj320_d1_unit300_location_aconvc10_aconvf100_mtlalpha0.5_adadelta_bs50_mli800_mlo150_karthick_5hrs_transfer_rnnlm_added/decode_et_babel_assamese_beam20_eacc.best_p0.0_len0.0-0.0_ctcw0.3_rnnlm0.4/result.wrd.txt
+|           SPKR                   |           # Snt                       # Wrd            |           Corr                         Sub                         Del                          Ins                         Err                       S.Err            |
+|           Sum/Avg                |          10299                        66430            |           40.2                        52.8                         7.0                         16.6                        76.4                        79.9            |
+activate does not accept more than one argument:
+('--nlsyms', 'data/lang_1char/non_lang_syms.txt', '--wer', 'true', 'exp/tr_babel10_blstmp_e8_subsample1_2_2_1_1_unit320_proj320_d1_unit300_location_aconvc10_aconvf100_mtlalpha0.5_adadelta_bs50_mli800_mlo150_karthick_5hrs_transfer_rnnlm_added/decode_et_babel_lao_beam20_eacc.best_p0.0_len0.0-0.0_ctcw0.3_rnnlm0.4', 'data/lang_1char/train_units.txt')
+
+2018-07-01 10:09:57,057 (concatjson:28) INFO: new json has 11354 utterances
+2018-07-01 10:09:57,850 (json2trn:22) INFO: reading exp/tr_babel10_blstmp_e8_subsample1_2_2_1_1_unit320_proj320_d1_unit300_location_aconvc10_aconvf100_mtlalpha0.5_adadelta_bs50_mli800_mlo150_karthick_5hrs_transfer_rnnlm_added/decode_et_babel_lao_beam20_eacc.best_p0.0_len0.0-0.0_ctcw0.3_rnnlm0.4/data.json
+2018-07-01 10:09:58,021 (json2trn:26) INFO: reading data/lang_1char/train_units.txt
+2018-07-01 10:09:58,027 (json2trn:34) INFO: writing hyp trn to exp/tr_babel10_blstmp_e8_subsample1_2_2_1_1_unit320_proj320_d1_unit300_location_aconvc10_aconvf100_mtlalpha0.5_adadelta_bs50_mli800_mlo150_karthick_5hrs_transfer_rnnlm_added/decode_et_babel_lao_beam20_eacc.best_p0.0_len0.0-0.0_ctcw0.3_rnnlm0.4/hyp.trn
+2018-07-01 10:09:58,027 (json2trn:35) INFO: writing ref trn to exp/tr_babel10_blstmp_e8_subsample1_2_2_1_1_unit320_proj320_d1_unit300_location_aconvc10_aconvf100_mtlalpha0.5_adadelta_bs50_mli800_mlo150_karthick_5hrs_transfer_rnnlm_added/decode_et_babel_lao_beam20_eacc.best_p0.0_len0.0-0.0_ctcw0.3_rnnlm0.4/ref.trn
+write a CER (or TER) result in exp/tr_babel10_blstmp_e8_subsample1_2_2_1_1_unit320_proj320_d1_unit300_location_aconvc10_aconvf100_mtlalpha0.5_adadelta_bs50_mli800_mlo150_karthick_5hrs_transfer_rnnlm_added/decode_et_babel_lao_beam20_eacc.best_p0.0_len0.0-0.0_ctcw0.3_rnnlm0.4/result.txt
+|           SPKR                  |           # Snt                      # Wrd           |           Corr                        Sub                         Del                        Ins                        Err                      S.Err           |
+|           Sum/Avg               |          11354                      391474           |           63.9                       23.8                        12.3                       11.9                       48.0                       86.6           |
+write a WER result in exp/tr_babel10_blstmp_e8_subsample1_2_2_1_1_unit320_proj320_d1_unit300_location_aconvc10_aconvf100_mtlalpha0.5_adadelta_bs50_mli800_mlo150_karthick_5hrs_transfer_rnnlm_added/decode_et_babel_lao_beam20_eacc.best_p0.0_len0.0-0.0_ctcw0.3_rnnlm0.4/result.wrd.txt
+|           SPKR                   |           # Snt                     # Wrd            |           Corr                         Sub                        Del                         Ins                         Err                      S.Err            |
+|           Sum/Avg                |          11354                      90303            |           41.5                        52.0                        6.5                        12.3                        70.8                       85.2            |
+activate does not accept more than one argument:
+('--nlsyms', 'data/lang_1char/non_lang_syms.txt', '--wer', 'true', 'exp/tr_babel10_blstmp_e8_subsample1_2_2_1_1_unit320_proj320_d1_unit300_location_aconvc10_aconvf100_mtlalpha0.5_adadelta_bs50_mli800_mlo150_karthick_5hrs_transfer_rnnlm_added/decode_et_babel_zulu_beam20_eacc.best_p0.0_len0.0-0.0_ctcw0.3_rnnlm0.4', 'data/lang_1char/train_units.txt')
+
+2018-07-01 10:42:49,853 (concatjson:28) INFO: new json has 10505 utterances
+2018-07-01 10:42:50,688 (json2trn:22) INFO: reading exp/tr_babel10_blstmp_e8_subsample1_2_2_1_1_unit320_proj320_d1_unit300_location_aconvc10_aconvf100_mtlalpha0.5_adadelta_bs50_mli800_mlo150_karthick_5hrs_transfer_rnnlm_added/decode_et_babel_zulu_beam20_eacc.best_p0.0_len0.0-0.0_ctcw0.3_rnnlm0.4/data.json
+2018-07-01 10:42:50,863 (json2trn:26) INFO: reading data/lang_1char/train_units.txt
+2018-07-01 10:42:50,869 (json2trn:34) INFO: writing hyp trn to exp/tr_babel10_blstmp_e8_subsample1_2_2_1_1_unit320_proj320_d1_unit300_location_aconvc10_aconvf100_mtlalpha0.5_adadelta_bs50_mli800_mlo150_karthick_5hrs_transfer_rnnlm_added/decode_et_babel_zulu_beam20_eacc.best_p0.0_len0.0-0.0_ctcw0.3_rnnlm0.4/hyp.trn
+2018-07-01 10:42:50,869 (json2trn:35) INFO: writing ref trn to exp/tr_babel10_blstmp_e8_subsample1_2_2_1_1_unit320_proj320_d1_unit300_location_aconvc10_aconvf100_mtlalpha0.5_adadelta_bs50_mli800_mlo150_karthick_5hrs_transfer_rnnlm_added/decode_et_babel_zulu_beam20_eacc.best_p0.0_len0.0-0.0_ctcw0.3_rnnlm0.4/ref.trn
+write a CER (or TER) result in exp/tr_babel10_blstmp_e8_subsample1_2_2_1_1_unit320_proj320_d1_unit300_location_aconvc10_aconvf100_mtlalpha0.5_adadelta_bs50_mli800_mlo150_karthick_5hrs_transfer_rnnlm_added/decode_et_babel_zulu_beam20_eacc.best_p0.0_len0.0-0.0_ctcw0.3_rnnlm0.4/result.txt
+|           SPKR                  |           # Snt                      # Wrd            |           Corr                        Sub                        Del                        Ins                         Err                      S.Err           |
+|           Sum/Avg               |          10505                      409715            |           52.0                       28.0                       20.0                       15.3                        63.2                       90.6           |
+write a WER result in exp/tr_babel10_blstmp_e8_subsample1_2_2_1_1_unit320_proj320_d1_unit300_location_aconvc10_aconvf100_mtlalpha0.5_adadelta_bs50_mli800_mlo150_karthick_5hrs_transfer_rnnlm_added/decode_et_babel_zulu_beam20_eacc.best_p0.0_len0.0-0.0_ctcw0.3_rnnlm0.4/result.wrd.txt
+|           SPKR                   |           # Snt                      # Wrd           |           Corr                         Sub                         Del                         Ins                        Err                       S.Err            |
+|           Sum/Avg                |          10505                       58636           |           14.8                        75.3                        10.0                        17.3                      102.5                        88.1            |
+activate does not accept more than one argument:
+('--nlsyms', 'data/lang_1char/non_lang_syms.txt', '--wer', 'true', 'exp/tr_babel10_blstmp_e8_subsample1_2_2_1_1_unit320_proj320_d1_unit300_location_aconvc10_aconvf100_mtlalpha0.5_adadelta_bs50_mli800_mlo150_karthick_5hrs_transfer_rnnlm_added/decode_et_babel_tagalog_beam20_eacc.best_p0.0_len0.0-0.0_ctcw0.3_rnnlm0.4', 'data/lang_1char/train_units.txt')
+
+2018-07-01 11:00:47,043 (concatjson:28) INFO: new json has 11187 utterances
+2018-07-01 11:00:47,831 (json2trn:22) INFO: reading exp/tr_babel10_blstmp_e8_subsample1_2_2_1_1_unit320_proj320_d1_unit300_location_aconvc10_aconvf100_mtlalpha0.5_adadelta_bs50_mli800_mlo150_karthick_5hrs_transfer_rnnlm_added/decode_et_babel_tagalog_beam20_eacc.best_p0.0_len0.0-0.0_ctcw0.3_rnnlm0.4/data.json
+2018-07-01 11:00:48,049 (json2trn:26) INFO: reading data/lang_1char/train_units.txt
+2018-07-01 11:00:48,056 (json2trn:34) INFO: writing hyp trn to exp/tr_babel10_blstmp_e8_subsample1_2_2_1_1_unit320_proj320_d1_unit300_location_aconvc10_aconvf100_mtlalpha0.5_adadelta_bs50_mli800_mlo150_karthick_5hrs_transfer_rnnlm_added/decode_et_babel_tagalog_beam20_eacc.best_p0.0_len0.0-0.0_ctcw0.3_rnnlm0.4/hyp.trn
+2018-07-01 11:00:48,056 (json2trn:35) INFO: writing ref trn to exp/tr_babel10_blstmp_e8_subsample1_2_2_1_1_unit320_proj320_d1_unit300_location_aconvc10_aconvf100_mtlalpha0.5_adadelta_bs50_mli800_mlo150_karthick_5hrs_transfer_rnnlm_added/decode_et_babel_tagalog_beam20_eacc.best_p0.0_len0.0-0.0_ctcw0.3_rnnlm0.4/ref.trn
+write a CER (or TER) result in exp/tr_babel10_blstmp_e8_subsample1_2_2_1_1_unit320_proj320_d1_unit300_location_aconvc10_aconvf100_mtlalpha0.5_adadelta_bs50_mli800_mlo150_karthick_5hrs_transfer_rnnlm_added/decode_et_babel_tagalog_beam20_eacc.best_p0.0_len0.0-0.0_ctcw0.3_rnnlm0.4/result.txt
+|           SPKR                   |           # Snt                      # Wrd            |           Corr                        Sub                         Del                        Ins                         Err                      S.Err            |
+|           Sum/Avg                |          11187                      338559            |           68.3                       17.9                        13.8                       12.1                        43.8                       83.8            |
+write a WER result in exp/tr_babel10_blstmp_e8_subsample1_2_2_1_1_unit320_proj320_d1_unit300_location_aconvc10_aconvf100_mtlalpha0.5_adadelta_bs50_mli800_mlo150_karthick_5hrs_transfer_rnnlm_added/decode_et_babel_tagalog_beam20_eacc.best_p0.0_len0.0-0.0_ctcw0.3_rnnlm0.4/result.wrd.txt
+|           SPKR                   |           # Snt                      # Wrd            |           Corr                          Sub                         Del                         Ins                         Err                       S.Err            |
+|           Sum/Avg                |          11187                       64879            |           39.1                         54.3                         6.5                        15.6                        76.5                        79.4            |
+activate does not accept more than one argument:
+('--nlsyms', 'data/lang_1char/non_lang_syms.txt', '--wer', 'true', 'exp/tr_babel10_blstmp_e8_subsample1_2_2_1_1_unit320_proj320_d1_unit300_location_aconvc10_aconvf100_mtlalpha0.5_adadelta_bs50_mli800_mlo150_karthick_5hrs_transfer_rnnlm_added/decode_et_babel_swahili_beam20_eacc.best_p0.0_len0.0-0.0_ctcw0.3_rnnlm0.4', 'data/lang_1char/train_units.txt')
+
+2018-07-01 11:17:23,362 (concatjson:28) INFO: new json has 10788 utterances
+2018-07-01 11:17:24,100 (json2trn:22) INFO: reading exp/tr_babel10_blstmp_e8_subsample1_2_2_1_1_unit320_proj320_d1_unit300_location_aconvc10_aconvf100_mtlalpha0.5_adadelta_bs50_mli800_mlo150_karthick_5hrs_transfer_rnnlm_added/decode_et_babel_swahili_beam20_eacc.best_p0.0_len0.0-0.0_ctcw0.3_rnnlm0.4/data.json
+2018-07-01 11:17:24,257 (json2trn:26) INFO: reading data/lang_1char/train_units.txt
+2018-07-01 11:17:24,263 (json2trn:34) INFO: writing hyp trn to exp/tr_babel10_blstmp_e8_subsample1_2_2_1_1_unit320_proj320_d1_unit300_location_aconvc10_aconvf100_mtlalpha0.5_adadelta_bs50_mli800_mlo150_karthick_5hrs_transfer_rnnlm_added/decode_et_babel_swahili_beam20_eacc.best_p0.0_len0.0-0.0_ctcw0.3_rnnlm0.4/hyp.trn
+2018-07-01 11:17:24,263 (json2trn:35) INFO: writing ref trn to exp/tr_babel10_blstmp_e8_subsample1_2_2_1_1_unit320_proj320_d1_unit300_location_aconvc10_aconvf100_mtlalpha0.5_adadelta_bs50_mli800_mlo150_karthick_5hrs_transfer_rnnlm_added/decode_et_babel_swahili_beam20_eacc.best_p0.0_len0.0-0.0_ctcw0.3_rnnlm0.4/ref.trn
+write a CER (or TER) result in exp/tr_babel10_blstmp_e8_subsample1_2_2_1_1_unit320_proj320_d1_unit300_location_aconvc10_aconvf100_mtlalpha0.5_adadelta_bs50_mli800_mlo150_karthick_5hrs_transfer_rnnlm_added/decode_et_babel_swahili_beam20_eacc.best_p0.0_len0.0-0.0_ctcw0.3_rnnlm0.4/result.txt
+|           SPKR                   |           # Snt                      # Wrd            |           Corr                        Sub                         Del                        Ins                         Err                      S.Err            |
+|           Sum/Avg                |          10788                      379252            |           75.1                       14.6                        10.3                        9.8                        34.7                       78.9            |
+write a WER result in exp/tr_babel10_blstmp_e8_subsample1_2_2_1_1_unit320_proj320_d1_unit300_location_aconvc10_aconvf100_mtlalpha0.5_adadelta_bs50_mli800_mlo150_karthick_5hrs_transfer_rnnlm_added/decode_et_babel_swahili_beam20_eacc.best_p0.0_len0.0-0.0_ctcw0.3_rnnlm0.4/result.wrd.txt
+|           SPKR                   |           # Snt                      # Wrd            |           Corr                          Sub                         Del                         Ins                         Err                       S.Err            |
+|           Sum/Avg                |          10788                       63678            |           44.9                         50.5                         4.6                        17.0                        72.1                        72.6            |
+Finished

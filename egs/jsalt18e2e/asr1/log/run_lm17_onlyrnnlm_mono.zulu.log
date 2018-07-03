@@ -1,0 +1,13 @@
+activate does not accept more than one argument:
+('--lm_lang', 'zulu', '--ngpu', '1')
+
+dictionary: data/lang_1char_mono_zulu/train_units.txt
+stage 2: Dictionary and Json Data Preparation
+make a non-linguistic symbol list for all languages
+<hes>
+<noise>
+<silence>
+<unk>
+<v-noise>
+62 data/lang_1char_mono_zulu/train_units.txt
+stage 3: LM Preparation

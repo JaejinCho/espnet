@@ -1,0 +1,5 @@
+activate does not accept more than one argument:
+('--backend', 'chainer', '--stage', '3', '--ngpu', '1')
+
+dictionary: data/lang_1char/train_units.txt
+stage 3: LM Preparation

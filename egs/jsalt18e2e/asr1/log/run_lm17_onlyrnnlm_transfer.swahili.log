@@ -1,0 +1,5 @@
+activate does not accept more than one argument:
+('--stage', '3', '--lm_lang', 'swahili', '--ngpu', '1')
+
+dictionary: data/lang_1char/train_units.txt
+stage 3: LM Preparation

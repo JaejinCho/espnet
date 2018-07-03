@@ -1,0 +1,182 @@
+activate does not accept more than one argument:
+('--lm_lang', 'bengali', '--ngpu', '1')
+
+dictionary: data/lang_1char_mono_bengali/train_units.txt
+stage 2: Dictionary and Json Data Preparation
+make a non-linguistic symbol list for all languages
+<hes>
+<noise>
+<silence>
+<unk>
+<v-noise>
+73 data/lang_1char_mono_bengali/train_units.txt
+stage 3: LM Preparation
+activate does not accept more than one argument:
+('--lm_lang', 'cantonese', '--ngpu', '1')
+
+dictionary: data/lang_1char_mono_cantonese/train_units.txt
+stage 2: Dictionary and Json Data Preparation
+make a non-linguistic symbol list for all languages
+<hes>
+<noise>
+<silence>
+<unk>
+<v-noise>
+3309 data/lang_1char_mono_cantonese/train_units.txt
+stage 3: LM Preparation
+activate does not accept more than one argument:
+('--lm_lang', 'georgian', '--ngpu', '1')
+
+dictionary: data/lang_1char_mono_georgian/train_units.txt
+stage 2: Dictionary and Json Data Preparation
+make a non-linguistic symbol list for all languages
+<hes>
+<noise>
+<silence>
+<unk>
+<v-noise>
+42 data/lang_1char_mono_georgian/train_units.txt
+stage 3: LM Preparation
+activate does not accept more than one argument:
+('--lm_lang', 'haitian', '--ngpu', '1')
+
+dictionary: data/lang_1char_mono_haitian/train_units.txt
+stage 2: Dictionary and Json Data Preparation
+make a non-linguistic symbol list for all languages
+<hes>
+<noise>
+<silence>
+<unk>
+<v-noise>
+67 data/lang_1char_mono_haitian/train_units.txt
+stage 3: LM Preparation
+activate does not accept more than one argument:
+('--lm_lang', 'kurmanji', '--ngpu', '1')
+
+dictionary: data/lang_1char_mono_kurmanji/train_units.txt
+stage 2: Dictionary and Json Data Preparation
+make a non-linguistic symbol list for all languages
+<hes>
+<noise>
+<silence>
+<unk>
+<v-noise>
+71 data/lang_1char_mono_kurmanji/train_units.txt
+stage 3: LM Preparation
+activate does not accept more than one argument:
+('--lm_lang', 'lao', '--ngpu', '1')
+
+dictionary: data/lang_1char_mono_lao/train_units.txt
+stage 2: Dictionary and Json Data Preparation
+make a non-linguistic symbol list for all languages
+<hes>
+<noise>
+<silence>
+<unk>
+<v-noise>
+61 data/lang_1char_mono_lao/train_units.txt
+stage 3: LM Preparation
+activate does not accept more than one argument:
+('--lm_lang', 'pashto', '--ngpu', '1')
+
+dictionary: data/lang_1char_mono_pashto/train_units.txt
+stage 2: Dictionary and Json Data Preparation
+make a non-linguistic symbol list for all languages
+<hes>
+<noise>
+<silence>
+<unk>
+<v-noise>
+56 data/lang_1char_mono_pashto/train_units.txt
+stage 3: LM Preparation
+activate does not accept more than one argument:
+('--lm_lang', 'swahili', '--ngpu', '1')
+
+dictionary: data/lang_1char_mono_swahili/train_units.txt
+stage 2: Dictionary and Json Data Preparation
+make a non-linguistic symbol list for all languages
+<hes>
+<noise>
+<silence>
+<unk>
+<v-noise>
+63 data/lang_1char_mono_swahili/train_units.txt
+stage 3: LM Preparation
+activate does not accept more than one argument:
+('--lm_lang', 'tagalog', '--ngpu', '1')
+
+dictionary: data/lang_1char_mono_tagalog/train_units.txt
+stage 2: Dictionary and Json Data Preparation
+make a non-linguistic symbol list for all languages
+<hes>
+<noise>
+<silence>
+<unk>
+<v-noise>
+63 data/lang_1char_mono_tagalog/train_units.txt
+stage 3: LM Preparation
+activate does not accept more than one argument:
+('--lm_lang', 'tamil', '--ngpu', '1')
+
+dictionary: data/lang_1char_mono_tamil/train_units.txt
+stage 2: Dictionary and Json Data Preparation
+make a non-linguistic symbol list for all languages
+<hes>
+<noise>
+<silence>
+<unk>
+<v-noise>
+56 data/lang_1char_mono_tamil/train_units.txt
+stage 3: LM Preparation
+activate does not accept more than one argument:
+('--lm_lang', 'tokpisin', '--ngpu', '1')
+
+dictionary: data/lang_1char_mono_tokpisin/train_units.txt
+stage 2: Dictionary and Json Data Preparation
+make a non-linguistic symbol list for all languages
+<hes>
+<noise>
+<silence>
+<unk>
+<v-noise>
+62 data/lang_1char_mono_tokpisin/train_units.txt
+stage 3: LM Preparation
+activate does not accept more than one argument:
+('--lm_lang', 'turkish', '--ngpu', '1')
+
+dictionary: data/lang_1char_mono_turkish/train_units.txt
+stage 2: Dictionary and Json Data Preparation
+make a non-linguistic symbol list for all languages
+<hes>
+<noise>
+<silence>
+<unk>
+<v-noise>
+73 data/lang_1char_mono_turkish/train_units.txt
+stage 3: LM Preparation
+activate does not accept more than one argument:
+('--lm_lang', 'vietnamese', '--ngpu', '1')
+
+dictionary: data/lang_1char_mono_vietnamese/train_units.txt
+stage 2: Dictionary and Json Data Preparation
+make a non-linguistic symbol list for all languages
+<hes>
+<noise>
+<silence>
+<unk>
+<v-noise>
+138 data/lang_1char_mono_vietnamese/train_units.txt
+stage 3: LM Preparation
+activate does not accept more than one argument:
+('--lm_lang', 'zulu', '--ngpu', '1')
+
+dictionary: data/lang_1char_mono_zulu/train_units.txt
+stage 2: Dictionary and Json Data Preparation
+make a non-linguistic symbol list for all languages
+<hes>
+<noise>
+<silence>
+<unk>
+<v-noise>
+62 data/lang_1char_mono_zulu/train_units.txt
+stage 3: LM Preparation

@@ -1,0 +1,11 @@
+1. missing (in run.sh): et_babel_tagalog, dt_babel_tagalog for recog_set variable (for whole set) while the data exist 
+
+2. data info (under ./data):
+- data starting with "tr (training), dt (dev), et (test)" are 55 directories
+   (run command "ls -d data/{tr,dt,et}_{babel_*,csj*,libr*} | wc -l"). 17, 18, and 20 for each. * Refer to datalist for details
+- ./data/local and ./data/lang_1char: 2 directories
+- seems ignorable: Other than ones (34 of them) above (there are also the data tr_[lan] w/o babel between tr
+   and [lan]. Looking at the directories, they are not proper kaldi-like data directory and no data there. I ignore them at my discretion
+- Total 91 directories. However, only 57 (55 at first and 2 at second)
+  directories might be used
+

@@ -53,6 +53,9 @@ maxlen_out=150 # if output length > maxlen_out, batchsize is automatically reduc
 opt=adadelta
 epochs=15
 
+# rnnlm related
+lm_weight=0.4
+
 # decoding parameter
 beam_size=20
 penalty=0.0
@@ -171,7 +174,7 @@ if [ ${stage} -le 1 ]; then
     # remove utt having more than 400 characters or no more than 0 characters
     remove_longshortdata.sh --maxframes 3000 --maxchars 400 data/${train_set}_org data/${train_set}
     remove_longshortdata.sh --maxframes 3000 --maxchars 400 data/${train_dev}_org data/${train_dev}
-    
+
     # compute global CMVN
     compute-cmvn-stats scp:data/${train_set}/feats.scp data/${train_set}/cmvn.ark
 
@@ -222,93 +225,36 @@ if [ ${stage} -le 2 ]; then
          data/${train_dev} ${dict} > ${feat_dt_dir}/data.json
 fi
 
-if [ -z ${tag} ]; then
-    expdir=exp/${train_set}_${etype}_e${elayers}_subsample${subsample}_unit${eunits}_proj${eprojs}_d${dlayers}_unit${dunits}_${atype}_aconvc${aconv_chans}_aconvf${aconv_filts}_mtlalpha${mtlalpha}_${opt}_bs${batchsize}_mli${maxlen_in}_mlo${maxlen_out}
-    if ${do_delta}; then
-        expdir=${expdir}_delta
-    fi
-else
-    expdir=exp/${train_set}_${tag}
-fi
-mkdir -p ${expdir}
-
+# You can skip this and remove --rnnlm option in the recognition (stage 5)
+lmexpdir=exp/train_rnnlm_2layer_bs256_shuffle_sgd1
+mkdir -p ${lmexpdir}
 if [ ${stage} -le 3 ]; then
-    echo "stage 3: Network Training"
-    ${cuda_cmd} --gpu ${ngpu} ${expdir}/train.log \
-        asr_train.py \
-        --ngpu ${ngpu} \
+    echo "stage 3: LM Preparation"
+    lmdatadir=data/local/lm_train_bs256_shuffle
+#    mkdir -p ${lmdatadir}
+#    sort -R data/tr_{babel_*,csj*,libri*}/text | text2token.py -s 1 -n 1 -l ${nlsyms} | \
+#        cut -f 2- -d" " | perl -pe 's/\n/ <eos> /g' > ${lmdatadir}/train.txt
+#    cat data/dt_{babel_*,csj*,libri*}/text | text2token.py -s 1 -n 1 -l ${nlsyms} | \
+#        cut -f 2- -d" " | perl -pe 's/\n/ <eos> /g' > ${lmdatadir}/valid.txt
+    # use only 1 gpu
+    if [ ${ngpu} -gt 1 ]; then
+        echo "LM training does not support multi-gpu. signle gpu will be used."
+        lmngpu=1
+    else
+        lmngpu=${ngpu}
+    fi
+    ${cuda_cmd} ${lmexpdir}/train.log \
+        lm_train.py \
+        --ngpu ${lmngpu} \
         --backend ${backend} \
-        --outdir ${expdir}/results \
-        --debugmode ${debugmode} \
-        --dict ${dict} \
-        --debugdir ${expdir} \
-        --minibatches ${N} \
-        --verbose ${verbose} \
-        --resume ${resume} \
-        --train-json ${feat_tr_dir}/data.json \
-        --valid-json ${feat_dt_dir}/data.json \
-        --etype ${etype} \
-        --elayers ${elayers} \
-        --eunits ${eunits} \
-        --eprojs ${eprojs} \
-        --subsample ${subsample} \
-        --dlayers ${dlayers} \
-        --dunits ${dunits} \
-        --atype ${atype} \
-        --aconv-chans ${aconv_chans} \
-        --aconv-filts ${aconv_filts} \
-        --mtlalpha ${mtlalpha} \
-        --batch-size ${batchsize} \
-        --maxlen-in ${maxlen_in} \
-        --maxlen-out ${maxlen_out} \
-        --opt ${opt} \
-        --epochs ${epochs}
+        --verbose 1 \
+        --outdir ${lmexpdir} \
+        --train-label ${lmdatadir}/train.txt \
+        --valid-label ${lmdatadir}/valid.txt \
+        --epoch 100 \
+        --batchsize 256 \
+        --dict ${dict}
+        --mom 0
+        --wd 0
+
 fi
-
-if [ ${stage} -le 4 ]; then
-    echo "stage 4: Decoding"
-    nj=32
-
-    for rtask in ${recog_set}; do
-    (
-        decode_dir=decode_${rtask}_beam${beam_size}_e${recog_model}_p${penalty}_len${minlenratio}-${maxlenratio}_ctcw${ctc_weight}
-        feat_recog_dir=${dumpdir}/${rtask}/delta${do_delta}
-
-        # split data
-        data=data/${rtask}
-        split_data.sh --per-utt ${data} ${nj};
-        sdata=${data}/split${nj}utt;
-
-         # make json labels for recognition
-        for j in `seq 1 ${nj}`; do
-            data2json.sh --feat ${feat_recog_dir}/feats.scp --nlsyms ${nlsyms} \
-                ${sdata}/${j} ${dict} > ${sdata}/${j}/data.json
-        done
-
-        #### use CPU for decoding
-        ngpu=0
-
-        ${decode_cmd} JOB=1:${nj} ${expdir}/${decode_dir}/log/decode.JOB.log \
-            asr_recog.py \
-            --ngpu ${ngpu} \
-            --backend ${backend} \
-            --recog-json ${sdata}/JOB/data.json \
-            --result-label ${expdir}/${decode_dir}/data.JOB.json \
-            --model ${expdir}/results/model.${recog_model}  \
-            --model-conf ${expdir}/results/model.conf  \
-            --beam-size ${beam_size} \
-            --penalty ${penalty} \
-            --maxlenratio ${maxlenratio} \
-            --minlenratio ${minlenratio} \
-            --ctc-weight ${ctc_weight} \
-            &
-        wait
-
-        score_sclite.sh --nlsyms ${nlsyms} --wer true ${expdir}/${decode_dir} ${dict}
-
-    ) &
-    done
-    wait
-    echo "Finished"
-fi
-
