@@ -1,6 +1,4 @@
-# Project Title
-
-Learning speaker embedding from Text-to-Speech
+# Learning speaker embedding from Text-to-Speech
 
 This is my first code sharing on Github. Any comments to improve this repo are welcome
 
@@ -12,7 +10,8 @@ Clone this repo and install ESPnet as below. If using a different version of ESP
 
 ```
 cd [cloned repo]/tools
-make KALDI=[kaldi path] PYTHON_VERSION=3.6 TH_VERSION=1.0.1 CUDA_VERSION=10.0
+make KALDI=[kaldi path] PYTHON_VERSION=3.6 TH_VERSION=1.0.1 CUDA_VERSION=10.0 # Remove the "KALDI=[kaldi path]" part if kaldi is NOT installed yet
+dis
 ```
 
 ### Experiments
