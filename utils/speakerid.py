@@ -269,7 +269,7 @@ from espnet.utils.dynamic_import import dynamic_import
 from espnet.nets.tts_interface import TTSInterface
 from espnet.asr.asr_utils import torch_load
 from utils.speakerid_kaldi_io import read_mat_scp
-from espnet.utils.io_utils_speakerid import LoadInputsAndTargets
+from espnet.utils.io_utils import LoadInputsAndTargets
 from espnet.utils.training.batchfy import make_batchset
 from espnet.utils.training.iterators import ToggleableShufflingSerialIterator
 from chainer.datasets import TransformDataset
