@@ -1,0 +1,10 @@
+predownload_list.txt
+list_run.sh
+
+# Below dir.s are already written in ../../../.gitignore
+log/
+data/
+exp/
+dump/
+tensorboard/
+fbank/
