@@ -273,7 +273,7 @@ from espnet.utils.io_utils import LoadInputsAndTargets
 from espnet.utils.training.batchfy import make_batchset
 from espnet.utils.training.iterators import ToggleableShufflingSerialIterator
 from chainer.datasets import TransformDataset
-from espnet.tts.pytorch_backend.tts_speakerid import CustomConverter
+from espnet.tts.pytorch_backend.tts import CustomConverter
 
 
 def decode(args):
