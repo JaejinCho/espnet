@@ -24,6 +24,7 @@ from espnet.nets.pytorch_backend.tacotron2.decoder import Decoder
 from espnet.nets.pytorch_backend.tacotron2.encoder import Encoder
 from espnet.nets.tts_interface import TTSInterface
 from espnet.utils.fill_missing_args import fill_missing_args
+from utils.speakerid import E2E_speakerid, AngleLoss
 
 
 class GuidedAttentionLoss(torch.nn.Module):
@@ -229,7 +230,7 @@ class Tacotron2(TTSInterface, torch.nn.Module):
                            help='Filter size of encoder convolution')
         # attention
         group.add_argument('--atype', default="location", type=str,
-                           choices=["forward_ta", "forward", "location"],
+                           choices=["noatt", "forward_ta", "forward", "location"],
                            help='Type of attention mechanism')
         group.add_argument('--adim', default=512, type=int,
                            help='Number of attention transformation dimensions')
@@ -288,6 +289,10 @@ class Tacotron2(TTSInterface, torch.nn.Module):
                            help='Reduction factor')
         group.add_argument("--spk-embed-dim", default=None, type=int,
                            help="Number of speaker embedding dimensions")
+        group.add_argument('--spkidloss-weight', default=0.03, type=float,
+                           help='Weight for the speaker id module when combined to tts loss')
+        group.add_argument("--num-spk", default=None, type=int,
+                           help="Number of speakers in the training data")
         group.add_argument("--spc-dim", default=None, type=int,
                            help="Number of spectrogram dimensions")
         # loss related
@@ -310,7 +315,6 @@ class Tacotron2(TTSInterface, torch.nn.Module):
             idim (int): Dimension of the inputs.
             odim (int): Dimension of the outputs.
             args (Namespace, optional):
-                - spk_embed_dim (int): Dimension of the speaker embedding.
                 - embed_dim (int): Dimension of character embedding.
                 - elayers (int): The number of encoder blstm layers.
                 - eunits (int): The number of encoder blstm units.
@@ -334,7 +338,9 @@ class Tacotron2(TTSInterface, torch.nn.Module):
                 - dropout_rate (float): Dropout rate.
                 - zoneout_rate (float): Zoneout rate.
                 - reduction_factor (int): Reduction factor.
-                - spk_embed_dim (int): Number of speaker embedding dimenstions.
+                - spk_embed_dim (int): Number of speaker embedding dimension.
+                - spkidloss_weight (float): Weight for the speaker id module when combined to tts loss
+                - num_spk (int): Number of speakers in the training data
                 - spc_dim (int): Number of spectrogram embedding dimenstions (only for use_cbhg=True).
                 - use_cbhg (bool): Whether to use CBHG module.
                 - cbhg_conv_bank_layers (int): The number of convoluional banks in CBHG.
@@ -362,6 +368,7 @@ class Tacotron2(TTSInterface, torch.nn.Module):
         self.idim = idim
         self.odim = odim
         self.spk_embed_dim = args.spk_embed_dim
+        self.spkidloss_weight = args.spkidloss_weight
         self.cumulate_att_w = args.cumulate_att_w
         self.reduction_factor = args.reduction_factor
         self.use_cbhg = args.use_cbhg
@@ -390,6 +397,13 @@ class Tacotron2(TTSInterface, torch.nn.Module):
                            use_residual=args.use_residual,
                            dropout_rate=args.dropout_rate,
                            padding_idx=padding_idx)
+        if args.train_spkid_extractor:
+            self.train_spkid_extractor = True
+            self.resnet_spkid = E2E_speakerid(input_dim=odim, output_dim=args.num_spk, Q=odim-1, D=32, hidden_dim=args.spk_embed_dim, pooling='mean',
+                        network_type='lde', distance_type='sqr', asoftmax=True, resnet_AvgPool2d_fre_ksize=10)
+            self.angle_loss = AngleLoss()
+        else:
+            self.train_spkid_extractor = False
         dec_idim = args.eunits if args.spk_embed_dim is None else args.eunits + args.spk_embed_dim
         if args.atype == "location":
             att = AttLoc(dec_idim,
@@ -416,6 +430,8 @@ class Tacotron2(TTSInterface, torch.nn.Module):
             if self.cumulate_att_w:
                 logging.warning("cumulation of attention weights is disabled in forward attention.")
                 self.cumulate_att_w = False
+        elif args.atype == "noatt": # This condition is satisfied only when using phone alignment for TTS input (Currently when using phn. ali. in TTS training for learning speaker embedding)
+            att = None
         else:
             raise NotImplementedError("Support only location or forward")
         self.dec = Decoder(idim=dec_idim,
@@ -454,7 +470,7 @@ class Tacotron2(TTSInterface, torch.nn.Module):
                              gru_units=args.cbhg_gru_units)
             self.cbhg_loss = CBHGLoss(use_masking=args.use_masking)
 
-    def forward(self, xs, ilens, ys, labels, olens, spembs=None, spcs=None, *args, **kwargs):
+    def forward(self, xs, ilens, ys, labels, olens, spembs=None, spcs=None, spklabs=None, *args, **kwargs):
         """Calculate forward propagation.
 
         Args:
@@ -464,6 +480,7 @@ class Tacotron2(TTSInterface, torch.nn.Module):
             olens (LongTensor): Batch of the lengths of each target (B,).
             spembs (Tensor, optional): Batch of speaker embedding vectors (B, spk_embed_dim).
             spcs (Tensor, optional): Batch of groundtruth spectrograms (B, Lmax, spc_dim).
+            spklabs (Tensor ,optional): Ground truth labels for speaker ids (B,). # (TODO): Check the dimension
 
         Returns:
             Tensor: Loss value.
@@ -481,7 +498,11 @@ class Tacotron2(TTSInterface, torch.nn.Module):
         # calculate tacotron2 outputs
         hs, hlens = self.enc(xs, ilens)
         if self.spk_embed_dim is not None:
-            spembs = F.normalize(spembs).unsqueeze(1).expand(-1, hs.size(1), -1)
+            if self.train_spkid_extractor: # self.spkidloss_weight = 0 still falls into this block
+                spembs, spkid_out = self.resnet_spkid(ys) # Currently working with a batch padded zero-padded sequence vectors (Nanxin did not use it so the current spk id model does not do any specific things to deal with the zero-padding)
+                spembs = spembs.unsqueeze(1).expand(-1, hs.size(1), -1)
+            else:
+                spembs = F.normalize(spembs).unsqueeze(1).expand(-1, hs.size(1), -1)
             hs = torch.cat([hs, spembs], dim=-1)
         after_outs, before_outs, logits, att_ws = self.dec(hs, hlens, ys)
 
@@ -502,6 +523,18 @@ class Tacotron2(TTSInterface, torch.nn.Module):
             {'mse_loss': mse_loss.item()},
             {'bce_loss': bce_loss.item()},
         ]
+
+        # calculate spkid loss & spkid acc
+        if self.train_spkid_extractor and (self.spkidloss_weight != 0): # When self.spkidloss_weight = 0, this part is useless
+            # loss
+            spkid_loss = self.angle_loss(spkid_out, spklabs)
+            loss += self.spkidloss_weight * spkid_loss
+            # acc
+            pred = spkid_out[0].max(1, keepdim=True)[1] # JJ (TODO) : currently values are ordered in a same way for both cos_theta and logp (Just following Nanxin's suggestion but need to check it)
+            correct = pred.eq(spklabs.view_as(pred)).sum().item()
+            spkid_acc = correct/float(spklabs.shape[0])
+            # log
+            report_keys += [{'spkid_loss': spkid_loss.item()}, {'spkid_acc': spkid_acc}]
 
         # caluculate attention loss
         if self.use_guided_attn_loss:

@@ -95,6 +95,10 @@ def get_parser():
                         help='The configuration file for the pre-processing')
     parser.add_argument('--use-speaker-embedding', default=False, type=strtobool,
                         help='Whether to use speaker embedding')
+    parser.add_argument('--train-spkid-extractor', default=False, type=strtobool,
+                        help='Whether to train speaker id network')
+    parser.add_argument("--train-spk-embed-dim", default=None, type=int,
+                        help="Number of speaker embedding dimensions in training speaker id network module")
     parser.add_argument('--use-second-target', default=False, type=strtobool,
                         help='Whether to use second target')
     # optimization related

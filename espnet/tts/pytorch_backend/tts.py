@@ -217,7 +217,7 @@ class CustomConverter(object):
         """
         # batch should be located in list
         assert len(batch) == 1
-        xs, ys, spembs, spcs = batch[0]
+        xs, ys, spembs, spklabs, spcs = batch[0]
 
         # get list of lengths (must be tensor for DataParallel)
         ilens = torch.from_numpy(np.array([x.shape[0] for x in xs])).long().to(device)
@@ -251,6 +251,10 @@ class CustomConverter(object):
             spembs = torch.from_numpy(np.array(spembs)).float().to(device)
             new_batch["spembs"] = spembs
 
+        # load speaker id label
+        if spklabs is not None:
+            new_batch["spklabs"] = torch.tensor(spklabs).to(device)
+
         return new_batch
 
 
@@ -275,7 +279,10 @@ def train(args):
 
     # get extra input and output dimenstion
     if args.use_speaker_embedding:
-        args.spk_embed_dim = int(valid_json[utts[0]]['input'][1]['shape'][0])
+        if args.train_spkid_extractor:
+            args.spk_embed_dim = args.train_spk_embed_dim
+        else:
+            args.spk_embed_dim = int(valid_json[utts[0]]['input'][1]['shape'][0])
     else:
         args.spk_embed_dim = None
     if args.use_second_target:
@@ -363,6 +370,7 @@ def train(args):
     load_tr = LoadInputsAndTargets(
         mode='tts',
         use_speaker_embedding=args.use_speaker_embedding,
+        train_spkid_extractor=args.train_spkid_extractor,
         use_second_target=args.use_second_target,
         preprocess_conf=args.preprocess_conf,
         preprocess_args={'train': True},  # Switch the mode of preprocessing
@@ -372,6 +380,7 @@ def train(args):
     load_cv = LoadInputsAndTargets(
         mode='tts',
         use_speaker_embedding=args.use_speaker_embedding,
+        train_spkid_extractor=args.train_spkid_extractor,
         use_second_target=args.use_second_target,
         preprocess_conf=args.preprocess_conf,
         preprocess_args={'train': False},  # Switch the mode of preprocessing
@@ -445,6 +454,10 @@ def train(args):
         base_plot_keys = model.module.base_plot_keys
     else:
         base_plot_keys = model.base_plot_keys
+
+    if args.train_spkid_extractor:
+        base_plot_keys += ['spkid_loss', 'spkid_acc']
+
     plot_keys = []
     for key in base_plot_keys:
         plot_key = ['main/' + key, 'validation/main/' + key]
@@ -472,6 +485,7 @@ def train(args):
     check_early_stop(trainer, args.epochs)
 
 
+# (TODO:JJ) this function is NOT yet taken care for speaker ID + TTS
 def decode(args):
     """Decode with E2E-TTS model."""
     set_deterministic_pytorch(args)

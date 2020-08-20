@@ -353,16 +353,23 @@ class Decoder(torch.nn.Module):
         prev_out = hs.new_zeros(hs.size(0), self.odim)
 
         # initialize attention
-        prev_att_w = None
-        self.att.reset()
+        if self.att is not None:
+            prev_att_w = None
+            self.att.reset()
+            att_ws = []
+        else:
+            att_ws = None
 
         # loop for an output sequence
-        outs, logits, att_ws = [], [], []
-        for y in ys.transpose(0, 1):
+        outs, logits = [], []
+        for ix, y in enumerate(ys.transpose(0, 1)):
             if self.use_att_extra_inputs:
                 att_c, att_w = self.att(hs, hlens, z_list[0], prev_att_w, prev_out)
             else:
-                att_c, att_w = self.att(hs, hlens, z_list[0], prev_att_w)
+                if self.att is not None:
+                    att_c, att_w = self.att(hs, hlens, z_list[0], prev_att_w)
+                else:
+                    att_c = hs[:,ix,:]
             prenet_out = self.prenet(prev_out) if self.prenet is not None else prev_out
             xs = torch.cat([att_c, prenet_out], dim=1)
             z_list[0], c_list[0] = self.lstm[0](xs, (z_list[0], c_list[0]))
@@ -372,16 +379,18 @@ class Decoder(torch.nn.Module):
             zcs = torch.cat([z_list[-1], att_c], dim=1) if self.use_concate else z_list[-1]
             outs += [self.feat_out(zcs).view(hs.size(0), self.odim, -1)]
             logits += [self.prob_out(zcs)]
-            att_ws += [att_w]
             prev_out = y  # teacher forcing
-            if self.cumulate_att_w and prev_att_w is not None:
-                prev_att_w = prev_att_w + att_w  # Note: error when use +=
-            else:
-                prev_att_w = att_w
+            if self.att is not None:
+                att_ws += [att_w]
+                if self.cumulate_att_w and prev_att_w is not None:
+                    prev_att_w = prev_att_w + att_w  # Note: error when use +=
+                else:
+                    prev_att_w = att_w
 
         logits = torch.cat(logits, dim=1)  # (B, Lmax)
         before_outs = torch.cat(outs, dim=2)  # (B, odim, Lmax)
-        att_ws = torch.stack(att_ws, dim=1)  # (B, Lmax, Tmax)
+        if self.att is not None:
+            att_ws = torch.stack(att_ws, dim=1)  # (B, Lmax, Tmax)
 
         if self.reduction_factor > 1:
             before_outs = before_outs.view(before_outs.size(0), self.odim, -1)  # (B, odim, Lmax)
@@ -400,7 +409,7 @@ class Decoder(torch.nn.Module):
             after_outs = self.output_activation_fn(after_outs)
 
         return after_outs, before_outs, logits, att_ws
-
+    # (TODO:JJ) this function is NOT yet taken care for speaker ID + TTS
     def inference(self, h, threshold=0.5, minlenratio=0.0, maxlenratio=10.0):
         """Generate the sequence of features given the sequences of characters.
 

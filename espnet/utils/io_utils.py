@@ -43,6 +43,7 @@ class LoadInputsAndTargets(object):
                  load_output=True,
                  sort_in_input_length=True,
                  use_speaker_embedding=False,
+                 train_spkid_extractor=False,
                  use_second_target=False,
                  preprocess_args=None,
                  keep_all_data_on_mem=False,
@@ -74,6 +75,7 @@ class LoadInputsAndTargets(object):
         self.load_input = load_input
         self.sort_in_input_length = sort_in_input_length
         self.use_speaker_embedding = use_speaker_embedding
+        self.train_spkid_extractor = train_spkid_extractor
         self.use_second_target = use_second_target
         if preprocess_args is None:
             self.preprocess_args = {}
@@ -137,6 +139,8 @@ class LoadInputsAndTargets(object):
                         # {"output": [{"tokenid": "1 2 3 4"}])
                         x = np.fromiter(map(int, inp['tokenid'].split()),
                                         dtype=np.int64)
+                    elif 'spklab' in inp:
+                        x = int(inp['spklab'])
                     else:
                         # ======= New format =======
                         # {"input":
@@ -321,18 +325,28 @@ class LoadInputsAndTargets(object):
 
             spembs = None
             spcs = None
+            spklabs = None
             spembs_name = 'spembs_none'
             spcs_name = 'spcs_none'
+            spklabs_name = 'spklabs_none'
 
             if self.use_second_target:
                 spcs = list(x_feats_dict.values())[1]
                 spcs = [spcs[i] for i in nonzero_sorted_idx]
                 spcs_name = list(x_feats_dict.keys())[1]
 
-            if self.use_speaker_embedding:
+            if self.use_speaker_embedding and (not self.train_spkid_extractor):
                 spembs = list(x_feats_dict.values())[1]
                 spembs = [spembs[i] for i in nonzero_sorted_idx]
                 spembs_name = list(x_feats_dict.keys())[1]
+
+            if self.train_spkid_extractor:
+                try:
+                    spklabs = list(y_feats_dict.values())[1]
+                    spklabs = [spklabs[i] for i in nonzero_sorted_idx]
+                    spklabs_name = list(y_feats_dict.keys())[1]
+                except:
+                    logging.warning('Current subset being evalulated is test set.')
 
             x_name = list(y_feats_dict.keys())[0]
             y_name = list(x_feats_dict.keys())[0]
@@ -340,6 +354,7 @@ class LoadInputsAndTargets(object):
             return_batch = OrderedDict([(x_name, xs),
                                         (y_name, ys),
                                         (spembs_name, spembs),
+                                        (spklabs_name, spklabs),
                                         (spcs_name, spcs)])
         elif self.use_speaker_embedding:
             if len(x_feats_dict) == 0:
