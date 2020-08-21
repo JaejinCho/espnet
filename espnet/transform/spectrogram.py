@@ -1,8 +1,7 @@
 import librosa
 import numpy as np
 
-
-def stft(x, n_fft, n_shift, win_length=None, window='hann', center=True,
+def stft(x, n_fft, n_shift, win_length=None, window='hann', center=False,
          pad_mode='reflect'):
     # x: [Time, Channel]
     if x.ndim == 1:
