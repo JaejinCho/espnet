@@ -52,11 +52,11 @@ tag="" # tag for managing experiments.
 
 # data required to download ahead
 voxceleb1_root="" # voxceleb1 corpus (should be manually downloaded)
-voxceleb1_phoneali_fpath="" # phoneali file
-uttlist_trainset="" # uttlist_trainset
-uttlist_devset="" # uttlist_devset
-phone_dict="" # phone dictionary
-utt2spklab="" # utt2spklab
+voxceleb1_phoneali_fpath="data/files4reprod/phone.perframe.sym.txt" # phoneali file
+uttlist_trainset="data/files4reprod/voxceleb1_train_filtered_train.uttlist" # uttlist_trainset
+uttlist_devset="data/files4reprod/voxceleb1_train_filtered_dev.uttlist" # uttlist_devset
+phone_dict="data/files4reprod/phones.txt" # phone dictionary
+utt2spklab="data/files4reprod/voxceleb1_train_filtered.utt2spklab" # utt2spklab
 
 
 
@@ -78,13 +78,13 @@ if [ ${stage} -le 0 ] && [ ${stop_stage} -ge 0 ]; then
     echo "stage 0: Data preparation"
     # 1. This script creates data/voxceleb1_test and data/voxceleb1_train.
     # Our evaluation set is the test portion of VoxCeleb1.
-    local/make_voxceleb1.pl $voxceleb1_root data # (TODO: need to get local/make_voxceleb1.pl from /export/b13/jcho/espnet_v3/tools/kaldi/egs/voxceleb/v2)
+    local/make_voxceleb1.pl $voxceleb1_root data
     ## Download required files from gdrive. This generates data/files4reprod dir including the required files
     if [ ! -d data/files4reprod ]; then
         wget --no-check-certificate 'https://drive.google.com/uc?export=download&id=1vazEXMEbr3unk9PUTD969SZJp58zLXrX' -O files4reprod.tar.gz && tar -zxvf files4reprod.tar.gz -C data
     fi
     # 2. Phone alignment file ([uttid]-[phone alignment] pair in each line) preparation
-    cp ${voxceleb1_phoneali_fpath} data/voxceleb1_train/text # # phone ali seq * 3 - (2, 3 or 4) = # acoustic seq (TODO: upload /export/b11/jcho/kaldi_20190316/egs/librispeech/s5/exp/chain_cleaned/tdnn_1d_sp/decode_voxceleb1_all_frame_subsampling_factor_3/phone.perframe.sym.txt for ${voxceleb1_phoneali_fpath})
+    cp ${voxceleb1_phoneali_fpath} data/voxceleb1_train/text # # phone ali seq * 3 - (2, 3 or 4) = # acoustic seq
     ## remove the lines where text is empty and fix the directory
     mv data/voxceleb1_train/text data/voxceleb1_train/.text && awk '{if(!(NF==1))print $0}' data/voxceleb1_train/.text > data/voxceleb1_train/text # Extract only lines with non-empty phone alignment
     fix_data_dir.sh data/voxceleb1_train
@@ -155,11 +155,11 @@ if [ ${stage} -le 2 ] && [ ${stop_stage} -ge 2 ]; then
     ### Task dependent. You have to check non-linguistic symbols used in the corpus.
     echo "stage 2: Dictionary and Json Data Preparation"
     mkdir -p data/lang_1char/
-    cp ${phone_dict} ${dict} # (TODO: upload /export/b11/jcho/kaldi_20190316/egs/librispeech/s5/exp/chain_cleaned/tdnn_1d_sp/phones.txt for ${phone_dict})
+    cp ${phone_dict} ${dict}
     sed -e '1 s:<eps> 0:<unk> 0:' ${dict} | awk -F' ' '{$2=$2+1;print}' OFS=' ' > .tmpdict && mv .tmpdict ${dict}
     wc -l ${dict}
 
-    # make json labels (TODO: copy data2json_kaldiali.sh)
+    # make json labels
     data2json_kaldiali.sh --kaldiali true --feat ${feat_tr_dir}/feats.scp \
          data/${train_set} ${dict} > ${feat_tr_dir}/data.json
     data2json_kaldiali.sh --kaldiali true --feat ${feat_dt_dir}/feats.scp \
@@ -167,12 +167,7 @@ if [ ${stage} -le 2 ] && [ ${stop_stage} -ge 2 ]; then
 
     # json prep. for speaker id module
     for subset in ${train_set} ${dev_set}; do
-        # update json (TODO: copy local/update_json_general.sh &
-        # /export/b18/jcho/espnet3/egs/libritts/asrtts+spkid/data/voxceleb1_train_filtered_librispeechXformerASR/voxceleb1_train_filtered.utt2spklab
-        # or
-        # /export/b18/jcho/espnet3/egs/libritts/asrtts+spkid/data/voxceleb1_train_filtered/voxceleb1_train_filtered.utt2spklab
-        # for ${utt2spklab})
-        #local/update_json_general.sh --loc output --k spklab ${dumpdir}/${subset}/data.json /export/b18/jcho/espnet3/egs/libritts/asrtts+spkid/data/voxceleb1_train_filtered_librispeechXformerASR/voxceleb1_train_filtered.utt2spklab # utt2spklab generated same way as for utt2spkid from Nanxin's Resnet code
+        # update json
         local/update_json_general.sh --loc output --k spklab ${dumpdir}/${subset}/data.json ${utt2spklab}
     done
 fi
@@ -197,7 +192,7 @@ if [ ${stage} -le 4 ] && [ ${stop_stage} -ge 4 ]; then
     echo "stage 4: Text-to-speech model training"
     tr_json=${feat_tr_dir}/data.json
     dt_json=${feat_dt_dir}/data.json
-    ${cuda_cmd_mem20G} --gpu ${ngpu} ${expdir}/train.log \
+    ${cuda_cmd} --gpu ${ngpu} ${expdir}/train.log \
         tts_train.py \
            --num-spk ${num_spk} \
            --spkidloss-weight ${spkidloss_weight} \
@@ -213,7 +208,6 @@ if [ ${stage} -le 4 ] && [ ${stop_stage} -ge 4 ]; then
            --config ${train_config}
 fi
 
-# (TODO) Add backend training and eval
 if [[ model.loss.best == ${model} ]]; then
     embname=`basename ${expdir}`
 else
@@ -303,5 +297,5 @@ fi
 
 if [ ${stage} -le 8 ] && [ ${stop_stage} -ge 8 ]; then
   echo "stage 8: EER & MinDCF"
-  qsub -cwd -o log/qsub.run.eer_mindcf.voxceleb1.${embname}.log -e log/qsub.run.eer_mindcf.voxceleb1.${embname}.log -l mem_free=200G,ram_free=200G run.eer_mindcf.voxceleb1.sh --eval_set ${eval_set} --embname ${embname} # (TODO: prep. /export/b17/janto/SRE18/v1.8k/scoring_software/ directory for scoring)
+  qsub -cwd -o log/qsub.run.eer_mindcf.voxceleb1.${embname}.log -e log/qsub.run.eer_mindcf.voxceleb1.${embname}.log -l mem_free=200G,ram_free=200G run.eer_mindcf.voxceleb1.sh --eval_set ${eval_set} --embname ${embname}
 fi
