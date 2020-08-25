@@ -15,16 +15,19 @@ make KALDI=[kaldi path] PYTHON_VERSION=3.6 TH_VERSION=1.0.1 CUDA_VERSION=10.0 # 
 
 ### Experiments
 
-Go to the experimental directory
+1. Download voxceleb1 corpus to [voxceleb1 corpus dir]. Running "$ ls [voxceleb1 corpus dir]" shows "vox1_meta.csv  voxceleb1_test.txt  voxceleb1_wav"
+
+2. Go to the experimental directory
 
 ```
 cd egs/voxceleb1/spkidtts
 ```
 
-Run experiment
+3. Run experiment
 
 ```
-$ bash run.sh --ngpu [# gpus to use] --spkidloss_weight [spkidloss_weight] --voxceleb1_root [voxceleb1 corpus dir] --voxceleb1_phoneali_fpath [(uttid)-(phn. seq.) pairs file] --uttlist_trainset [uttlist_trainset] --uttlist_devset [uttlist_devset] --phone_dict [phone dictionary] --utt2spklab [(uttid)-(spklab) pairs file] # Setting "--spkidloss_weight 0.03" is the same as M-TTS + SpkID loss w/ ASR Phn. Align. SR3 in Table 5 of the paper
+$ bash run.sh --ngpu [# gpus to use. Using multiple gpus is likely NOT working with the current codes] --spkidloss_weight [spkidloss weight] --voxceleb1_root [voxceleb1 corpus dir]
+$ # e.g., bash run.sh --ngpu 1 --spkidloss_weight 0.03 --voxceleb1_root /export/corpora5/VoxCeleb1_v1 # Setting "--spkidloss_weight 0.03" is the same as M-TTS + SpkID loss w/ ASR Phn. Align. SR3 in Table 5 of the paper
 ```
 
 ## Citation
