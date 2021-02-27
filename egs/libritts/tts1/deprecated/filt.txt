@@ -1,0 +1,7 @@
+feats.scp
+spk2gender
+spk2utt
+text
+utt2num_frames
+utt2spk
+wav.scp

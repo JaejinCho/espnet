@@ -1,0 +1,46 @@
+mkdir log
+
+# 1. Data prep: spkloss_weight does not matter specified here in data prep.
+(*** only for the first run ***) bash run.asrttsspkid.spkloss_weight.new.update.rf3.sh --stage 0 --stop_stage 0 --ngpu 1 --n_average 0 --spkloss_weight 0 2>&1 | tee log/run.asrttsspkid.spkloss_weight.new.update.rf3.spkloss_weight0.stage0only.log
+
+# 2. Training
+##(STOPPED WITH UNEXPECTED ERROR. ACTUALLY NO SPECIFIC ERROR LOG. I THINK IT IS DUE TO ENV UPDATE WHILE THIS SCRIPT WAS RUNNING)
+bash run.asrttsspkid.spkloss_weight.new.update.rf3.sh --stage 1 --ngpu 1 --n_average 0 --spkloss_weight 0.03 2>&1 | tee log/run.asrttsspkid.spkloss_weight.new.update.rf3.spkloss_weight0.03.fromstage1toEnd.log
+## rerun from stage 4
+bash run.asrttsspkid.spkloss_weight.new.update.rf3.sh --cuda_memsize 20 --stage 4 --ngpu 1 --n_average 0 --spkloss_weight 0.03 2>&1 | tee log/run.asrttsspkid.spkloss_weight.new.update.rf3.spkloss_weight0.03.fromstage4toEnd.cuda_memsize20G.log
+## w/ spkloss_weight 0
+bash run.asrttsspkid.spkloss_weight.new.update.rf3.sh --cuda_memsize 35 --stage 4 --ngpu 1 --n_average 0 --spkloss_weight 0 2>&1 | tee log/run.asrttsspkid.spkloss_weight.new.update.rf3.spkloss_weight0.fromstage4toEnd.cuda_memsize35G.log
+
+## ******* The runs above in 2. Training were moved to exp_old/ and the exp/ is replaced by exp/ from identv-vision grid
+### copy the exp/ dir rsynced from identv-vision grid (To see orignal exp/, i.e. before some files under exp/ dir are overwritten, check /export/b11/jcho/rsyncing_fromidentv/home/jj/tools/espnet/egs/libritts/asrtts+spkid_voxcelebNaug_kaldiasr_phonealign_rf3/exp/)
+cp -r /export/b11/jcho/rsyncing_fromidentv/home/jj/tools/espnet/egs/libritts/asrtts+spkid_voxcelebNaug_kaldiasr_phonealign_rf3/exp /export/b18/jcho/espnet3/egs/libritts/asrtts+spkid_voxcelebNaug_kaldiasr_phonealign_rf3
+### Rerun training from the stopped epoch (ING for spkloss_weight 0, 0.03, 0.3, 0.9)
+(DONE, change [weight] parts accordingly and run) bash run.asrttsspkid.spkloss_weight.new.update.rf3.sh --resume /export/b11/jcho/rsyncing_fromidentv/home/jj/tools/espnet/egs/libritts/asrtts+spkid_voxcelebNaug_kaldiasr_phonealign_rf3/exp/voxceleb_train_combined_train_pytorch_train_pytorch_tacotron2+spkemb_noatt_rf3_spkloss_weight[weight]/results/snapshot.ep.6 --cuda_memsize 20 --stage 4 --ngpu 1 --n_average 0 --spkloss_weight [weight] 2>&1 | tee log/run.asrttsspkid.spkloss_weight.new.update.rf3.spkloss_weight[weight].fromstage4toEnd.cuda_memsize20G.fromsnapshot6.log
+(ING, 2flstm512Nusecat) bash run.asrttsspkid.spkloss_weight.new.update.rf3.fullyunsync.addnceloss.sh --train_config conf/train_pytorch_forwardtacotron2+spkemb_2flstm512Nusecat_nceloss_fullyunsync_shufflebatching_bs56.yaml --cuda_memsize 20 --stage 4 --stop_stage 4 --ngpu 1 --n_average 0 --spkloss_weight 0.03 --nceloss_weight 0.001 2>&1 | tee log/run.asrttsspkid.spkloss_weight.new.update.rf3.fullyunsync.addnceloss.spkloss_weight0.03.nceloss_weight0.001.onlystage4.FT2_2flstm512Nusecat.shufflebatching.bs56.cuda_memsize20G.log
+(DONE, FT2 w/ nce_loss + shufflebatching, nceloss_weight=0.001, lr=1e-3) bash run.asrttsspkid.spkloss_weight.new.update.rf3.fullyunsync.addnceloss.sh --train_config conf/train_pytorch_forwardtacotron2+spkemb_2flstm512Nusecat_nceloss_fullyunsync_shufflebatching_bs56.yaml --stage 4 --stop_stage 4 --ngpu 1 --n_average 0 --spkloss_weight 0.03 --nceloss_weight 0.001 2>&1 | tee log/run.asrttsspkid.spkloss_weight.new.update.rf3.fullyunsync.spkloss_weight0.03.nceloss_weight0.001.onlystage4.FT2_2flstm512Nusecat.shufflebatching.bs56.log
+
+# 3. Backend
+## 1) Using voxceleb_train_combined_trainNdev
+#### spkloss_weight=0.03
+(DONE) bash run_backendonly_cpuparallel.voxceleb_all.sh --model snapshot.ep.6 --nj 70 --ngpu 0 --expdir /export/b11/jcho/rsyncing_fromidentv/home/jj/tools/espnet/egs/libritts/asrtts+spkid_voxcelebNaug_kaldiasr_phonealign_rf3/exp/voxceleb_train_combined_train_pytorch_train_pytorch_tacotron2+spkemb_noatt_rf3_spkloss_weight0.03/ 2>&1 | tee log/backend.voxceleb_train_combined_train_pytorch_train_pytorch_tacotron2+spkemb_noatt_rf3_spkloss_weight0.03.snapshot.ep.6.log
+#### Rerun only stage 8 after I got an error due to wrong path (No existing error)
+(DONE) bash run_backendonly_cpuparallel.voxceleb_all.sh --stage 8 --model snapshot.ep.6 --nj 70 --ngpu 0 --expdir /export/b11/jcho/rsyncing_fromidentv/home/jj/tools/espnet/egs/libritts/asrtts+spkid_voxcelebNaug_kaldiasr_phonealign_rf3/exp/voxceleb_train_combined_train_pytorch_train_pytorch_tacotron2+spkemb_noatt_rf3_spkloss_weight0.03/ 2>&1 | tee log/backend.voxceleb_train_combined_train_pytorch_train_pytorch_tacotron2+spkemb_noatt_rf3_spkloss_weight0.03.snapshot.ep.6.stage8only.log
+#### spkloss_weight=0
+(STOPPED DUE TO MOMERY ERROR IN DOING "sort -k1") bash run_backendonly_cpuparallel.voxceleb_all.sh --model snapshot.ep.6 --nj 70 --ngpu 0 --expdir /export/b11/jcho/rsyncing_fromidentv/home/jj/tools/espnet/egs/libritts/asrtts+spkid_voxcelebNaug_kaldiasr_phonealign_rf3/exp/voxceleb_train_combined_train_pytorch_train_pytorch_tacotron2+spkemb_noatt_rf3_spkloss_weight0/ 2>&1 | tee log/backend.voxceleb_train_combined_train_pytorch_train_pytorch_tacotron2+spkemb_noatt_rf3_spkloss_weight0.snapshot.ep.6.log
+#### rerun above from stage 6 after removing "sort -k1" (IDK yet if it works without it)
+(DONE) bash run_backendonly_cpuparallel.voxceleb_all.sh --stage 6 --model snapshot.ep.6 --nj 70 --ngpu 0 --expdir /export/b11/jcho/rsyncing_fromidentv/home/jj/tools/espnet/egs/libritts/asrtts+spkid_voxcelebNaug_kaldiasr_phonealign_rf3/exp/voxceleb_train_combined_train_pytorch_train_pytorch_tacotron2+spkemb_noatt_rf3_spkloss_weight0/ 2>&1 | tee log/backend.voxceleb_train_combined_train_pytorch_train_pytorch_tacotron2+spkemb_noatt_rf3_spkloss_weight0.snapshot.ep.6.log
+#### spkloss_weight=0.3
+(DONE) bash run_backendonly_cpuparallel.voxceleb_all.sh --model snapshot.ep.6 --nj 70 --ngpu 0 --expdir /export/b11/jcho/rsyncing_fromidentv/home/jj/tools/espnet/egs/libritts/asrtts+spkid_voxcelebNaug_kaldiasr_phonealign_rf3/exp/voxceleb_train_combined_train_pytorch_train_pytorch_tacotron2+spkemb_noatt_rf3_spkloss_weight0.3/ 2>&1 | tee log/backend.voxceleb_train_combined_train_pytorch_train_pytorch_tacotron2+spkemb_noatt_rf3_spkloss_weight0.3.snapshot.ep.6.log
+#### spkloss_weight=0.9
+(DONE) bash run_backendonly_cpuparallel.voxceleb_all.sh --model snapshot.ep.6 --nj 70 --ngpu 0 --expdir /export/b11/jcho/rsyncing_fromidentv/home/jj/tools/espnet/egs/libritts/asrtts+spkid_voxcelebNaug_kaldiasr_phonealign_rf3/exp/voxceleb_train_combined_train_pytorch_train_pytorch_tacotron2+spkemb_noatt_rf3_spkloss_weight0.9/ 2>&1 | tee log/backend.voxceleb_train_combined_train_pytorch_train_pytorch_tacotron2+spkemb_noatt_rf3_spkloss_weight0.9.snapshot.ep.6.log
+### with ep.13 (AFTER RERUN FOR FEW MORE EPOCHS FROM THE STOPPED POINTS AT IDENTV GRID)
+#### spkloss_weight=0.03
+(DONE) bash run_backendonly_cpuparallel.voxceleb_all.sh --model snapshot.ep.13 --nj 70 --ngpu 0 --expdir exp/voxceleb_train_combined_train_pytorch_train_pytorch_tacotron2+spkemb_noatt_rf3_spkloss_weight0.03/ 2>&1 | tee log/backend.voxceleb_train_combined_train_pytorch_train_pytorch_tacotron2+spkemb_noatt_rf3_spkloss_weight0.03.snapshot.ep.13.log
+#### spkloss_weight=0
+(DONE) bash run_backendonly_cpuparallel.voxceleb_all.onbc.sh --model snapshot.ep.13 --nj 70 --ngpu 0 --expdir exp/voxceleb_train_combined_train_pytorch_train_pytorch_tacotron2+spkemb_noatt_rf3_spkloss_weight0/ 2>&1 | tee log/backend.voxceleb_train_combined_train_pytorch_train_pytorch_tacotron2+spkemb_noatt_rf3_spkloss_weight0.snapshot.ep.13.log
+#### After 30 epochs are done:
+(DONE, best spkid_{acc,loss} at ep.20) bash run_backendonly_cpuparallel.voxceleb_all.onbc.sh --model snapshot.ep.20 --nj 70 --ngpu 0 --expdir exp/voxceleb_train_combined_train_pytorch_train_pytorch_tacotron2+spkemb_noatt_rf3_spkloss_weight0.03/ 2>&1 | tee log/backend.voxceleb_train_combined_train_pytorch_train_pytorch_tacotron2+spkemb_noatt_rf3_spkloss_weight0.03.snapshot.ep.20.best_spkidaccNloss.onbc.log
+(DONE, 2nd best loss at ep.19) bash run_backendonly_cpuparallel.voxceleb_all.onbc.sh --model snapshot.ep.19 --nj 70 --ngpu 0 --expdir exp/voxceleb_train_combined_train_pytorch_train_pytorch_tacotron2+spkemb_noatt_rf3_spkloss_weight0.03/ 2>&1 | tee log/backend.voxceleb_train_combined_train_pytorch_train_pytorch_tacotron2+spkemb_noatt_rf3_spkloss_weight0.03.snapshot.ep.19.2ndbest_loss.onbc.log
+## 2) Using voxceleb_train
+(DONE) bash run_backendonly_cpuparallel.voxceleb2_random500k.onbc.sh --model snapshot.ep.13 --nj 70 --ngpu 0 --expdir exp/voxceleb_train_combined_train_pytorch_train_pytorch_tacotron2+spkemb_noatt_rf3_spkloss_weight0.03/ 2>&1 | tee log/backend.voxceleb_train_combined_train_pytorch_train_pytorch_tacotron2+spkemb_noatt_rf3_spkloss_weight0.03.snapshot.ep.13.backendtrain_with_voxceleb2_500k.log
+(ING) bash run_backendonly_cpuparallel.voxceleb2_random500k.onbc.sh --model snapshot.ep.20 --nj 70 --ngpu 0 --expdir exp/voxceleb_train_combined_train_pytorch_train_pytorch_tacotron2+spkemb_noatt_rf3_spkloss_weight0.03/ 2>&1 | tee log/backend.voxceleb_train_combined_train_pytorch_train_pytorch_tacotron2+spkemb_noatt_rf3_spkloss_weight0.03.snapshot.ep.20.backendtrain_with_voxceleb2_500k.log

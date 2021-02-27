@@ -1,0 +1,7 @@
+8.0K	/export/b18/jcho/espnet3/CONTRIBUTING.md
+12K	/export/b18/jcho/espnet3/LICENSE
+28K	/export/b18/jcho/espnet3/README.md
+36K	/export/b18/jcho/espnet3/ci
+4.0K	/export/b18/jcho/espnet3/disk_usage_20200318.txt
+152K	/export/b18/jcho/espnet3/doc
+68K	/export/b18/jcho/espnet3/docker

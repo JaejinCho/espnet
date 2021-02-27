@@ -1,0 +1,23 @@
+## Libritts with txf ASR transcript
+# 0. Remove previous list_run.txt copied
+rm list_run.txt log/*
+cp ../asrtts+spkid_libris_txf_asr/run.asrttsspkid.spkloss_weight.new.sh . # This code was fixed after copied
+
+# 1. Training
+bash run.asrttsspkid.spkloss_weight.new.sh --ngpu 1 --n_average 0 --spkloss_weight 0 2>&1 | tee log/run.asrttsspkid.spkloss_weight.new.spkloss_weight0.log # ***** only for the first run *****
+bash run.asrttsspkid.spkloss_weight.new.sh --stage 4 --ngpu 1 --n_average 0 --spkloss_weight 0 2>&1 | tee log/run.asrttsspkid.spkloss_weight.new.spkloss_weight0.log
+
+# 2. Resume training (some (spkloss_weight{0,3}) stopped due to memory problem)
+## 1) copy some files or change some files names for backup (did the same for spkloss_weight3)
+expdir=exp/train_train_pytorch_train_pytorch_tacotron2+spkemb_spkloss_weight0
+mv ${expdir}/q ${expdir}/q_b4resume
+mv ${expdir}/train.log ${expdir}/train_b4resume.log
+mkdir -p ${expdir}/results/somefiles_b4resume
+cp -r `ls -d ${expdir}/results/* | grep -v "snapshot\|somefiles_b4resume"` ${expdir}/results/somefiles_b4resume/
+(+) selectively copy snapshot.ep.{-1,index where the training stopped,+1} to results/somefiles_b4resume (e.g. cp ${expdir}/results/snapshot.ep.{8,9,10} ${expdir}/results/somefiles_b4resume)
+## 2) Actually resume running
+bash run.asrttsspkid.spkloss_weight.new.mem10G.sh --resume /export/b18/jcho/espnet3/egs/libritts/asrtts+spkid_libris_kaldiasr/exp/train_train_pytorch_train_pytorch_tacotron2+spkemb_spkloss_weight0/results/snapshot.ep.16 --stage 4 --ngpu 1 --n_average 0 --spkloss_weight 0 2>&1 | tee log/run.asrttsspkid.spkloss_weight.new.spkloss_weight0.fromstage4.resume16.log
+bash run.asrttsspkid.spkloss_weight.new.mem10G.sh --resume /export/b18/jcho/espnet3/egs/libritts/asrtts+spkid_libris_kaldiasr/exp/train_train_pytorch_train_pytorch_tacotron2+spkemb_spkloss_weight3/results/snapshot.ep.9 --stage 4 --ngpu 1 --n_average 0 --spkloss_weight 3 2>&1 | tee log/run.asrttsspkid.spkloss_weight.new.spkloss_weight3.fromstage4.resume9.log
+
+# 3. Backend training (Run for all spkloss_weights except 3 since it is still in training)
+bash run_backendonly_cpuparallel.sh --nj 70 --ngpu 0 --expdir exp/train_train_pytorch_train_pytorch_tacotron2+spkemb_spkloss_weight[weight value] 2>&1 | tee log/backend.train_train_pytorch_train_pytorch_tacotron2+spkemb_spkloss_weight[weight value].log

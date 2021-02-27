@@ -1,0 +1,32 @@
+-----exp/train_train_pytorch_train_pytorch_tacotron2+spkemb_spkloss_weight0.001/results/log-----
+2221:        "validation/main/spkid_acc": 0.9262451483026298,
+8864:        "validation/main/loss": 0.453826952154619,
+-----exp/train_train_pytorch_train_pytorch_tacotron2+spkemb_spkloss_weight0.003/results/log-----
+8494:        "validation/main/spkid_acc": 0.9860151633646159,
+10340:        "validation/main/loss": 0.4543501282260366,
+-----exp/train_train_pytorch_train_pytorch_tacotron2+spkemb_spkloss_weight0.01/results/log-----
+5173:        "validation/main/spkid_acc": 0.9940856360792492,
+10340:        "validation/main/loss": 0.45815595614649085,
+-----exp/train_train_pytorch_train_pytorch_tacotron2+spkemb_spkloss_weight0.03/results/log-----
+7018:        "validation/main/spkid_acc": 0.9969532064650677,
+8125:        "validation/main/spkid_acc": 0.9969532064650677,
+8495:        "validation/main/loss": 0.46218780727282055,
+-----exp/train_train_pytorch_train_pytorch_tacotron2+spkemb_spkloss_weight0.1/results/log-----
+5173:        "validation/main/spkid_acc": 0.9978656152241918,
+10709:        "validation/main/loss": 0.4717835805711955,
+-----exp/train_train_pytorch_train_pytorch_tacotron2+spkemb_spkloss_weight0.3/results/log-----
+4066:        "validation/main/spkid_acc": 0.9986802659019811,
+10709:        "validation/main/loss": 0.496182921811612,
+-----exp/train_train_pytorch_train_pytorch_tacotron2+spkemb_spkloss_weight0/results/log-----
+2959:        "validation/main/spkid_acc": 0.003975495307612095,
+10340:        "validation/main/loss": 0.44871313750308794,
+-----exp/train_train_pytorch_train_pytorch_tacotron2+spkemb_spkloss_weight10/results/log-----
+6280:        "validation/main/spkid_acc": 0.9979796663190823,
+9602:        "validation/main/loss": 1.1566822289550391,
+-----exp/train_train_pytorch_train_pytorch_tacotron2+spkemb_spkloss_weight1/results/log-----
+7756:        "validation/main/spkid_acc": 0.9978656152241918,
+10709:        "validation/main/loss": 0.5745546796026021,
+-----exp/train_train_pytorch_train_pytorch_tacotron2+spkemb_spkloss_weight3/results/log-----
+8863:        "validation/main/spkid_acc": 0.9972301876955162,
+9232:        "validation/main/spkid_acc": 0.9972301876955162,
+10709:        "validation/main/loss": 0.7114186900375533,

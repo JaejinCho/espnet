@@ -1,0 +1,29 @@
+*** The upper the codes are located, The more recent they are***
+
+# create a new dir for sre + kaldiaug (sre20 recipe) experiments
+rsync -av --progress --exclude *tmp* --exclude *temp* --exclude run*sh --exclude list_run* --exclude deprecated --exclude tensorboard --exclude log --exclude data --exclude exp --exclude dump --exclude prep4eer.temp /export/b18/jcho/espnet3/egs/libritts/asrtts+spkid_sre_phonealign/ asrtts+spkid_sreNkaldiaug_phonealign/
+
+# create a new dir for sre (sre20 recipe) experiments
+rsync -av --progress --exclude list_run* --exclude deprecated --exclude tensorboard --exclude list_run.txt --exclude log --exclude data --exclude exp --exclude dump --exclude prep4eer.temp --exclude data/train_eval/trials asrtts+spkid_voxceleb2_phonealign/ asrtts+spkid_sre_phonealign/
+
+# rsync from tts+spkid_final to asrtts+spkid_libris_txf_asr
+rsync -arv --exclude={exp,mfcc,fbank,dump,dump_pretrained_xvector,dump_spkidadd,data,tensorboard,log,deprecated} tts+spkid_final/ asrtts+spkid_libris_txf_asr/
+
+# rsync from tts+spkid_final to asrtts+spkid
+rsync -arv --exclude={exp,mfcc,fbank,dump,dump_pretrained_xvector,dump_spkidadd,data,tensorboard,log,deprecated} tts+spkid_final/ asrtts+spkid/
+
+rsync -av --exclude=*ark --exclude '*.ark' --exclude '*.scp' --exclude-from=exclude.rsync.fromtts1.txt tts1/ tts+spkid 2>&1 | tee rsync.log
+
+# latest run (to generate tts+spkid_final)
+## 1
+rsync -av --exclude-from=exclude.rsync.fromtts1.txt tts1/ [new dir name] 2>&1 | tee rsync.[new dir name].update.log
+## 2: After the rsynced directory generated above, run the commands below in the new directory
+rm run.sh run.tts+spkid.sh
+cp ../tts+spkid/{run.sh,run.ttsspkid.spkloss_weight.sh,list_run.txt} .
+## already run commands:
+rsync -av --exclude-from=exclude.rsync.fromtts1.txt tts1/ tts_featext 2>&1 | tee rsync.tts_featext.update.log
+
+
+# copy tts+spk_final to tts+spkid_checktts_v1
+cp -r tts+spk_final tts+spkid_checktts_v1
+

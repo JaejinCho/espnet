@@ -1,0 +1,40 @@
+# Libritts with kaldi asr phone alignment
+# ********** Use run.asrttsspkid.spkloss_weight.new.update.*.sh instead of run.asrttsspkid.spkloss_weight.new.sh **********
+
+
+
+# 0. Remove previous list_run.txt copied
+rm list_run.txt
+cp ../asrtts+spkid_libris_kaldiasr/run.asrttsspkid.spkloss_weight.new.sh . # This code was edited after copied
+
+
+
+# 1. Training
+## STOPPED RUNNING THIS: this one had unmatching # input frames and # output frames.
+***** only for the first run ***** bash run.asrttsspkid.spkloss_weight.new.sh --ngpu 1 --n_average 0 --spkloss_weight 0 2>&1 | tee log/run.asrttsspkid.spkloss_weight.new.spkloss_weight0.log
+## This is a fix for the above to have matching # input frames and # output frames. The code is edited from run.asrttsspkid.spkloss_weight.new.sh
+## run the command right below after "rm -r data/ exp/ dump/"
+***** only for the first run ***** bash run.asrttsspkid.spkloss_weight.new.update.sh --ngpu 1 --n_average 0 --spkloss_weight 0 2>&1 | tee log/run.asrttsspkid.spkloss_weight.new.update.spkloss_weight0.log
+(STOPPED due to less memory request) bash run.asrttsspkid.spkloss_weight.new.update.rf1.sh --stage 4 --ngpu 1 --n_average 0 --spkloss_weight 0 2>&1 | tee log/run.asrttsspkid.spkloss_weight.new.update.rf1.spkloss_weight0.fromstage4.log
+(ING) bash run.asrttsspkid.spkloss_weight.new.update.rf1.sh --stage 4 --ngpu 1 --n_average 0 --spkloss_weight 0.03 2>&1 | tee log/run.asrttsspkid.spkloss_weight.new.update.rf1.spkloss_weight0.03.fromstage4.log
+### Resume training
+#### 1) copy some files or change some files names for backup (did the same for spkloss_weight3)
+expdir=exp/train_train_pytorch_train_pytorch_tacotron2+spkemb_noatt_rf1_spkloss_weight0
+mv ${expdir}/q ${expdir}/q_b4resume
+mv ${expdir}/train.log ${expdir}/train_b4resume.log
+mkdir -p ${expdir}/results/somefiles_b4resume
+cp -r `ls -d ${expdir}/results/* | grep -v "snapshot\|somefiles_b4resume"` ${expdir}/results/somefiles_b4resume/
+(+) selectively copy snapshot.ep.{-1,index where the training stopped,+1} to results/somefiles_b4resume (e.g. cp ${expdir}/results/snapshot.ep.{8,9,10} ${expdir}/results/somefiles_b4resume)
+#### 2) Finally run again
+(ING, Run again from stop with more memory request) bash run.asrttsspkid.spkloss_weight.new.update.rf1.sh --resume /export/b18/jcho/espnet3/egs/libritts/asrtts+spkid_libris_kaldiasr_phonealign/exp/train_train_pytorch_train_pytorch_tacotron2+spkemb_noatt_rf1_spkloss_weight0/results/snapshot.ep.14 --stage 4 --ngpu 1 --n_average 0 --spkloss_weight 0 2>&1 | tee log/run.asrttsspkid.spkloss_weight.new.update.rf1.spkloss_weight0.fromstage4.resume14.log
+
+***** Decoding while running (based on snapshot.ep.10) *****
+(DONE, (based on snapshot.ep.10)) bash run.asrttsspkid.spkloss_weight.new.update.rf1.sh --stage 5 --ngpu 1 --n_average 0 --spkloss_weight 0 2>&1 | tee log/run.asrttsspkid.spkloss_weight.new.update.rf1.spkloss_weight0.fromstage5.snapshot.ep.10.log
+(TODO) Run for rf2 (default)
+
+
+# 2. Backend
+***** Backend exp while running *****
+(DONE, (based on snapshot.ep.11)) bash run_backendonly_cpuparallel.sh --nj 70 --ngpu 0 --expdir exp/train_train_pytorch_train_pytorch_tacotron2+spkemb_noatt_rf1_spkloss_weight0/ 2>&1 | tee log/backend.train_train_pytorch_train_pytorch_tacotron2+spkemb_noatt_rf1_spkloss_weight0.snapshot.ep.10.log >> (logged eerNmindcf to) run.eer_mindcf.train_train_pytorch_train_pytorch_tacotron2+spkemb_noatt_rf1_spkloss_weight0.old.log
+(DONE: after all 30 epochs. Also, naming around "${embname}" term changed by connecting it (front/back) with others by "_" instead of ".") bash run_backendonly_cpuparallel.sh --nj 70 --ngpu 0 --expdir exp/train_train_pytorch_train_pytorch_tacotron2+spkemb_noatt_rf1_spkloss_weight0/ 2>&1 | tee log/backend.train_train_pytorch_train_pytorch_tacotron2+spkemb_noatt_rf1_spkloss_weight0.log
+(TODO) Run for rf2 (default)

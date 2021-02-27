@@ -1,0 +1,13 @@
+cmvn.ark
+cv.spkid.uttlist
+feats.scp
+spk2gender
+spk2num
+spk2utt
+text
+tmp
+train.spkid.uttlist
+utt2num_frames
+utt2spk
+utt2spklab
+wav.scp

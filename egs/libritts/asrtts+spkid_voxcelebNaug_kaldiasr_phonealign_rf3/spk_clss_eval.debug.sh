@@ -1,0 +1,1 @@
+speakerid_eval_classification.py --backend pytorch --ngpu 1 --verbose 0 --json dump/train_dev/data.json --model exp/train_train_pytorch_train_pytorch_tacotron2+spkemb_spkloss_weight0.01/results/model.loss.best --batch-size 256

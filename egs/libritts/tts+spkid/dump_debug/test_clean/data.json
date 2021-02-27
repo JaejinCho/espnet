@@ -1,0 +1,2504 @@
+{
+    "utts": {
+        "1089_134686_000001_000001": {
+            "input": [
+                {
+                    "feat": "/export/b18/jcho/espnet3/egs/libritts/tts+spkid/dump/test_clean/feats.1.ark:26",
+                    "name": "input1",
+                    "shape": [
+                        1203,
+                        80
+                    ]
+                }
+            ],
+            "output": [
+                {
+                    "name": "target1",
+                    "shape": [
+                        205,
+                        78
+                    ],
+                    "text": "He hoped there would be stew for dinner, turnips and carrots and bruised potatoes and fat mutton pieces to be ladled out in thick peppered flour fattened sauce. Stuff it into you, his belly counselled him.",
+                    "token": "H e <space> h o p e d <space> t h e r e <space> w o u l d <space> b e <space> s t e w <space> f o r <space> d i n n e r , <space> t u r n i p s <space> a n d <space> c a r r o t s <space> a n d <space> b r u i s e d <space> p o t a t o e s <space> a n d <space> f a t <space> m u t t o n <space> p i e c e s <space> t o <space> b e <space> l a d l e d <space> o u t <space> i n <space> t h i c k <space> p e p p e r e d <space> f l o u r <space> f a t t e n e d <space> s a u c e . <space> S t u f f <space> i t <space> i n t o <space> y o u , <space> h i s <space> b e l l y <space> c o u n s e l l e d <space> h i m .",
+                    "tokenid": "22 47 13 50 57 58 47 46 13 62 50 47 60 47 13 65 57 63 54 46 13 44 47 13 61 62 47 65 13 48 57 60 13 46 51 56 56 47 60 7 13 62 63 60 56 51 58 61 13 43 56 46 13 45 43 60 60 57 62 61 13 43 56 46 13 44 60 63 51 61 47 46 13 58 57 62 43 62 57 47 61 13 43 56 46 13 48 43 62 13 55 63 62 62 57 56 13 58 51 47 45 47 61 13 62 57 13 44 47 13 54 43 46 54 47 46 13 57 63 62 13 51 56 13 62 50 51 45 53 13 58 47 58 58 47 60 47 46 13 48 54 57 63 60 13 48 43 62 62 47 56 47 46 13 61 43 63 45 47 9 13 33 62 63 48 48 13 51 62 13 51 56 62 57 13 67 57 63 7 13 50 51 61 13 44 47 54 54 67 13 45 57 63 56 61 47 54 54 47 46 13 50 51 55 9"
+                }
+            ],
+            "utt2spk": "1089_134686"
+        },
+        "1089_134686_000002_000000": {
+            "input": [
+                {
+                    "feat": "/export/b18/jcho/espnet3/egs/libritts/tts+spkid/dump/test_clean/feats.1.ark:96953",
+                    "name": "input1",
+                    "shape": [
+                        205,
+                        80
+                    ]
+                }
+            ],
+            "output": [
+                {
+                    "name": "target1",
+                    "shape": [
+                        34,
+                        78
+                    ],
+                    "text": "It would be a gloomy secret night.",
+                    "token": "I t <space> w o u l d <space> b e <space> a <space> g l o o m y <space> s e c r e t <space> n i g h t .",
+                    "tokenid": "23 62 13 65 57 63 54 46 13 44 47 13 43 13 49 54 57 57 55 67 13 61 47 45 60 47 62 13 56 51 49 50 62 9"
+                }
+            ],
+            "utt2spk": "1089_134686"
+        },
+        "1089_134686_000002_000001": {
+            "input": [
+                {
+                    "feat": "/export/b18/jcho/espnet3/egs/libritts/tts+spkid/dump/test_clean/feats.1.ark:114040",
+                    "name": "input1",
+                    "shape": [
+                        560,
+                        80
+                    ]
+                }
+            ],
+            "output": [
+                {
+                    "name": "target1",
+                    "shape": [
+                        107,
+                        78
+                    ],
+                    "text": "After early nightfall the yellow lamps would light up, here and there, the squalid quarter of the brothels.",
+                    "token": "A f t e r <space> e a r l y <space> n i g h t f a l l <space> t h e <space> y e l l o w <space> l a m p s <space> w o u l d <space> l i g h t <space> u p , <space> h e r e <space> a n d <space> t h e r e , <space> t h e <space> s q u a l i d <space> q u a r t e r <space> o f <space> t h e <space> b r o t h e l s .",
+                    "tokenid": "15 48 62 47 60 13 47 43 60 54 67 13 56 51 49 50 62 48 43 54 54 13 62 50 47 13 67 47 54 54 57 65 13 54 43 55 58 61 13 65 57 63 54 46 13 54 51 49 50 62 13 63 58 7 13 50 47 60 47 13 43 56 46 13 62 50 47 60 47 7 13 62 50 47 13 61 59 63 43 54 51 46 13 59 63 43 60 62 47 60 13 57 48 13 62 50 47 13 44 60 57 62 50 47 54 61 9"
+                }
+            ],
+            "utt2spk": "1089_134686"
+        },
+        "1089_134686_000002_000002": {
+            "input": [
+                {
+                    "feat": "/export/b18/jcho/espnet3/egs/libritts/tts+spkid/dump/test_clean/feats.1.ark:159527",
+                    "name": "input1",
+                    "shape": [
+                        1158,
+                        80
+                    ]
+                }
+            ],
+            "output": [
+                {
+                    "name": "target1",
+                    "shape": [
+                        173,
+                        78
+                    ],
+                    "text": "He would follow a devious course up and down the streets, circling always nearer and nearer in a tremor of fear and joy, until his feet led him suddenly round a dark corner.",
+                    "token": "H e <space> w o u l d <space> f o l l o w <space> a <space> d e v i o u s <space> c o u r s e <space> u p <space> a n d <space> d o w n <space> t h e <space> s t r e e t s , <space> c i r c l i n g <space> a l w a y s <space> n e a r e r <space> a n d <space> n e a r e r <space> i n <space> a <space> t r e m o r <space> o f <space> f e a r <space> a n d <space> j o y , <space> u n t i l <space> h i s <space> f e e t <space> l e d <space> h i m <space> s u d d e n l y <space> r o u n d <space> a <space> d a r k <space> c o r n e r .",
+                    "tokenid": "22 47 13 65 57 63 54 46 13 48 57 54 54 57 65 13 43 13 46 47 64 51 57 63 61 13 45 57 63 60 61 47 13 63 58 13 43 56 46 13 46 57 65 56 13 62 50 47 13 61 62 60 47 47 62 61 7 13 45 51 60 45 54 51 56 49 13 43 54 65 43 67 61 13 56 47 43 60 47 60 13 43 56 46 13 56 47 43 60 47 60 13 51 56 13 43 13 62 60 47 55 57 60 13 57 48 13 48 47 43 60 13 43 56 46 13 52 57 67 7 13 63 56 62 51 54 13 50 51 61 13 48 47 47 62 13 54 47 46 13 50 51 55 13 61 63 46 46 47 56 54 67 13 60 57 63 56 46 13 43 13 46 43 60 53 13 45 57 60 56 47 60 9"
+                }
+            ],
+            "utt2spk": "1089_134686"
+        },
+        "1089_134686_000002_000003": {
+            "input": [
+                {
+                    "feat": "/export/b18/jcho/espnet3/egs/libritts/tts+spkid/dump/test_clean/feats.1.ark:252854",
+                    "name": "input1",
+                    "shape": [
+                        1939,
+                        80
+                    ]
+                }
+            ],
+            "output": [
+                {
+                    "name": "target1",
+                    "shape": [
+                        312,
+                        78
+                    ],
+                    "text": "The whores would be just coming out of their houses making ready for the night, yawning lazily after their sleep and settling the hairpins in their clusters of hair. He would pass by them calmly waiting for a sudden movement of his own will or a sudden call to his sin loving soul from their soft perfumed flesh.",
+                    "token": "T h e <space> w h o r e s <space> w o u l d <space> b e <space> j u s t <space> c o m i n g <space> o u t <space> o f <space> t h e i r <space> h o u s e s <space> m a k i n g <space> r e a d y <space> f o r <space> t h e <space> n i g h t , <space> y a w n i n g <space> l a z i l y <space> a f t e r <space> t h e i r <space> s l e e p <space> a n d <space> s e t t l i n g <space> t h e <space> h a i r p i n s <space> i n <space> t h e i r <space> c l u s t e r s <space> o f <space> h a i r . <space> H e <space> w o u l d <space> p a s s <space> b y <space> t h e m <space> c a l m l y <space> w a i t i n g <space> f o r <space> a <space> s u d d e n <space> m o v e m e n t <space> o f <space> h i s <space> o w n <space> w i l l <space> o r <space> a <space> s u d d e n <space> c a l l <space> t o <space> h i s <space> s i n <space> l o v i n g <space> s o u l <space> f r o m <space> t h e i r <space> s o f t <space> p e r f u m e d <space> f l e s h .",
+                    "tokenid": "34 50 47 13 65 50 57 60 47 61 13 65 57 63 54 46 13 44 47 13 52 63 61 62 13 45 57 55 51 56 49 13 57 63 62 13 57 48 13 62 50 47 51 60 13 50 57 63 61 47 61 13 55 43 53 51 56 49 13 60 47 43 46 67 13 48 57 60 13 62 50 47 13 56 51 49 50 62 7 13 67 43 65 56 51 56 49 13 54 43 68 51 54 67 13 43 48 62 47 60 13 62 50 47 51 60 13 61 54 47 47 58 13 43 56 46 13 61 47 62 62 54 51 56 49 13 62 50 47 13 50 43 51 60 58 51 56 61 13 51 56 13 62 50 47 51 60 13 45 54 63 61 62 47 60 61 13 57 48 13 50 43 51 60 9 13 22 47 13 65 57 63 54 46 13 58 43 61 61 13 44 67 13 62 50 47 55 13 45 43 54 55 54 67 13 65 43 51 62 51 56 49 13 48 57 60 13 43 13 61 63 46 46 47 56 13 55 57 64 47 55 47 56 62 13 57 48 13 50 51 61 13 57 65 56 13 65 51 54 54 13 57 60 13 43 13 61 63 46 46 47 56 13 45 43 54 54 13 62 57 13 50 51 61 13 61 51 56 13 54 57 64 51 56 49 13 61 57 63 54 13 48 60 57 55 13 62 50 47 51 60 13 61 57 48 62 13 58 47 60 48 63 55 47 46 13 48 54 47 61 50 9"
+                }
+            ],
+            "utt2spk": "1089_134686"
+        },
+        "1089_134686_000002_000004": {
+            "input": [
+                {
+                    "feat": "/export/b18/jcho/espnet3/egs/libritts/tts+spkid/dump/test_clean/feats.1.ark:408661",
+                    "name": "input1",
+                    "shape": [
+                        2197,
+                        80
+                    ]
+                }
+            ],
+            "output": [
+                {
+                    "name": "target1",
+                    "shape": [
+                        306,
+                        78
+                    ],
+                    "text": "Yet as he prowled in quest of that call, his senses, stultified only by his desire, would note keenly all that wounded or shamed them; his eyes, a ring of porter froth on a clothless table or a photograph of two soldiers standing to attention or a gaudy playbill; his ears, the drawling jargon of greeting:",
+                    "token": "Y e t <space> a s <space> h e <space> p r o w l e d <space> i n <space> q u e s t <space> o f <space> t h a t <space> c a l l , <space> h i s <space> s e n s e s , <space> s t u l t i f i e d <space> o n l y <space> b y <space> h i s <space> d e s i r e , <space> w o u l d <space> n o t e <space> k e e n l y <space> a l l <space> t h a t <space> w o u n d e d <space> o r <space> s h a m e d <space> t h e m ; <space> h i s <space> e y e s , <space> a <space> r i n g <space> o f <space> p o r t e r <space> f r o t h <space> o n <space> a <space> c l o t h l e s s <space> t a b l e <space> o r <space> a <space> p h o t o g r a p h <space> o f <space> t w o <space> s o l d i e r s <space> s t a n d i n g <space> t o <space> a t t e n t i o n <space> o r <space> a <space> g a u d y <space> p l a y b i l l ; <space> h i s <space> e a r s , <space> t h e <space> d r a w l i n g <space> j a r g o n <space> o f <space> g r e e t i n g :",
+                    "tokenid": "39 47 62 13 43 61 13 50 47 13 58 60 57 65 54 47 46 13 51 56 13 59 63 47 61 62 13 57 48 13 62 50 43 62 13 45 43 54 54 7 13 50 51 61 13 61 47 56 61 47 61 7 13 61 62 63 54 62 51 48 51 47 46 13 57 56 54 67 13 44 67 13 50 51 61 13 46 47 61 51 60 47 7 13 65 57 63 54 46 13 56 57 62 47 13 53 47 47 56 54 67 13 43 54 54 13 62 50 43 62 13 65 57 63 56 46 47 46 13 57 60 13 61 50 43 55 47 46 13 62 50 47 55 12 13 50 51 61 13 47 67 47 61 7 13 43 13 60 51 56 49 13 57 48 13 58 57 60 62 47 60 13 48 60 57 62 50 13 57 56 13 43 13 45 54 57 62 50 54 47 61 61 13 62 43 44 54 47 13 57 60 13 43 13 58 50 57 62 57 49 60 43 58 50 13 57 48 13 62 65 57 13 61 57 54 46 51 47 60 61 13 61 62 43 56 46 51 56 49 13 62 57 13 43 62 62 47 56 62 51 57 56 13 57 60 13 43 13 49 43 63 46 67 13 58 54 43 67 44 51 54 54 12 13 50 51 61 13 47 43 60 61 7 13 62 50 47 13 46 60 43 65 54 51 56 49 13 52 43 60 49 57 56 13 57 48 13 49 60 47 47 62 51 56 49 11"
+                }
+            ],
+            "utt2spk": "1089_134686"
+        },
+        "1089_134686_000003_000000": {
+            "input": [
+                {
+                    "feat": "/export/b18/jcho/espnet3/egs/libritts/tts+spkid/dump/test_clean/feats.1.ark:585108",
+                    "name": "input1",
+                    "shape": [
+                        204,
+                        80
+                    ]
+                }
+            ],
+            "output": [
+                {
+                    "name": "target1",
+                    "shape": [
+                        39,
+                        78
+                    ],
+                    "text": "--Hello, Bertie, any good in your mind?",
+                    "token": "- - H e l l o , <space> B e r t i e , <space> a n y <space> g o o d <space> i n <space> y o u r <space> m i n d ?",
+                    "tokenid": "8 8 22 47 54 54 57 7 13 16 47 60 62 51 47 7 13 43 56 67 13 49 57 57 46 13 51 56 13 67 57 63 60 13 55 51 56 46 14"
+                }
+            ],
+            "utt2spk": "1089_134686"
+        },
+        "1089_134686_000004_000000": {
+            "input": [
+                {
+                    "feat": "/export/b18/jcho/espnet3/egs/libritts/tts+spkid/dump/test_clean/feats.1.ark:602115",
+                    "name": "input1",
+                    "shape": [
+                        152,
+                        80
+                    ]
+                }
+            ],
+            "output": [
+                {
+                    "name": "target1",
+                    "shape": [
+                        22,
+                        78
+                    ],
+                    "text": "--Is that you, pigeon?",
+                    "token": "- - I s <space> t h a t <space> y o u , <space> p i g e o n ?",
+                    "tokenid": "8 8 23 61 13 62 50 43 62 13 67 57 63 7 13 58 51 49 47 57 56 14"
+                }
+            ],
+            "utt2spk": "1089_134686"
+        },
+        "1089_134686_000005_000000": {
+            "input": [
+                {
+                    "feat": "/export/b18/jcho/espnet3/egs/libritts/tts+spkid/dump/test_clean/feats.1.ark:614962",
+                    "name": "input1",
+                    "shape": [
+                        109,
+                        80
+                    ]
+                }
+            ],
+            "output": [
+                {
+                    "name": "target1",
+                    "shape": [
+                        13,
+                        78
+                    ],
+                    "text": "--Number ten.",
+                    "token": "- - N u m b e r <space> t e n .",
+                    "tokenid": "8 8 28 63 55 44 47 60 13 62 47 56 9"
+                }
+            ],
+            "utt2spk": "1089_134686"
+        },
+        "1089_134686_000005_000001": {
+            "input": [
+                {
+                    "feat": "/export/b18/jcho/espnet3/egs/libritts/tts+spkid/dump/test_clean/feats.1.ark:624369",
+                    "name": "input1",
+                    "shape": [
+                        182,
+                        80
+                    ]
+                }
+            ],
+            "output": [
+                {
+                    "name": "target1",
+                    "shape": [
+                        30,
+                        78
+                    ],
+                    "text": "Fresh Nelly is waiting on you.",
+                    "token": "F r e s h <space> N e l l y <space> i s <space> w a i t i n g <space> o n <space> y o u .",
+                    "tokenid": "20 60 47 61 50 13 28 47 54 54 67 13 51 61 13 65 43 51 62 51 56 49 13 57 56 13 67 57 63 9"
+                }
+            ],
+            "utt2spk": "1089_134686"
+        },
+        "1089_134686_000006_000000": {
+            "input": [
+                {
+                    "feat": "/export/b18/jcho/espnet3/egs/libritts/tts+spkid/dump/test_clean/feats.1.ark:639616",
+                    "name": "input1",
+                    "shape": [
+                        109,
+                        80
+                    ]
+                }
+            ],
+            "output": [
+                {
+                    "name": "target1",
+                    "shape": [
+                        22,
+                        78
+                    ],
+                    "text": "--Good night, husband!",
+                    "token": "- - G o o d <space> n i g h t , <space> h u s b a n d !",
+                    "tokenid": "8 8 21 57 57 46 13 56 51 49 50 62 7 13 50 63 61 44 43 56 46 2"
+                }
+            ],
+            "utt2spk": "1089_134686"
+        },
+        "1089_134686_000006_000001": {
+            "input": [
+                {
+                    "feat": "/export/b18/jcho/espnet3/egs/libritts/tts+spkid/dump/test_clean/feats.1.ark:649023",
+                    "name": "input1",
+                    "shape": [
+                        183,
+                        80
+                    ]
+                }
+            ],
+            "output": [
+                {
+                    "name": "target1",
+                    "shape": [
+                        31,
+                        78
+                    ],
+                    "text": "Coming in to have a short time?",
+                    "token": "C o m i n g <space> i n <space> t o <space> h a v e <space> a <space> s h o r t <space> t i m e ?",
+                    "tokenid": "17 57 55 51 56 49 13 51 56 13 62 57 13 50 43 64 47 13 43 13 61 50 57 60 62 13 62 51 55 47 14"
+                }
+            ],
+            "utt2spk": "1089_134686"
+        },
+        "1089_134686_000007_000000": {
+            "input": [
+                {
+                    "feat": "/export/b18/jcho/espnet3/egs/libritts/tts+spkid/dump/test_clean/feats.1.ark:664350",
+                    "name": "input1",
+                    "shape": [
+                        1443,
+                        80
+                    ]
+                }
+            ],
+            "output": [
+                {
+                    "name": "target1",
+                    "shape": [
+                        222,
+                        78
+                    ],
+                    "text": "The equation on the page of his scribbler began to spread out a widening tail, eyed and starred like a peacock's; and, when the eyes and stars of its indices had been eliminated, began slowly to fold itself together again.",
+                    "token": "T h e <space> e q u a t i o n <space> o n <space> t h e <space> p a g e <space> o f <space> h i s <space> s c r i b b l e r <space> b e g a n <space> t o <space> s p r e a d <space> o u t <space> a <space> w i d e n i n g <space> t a i l , <space> e y e d <space> a n d <space> s t a r r e d <space> l i k e <space> a <space> p e a c o c k ' s ; <space> a n d , <space> w h e n <space> t h e <space> e y e s <space> a n d <space> s t a r s <space> o f <space> i t s <space> i n d i c e s <space> h a d <space> b e e n <space> e l i m i n a t e d , <space> b e g a n <space> s l o w l y <space> t o <space> f o l d <space> i t s e l f <space> t o g e t h e r <space> a g a i n .",
+                    "tokenid": "34 50 47 13 47 59 63 43 62 51 57 56 13 57 56 13 62 50 47 13 58 43 49 47 13 57 48 13 50 51 61 13 61 45 60 51 44 44 54 47 60 13 44 47 49 43 56 13 62 57 13 61 58 60 47 43 46 13 57 63 62 13 43 13 65 51 46 47 56 51 56 49 13 62 43 51 54 7 13 47 67 47 46 13 43 56 46 13 61 62 43 60 60 47 46 13 54 51 53 47 13 43 13 58 47 43 45 57 45 53 4 61 12 13 43 56 46 7 13 65 50 47 56 13 62 50 47 13 47 67 47 61 13 43 56 46 13 61 62 43 60 61 13 57 48 13 51 62 61 13 51 56 46 51 45 47 61 13 50 43 46 13 44 47 47 56 13 47 54 51 55 51 56 43 62 47 46 7 13 44 47 49 43 56 13 61 54 57 65 54 67 13 62 57 13 48 57 54 46 13 51 62 61 47 54 48 13 62 57 49 47 62 50 47 60 13 43 49 43 51 56 9"
+                }
+            ],
+            "utt2spk": "1089_134686"
+        },
+        "1089_134686_000007_000002": {
+            "input": [
+                {
+                    "feat": "/export/b18/jcho/espnet3/egs/libritts/tts+spkid/dump/test_clean/feats.1.ark:780477",
+                    "name": "input1",
+                    "shape": [
+                        1016,
+                        80
+                    ]
+                }
+            ],
+            "output": [
+                {
+                    "name": "target1",
+                    "shape": [
+                        149,
+                        78
+                    ],
+                    "text": "The vast cycle of starry life bore his weary mind outward to its verge and inward to its centre, a distant music accompanying him outward and inward.",
+                    "token": "T h e <space> v a s t <space> c y c l e <space> o f <space> s t a r r y <space> l i f e <space> b o r e <space> h i s <space> w e a r y <space> m i n d <space> o u t w a r d <space> t o <space> i t s <space> v e r g e <space> a n d <space> i n w a r d <space> t o <space> i t s <space> c e n t r e , <space> a <space> d i s t a n t <space> m u s i c <space> a c c o m p a n y i n g <space> h i m <space> o u t w a r d <space> a n d <space> i n w a r d .",
+                    "tokenid": "34 50 47 13 64 43 61 62 13 45 67 45 54 47 13 57 48 13 61 62 43 60 60 67 13 54 51 48 47 13 44 57 60 47 13 50 51 61 13 65 47 43 60 67 13 55 51 56 46 13 57 63 62 65 43 60 46 13 62 57 13 51 62 61 13 64 47 60 49 47 13 43 56 46 13 51 56 65 43 60 46 13 62 57 13 51 62 61 13 45 47 56 62 60 47 7 13 43 13 46 51 61 62 43 56 62 13 55 63 61 51 45 13 43 45 45 57 55 58 43 56 67 51 56 49 13 50 51 55 13 57 63 62 65 43 60 46 13 43 56 46 13 51 56 65 43 60 46 9"
+                }
+            ],
+            "utt2spk": "1089_134686"
+        },
+        "1089_134686_000007_000003": {
+            "input": [
+                {
+                    "feat": "/export/b18/jcho/espnet3/egs/libritts/tts+spkid/dump/test_clean/feats.1.ark:862444",
+                    "name": "input1",
+                    "shape": [
+                        95,
+                        80
+                    ]
+                }
+            ],
+            "output": [
+                {
+                    "name": "target1",
+                    "shape": [
+                        11,
+                        78
+                    ],
+                    "text": "What music?",
+                    "token": "W h a t <space> m u s i c ?",
+                    "tokenid": "37 50 43 62 13 55 63 61 51 45 14"
+                }
+            ],
+            "utt2spk": "1089_134686"
+        },
+        "1089_134686_000007_000004": {
+            "input": [
+                {
+                    "feat": "/export/b18/jcho/espnet3/egs/libritts/tts+spkid/dump/test_clean/feats.1.ark:870731",
+                    "name": "input1",
+                    "shape": [
+                        844,
+                        80
+                    ]
+                }
+            ],
+            "output": [
+                {
+                    "name": "target1",
+                    "shape": [
+                        139,
+                        78
+                    ],
+                    "text": "The music came nearer and he recalled the words, the words of Shelley's fragment upon the moon wandering companionless, pale for weariness.",
+                    "token": "T h e <space> m u s i c <space> c a m e <space> n e a r e r <space> a n d <space> h e <space> r e c a l l e d <space> t h e <space> w o r d s , <space> t h e <space> w o r d s <space> o f <space> S h e l l e y ' s <space> f r a g m e n t <space> u p o n <space> t h e <space> m o o n <space> w a n d e r i n g <space> c o m p a n i o n l e s s , <space> p a l e <space> f o r <space> w e a r i n e s s .",
+                    "tokenid": "34 50 47 13 55 63 61 51 45 13 45 43 55 47 13 56 47 43 60 47 60 13 43 56 46 13 50 47 13 60 47 45 43 54 54 47 46 13 62 50 47 13 65 57 60 46 61 7 13 62 50 47 13 65 57 60 46 61 13 57 48 13 33 50 47 54 54 47 67 4 61 13 48 60 43 49 55 47 56 62 13 63 58 57 56 13 62 50 47 13 55 57 57 56 13 65 43 56 46 47 60 51 56 49 13 45 57 55 58 43 56 51 57 56 54 47 61 61 7 13 58 43 54 47 13 48 57 60 13 65 47 43 60 51 56 47 61 61 9"
+                }
+            ],
+            "utt2spk": "1089_134686"
+        },
+        "1089_134686_000007_000005": {
+            "input": [
+                {
+                    "feat": "/export/b18/jcho/espnet3/egs/libritts/tts+spkid/dump/test_clean/feats.1.ark:938938",
+                    "name": "input1",
+                    "shape": [
+                        498,
+                        80
+                    ]
+                }
+            ],
+            "output": [
+                {
+                    "name": "target1",
+                    "shape": [
+                        75,
+                        78
+                    ],
+                    "text": "The stars began to crumble and a cloud of fine stardust fell through space.",
+                    "token": "T h e <space> s t a r s <space> b e g a n <space> t o <space> c r u m b l e <space> a n d <space> a <space> c l o u d <space> o f <space> f i n e <space> s t a r d u s t <space> f e l l <space> t h r o u g h <space> s p a c e .",
+                    "tokenid": "34 50 47 13 61 62 43 60 61 13 44 47 49 43 56 13 62 57 13 45 60 63 55 44 54 47 13 43 56 46 13 43 13 45 54 57 63 46 13 57 48 13 48 51 56 47 13 61 62 43 60 46 63 61 62 13 48 47 54 54 13 62 50 60 57 63 49 50 13 61 58 43 45 47 9"
+                }
+            ],
+            "utt2spk": "1089_134686"
+        },
+        "1089_134686_000008_000000": {
+            "input": [
+                {
+                    "feat": "/export/b18/jcho/espnet3/egs/libritts/tts+spkid/dump/test_clean/feats.1.ark:979465",
+                    "name": "input1",
+                    "shape": [
+                        2926,
+                        80
+                    ]
+                }
+            ],
+            "output": [
+                {
+                    "name": "target1",
+                    "shape": [
+                        406,
+                        78
+                    ],
+                    "text": "The dull light fell more faintly upon the page whereon another equation began to unfold itself slowly and to spread abroad its widening tail. It was his own soul going forth to experience, unfolding itself sin by sin, spreading abroad the bale fire of its burning stars and folding back upon itself, fading slowly, quenching its own lights and fires. They were quenched: and the cold darkness filled chaos.",
+                    "token": "T h e <space> d u l l <space> l i g h t <space> f e l l <space> m o r e <space> f a i n t l y <space> u p o n <space> t h e <space> p a g e <space> w h e r e o n <space> a n o t h e r <space> e q u a t i o n <space> b e g a n <space> t o <space> u n f o l d <space> i t s e l f <space> s l o w l y <space> a n d <space> t o <space> s p r e a d <space> a b r o a d <space> i t s <space> w i d e n i n g <space> t a i l . <space> I t <space> w a s <space> h i s <space> o w n <space> s o u l <space> g o i n g <space> f o r t h <space> t o <space> e x p e r i e n c e , <space> u n f o l d i n g <space> i t s e l f <space> s i n <space> b y <space> s i n , <space> s p r e a d i n g <space> a b r o a d <space> t h e <space> b a l e <space> f i r e <space> o f <space> i t s <space> b u r n i n g <space> s t a r s <space> a n d <space> f o l d i n g <space> b a c k <space> u p o n <space> i t s e l f , <space> f a d i n g <space> s l o w l y , <space> q u e n c h i n g <space> i t s <space> o w n <space> l i g h t s <space> a n d <space> f i r e s . <space> T h e y <space> w e r e <space> q u e n c h e d : <space> a n d <space> t h e <space> c o l d <space> d a r k n e s s <space> f i l l e d <space> c h a o s .",
+                    "tokenid": "34 50 47 13 46 63 54 54 13 54 51 49 50 62 13 48 47 54 54 13 55 57 60 47 13 48 43 51 56 62 54 67 13 63 58 57 56 13 62 50 47 13 58 43 49 47 13 65 50 47 60 47 57 56 13 43 56 57 62 50 47 60 13 47 59 63 43 62 51 57 56 13 44 47 49 43 56 13 62 57 13 63 56 48 57 54 46 13 51 62 61 47 54 48 13 61 54 57 65 54 67 13 43 56 46 13 62 57 13 61 58 60 47 43 46 13 43 44 60 57 43 46 13 51 62 61 13 65 51 46 47 56 51 56 49 13 62 43 51 54 9 13 23 62 13 65 43 61 13 50 51 61 13 57 65 56 13 61 57 63 54 13 49 57 51 56 49 13 48 57 60 62 50 13 62 57 13 47 66 58 47 60 51 47 56 45 47 7 13 63 56 48 57 54 46 51 56 49 13 51 62 61 47 54 48 13 61 51 56 13 44 67 13 61 51 56 7 13 61 58 60 47 43 46 51 56 49 13 43 44 60 57 43 46 13 62 50 47 13 44 43 54 47 13 48 51 60 47 13 57 48 13 51 62 61 13 44 63 60 56 51 56 49 13 61 62 43 60 61 13 43 56 46 13 48 57 54 46 51 56 49 13 44 43 45 53 13 63 58 57 56 13 51 62 61 47 54 48 7 13 48 43 46 51 56 49 13 61 54 57 65 54 67 7 13 59 63 47 56 45 50 51 56 49 13 51 62 61 13 57 65 56 13 54 51 49 50 62 61 13 43 56 46 13 48 51 60 47 61 9 13 34 50 47 67 13 65 47 60 47 13 59 63 47 56 45 50 47 46 11 13 43 56 46 13 62 50 47 13 45 57 54 46 13 46 43 60 53 56 47 61 61 13 48 51 54 54 47 46 13 45 50 43 57 61 9"
+                }
+            ],
+            "utt2spk": "1089_134686"
+        },
+        "1089_134686_000009_000000": {
+            "input": [
+                {
+                    "feat": "/export/b18/jcho/espnet3/egs/libritts/tts+spkid/dump/test_clean/feats.1.ark:1214232",
+                    "name": "input1",
+                    "shape": [
+                        330,
+                        80
+                    ]
+                }
+            ],
+            "output": [
+                {
+                    "name": "target1",
+                    "shape": [
+                        46,
+                        78
+                    ],
+                    "text": "A cold lucid indifference reigned in his soul.",
+                    "token": "A <space> c o l d <space> l u c i d <space> i n d i f f e r e n c e <space> r e i g n e d <space> i n <space> h i s <space> s o u l .",
+                    "tokenid": "15 13 45 57 54 46 13 54 63 45 51 46 13 51 56 46 51 48 48 47 60 47 56 45 47 13 60 47 51 49 56 47 46 13 51 56 13 50 51 61 13 61 57 63 54 9"
+                }
+            ],
+            "utt2spk": "1089_134686"
+        },
+        "1089_134686_000009_000001": {
+            "input": [
+                {
+                    "feat": "/export/b18/jcho/espnet3/egs/libritts/tts+spkid/dump/test_clean/feats.1.ark:1241319",
+                    "name": "input1",
+                    "shape": [
+                        931,
+                        80
+                    ]
+                }
+            ],
+            "output": [
+                {
+                    "name": "target1",
+                    "shape": [
+                        137,
+                        78
+                    ],
+                    "text": "At his first violent sin he had felt a wave of vitality pass out of him and had feared to find his body or his soul maimed by the excess.",
+                    "token": "A t <space> h i s <space> f i r s t <space> v i o l e n t <space> s i n <space> h e <space> h a d <space> f e l t <space> a <space> w a v e <space> o f <space> v i t a l i t y <space> p a s s <space> o u t <space> o f <space> h i m <space> a n d <space> h a d <space> f e a r e d <space> t o <space> f i n d <space> h i s <space> b o d y <space> o r <space> h i s <space> s o u l <space> m a i m e d <space> b y <space> t h e <space> e x c e s s .",
+                    "tokenid": "15 62 13 50 51 61 13 48 51 60 61 62 13 64 51 57 54 47 56 62 13 61 51 56 13 50 47 13 50 43 46 13 48 47 54 62 13 43 13 65 43 64 47 13 57 48 13 64 51 62 43 54 51 62 67 13 58 43 61 61 13 57 63 62 13 57 48 13 50 51 55 13 43 56 46 13 50 43 46 13 48 47 43 60 47 46 13 62 57 13 48 51 56 46 13 50 51 61 13 44 57 46 67 13 57 60 13 50 51 61 13 61 57 63 54 13 55 43 51 55 47 46 13 44 67 13 62 50 47 13 47 66 45 47 61 61 9"
+                }
+            ],
+            "utt2spk": "1089_134686"
+        },
+        "1089_134686_000009_000002": {
+            "input": [
+                {
+                    "feat": "/export/b18/jcho/espnet3/egs/libritts/tts+spkid/dump/test_clean/feats.1.ark:1316486",
+                    "name": "input1",
+                    "shape": [
+                        1212,
+                        80
+                    ]
+                }
+            ],
+            "output": [
+                {
+                    "name": "target1",
+                    "shape": [
+                        194,
+                        78
+                    ],
+                    "text": "Instead the vital wave had carried him on its bosom out of himself and back again when it receded: and no part of body or soul had been maimed but a dark peace had been established between them.",
+                    "token": "I n s t e a d <space> t h e <space> v i t a l <space> w a v e <space> h a d <space> c a r r i e d <space> h i m <space> o n <space> i t s <space> b o s o m <space> o u t <space> o f <space> h i m s e l f <space> a n d <space> b a c k <space> a g a i n <space> w h e n <space> i t <space> r e c e d e d : <space> a n d <space> n o <space> p a r t <space> o f <space> b o d y <space> o r <space> s o u l <space> h a d <space> b e e n <space> m a i m e d <space> b u t <space> a <space> d a r k <space> p e a c e <space> h a d <space> b e e n <space> e s t a b l i s h e d <space> b e t w e e n <space> t h e m .",
+                    "tokenid": "23 56 61 62 47 43 46 13 62 50 47 13 64 51 62 43 54 13 65 43 64 47 13 50 43 46 13 45 43 60 60 51 47 46 13 50 51 55 13 57 56 13 51 62 61 13 44 57 61 57 55 13 57 63 62 13 57 48 13 50 51 55 61 47 54 48 13 43 56 46 13 44 43 45 53 13 43 49 43 51 56 13 65 50 47 56 13 51 62 13 60 47 45 47 46 47 46 11 13 43 56 46 13 56 57 13 58 43 60 62 13 57 48 13 44 57 46 67 13 57 60 13 61 57 63 54 13 50 43 46 13 44 47 47 56 13 55 43 51 55 47 46 13 44 63 62 13 43 13 46 43 60 53 13 58 47 43 45 47 13 50 43 46 13 44 47 47 56 13 47 61 62 43 44 54 51 61 50 47 46 13 44 47 62 65 47 47 56 13 62 50 47 55 9"
+                }
+            ],
+            "utt2spk": "1089_134686"
+        },
+        "1089_134686_000009_000003": {
+            "input": [
+                {
+                    "feat": "/export/b18/jcho/espnet3/egs/libritts/tts+spkid/dump/test_clean/feats.1.ark:1414133",
+                    "name": "input1",
+                    "shape": [
+                        566,
+                        80
+                    ]
+                }
+            ],
+            "output": [
+                {
+                    "name": "target1",
+                    "shape": [
+                        94,
+                        78
+                    ],
+                    "text": "The chaos in which his ardour extinguished itself was a cold indifferent knowledge of himself.",
+                    "token": "T h e <space> c h a o s <space> i n <space> w h i c h <space> h i s <space> a r d o u r <space> e x t i n g u i s h e d <space> i t s e l f <space> w a s <space> a <space> c o l d <space> i n d i f f e r e n t <space> k n o w l e d g e <space> o f <space> h i m s e l f .",
+                    "tokenid": "34 50 47 13 45 50 43 57 61 13 51 56 13 65 50 51 45 50 13 50 51 61 13 43 60 46 57 63 60 13 47 66 62 51 56 49 63 51 61 50 47 46 13 51 62 61 47 54 48 13 65 43 61 13 43 13 45 57 54 46 13 51 56 46 51 48 48 47 60 47 56 62 13 53 56 57 65 54 47 46 49 47 13 57 48 13 50 51 55 61 47 54 48 9"
+                }
+            ],
+            "utt2spk": "1089_134686"
+        },
+        "1089_134686_000009_000004": {
+            "input": [
+                {
+                    "feat": "/export/b18/jcho/espnet3/egs/libritts/tts+spkid/dump/test_clean/feats.1.ark:1460100",
+                    "name": "input1",
+                    "shape": [
+                        1373,
+                        80
+                    ]
+                }
+            ],
+            "output": [
+                {
+                    "name": "target1",
+                    "shape": [
+                        203,
+                        78
+                    ],
+                    "text": "He had sinned mortally not once but many times and he knew that, while he stood in danger of eternal damnation for the first sin alone, by every succeeding sin he multiplied his guilt and his punishment.",
+                    "token": "H e <space> h a d <space> s i n n e d <space> m o r t a l l y <space> n o t <space> o n c e <space> b u t <space> m a n y <space> t i m e s <space> a n d <space> h e <space> k n e w <space> t h a t , <space> w h i l e <space> h e <space> s t o o d <space> i n <space> d a n g e r <space> o f <space> e t e r n a l <space> d a m n a t i o n <space> f o r <space> t h e <space> f i r s t <space> s i n <space> a l o n e , <space> b y <space> e v e r y <space> s u c c e e d i n g <space> s i n <space> h e <space> m u l t i p l i e d <space> h i s <space> g u i l t <space> a n d <space> h i s <space> p u n i s h m e n t .",
+                    "tokenid": "22 47 13 50 43 46 13 61 51 56 56 47 46 13 55 57 60 62 43 54 54 67 13 56 57 62 13 57 56 45 47 13 44 63 62 13 55 43 56 67 13 62 51 55 47 61 13 43 56 46 13 50 47 13 53 56 47 65 13 62 50 43 62 7 13 65 50 51 54 47 13 50 47 13 61 62 57 57 46 13 51 56 13 46 43 56 49 47 60 13 57 48 13 47 62 47 60 56 43 54 13 46 43 55 56 43 62 51 57 56 13 48 57 60 13 62 50 47 13 48 51 60 61 62 13 61 51 56 13 43 54 57 56 47 7 13 44 67 13 47 64 47 60 67 13 61 63 45 45 47 47 46 51 56 49 13 61 51 56 13 50 47 13 55 63 54 62 51 58 54 51 47 46 13 50 51 61 13 49 63 51 54 62 13 43 56 46 13 50 51 61 13 58 63 56 51 61 50 55 47 56 62 9"
+                }
+            ],
+            "utt2spk": "1089_134686"
+        },
+        "1089_134686_000009_000005": {
+            "input": [
+                {
+                    "feat": "/export/b18/jcho/espnet3/egs/libritts/tts+spkid/dump/test_clean/feats.1.ark:1570627",
+                    "name": "input1",
+                    "shape": [
+                        882,
+                        80
+                    ]
+                }
+            ],
+            "output": [
+                {
+                    "name": "target1",
+                    "shape": [
+                        134,
+                        78
+                    ],
+                    "text": "His days and works and thoughts could make no atonement for him, the fountains of sanctifying grace having ceased to refresh his soul.",
+                    "token": "H i s <space> d a y s <space> a n d <space> w o r k s <space> a n d <space> t h o u g h t s <space> c o u l d <space> m a k e <space> n o <space> a t o n e m e n t <space> f o r <space> h i m , <space> t h e <space> f o u n t a i n s <space> o f <space> s a n c t i f y i n g <space> g r a c e <space> h a v i n g <space> c e a s e d <space> t o <space> r e f r e s h <space> h i s <space> s o u l .",
+                    "tokenid": "22 51 61 13 46 43 67 61 13 43 56 46 13 65 57 60 53 61 13 43 56 46 13 62 50 57 63 49 50 62 61 13 45 57 63 54 46 13 55 43 53 47 13 56 57 13 43 62 57 56 47 55 47 56 62 13 48 57 60 13 50 51 55 7 13 62 50 47 13 48 57 63 56 62 43 51 56 61 13 57 48 13 61 43 56 45 62 51 48 67 51 56 49 13 49 60 43 45 47 13 50 43 64 51 56 49 13 45 47 43 61 47 46 13 62 57 13 60 47 48 60 47 61 50 13 50 51 61 13 61 57 63 54 9"
+                }
+            ],
+            "utt2spk": "1089_134686"
+        },
+        "1089_134686_000009_000006": {
+            "input": [
+                {
+                    "feat": "/export/b18/jcho/espnet3/egs/libritts/tts+spkid/dump/test_clean/feats.1.ark:1641874",
+                    "name": "input1",
+                    "shape": [
+                        920,
+                        80
+                    ]
+                }
+            ],
+            "output": [
+                {
+                    "name": "target1",
+                    "shape": [
+                        137,
+                        78
+                    ],
+                    "text": "At most, by an alms given to a beggar whose blessing he fled from, he might hope wearily to win for himself some measure of actual grace.",
+                    "token": "A t <space> m o s t , <space> b y <space> a n <space> a l m s <space> g i v e n <space> t o <space> a <space> b e g g a r <space> w h o s e <space> b l e s s i n g <space> h e <space> f l e d <space> f r o m , <space> h e <space> m i g h t <space> h o p e <space> w e a r i l y <space> t o <space> w i n <space> f o r <space> h i m s e l f <space> s o m e <space> m e a s u r e <space> o f <space> a c t u a l <space> g r a c e .",
+                    "tokenid": "15 62 13 55 57 61 62 7 13 44 67 13 43 56 13 43 54 55 61 13 49 51 64 47 56 13 62 57 13 43 13 44 47 49 49 43 60 13 65 50 57 61 47 13 44 54 47 61 61 51 56 49 13 50 47 13 48 54 47 46 13 48 60 57 55 7 13 50 47 13 55 51 49 50 62 13 50 57 58 47 13 65 47 43 60 51 54 67 13 62 57 13 65 51 56 13 48 57 60 13 50 51 55 61 47 54 48 13 61 57 55 47 13 55 47 43 61 63 60 47 13 57 48 13 43 45 62 63 43 54 13 49 60 43 45 47 9"
+                }
+            ],
+            "utt2spk": "1089_134686"
+        },
+        "1089_134686_000009_000007": {
+            "input": [
+                {
+                    "feat": "/export/b18/jcho/espnet3/egs/libritts/tts+spkid/dump/test_clean/feats.1.ark:1716161",
+                    "name": "input1",
+                    "shape": [
+                        187,
+                        80
+                    ]
+                }
+            ],
+            "output": [
+                {
+                    "name": "target1",
+                    "shape": [
+                        31,
+                        78
+                    ],
+                    "text": "Devotion had gone by the board.",
+                    "token": "D e v o t i o n <space> h a d <space> g o n e <space> b y <space> t h e <space> b o a r d .",
+                    "tokenid": "18 47 64 57 62 51 57 56 13 50 43 46 13 49 57 56 47 13 44 67 13 62 50 47 13 44 57 43 60 46 9"
+                }
+            ],
+            "utt2spk": "1089_134686"
+        },
+        "1089_134686_000009_000008": {
+            "input": [
+                {
+                    "feat": "/export/b18/jcho/espnet3/egs/libritts/tts+spkid/dump/test_clean/feats.1.ark:1731808",
+                    "name": "input1",
+                    "shape": [
+                        541,
+                        80
+                    ]
+                }
+            ],
+            "output": [
+                {
+                    "name": "target1",
+                    "shape": [
+                        86,
+                        78
+                    ],
+                    "text": "What did it avail to pray when he knew that his soul lusted after its own destruction?",
+                    "token": "W h a t <space> d i d <space> i t <space> a v a i l <space> t o <space> p r a y <space> w h e n <space> h e <space> k n e w <space> t h a t <space> h i s <space> s o u l <space> l u s t e d <space> a f t e r <space> i t s <space> o w n <space> d e s t r u c t i o n ?",
+                    "tokenid": "37 50 43 62 13 46 51 46 13 51 62 13 43 64 43 51 54 13 62 57 13 58 60 43 67 13 65 50 47 56 13 50 47 13 53 56 47 65 13 62 50 43 62 13 50 51 61 13 61 57 63 54 13 54 63 61 62 47 46 13 43 48 62 47 60 13 51 62 61 13 57 65 56 13 46 47 61 62 60 63 45 62 51 57 56 14"
+                }
+            ],
+            "utt2spk": "1089_134686"
+        },
+        "1089_134686_000009_000009": {
+            "input": [
+                {
+                    "feat": "/export/b18/jcho/espnet3/egs/libritts/tts+spkid/dump/test_clean/feats.1.ark:1775775",
+                    "name": "input1",
+                    "shape": [
+                        1421,
+                        80
+                    ]
+                }
+            ],
+            "output": [
+                {
+                    "name": "target1",
+                    "shape": [
+                        220,
+                        78
+                    ],
+                    "text": "A certain pride, a certain awe, withheld him from offering to God even one prayer at night, though he knew it was in God's power to take away his life while he slept and hurl his soul hellward ere he could beg for mercy.",
+                    "token": "A <space> c e r t a i n <space> p r i d e , <space> a <space> c e r t a i n <space> a w e , <space> w i t h h e l d <space> h i m <space> f r o m <space> o f f e r i n g <space> t o <space> G o d <space> e v e n <space> o n e <space> p r a y e r <space> a t <space> n i g h t , <space> t h o u g h <space> h e <space> k n e w <space> i t <space> w a s <space> i n <space> G o d ' s <space> p o w e r <space> t o <space> t a k e <space> a w a y <space> h i s <space> l i f e <space> w h i l e <space> h e <space> s l e p t <space> a n d <space> h u r l <space> h i s <space> s o u l <space> h e l l w a r d <space> e r e <space> h e <space> c o u l d <space> b e g <space> f o r <space> m e r c y .",
+                    "tokenid": "15 13 45 47 60 62 43 51 56 13 58 60 51 46 47 7 13 43 13 45 47 60 62 43 51 56 13 43 65 47 7 13 65 51 62 50 50 47 54 46 13 50 51 55 13 48 60 57 55 13 57 48 48 47 60 51 56 49 13 62 57 13 21 57 46 13 47 64 47 56 13 57 56 47 13 58 60 43 67 47 60 13 43 62 13 56 51 49 50 62 7 13 62 50 57 63 49 50 13 50 47 13 53 56 47 65 13 51 62 13 65 43 61 13 51 56 13 21 57 46 4 61 13 58 57 65 47 60 13 62 57 13 62 43 53 47 13 43 65 43 67 13 50 51 61 13 54 51 48 47 13 65 50 51 54 47 13 50 47 13 61 54 47 58 62 13 43 56 46 13 50 63 60 54 13 50 51 61 13 61 57 63 54 13 50 47 54 54 65 43 60 46 13 47 60 47 13 50 47 13 45 57 63 54 46 13 44 47 49 13 48 57 60 13 55 47 60 45 67 9"
+                }
+            ],
+            "utt2spk": "1089_134686"
+        },
+        "1089_134686_000009_000010": {
+            "input": [
+                {
+                    "feat": "/export/b18/jcho/espnet3/egs/libritts/tts+spkid/dump/test_clean/feats.1.ark:1890142",
+                    "name": "input1",
+                    "shape": [
+                        1175,
+                        80
+                    ]
+                }
+            ],
+            "output": [
+                {
+                    "name": "target1",
+                    "shape": [
+                        183,
+                        78
+                    ],
+                    "text": "His pride in his own sin, his loveless awe of God, told him that his offence was too grievous to be atoned for in whole or in part by a false homage to the All seeing and All knowing.",
+                    "token": "H i s <space> p r i d e <space> i n <space> h i s <space> o w n <space> s i n , <space> h i s <space> l o v e l e s s <space> a w e <space> o f <space> G o d , <space> t o l d <space> h i m <space> t h a t <space> h i s <space> o f f e n c e <space> w a s <space> t o o <space> g r i e v o u s <space> t o <space> b e <space> a t o n e d <space> f o r <space> i n <space> w h o l e <space> o r <space> i n <space> p a r t <space> b y <space> a <space> f a l s e <space> h o m a g e <space> t o <space> t h e <space> A l l <space> s e e i n g <space> a n d <space> A l l <space> k n o w i n g .",
+                    "tokenid": "22 51 61 13 58 60 51 46 47 13 51 56 13 50 51 61 13 57 65 56 13 61 51 56 7 13 50 51 61 13 54 57 64 47 54 47 61 61 13 43 65 47 13 57 48 13 21 57 46 7 13 62 57 54 46 13 50 51 55 13 62 50 43 62 13 50 51 61 13 57 48 48 47 56 45 47 13 65 43 61 13 62 57 57 13 49 60 51 47 64 57 63 61 13 62 57 13 44 47 13 43 62 57 56 47 46 13 48 57 60 13 51 56 13 65 50 57 54 47 13 57 60 13 51 56 13 58 43 60 62 13 44 67 13 43 13 48 43 54 61 47 13 50 57 55 43 49 47 13 62 57 13 62 50 47 13 15 54 54 13 61 47 47 51 56 49 13 43 56 46 13 15 54 54 13 53 56 57 65 51 56 49 9"
+                }
+            ],
+            "utt2spk": "1089_134686"
+        },
+        "1089_134686_000010_000000": {
+            "input": [
+                {
+                    "feat": "/export/b18/jcho/espnet3/egs/libritts/tts+spkid/dump/test_clean/feats.1.ark:1984829",
+                    "name": "input1",
+                    "shape": [
+                        367,
+                        80
+                    ]
+                }
+            ],
+            "output": [
+                {
+                    "name": "target1",
+                    "shape": [
+                        65,
+                        78
+                    ],
+                    "text": "--Well now, Ennis, I declare you have a head and so has my stick!",
+                    "token": "- - W e l l <space> n o w , <space> E n n i s , <space> I <space> d e c l a r e <space> y o u <space> h a v e <space> a <space> h e a d <space> a n d <space> s o <space> h a s <space> m y <space> s t i c k !",
+                    "tokenid": "8 8 37 47 54 54 13 56 57 65 7 13 19 56 56 51 61 7 13 23 13 46 47 45 54 43 60 47 13 67 57 63 13 50 43 64 47 13 43 13 50 47 43 46 13 43 56 46 13 61 57 13 50 43 61 13 55 67 13 61 62 51 45 53 2"
+                }
+            ],
+            "utt2spk": "1089_134686"
+        },
+        "1089_134686_000010_000001": {
+            "input": [
+                {
+                    "feat": "/export/b18/jcho/espnet3/egs/libritts/tts+spkid/dump/test_clean/feats.1.ark:2014876",
+                    "name": "input1",
+                    "shape": [
+                        386,
+                        80
+                    ]
+                }
+            ],
+            "output": [
+                {
+                    "name": "target1",
+                    "shape": [
+                        67,
+                        78
+                    ],
+                    "text": "Do you mean to say that you are not able to tell me what a surd is?",
+                    "token": "D o <space> y o u <space> m e a n <space> t o <space> s a y <space> t h a t <space> y o u <space> a r e <space> n o t <space> a b l e <space> t o <space> t e l l <space> m e <space> w h a t <space> a <space> s u r d <space> i s ?",
+                    "tokenid": "18 57 13 67 57 63 13 55 47 43 56 13 62 57 13 61 43 67 13 62 50 43 62 13 67 57 63 13 43 60 47 13 56 57 62 13 43 44 54 47 13 62 57 13 62 47 54 54 13 55 47 13 65 50 43 62 13 43 13 61 63 60 46 13 51 61 14"
+                }
+            ],
+            "utt2spk": "1089_134686"
+        },
+        "1089_134686_000011_000001": {
+            "input": [
+                {
+                    "feat": "/export/b18/jcho/espnet3/egs/libritts/tts+spkid/dump/test_clean/feats.1.ark:2046443",
+                    "name": "input1",
+                    "shape": [
+                        263,
+                        80
+                    ]
+                }
+            ],
+            "output": [
+                {
+                    "name": "target1",
+                    "shape": [
+                        46,
+                        78
+                    ],
+                    "text": "Towards others he felt neither shame nor fear.",
+                    "token": "T o w a r d s <space> o t h e r s <space> h e <space> f e l t <space> n e i t h e r <space> s h a m e <space> n o r <space> f e a r .",
+                    "tokenid": "34 57 65 43 60 46 61 13 57 62 50 47 60 61 13 50 47 13 48 47 54 62 13 56 47 51 62 50 47 60 13 61 50 43 55 47 13 56 57 60 13 48 47 43 60 9"
+                }
+            ],
+            "utt2spk": "1089_134686"
+        },
+        "1089_134686_000011_000002": {
+            "input": [
+                {
+                    "feat": "/export/b18/jcho/espnet3/egs/libritts/tts+spkid/dump/test_clean/feats.1.ark:2068170",
+                    "name": "input1",
+                    "shape": [
+                        2079,
+                        80
+                    ]
+                }
+            ],
+            "output": [
+                {
+                    "name": "target1",
+                    "shape": [
+                        349,
+                        78
+                    ],
+                    "text": "On Sunday mornings as he passed the church door he glanced coldly at the worshippers who stood bareheaded, four deep, outside the church, morally present at the mass which they could neither see nor hear. Their dull piety and the sickly smell of the cheap hair oil with which they had anointed their heads repelled him from the altar they prayed at.",
+                    "token": "O n <space> S u n d a y <space> m o r n i n g s <space> a s <space> h e <space> p a s s e d <space> t h e <space> c h u r c h <space> d o o r <space> h e <space> g l a n c e d <space> c o l d l y <space> a t <space> t h e <space> w o r s h i p p e r s <space> w h o <space> s t o o d <space> b a r e h e a d e d , <space> f o u r <space> d e e p , <space> o u t s i d e <space> t h e <space> c h u r c h , <space> m o r a l l y <space> p r e s e n t <space> a t <space> t h e <space> m a s s <space> w h i c h <space> t h e y <space> c o u l d <space> n e i t h e r <space> s e e <space> n o r <space> h e a r . <space> T h e i r <space> d u l l <space> p i e t y <space> a n d <space> t h e <space> s i c k l y <space> s m e l l <space> o f <space> t h e <space> c h e a p <space> h a i r <space> o i l <space> w i t h <space> w h i c h <space> t h e y <space> h a d <space> a n o i n t e d <space> t h e i r <space> h e a d s <space> r e p e l l e d <space> h i m <space> f r o m <space> t h e <space> a l t a r <space> t h e y <space> p r a y e d <space> a t .",
+                    "tokenid": "29 56 13 33 63 56 46 43 67 13 55 57 60 56 51 56 49 61 13 43 61 13 50 47 13 58 43 61 61 47 46 13 62 50 47 13 45 50 63 60 45 50 13 46 57 57 60 13 50 47 13 49 54 43 56 45 47 46 13 45 57 54 46 54 67 13 43 62 13 62 50 47 13 65 57 60 61 50 51 58 58 47 60 61 13 65 50 57 13 61 62 57 57 46 13 44 43 60 47 50 47 43 46 47 46 7 13 48 57 63 60 13 46 47 47 58 7 13 57 63 62 61 51 46 47 13 62 50 47 13 45 50 63 60 45 50 7 13 55 57 60 43 54 54 67 13 58 60 47 61 47 56 62 13 43 62 13 62 50 47 13 55 43 61 61 13 65 50 51 45 50 13 62 50 47 67 13 45 57 63 54 46 13 56 47 51 62 50 47 60 13 61 47 47 13 56 57 60 13 50 47 43 60 9 13 34 50 47 51 60 13 46 63 54 54 13 58 51 47 62 67 13 43 56 46 13 62 50 47 13 61 51 45 53 54 67 13 61 55 47 54 54 13 57 48 13 62 50 47 13 45 50 47 43 58 13 50 43 51 60 13 57 51 54 13 65 51 62 50 13 65 50 51 45 50 13 62 50 47 67 13 50 43 46 13 43 56 57 51 56 62 47 46 13 62 50 47 51 60 13 50 47 43 46 61 13 60 47 58 47 54 54 47 46 13 50 51 55 13 48 60 57 55 13 62 50 47 13 43 54 62 43 60 13 62 50 47 67 13 58 60 43 67 47 46 13 43 62 9"
+                }
+            ],
+            "utt2spk": "1089_134686"
+        },
+        "1089_134686_000011_000003": {
+            "input": [
+                {
+                    "feat": "/export/b18/jcho/espnet3/egs/libritts/tts+spkid/dump/test_clean/feats.1.ark:2235177",
+                    "name": "input1",
+                    "shape": [
+                        701,
+                        80
+                    ]
+                }
+            ],
+            "output": [
+                {
+                    "name": "target1",
+                    "shape": [
+                        110,
+                        78
+                    ],
+                    "text": "He stooped to the evil of hypocrisy with others, sceptical of their innocence which he could cajole so easily.",
+                    "token": "H e <space> s t o o p e d <space> t o <space> t h e <space> e v i l <space> o f <space> h y p o c r i s y <space> w i t h <space> o t h e r s , <space> s c e p t i c a l <space> o f <space> t h e i r <space> i n n o c e n c e <space> w h i c h <space> h e <space> c o u l d <space> c a j o l e <space> s o <space> e a s i l y .",
+                    "tokenid": "22 47 13 61 62 57 57 58 47 46 13 62 57 13 62 50 47 13 47 64 51 54 13 57 48 13 50 67 58 57 45 60 51 61 67 13 65 51 62 50 13 57 62 50 47 60 61 7 13 61 45 47 58 62 51 45 43 54 13 57 48 13 62 50 47 51 60 13 51 56 56 57 45 47 56 45 47 13 65 50 51 45 50 13 50 47 13 45 57 63 54 46 13 45 43 52 57 54 47 13 61 57 13 47 43 61 51 54 67 9"
+                }
+            ],
+            "utt2spk": "1089_134686"
+        },
+        "1089_134686_000012_000000": {
+            "input": [
+                {
+                    "feat": "/export/b18/jcho/espnet3/egs/libritts/tts+spkid/dump/test_clean/feats.1.ark:2291944",
+                    "name": "input1",
+                    "shape": [
+                        783,
+                        80
+                    ]
+                }
+            ],
+            "output": [
+                {
+                    "name": "target1",
+                    "shape": [
+                        147,
+                        78
+                    ],
+                    "text": "On the wall of his bedroom hung an illuminated scroll, the certificate of his prefecture in the college of the sodality of the Blessed Virgin Mary.",
+                    "token": "O n <space> t h e <space> w a l l <space> o f <space> h i s <space> b e d r o o m <space> h u n g <space> a n <space> i l l u m i n a t e d <space> s c r o l l , <space> t h e <space> c e r t i f i c a t e <space> o f <space> h i s <space> p r e f e c t u r e <space> i n <space> t h e <space> c o l l e g e <space> o f <space> t h e <space> s o d a l i t y <space> o f <space> t h e <space> B l e s s e d <space> V i r g i n <space> M a r y .",
+                    "tokenid": "29 56 13 62 50 47 13 65 43 54 54 13 57 48 13 50 51 61 13 44 47 46 60 57 57 55 13 50 63 56 49 13 43 56 13 51 54 54 63 55 51 56 43 62 47 46 13 61 45 60 57 54 54 7 13 62 50 47 13 45 47 60 62 51 48 51 45 43 62 47 13 57 48 13 50 51 61 13 58 60 47 48 47 45 62 63 60 47 13 51 56 13 62 50 47 13 45 57 54 54 47 49 47 13 57 48 13 62 50 47 13 61 57 46 43 54 51 62 67 13 57 48 13 62 50 47 13 16 54 47 61 61 47 46 13 36 51 60 49 51 56 13 27 43 60 67 9"
+                }
+            ],
+            "utt2spk": "1089_134686"
+        },
+        "1089_134686_000012_000002": {
+            "input": [
+                {
+                    "feat": "/export/b18/jcho/espnet3/egs/libritts/tts+spkid/dump/test_clean/feats.1.ark:2355271",
+                    "name": "input1",
+                    "shape": [
+                        255,
+                        80
+                    ]
+                }
+            ],
+            "output": [
+                {
+                    "name": "target1",
+                    "shape": [
+                        47,
+                        78
+                    ],
+                    "text": "The falsehood of his position did not pain him.",
+                    "token": "T h e <space> f a l s e h o o d <space> o f <space> h i s <space> p o s i t i o n <space> d i d <space> n o t <space> p a i n <space> h i m .",
+                    "tokenid": "34 50 47 13 48 43 54 61 47 50 57 57 46 13 57 48 13 50 51 61 13 58 57 61 51 62 51 57 56 13 46 51 46 13 56 57 62 13 58 43 51 56 13 50 51 55 9"
+                }
+            ],
+            "utt2spk": "1089_134686"
+        },
+        "1089_134686_000012_000003": {
+            "input": [
+                {
+                    "feat": "/export/b18/jcho/espnet3/egs/libritts/tts+spkid/dump/test_clean/feats.1.ark:2376358",
+                    "name": "input1",
+                    "shape": [
+                        1037,
+                        80
+                    ]
+                }
+            ],
+            "output": [
+                {
+                    "name": "target1",
+                    "shape": [
+                        175,
+                        78
+                    ],
+                    "text": "If at moments he felt an impulse to rise from his post of honour and, confessing before them all his unworthiness, to leave the chapel, a glance at their faces restrained him.",
+                    "token": "I f <space> a t <space> m o m e n t s <space> h e <space> f e l t <space> a n <space> i m p u l s e <space> t o <space> r i s e <space> f r o m <space> h i s <space> p o s t <space> o f <space> h o n o u r <space> a n d , <space> c o n f e s s i n g <space> b e f o r e <space> t h e m <space> a l l <space> h i s <space> u n w o r t h i n e s s , <space> t o <space> l e a v e <space> t h e <space> c h a p e l , <space> a <space> g l a n c e <space> a t <space> t h e i r <space> f a c e s <space> r e s t r a i n e d <space> h i m .",
+                    "tokenid": "23 48 13 43 62 13 55 57 55 47 56 62 61 13 50 47 13 48 47 54 62 13 43 56 13 51 55 58 63 54 61 47 13 62 57 13 60 51 61 47 13 48 60 57 55 13 50 51 61 13 58 57 61 62 13 57 48 13 50 57 56 57 63 60 13 43 56 46 7 13 45 57 56 48 47 61 61 51 56 49 13 44 47 48 57 60 47 13 62 50 47 55 13 43 54 54 13 50 51 61 13 63 56 65 57 60 62 50 51 56 47 61 61 7 13 62 57 13 54 47 43 64 47 13 62 50 47 13 45 50 43 58 47 54 7 13 43 13 49 54 43 56 45 47 13 43 62 13 62 50 47 51 60 13 48 43 45 47 61 13 60 47 61 62 60 43 51 56 47 46 13 50 51 55 9"
+                }
+            ],
+            "utt2spk": "1089_134686"
+        },
+        "1089_134686_000012_000004": {
+            "input": [
+                {
+                    "feat": "/export/b18/jcho/espnet3/egs/libritts/tts+spkid/dump/test_clean/feats.1.ark:2460005",
+                    "name": "input1",
+                    "shape": [
+                        381,
+                        80
+                    ]
+                }
+            ],
+            "output": [
+                {
+                    "name": "target1",
+                    "shape": [
+                        63,
+                        78
+                    ],
+                    "text": "The imagery of the psalms of prophecy soothed his barren pride.",
+                    "token": "T h e <space> i m a g e r y <space> o f <space> t h e <space> p s a l m s <space> o f <space> p r o p h e c y <space> s o o t h e d <space> h i s <space> b a r r e n <space> p r i d e .",
+                    "tokenid": "34 50 47 13 51 55 43 49 47 60 67 13 57 48 13 62 50 47 13 58 61 43 54 55 61 13 57 48 13 58 60 57 58 50 47 45 67 13 61 57 57 62 50 47 46 13 50 51 61 13 44 43 60 60 47 56 13 58 60 51 46 47 9"
+                }
+            ],
+            "utt2spk": "1089_134686"
+        },
+        "1089_134686_000014_000001": {
+            "input": [
+                {
+                    "feat": "/export/b18/jcho/espnet3/egs/libritts/tts+spkid/dump/test_clean/feats.1.ark:2491172",
+                    "name": "input1",
+                    "shape": [
+                        1010,
+                        80
+                    ]
+                }
+            ],
+            "output": [
+                {
+                    "name": "target1",
+                    "shape": [
+                        162,
+                        78
+                    ],
+                    "text": "Her eyes seemed to regard him with mild pity; her holiness, a strange light glowing faintly upon her frail flesh, did not humiliate the sinner who approached her.",
+                    "token": "H e r <space> e y e s <space> s e e m e d <space> t o <space> r e g a r d <space> h i m <space> w i t h <space> m i l d <space> p i t y ; <space> h e r <space> h o l i n e s s , <space> a <space> s t r a n g e <space> l i g h t <space> g l o w i n g <space> f a i n t l y <space> u p o n <space> h e r <space> f r a i l <space> f l e s h , <space> d i d <space> n o t <space> h u m i l i a t e <space> t h e <space> s i n n e r <space> w h o <space> a p p r o a c h e d <space> h e r .",
+                    "tokenid": "22 47 60 13 47 67 47 61 13 61 47 47 55 47 46 13 62 57 13 60 47 49 43 60 46 13 50 51 55 13 65 51 62 50 13 55 51 54 46 13 58 51 62 67 12 13 50 47 60 13 50 57 54 51 56 47 61 61 7 13 43 13 61 62 60 43 56 49 47 13 54 51 49 50 62 13 49 54 57 65 51 56 49 13 48 43 51 56 62 54 67 13 63 58 57 56 13 50 47 60 13 48 60 43 51 54 13 48 54 47 61 50 7 13 46 51 46 13 56 57 62 13 50 63 55 51 54 51 43 62 47 13 62 50 47 13 61 51 56 56 47 60 13 65 50 57 13 43 58 58 60 57 43 45 50 47 46 13 50 47 60 9"
+                }
+            ],
+            "utt2spk": "1089_134686"
+        },
+        "1089_134686_000014_000002": {
+            "input": [
+                {
+                    "feat": "/export/b18/jcho/espnet3/egs/libritts/tts+spkid/dump/test_clean/feats.1.ark:2572659",
+                    "name": "input1",
+                    "shape": [
+                        645,
+                        80
+                    ]
+                }
+            ],
+            "output": [
+                {
+                    "name": "target1",
+                    "shape": [
+                        116,
+                        78
+                    ],
+                    "text": "If ever he was impelled to cast sin from him and to repent the impulse that moved him was the wish to be her knight.",
+                    "token": "I f <space> e v e r <space> h e <space> w a s <space> i m p e l l e d <space> t o <space> c a s t <space> s i n <space> f r o m <space> h i m <space> a n d <space> t o <space> r e p e n t <space> t h e <space> i m p u l s e <space> t h a t <space> m o v e d <space> h i m <space> w a s <space> t h e <space> w i s h <space> t o <space> b e <space> h e r <space> k n i g h t .",
+                    "tokenid": "23 48 13 47 64 47 60 13 50 47 13 65 43 61 13 51 55 58 47 54 54 47 46 13 62 57 13 45 43 61 62 13 61 51 56 13 48 60 57 55 13 50 51 55 13 43 56 46 13 62 57 13 60 47 58 47 56 62 13 62 50 47 13 51 55 58 63 54 61 47 13 62 50 43 62 13 55 57 64 47 46 13 50 51 55 13 65 43 61 13 62 50 47 13 65 51 61 50 13 62 57 13 44 47 13 50 47 60 13 53 56 51 49 50 62 9"
+                }
+            ],
+            "utt2spk": "1089_134686"
+        },
+        "1089_134686_000014_000003": {
+            "input": [
+                {
+                    "feat": "/export/b18/jcho/espnet3/egs/libritts/tts+spkid/dump/test_clean/feats.1.ark:2624946",
+                    "name": "input1",
+                    "shape": [
+                        2200,
+                        80
+                    ]
+                }
+            ],
+            "output": [
+                {
+                    "name": "target1",
+                    "shape": [
+                        356,
+                        78
+                    ],
+                    "text": "If ever his soul, re entering her dwelling shyly after the frenzy of his body's lust had spent itself, was turned towards her whose emblem is the morning star, BRIGHT AND MUSICAL, TELLING OF HEAVEN AND INFUSING PEACE, it was when her names were murmured softly by lips whereon there still lingered foul and shameful words, the savour itself of a lewd kiss.",
+                    "token": "I f <space> e v e r <space> h i s <space> s o u l , <space> r e <space> e n t e r i n g <space> h e r <space> d w e l l i n g <space> s h y l y <space> a f t e r <space> t h e <space> f r e n z y <space> o f <space> h i s <space> b o d y ' s <space> l u s t <space> h a d <space> s p e n t <space> i t s e l f , <space> w a s <space> t u r n e d <space> t o w a r d s <space> h e r <space> w h o s e <space> e m b l e m <space> i s <space> t h e <space> m o r n i n g <space> s t a r , <space> B R I G H T <space> A N D <space> M U S I C A L , <space> T E L L I N G <space> O F <space> H E A V E N <space> A N D <space> I N F U S I N G <space> P E A C E , <space> i t <space> w a s <space> w h e n <space> h e r <space> n a m e s <space> w e r e <space> m u r m u r e d <space> s o f t l y <space> b y <space> l i p s <space> w h e r e o n <space> t h e r e <space> s t i l l <space> l i n g e r e d <space> f o u l <space> a n d <space> s h a m e f u l <space> w o r d s , <space> t h e <space> s a v o u r <space> i t s e l f <space> o f <space> a <space> l e w d <space> k i s s .",
+                    "tokenid": "23 48 13 47 64 47 60 13 50 51 61 13 61 57 63 54 7 13 60 47 13 47 56 62 47 60 51 56 49 13 50 47 60 13 46 65 47 54 54 51 56 49 13 61 50 67 54 67 13 43 48 62 47 60 13 62 50 47 13 48 60 47 56 68 67 13 57 48 13 50 51 61 13 44 57 46 67 4 61 13 54 63 61 62 13 50 43 46 13 61 58 47 56 62 13 51 62 61 47 54 48 7 13 65 43 61 13 62 63 60 56 47 46 13 62 57 65 43 60 46 61 13 50 47 60 13 65 50 57 61 47 13 47 55 44 54 47 55 13 51 61 13 62 50 47 13 55 57 60 56 51 56 49 13 61 62 43 60 7 13 16 32 23 21 22 34 13 15 28 18 13 27 35 33 23 17 15 26 7 13 34 19 26 26 23 28 21 13 29 20 13 22 19 15 36 19 28 13 15 28 18 13 23 28 20 35 33 23 28 21 13 30 19 15 17 19 7 13 51 62 13 65 43 61 13 65 50 47 56 13 50 47 60 13 56 43 55 47 61 13 65 47 60 47 13 55 63 60 55 63 60 47 46 13 61 57 48 62 54 67 13 44 67 13 54 51 58 61 13 65 50 47 60 47 57 56 13 62 50 47 60 47 13 61 62 51 54 54 13 54 51 56 49 47 60 47 46 13 48 57 63 54 13 43 56 46 13 61 50 43 55 47 48 63 54 13 65 57 60 46 61 7 13 62 50 47 13 61 43 64 57 63 60 13 51 62 61 47 54 48 13 57 48 13 43 13 54 47 65 46 13 53 51 61 61 9"
+                }
+            ],
+            "utt2spk": "1089_134686"
+        },
+        "1089_134686_000015_000000": {
+            "input": [
+                {
+                    "feat": "/export/b18/jcho/espnet3/egs/libritts/tts+spkid/dump/test_clean/feats.1.ark:2801633",
+                    "name": "input1",
+                    "shape": [
+                        101,
+                        80
+                    ]
+                }
+            ],
+            "output": [
+                {
+                    "name": "target1",
+                    "shape": [
+                        17,
+                        78
+                    ],
+                    "text": "That was strange.",
+                    "token": "T h a t <space> w a s <space> s t r a n g e .",
+                    "tokenid": "34 50 43 62 13 65 43 61 13 61 62 60 43 56 49 47 9"
+                }
+            ],
+            "utt2spk": "1089_134686"
+        },
+        "1089_134686_000015_000001": {
+            "input": [
+                {
+                    "feat": "/export/b18/jcho/espnet3/egs/libritts/tts+spkid/dump/test_clean/feats.1.ark:2810400",
+                    "name": "input1",
+                    "shape": [
+                        180,
+                        80
+                    ]
+                }
+            ],
+            "output": [
+                {
+                    "name": "target1",
+                    "shape": [
+                        34,
+                        78
+                    ],
+                    "text": "He tried to think how it could be.",
+                    "token": "H e <space> t r i e d <space> t o <space> t h i n k <space> h o w <space> i t <space> c o u l d <space> b e .",
+                    "tokenid": "22 47 13 62 60 51 47 46 13 62 57 13 62 50 51 56 53 13 50 57 65 13 51 62 13 45 57 63 54 46 13 44 47 9"
+                }
+            ],
+            "utt2spk": "1089_134686"
+        },
+        "1089_134686_000015_000002": {
+            "input": [
+                {
+                    "feat": "/export/b18/jcho/espnet3/egs/libritts/tts+spkid/dump/test_clean/feats.1.ark:2825487",
+                    "name": "input1",
+                    "shape": [
+                        376,
+                        80
+                    ]
+                }
+            ],
+            "output": [
+                {
+                    "name": "target1",
+                    "shape": [
+                        69,
+                        78
+                    ],
+                    "text": "But the dusk, deepening in the schoolroom, covered over his thoughts.",
+                    "token": "B u t <space> t h e <space> d u s k , <space> d e e p e n i n g <space> i n <space> t h e <space> s c h o o l r o o m , <space> c o v e r e d <space> o v e r <space> h i s <space> t h o u g h t s .",
+                    "tokenid": "16 63 62 13 62 50 47 13 46 63 61 53 7 13 46 47 47 58 47 56 51 56 49 13 51 56 13 62 50 47 13 61 45 50 57 57 54 60 57 57 55 7 13 45 57 64 47 60 47 46 13 57 64 47 60 13 50 51 61 13 62 50 57 63 49 50 62 61 9"
+                }
+            ],
+            "utt2spk": "1089_134686"
+        },
+        "1089_134686_000015_000003": {
+            "input": [
+                {
+                    "feat": "/export/b18/jcho/espnet3/egs/libritts/tts+spkid/dump/test_clean/feats.1.ark:2856254",
+                    "name": "input1",
+                    "shape": [
+                        523,
+                        80
+                    ]
+                }
+            ],
+            "output": [
+                {
+                    "name": "target1",
+                    "shape": [
+                        95,
+                        78
+                    ],
+                    "text": "The bell rang. The master marked the sums and cuts to be done for the next lesson and went out.",
+                    "token": "T h e <space> b e l l <space> r a n g . <space> T h e <space> m a s t e r <space> m a r k e d <space> t h e <space> s u m s <space> a n d <space> c u t s <space> t o <space> b e <space> d o n e <space> f o r <space> t h e <space> n e x t <space> l e s s o n <space> a n d <space> w e n t <space> o u t .",
+                    "tokenid": "34 50 47 13 44 47 54 54 13 60 43 56 49 9 13 34 50 47 13 55 43 61 62 47 60 13 55 43 60 53 47 46 13 62 50 47 13 61 63 55 61 13 43 56 46 13 45 63 62 61 13 62 57 13 44 47 13 46 57 56 47 13 48 57 60 13 62 50 47 13 56 47 66 62 13 54 47 61 61 57 56 13 43 56 46 13 65 47 56 62 13 57 63 62 9"
+                }
+            ],
+            "utt2spk": "1089_134686"
+        },
+        "1089_134686_000015_000004": {
+            "input": [
+                {
+                    "feat": "/export/b18/jcho/espnet3/egs/libritts/tts+spkid/dump/test_clean/feats.1.ark:2898781",
+                    "name": "input1",
+                    "shape": [
+                        348,
+                        80
+                    ]
+                }
+            ],
+            "output": [
+                {
+                    "name": "target1",
+                    "shape": [
+                        47,
+                        78
+                    ],
+                    "text": "Heron, beside Stephen, began to hum tunelessly.",
+                    "token": "H e r o n , <space> b e s i d e <space> S t e p h e n , <space> b e g a n <space> t o <space> h u m <space> t u n e l e s s l y .",
+                    "tokenid": "22 47 60 57 56 7 13 44 47 61 51 46 47 13 33 62 47 58 50 47 56 7 13 44 47 49 43 56 13 62 57 13 50 63 55 13 62 63 56 47 54 47 61 61 54 67 9"
+                }
+            ],
+            "utt2spk": "1089_134686"
+        },
+        "1089_134686_000017_000000": {
+            "input": [
+                {
+                    "feat": "/export/b18/jcho/espnet3/egs/libritts/tts+spkid/dump/test_clean/feats.1.ark:2927308",
+                    "name": "input1",
+                    "shape": [
+                        295,
+                        80
+                    ]
+                }
+            ],
+            "output": [
+                {
+                    "name": "target1",
+                    "shape": [
+                        51,
+                        78
+                    ],
+                    "text": "Ennis, who had gone to the yard, came back, saying:",
+                    "token": "E n n i s , <space> w h o <space> h a d <space> g o n e <space> t o <space> t h e <space> y a r d , <space> c a m e <space> b a c k , <space> s a y i n g :",
+                    "tokenid": "19 56 56 51 61 7 13 65 50 57 13 50 43 46 13 49 57 56 47 13 62 57 13 62 50 47 13 67 43 60 46 7 13 45 43 55 47 13 44 43 45 53 7 13 61 43 67 51 56 49 11"
+                }
+            ],
+            "utt2spk": "1089_134686"
+        },
+        "1089_134686_000018_000000": {
+            "input": [
+                {
+                    "feat": "/export/b18/jcho/espnet3/egs/libritts/tts+spkid/dump/test_clean/feats.1.ark:2951595",
+                    "name": "input1",
+                    "shape": [
+                        206,
+                        80
+                    ]
+                }
+            ],
+            "output": [
+                {
+                    "name": "target1",
+                    "shape": [
+                        53,
+                        78
+                    ],
+                    "text": "--The boy from the house is coming up for the rector.",
+                    "token": "- - T h e <space> b o y <space> f r o m <space> t h e <space> h o u s e <space> i s <space> c o m i n g <space> u p <space> f o r <space> t h e <space> r e c t o r .",
+                    "tokenid": "8 8 34 50 47 13 44 57 67 13 48 60 57 55 13 62 50 47 13 50 57 63 61 47 13 51 61 13 45 57 55 51 56 49 13 63 58 13 48 57 60 13 62 50 47 13 60 47 45 62 57 60 9"
+                }
+            ],
+            "utt2spk": "1089_134686"
+        },
+        "1089_134686_000019_000000": {
+            "input": [
+                {
+                    "feat": "/export/b18/jcho/espnet3/egs/libritts/tts+spkid/dump/test_clean/feats.1.ark:2968762",
+                    "name": "input1",
+                    "shape": [
+                        290,
+                        80
+                    ]
+                }
+            ],
+            "output": [
+                {
+                    "name": "target1",
+                    "shape": [
+                        52,
+                        78
+                    ],
+                    "text": "A tall boy behind Stephen rubbed his hands and said:",
+                    "token": "A <space> t a l l <space> b o y <space> b e h i n d <space> S t e p h e n <space> r u b b e d <space> h i s <space> h a n d s <space> a n d <space> s a i d :",
+                    "tokenid": "15 13 62 43 54 54 13 44 57 67 13 44 47 50 51 56 46 13 33 62 47 58 50 47 56 13 60 63 44 44 47 46 13 50 51 61 13 50 43 56 46 61 13 43 56 46 13 61 43 51 46 11"
+                }
+            ],
+            "utt2spk": "1089_134686"
+        },
+        "1089_134686_000020_000000": {
+            "input": [
+                {
+                    "feat": "/export/b18/jcho/espnet3/egs/libritts/tts+spkid/dump/test_clean/feats.1.ark:2992649",
+                    "name": "input1",
+                    "shape": [
+                        98,
+                        80
+                    ]
+                }
+            ],
+            "output": [
+                {
+                    "name": "target1",
+                    "shape": [
+                        19,
+                        78
+                    ],
+                    "text": "--That's game ball.",
+                    "token": "- - T h a t ' s <space> g a m e <space> b a l l .",
+                    "tokenid": "8 8 34 50 43 62 4 61 13 49 43 55 47 13 44 43 54 54 9"
+                }
+            ],
+            "utt2spk": "1089_134686"
+        },
+        "1089_134686_000020_000001": {
+            "input": [
+                {
+                    "feat": "/export/b18/jcho/espnet3/egs/libritts/tts+spkid/dump/test_clean/feats.1.ark:3001176",
+                    "name": "input1",
+                    "shape": [
+                        167,
+                        80
+                    ]
+                }
+            ],
+            "output": [
+                {
+                    "name": "target1",
+                    "shape": [
+                        27,
+                        78
+                    ],
+                    "text": "We can scut the whole hour.",
+                    "token": "W e <space> c a n <space> s c u t <space> t h e <space> w h o l e <space> h o u r .",
+                    "tokenid": "37 47 13 45 43 56 13 61 45 63 62 13 62 50 47 13 65 50 57 54 47 13 50 57 63 60 9"
+                }
+            ],
+            "utt2spk": "1089_134686"
+        },
+        "1089_134686_000021_000000": {
+            "input": [
+                {
+                    "feat": "/export/b18/jcho/espnet3/egs/libritts/tts+spkid/dump/test_clean/feats.1.ark:3015223",
+                    "name": "input1",
+                    "shape": [
+                        786,
+                        80
+                    ]
+                }
+            ],
+            "output": [
+                {
+                    "name": "target1",
+                    "shape": [
+                        136,
+                        78
+                    ],
+                    "text": "Stephen, leaning back and drawing idly on his scribbler, listened to the talk about him which Heron checked from time to time by saying:",
+                    "token": "S t e p h e n , <space> l e a n i n g <space> b a c k <space> a n d <space> d r a w i n g <space> i d l y <space> o n <space> h i s <space> s c r i b b l e r , <space> l i s t e n e d <space> t o <space> t h e <space> t a l k <space> a b o u t <space> h i m <space> w h i c h <space> H e r o n <space> c h e c k e d <space> f r o m <space> t i m e <space> t o <space> t i m e <space> b y <space> s a y i n g :",
+                    "tokenid": "33 62 47 58 50 47 56 7 13 54 47 43 56 51 56 49 13 44 43 45 53 13 43 56 46 13 46 60 43 65 51 56 49 13 51 46 54 67 13 57 56 13 50 51 61 13 61 45 60 51 44 44 54 47 60 7 13 54 51 61 62 47 56 47 46 13 62 57 13 62 50 47 13 62 43 54 53 13 43 44 57 63 62 13 50 51 55 13 65 50 51 45 50 13 22 47 60 57 56 13 45 50 47 45 53 47 46 13 48 60 57 55 13 62 51 55 47 13 62 57 13 62 51 55 47 13 44 67 13 61 43 67 51 56 49 11"
+                }
+            ],
+            "utt2spk": "1089_134686"
+        },
+        "1089_134686_000022_000000": {
+            "input": [
+                {
+                    "feat": "/export/b18/jcho/espnet3/egs/libritts/tts+spkid/dump/test_clean/feats.1.ark:3078790",
+                    "name": "input1",
+                    "shape": [
+                        87,
+                        80
+                    ]
+                }
+            ],
+            "output": [
+                {
+                    "name": "target1",
+                    "shape": [
+                        20,
+                        78
+                    ],
+                    "text": "--Shut up, will you.",
+                    "token": "- - S h u t <space> u p , <space> w i l l <space> y o u .",
+                    "tokenid": "8 8 33 50 63 62 13 63 58 7 13 65 51 54 54 13 67 57 63 9"
+                }
+            ],
+            "utt2spk": "1089_134686"
+        },
+        "1089_134686_000022_000001": {
+            "input": [
+                {
+                    "feat": "/export/b18/jcho/espnet3/egs/libritts/tts+spkid/dump/test_clean/feats.1.ark:3086437",
+                    "name": "input1",
+                    "shape": [
+                        167,
+                        80
+                    ]
+                }
+            ],
+            "output": [
+                {
+                    "name": "target1",
+                    "shape": [
+                        31,
+                        78
+                    ],
+                    "text": "Don't make such a bally racket!",
+                    "token": "D o n ' t <space> m a k e <space> s u c h <space> a <space> b a l l y <space> r a c k e t !",
+                    "tokenid": "18 57 56 4 62 13 55 43 53 47 13 61 63 45 50 13 43 13 44 43 54 54 67 13 60 43 45 53 47 62 2"
+                }
+            ],
+            "utt2spk": "1089_134686"
+        },
+        "1089_134686_000023_000000": {
+            "input": [
+                {
+                    "feat": "/export/b18/jcho/espnet3/egs/libritts/tts+spkid/dump/test_clean/feats.1.ark:3100484",
+                    "name": "input1",
+                    "shape": [
+                        1386,
+                        80
+                    ]
+                }
+            ],
+            "output": [
+                {
+                    "name": "target1",
+                    "shape": [
+                        221,
+                        78
+                    ],
+                    "text": "It was strange too that he found an arid pleasure in following up to the end the rigid lines of the doctrines of the church and penetrating into obscure silences only to hear and feel the more deeply his own condemnation.",
+                    "token": "I t <space> w a s <space> s t r a n g e <space> t o o <space> t h a t <space> h e <space> f o u n d <space> a n <space> a r i d <space> p l e a s u r e <space> i n <space> f o l l o w i n g <space> u p <space> t o <space> t h e <space> e n d <space> t h e <space> r i g i d <space> l i n e s <space> o f <space> t h e <space> d o c t r i n e s <space> o f <space> t h e <space> c h u r c h <space> a n d <space> p e n e t r a t i n g <space> i n t o <space> o b s c u r e <space> s i l e n c e s <space> o n l y <space> t o <space> h e a r <space> a n d <space> f e e l <space> t h e <space> m o r e <space> d e e p l y <space> h i s <space> o w n <space> c o n d e m n a t i o n .",
+                    "tokenid": "23 62 13 65 43 61 13 61 62 60 43 56 49 47 13 62 57 57 13 62 50 43 62 13 50 47 13 48 57 63 56 46 13 43 56 13 43 60 51 46 13 58 54 47 43 61 63 60 47 13 51 56 13 48 57 54 54 57 65 51 56 49 13 63 58 13 62 57 13 62 50 47 13 47 56 46 13 62 50 47 13 60 51 49 51 46 13 54 51 56 47 61 13 57 48 13 62 50 47 13 46 57 45 62 60 51 56 47 61 13 57 48 13 62 50 47 13 45 50 63 60 45 50 13 43 56 46 13 58 47 56 47 62 60 43 62 51 56 49 13 51 56 62 57 13 57 44 61 45 63 60 47 13 61 51 54 47 56 45 47 61 13 57 56 54 67 13 62 57 13 50 47 43 60 13 43 56 46 13 48 47 47 54 13 62 50 47 13 55 57 60 47 13 46 47 47 58 54 67 13 50 51 61 13 57 65 56 13 45 57 56 46 47 55 56 43 62 51 57 56 9"
+                }
+            ],
+            "utt2spk": "1089_134686"
+        },
+        "1089_134686_000023_000001": {
+            "input": [
+                {
+                    "feat": "/export/b18/jcho/espnet3/egs/libritts/tts+spkid/dump/test_clean/feats.1.ark:3212051",
+                    "name": "input1",
+                    "shape": [
+                        1218,
+                        80
+                    ]
+                }
+            ],
+            "output": [
+                {
+                    "name": "target1",
+                    "shape": [
+                        208,
+                        78
+                    ],
+                    "text": "The sentence of saint james which says that he who offends against one commandment becomes guilty of all, had seemed to him first a swollen phrase until he had begun to grope in the darkness of his own state.",
+                    "token": "T h e <space> s e n t e n c e <space> o f <space> s a i n t <space> j a m e s <space> w h i c h <space> s a y s <space> t h a t <space> h e <space> w h o <space> o f f e n d s <space> a g a i n s t <space> o n e <space> c o m m a n d m e n t <space> b e c o m e s <space> g u i l t y <space> o f <space> a l l , <space> h a d <space> s e e m e d <space> t o <space> h i m <space> f i r s t <space> a <space> s w o l l e n <space> p h r a s e <space> u n t i l <space> h e <space> h a d <space> b e g u n <space> t o <space> g r o p e <space> i n <space> t h e <space> d a r k n e s s <space> o f <space> h i s <space> o w n <space> s t a t e .",
+                    "tokenid": "34 50 47 13 61 47 56 62 47 56 45 47 13 57 48 13 61 43 51 56 62 13 52 43 55 47 61 13 65 50 51 45 50 13 61 43 67 61 13 62 50 43 62 13 50 47 13 65 50 57 13 57 48 48 47 56 46 61 13 43 49 43 51 56 61 62 13 57 56 47 13 45 57 55 55 43 56 46 55 47 56 62 13 44 47 45 57 55 47 61 13 49 63 51 54 62 67 13 57 48 13 43 54 54 7 13 50 43 46 13 61 47 47 55 47 46 13 62 57 13 50 51 55 13 48 51 60 61 62 13 43 13 61 65 57 54 54 47 56 13 58 50 60 43 61 47 13 63 56 62 51 54 13 50 47 13 50 43 46 13 44 47 49 63 56 13 62 57 13 49 60 57 58 47 13 51 56 13 62 50 47 13 46 43 60 53 56 47 61 61 13 57 48 13 50 51 61 13 57 65 56 13 61 62 43 62 47 9"
+                }
+            ],
+            "utt2spk": "1089_134686"
+        },
+        "1089_134686_000024_000000": {
+            "input": [
+                {
+                    "feat": "/export/b18/jcho/espnet3/egs/libritts/tts+spkid/dump/test_clean/feats.1.ark:3310178",
+                    "name": "input1",
+                    "shape": [
+                        933,
+                        80
+                    ]
+                }
+            ],
+            "output": [
+                {
+                    "name": "target1",
+                    "shape": [
+                        145,
+                        78
+                    ],
+                    "text": "As he sat in his bench gazing calmly at the rector's shrewd harsh face, his mind wound itself in and out of the curious questions proposed to it.",
+                    "token": "A s <space> h e <space> s a t <space> i n <space> h i s <space> b e n c h <space> g a z i n g <space> c a l m l y <space> a t <space> t h e <space> r e c t o r ' s <space> s h r e w d <space> h a r s h <space> f a c e , <space> h i s <space> m i n d <space> w o u n d <space> i t s e l f <space> i n <space> a n d <space> o u t <space> o f <space> t h e <space> c u r i o u s <space> q u e s t i o n s <space> p r o p o s e d <space> t o <space> i t .",
+                    "tokenid": "15 61 13 50 47 13 61 43 62 13 51 56 13 50 51 61 13 44 47 56 45 50 13 49 43 68 51 56 49 13 45 43 54 55 54 67 13 43 62 13 62 50 47 13 60 47 45 62 57 60 4 61 13 61 50 60 47 65 46 13 50 43 60 61 50 13 48 43 45 47 7 13 50 51 61 13 55 51 56 46 13 65 57 63 56 46 13 51 62 61 47 54 48 13 51 56 13 43 56 46 13 57 63 62 13 57 48 13 62 50 47 13 45 63 60 51 57 63 61 13 59 63 47 61 62 51 57 56 61 13 58 60 57 58 57 61 47 46 13 62 57 13 51 62 9"
+                }
+            ],
+            "utt2spk": "1089_134686"
+        },
+        "1089_134686_000024_000001": {
+            "input": [
+                {
+                    "feat": "/export/b18/jcho/espnet3/egs/libritts/tts+spkid/dump/test_clean/feats.1.ark:3385505",
+                    "name": "input1",
+                    "shape": [
+                        1513,
+                        80
+                    ]
+                }
+            ],
+            "output": [
+                {
+                    "name": "target1",
+                    "shape": [
+                        246,
+                        78
+                    ],
+                    "text": "If a man had stolen a pound in his youth and had used that pound to amass a huge fortune how much was he obliged to give back, the pound he had stolen only or the pound together with the compound interest accruing upon it or all his huge fortune?",
+                    "token": "I f <space> a <space> m a n <space> h a d <space> s t o l e n <space> a <space> p o u n d <space> i n <space> h i s <space> y o u t h <space> a n d <space> h a d <space> u s e d <space> t h a t <space> p o u n d <space> t o <space> a m a s s <space> a <space> h u g e <space> f o r t u n e <space> h o w <space> m u c h <space> w a s <space> h e <space> o b l i g e d <space> t o <space> g i v e <space> b a c k , <space> t h e <space> p o u n d <space> h e <space> h a d <space> s t o l e n <space> o n l y <space> o r <space> t h e <space> p o u n d <space> t o g e t h e r <space> w i t h <space> t h e <space> c o m p o u n d <space> i n t e r e s t <space> a c c r u i n g <space> u p o n <space> i t <space> o r <space> a l l <space> h i s <space> h u g e <space> f o r t u n e ?",
+                    "tokenid": "23 48 13 43 13 55 43 56 13 50 43 46 13 61 62 57 54 47 56 13 43 13 58 57 63 56 46 13 51 56 13 50 51 61 13 67 57 63 62 50 13 43 56 46 13 50 43 46 13 63 61 47 46 13 62 50 43 62 13 58 57 63 56 46 13 62 57 13 43 55 43 61 61 13 43 13 50 63 49 47 13 48 57 60 62 63 56 47 13 50 57 65 13 55 63 45 50 13 65 43 61 13 50 47 13 57 44 54 51 49 47 46 13 62 57 13 49 51 64 47 13 44 43 45 53 7 13 62 50 47 13 58 57 63 56 46 13 50 47 13 50 43 46 13 61 62 57 54 47 56 13 57 56 54 67 13 57 60 13 62 50 47 13 58 57 63 56 46 13 62 57 49 47 62 50 47 60 13 65 51 62 50 13 62 50 47 13 45 57 55 58 57 63 56 46 13 51 56 62 47 60 47 61 62 13 43 45 45 60 63 51 56 49 13 63 58 57 56 13 51 62 13 57 60 13 43 54 54 13 50 51 61 13 50 63 49 47 13 48 57 60 62 63 56 47 14"
+                }
+            ],
+            "utt2spk": "1089_134686"
+        },
+        "1089_134686_000024_000002": {
+            "input": [
+                {
+                    "feat": "/export/b18/jcho/espnet3/egs/libritts/tts+spkid/dump/test_clean/feats.1.ark:3507232",
+                    "name": "input1",
+                    "shape": [
+                        570,
+                        80
+                    ]
+                }
+            ],
+            "output": [
+                {
+                    "name": "target1",
+                    "shape": [
+                        91,
+                        78
+                    ],
+                    "text": "If a layman in giving baptism pour the water before saying the words is the child baptized?",
+                    "token": "I f <space> a <space> l a y m a n <space> i n <space> g i v i n g <space> b a p t i s m <space> p o u r <space> t h e <space> w a t e r <space> b e f o r e <space> s a y i n g <space> t h e <space> w o r d s <space> i s <space> t h e <space> c h i l d <space> b a p t i z e d ?",
+                    "tokenid": "23 48 13 43 13 54 43 67 55 43 56 13 51 56 13 49 51 64 51 56 49 13 44 43 58 62 51 61 55 13 58 57 63 60 13 62 50 47 13 65 43 62 47 60 13 44 47 48 57 60 47 13 61 43 67 51 56 49 13 62 50 47 13 65 57 60 46 61 13 51 61 13 62 50 47 13 45 50 51 54 46 13 44 43 58 62 51 68 47 46 14"
+                }
+            ],
+            "utt2spk": "1089_134686"
+        },
+        "1089_134686_000024_000004": {
+            "input": [
+                {
+                    "feat": "/export/b18/jcho/espnet3/egs/libritts/tts+spkid/dump/test_clean/feats.1.ark:3553519",
+                    "name": "input1",
+                    "shape": [
+                        979,
+                        80
+                    ]
+                }
+            ],
+            "output": [
+                {
+                    "name": "target1",
+                    "shape": [
+                        176,
+                        78
+                    ],
+                    "text": "How comes it that while the first beatitude promises the kingdom of heaven to the poor of heart the second beatitude promises also to the meek that they shall possess the land?",
+                    "token": "H o w <space> c o m e s <space> i t <space> t h a t <space> w h i l e <space> t h e <space> f i r s t <space> b e a t i t u d e <space> p r o m i s e s <space> t h e <space> k i n g d o m <space> o f <space> h e a v e n <space> t o <space> t h e <space> p o o r <space> o f <space> h e a r t <space> t h e <space> s e c o n d <space> b e a t i t u d e <space> p r o m i s e s <space> a l s o <space> t o <space> t h e <space> m e e k <space> t h a t <space> t h e y <space> s h a l l <space> p o s s e s s <space> t h e <space> l a n d ?",
+                    "tokenid": "22 57 65 13 45 57 55 47 61 13 51 62 13 62 50 43 62 13 65 50 51 54 47 13 62 50 47 13 48 51 60 61 62 13 44 47 43 62 51 62 63 46 47 13 58 60 57 55 51 61 47 61 13 62 50 47 13 53 51 56 49 46 57 55 13 57 48 13 50 47 43 64 47 56 13 62 57 13 62 50 47 13 58 57 57 60 13 57 48 13 50 47 43 60 62 13 62 50 47 13 61 47 45 57 56 46 13 44 47 43 62 51 62 63 46 47 13 58 60 57 55 51 61 47 61 13 43 54 61 57 13 62 57 13 62 50 47 13 55 47 47 53 13 62 50 43 62 13 62 50 47 67 13 61 50 43 54 54 13 58 57 61 61 47 61 61 13 62 50 47 13 54 43 56 46 14"
+                }
+            ],
+            "utt2spk": "1089_134686"
+        },
+        "1089_134686_000024_000005": {
+            "input": [
+                {
+                    "feat": "/export/b18/jcho/espnet3/egs/libritts/tts+spkid/dump/test_clean/feats.1.ark:3632526",
+                    "name": "input1",
+                    "shape": [
+                        1179,
+                        80
+                    ]
+                }
+            ],
+            "output": [
+                {
+                    "name": "target1",
+                    "shape": [
+                        193,
+                        78
+                    ],
+                    "text": "Why was the sacrament of the eucharist instituted under the two species of bread and wine if Jesus Christ be present body and blood, soul and divinity, in the bread alone and in the wine alone?",
+                    "token": "W h y <space> w a s <space> t h e <space> s a c r a m e n t <space> o f <space> t h e <space> e u c h a r i s t <space> i n s t i t u t e d <space> u n d e r <space> t h e <space> t w o <space> s p e c i e s <space> o f <space> b r e a d <space> a n d <space> w i n e <space> i f <space> J e s u s <space> C h r i s t <space> b e <space> p r e s e n t <space> b o d y <space> a n d <space> b l o o d , <space> s o u l <space> a n d <space> d i v i n i t y , <space> i n <space> t h e <space> b r e a d <space> a l o n e <space> a n d <space> i n <space> t h e <space> w i n e <space> a l o n e ?",
+                    "tokenid": "37 50 67 13 65 43 61 13 62 50 47 13 61 43 45 60 43 55 47 56 62 13 57 48 13 62 50 47 13 47 63 45 50 43 60 51 61 62 13 51 56 61 62 51 62 63 62 47 46 13 63 56 46 47 60 13 62 50 47 13 62 65 57 13 61 58 47 45 51 47 61 13 57 48 13 44 60 47 43 46 13 43 56 46 13 65 51 56 47 13 51 48 13 24 47 61 63 61 13 17 50 60 51 61 62 13 44 47 13 58 60 47 61 47 56 62 13 44 57 46 67 13 43 56 46 13 44 54 57 57 46 7 13 61 57 63 54 13 43 56 46 13 46 51 64 51 56 51 62 67 7 13 51 56 13 62 50 47 13 44 60 47 43 46 13 43 54 57 56 47 13 43 56 46 13 51 56 13 62 50 47 13 65 51 56 47 13 43 54 57 56 47 14"
+                }
+            ],
+            "utt2spk": "1089_134686"
+        },
+        "1089_134686_000024_000006": {
+            "input": [
+                {
+                    "feat": "/export/b18/jcho/espnet3/egs/libritts/tts+spkid/dump/test_clean/feats.1.ark:3727533",
+                    "name": "input1",
+                    "shape": [
+                        768,
+                        80
+                    ]
+                }
+            ],
+            "output": [
+                {
+                    "name": "target1",
+                    "shape": [
+                        130,
+                        78
+                    ],
+                    "text": "Does a tiny particle of the consecrated bread contain all the body and blood of Jesus Christ or a part only of the body and blood?",
+                    "token": "D o e s <space> a <space> t i n y <space> p a r t i c l e <space> o f <space> t h e <space> c o n s e c r a t e d <space> b r e a d <space> c o n t a i n <space> a l l <space> t h e <space> b o d y <space> a n d <space> b l o o d <space> o f <space> J e s u s <space> C h r i s t <space> o r <space> a <space> p a r t <space> o n l y <space> o f <space> t h e <space> b o d y <space> a n d <space> b l o o d ?",
+                    "tokenid": "18 57 47 61 13 43 13 62 51 56 67 13 58 43 60 62 51 45 54 47 13 57 48 13 62 50 47 13 45 57 56 61 47 45 60 43 62 47 46 13 44 60 47 43 46 13 45 57 56 62 43 51 56 13 43 54 54 13 62 50 47 13 44 57 46 67 13 43 56 46 13 44 54 57 57 46 13 57 48 13 24 47 61 63 61 13 17 50 60 51 61 62 13 57 60 13 43 13 58 43 60 62 13 57 56 54 67 13 57 48 13 62 50 47 13 44 57 46 67 13 43 56 46 13 44 54 57 57 46 14"
+                }
+            ],
+            "utt2spk": "1089_134686"
+        },
+        "1089_134686_000024_000007": {
+            "input": [
+                {
+                    "feat": "/export/b18/jcho/espnet3/egs/libritts/tts+spkid/dump/test_clean/feats.1.ark:3789660",
+                    "name": "input1",
+                    "shape": [
+                        1024,
+                        80
+                    ]
+                }
+            ],
+            "output": [
+                {
+                    "name": "target1",
+                    "shape": [
+                        171,
+                        78
+                    ],
+                    "text": "If the wine change into vinegar and the host crumble into corruption after they have been consecrated, is Jesus Christ still present under their species as God and as man?",
+                    "token": "I f <space> t h e <space> w i n e <space> c h a n g e <space> i n t o <space> v i n e g a r <space> a n d <space> t h e <space> h o s t <space> c r u m b l e <space> i n t o <space> c o r r u p t i o n <space> a f t e r <space> t h e y <space> h a v e <space> b e e n <space> c o n s e c r a t e d , <space> i s <space> J e s u s <space> C h r i s t <space> s t i l l <space> p r e s e n t <space> u n d e r <space> t h e i r <space> s p e c i e s <space> a s <space> G o d <space> a n d <space> a s <space> m a n ?",
+                    "tokenid": "23 48 13 62 50 47 13 65 51 56 47 13 45 50 43 56 49 47 13 51 56 62 57 13 64 51 56 47 49 43 60 13 43 56 46 13 62 50 47 13 50 57 61 62 13 45 60 63 55 44 54 47 13 51 56 62 57 13 45 57 60 60 63 58 62 51 57 56 13 43 48 62 47 60 13 62 50 47 67 13 50 43 64 47 13 44 47 47 56 13 45 57 56 61 47 45 60 43 62 47 46 7 13 51 61 13 24 47 61 63 61 13 17 50 60 51 61 62 13 61 62 51 54 54 13 58 60 47 61 47 56 62 13 63 56 46 47 60 13 62 50 47 51 60 13 61 58 47 45 51 47 61 13 43 61 13 21 57 46 13 43 56 46 13 43 61 13 55 43 56 14"
+                }
+            ],
+            "utt2spk": "1089_134686"
+        },
+        "1089_134686_000025_000001": {
+            "input": [
+                {
+                    "feat": "/export/b18/jcho/espnet3/egs/libritts/tts+spkid/dump/test_clean/feats.1.ark:3872267",
+                    "name": "input1",
+                    "shape": [
+                        95,
+                        80
+                    ]
+                }
+            ],
+            "output": [
+                {
+                    "name": "target1",
+                    "shape": [
+                        11,
+                        78
+                    ],
+                    "text": "Here he is!",
+                    "token": "H e r e <space> h e <space> i s !",
+                    "tokenid": "22 47 60 47 13 50 47 13 51 61 2"
+                }
+            ],
+            "utt2spk": "1089_134686"
+        },
+        "1089_134686_000026_000000": {
+            "input": [
+                {
+                    "feat": "/export/b18/jcho/espnet3/egs/libritts/tts+spkid/dump/test_clean/feats.1.ark:3880554",
+                    "name": "input1",
+                    "shape": [
+                        369,
+                        80
+                    ]
+                }
+            ],
+            "output": [
+                {
+                    "name": "target1",
+                    "shape": [
+                        74,
+                        78
+                    ],
+                    "text": "A boy from his post at the window had seen the rector come from the house.",
+                    "token": "A <space> b o y <space> f r o m <space> h i s <space> p o s t <space> a t <space> t h e <space> w i n d o w <space> h a d <space> s e e n <space> t h e <space> r e c t o r <space> c o m e <space> f r o m <space> t h e <space> h o u s e .",
+                    "tokenid": "15 13 44 57 67 13 48 60 57 55 13 50 51 61 13 58 57 61 62 13 43 62 13 62 50 47 13 65 51 56 46 57 65 13 50 43 46 13 61 47 47 56 13 62 50 47 13 60 47 45 62 57 60 13 45 57 55 47 13 48 60 57 55 13 62 50 47 13 50 57 63 61 47 9"
+                }
+            ],
+            "utt2spk": "1089_134686"
+        },
+        "1089_134686_000026_000001": {
+            "input": [
+                {
+                    "feat": "/export/b18/jcho/espnet3/egs/libritts/tts+spkid/dump/test_clean/feats.1.ark:3910761",
+                    "name": "input1",
+                    "shape": [
+                        360,
+                        80
+                    ]
+                }
+            ],
+            "output": [
+                {
+                    "name": "target1",
+                    "shape": [
+                        69,
+                        78
+                    ],
+                    "text": "All the catechisms were opened and all heads bent upon them silently.",
+                    "token": "A l l <space> t h e <space> c a t e c h i s m s <space> w e r e <space> o p e n e d <space> a n d <space> a l l <space> h e a d s <space> b e n t <space> u p o n <space> t h e m <space> s i l e n t l y .",
+                    "tokenid": "15 54 54 13 62 50 47 13 45 43 62 47 45 50 51 61 55 61 13 65 47 60 47 13 57 58 47 56 47 46 13 43 56 46 13 43 54 54 13 50 47 43 46 61 13 44 47 56 62 13 63 58 57 56 13 62 50 47 55 13 61 51 54 47 56 62 54 67 9"
+                }
+            ],
+            "utt2spk": "1089_134686"
+        },
+        "1089_134686_000026_000003": {
+            "input": [
+                {
+                    "feat": "/export/b18/jcho/espnet3/egs/libritts/tts+spkid/dump/test_clean/feats.1.ark:3940248",
+                    "name": "input1",
+                    "shape": [
+                        532,
+                        80
+                    ]
+                }
+            ],
+            "output": [
+                {
+                    "name": "target1",
+                    "shape": [
+                        94,
+                        78
+                    ],
+                    "text": "A gentle kick from the tall boy in the bench behind urged Stephen to ask a difficult question.",
+                    "token": "A <space> g e n t l e <space> k i c k <space> f r o m <space> t h e <space> t a l l <space> b o y <space> i n <space> t h e <space> b e n c h <space> b e h i n d <space> u r g e d <space> S t e p h e n <space> t o <space> a s k <space> a <space> d i f f i c u l t <space> q u e s t i o n .",
+                    "tokenid": "15 13 49 47 56 62 54 47 13 53 51 45 53 13 48 60 57 55 13 62 50 47 13 62 43 54 54 13 44 57 67 13 51 56 13 62 50 47 13 44 47 56 45 50 13 44 47 50 51 56 46 13 63 60 49 47 46 13 33 62 47 58 50 47 56 13 62 57 13 43 61 53 13 43 13 46 51 48 48 51 45 63 54 62 13 59 63 47 61 62 51 57 56 9"
+                }
+            ],
+            "utt2spk": "1089_134686"
+        },
+        "1089_134686_000027_000000": {
+            "input": [
+                {
+                    "feat": "/export/b18/jcho/espnet3/egs/libritts/tts+spkid/dump/test_clean/feats.1.ark:3983495",
+                    "name": "input1",
+                    "shape": [
+                        311,
+                        80
+                    ]
+                }
+            ],
+            "output": [
+                {
+                    "name": "target1",
+                    "shape": [
+                        63,
+                        78
+                    ],
+                    "text": "The rector did not ask for a catechism to hear the lesson from.",
+                    "token": "T h e <space> r e c t o r <space> d i d <space> n o t <space> a s k <space> f o r <space> a <space> c a t e c h i s m <space> t o <space> h e a r <space> t h e <space> l e s s o n <space> f r o m .",
+                    "tokenid": "34 50 47 13 60 47 45 62 57 60 13 46 51 46 13 56 57 62 13 43 61 53 13 48 57 60 13 43 13 45 43 62 47 45 50 51 61 55 13 62 57 13 50 47 43 60 13 62 50 47 13 54 47 61 61 57 56 13 48 60 57 55 9"
+                }
+            ],
+            "utt2spk": "1089_134686"
+        },
+        "1089_134686_000027_000001": {
+            "input": [
+                {
+                    "feat": "/export/b18/jcho/espnet3/egs/libritts/tts+spkid/dump/test_clean/feats.1.ark:4009062",
+                    "name": "input1",
+                    "shape": [
+                        211,
+                        80
+                    ]
+                }
+            ],
+            "output": [
+                {
+                    "name": "target1",
+                    "shape": [
+                        42,
+                        78
+                    ],
+                    "text": "He clasped his hands on the desk and said:",
+                    "token": "H e <space> c l a s p e d <space> h i s <space> h a n d s <space> o n <space> t h e <space> d e s k <space> a n d <space> s a i d :",
+                    "tokenid": "22 47 13 45 54 43 61 58 47 46 13 50 51 61 13 50 43 56 46 61 13 57 56 13 62 50 47 13 46 47 61 53 13 43 56 46 13 61 43 51 46 11"
+                }
+            ],
+            "utt2spk": "1089_134686"
+        },
+        "1089_134686_000028_000001": {
+            "input": [
+                {
+                    "feat": "/export/b18/jcho/espnet3/egs/libritts/tts+spkid/dump/test_clean/feats.1.ark:4026629",
+                    "name": "input1",
+                    "shape": [
+                        262,
+                        80
+                    ]
+                }
+            ],
+            "output": [
+                {
+                    "name": "target1",
+                    "shape": [
+                        48,
+                        78
+                    ],
+                    "text": "The retreat will go on from Wednesday to Friday.",
+                    "token": "T h e <space> r e t r e a t <space> w i l l <space> g o <space> o n <space> f r o m <space> W e d n e s d a y <space> t o <space> F r i d a y .",
+                    "tokenid": "34 50 47 13 60 47 62 60 47 43 62 13 65 51 54 54 13 49 57 13 57 56 13 48 60 57 55 13 37 47 46 56 47 61 46 43 67 13 62 57 13 20 60 51 46 43 67 9"
+                }
+            ],
+            "utt2spk": "1089_134686"
+        },
+        "1089_134686_000028_000002": {
+            "input": [
+                {
+                    "feat": "/export/b18/jcho/espnet3/egs/libritts/tts+spkid/dump/test_clean/feats.1.ark:4048276",
+                    "name": "input1",
+                    "shape": [
+                        406,
+                        80
+                    ]
+                }
+            ],
+            "output": [
+                {
+                    "name": "target1",
+                    "shape": [
+                        65,
+                        78
+                    ],
+                    "text": "On Friday confession will be heard all the afternoon after beads.",
+                    "token": "O n <space> F r i d a y <space> c o n f e s s i o n <space> w i l l <space> b e <space> h e a r d <space> a l l <space> t h e <space> a f t e r n o o n <space> a f t e r <space> b e a d s .",
+                    "tokenid": "29 56 13 20 60 51 46 43 67 13 45 57 56 48 47 61 61 51 57 56 13 65 51 54 54 13 44 47 13 50 47 43 60 46 13 43 54 54 13 62 50 47 13 43 48 62 47 60 56 57 57 56 13 43 48 62 47 60 13 44 47 43 46 61 9"
+                }
+            ],
+            "utt2spk": "1089_134686"
+        },
+        "1089_134686_000028_000003": {
+            "input": [
+                {
+                    "feat": "/export/b18/jcho/espnet3/egs/libritts/tts+spkid/dump/test_clean/feats.1.ark:4081443",
+                    "name": "input1",
+                    "shape": [
+                        460,
+                        80
+                    ]
+                }
+            ],
+            "output": [
+                {
+                    "name": "target1",
+                    "shape": [
+                        85,
+                        78
+                    ],
+                    "text": "If any boys have special confessors perhaps it will be better for them not to change.",
+                    "token": "I f <space> a n y <space> b o y s <space> h a v e <space> s p e c i a l <space> c o n f e s s o r s <space> p e r h a p s <space> i t <space> w i l l <space> b e <space> b e t t e r <space> f o r <space> t h e m <space> n o t <space> t o <space> c h a n g e .",
+                    "tokenid": "23 48 13 43 56 67 13 44 57 67 61 13 50 43 64 47 13 61 58 47 45 51 43 54 13 45 57 56 48 47 61 61 57 60 61 13 58 47 60 50 43 58 61 13 51 62 13 65 51 54 54 13 44 47 13 44 47 62 62 47 60 13 48 57 60 13 62 50 47 55 13 56 57 62 13 62 57 13 45 50 43 56 49 47 9"
+                }
+            ],
+            "utt2spk": "1089_134686"
+        },
+        "1089_134686_000028_000004": {
+            "input": [
+                {
+                    "feat": "/export/b18/jcho/espnet3/egs/libritts/tts+spkid/dump/test_clean/feats.1.ark:4118930",
+                    "name": "input1",
+                    "shape": [
+                        499,
+                        80
+                    ]
+                }
+            ],
+            "output": [
+                {
+                    "name": "target1",
+                    "shape": [
+                        93,
+                        78
+                    ],
+                    "text": "Mass will be on Saturday morning at nine o'clock and general communion for the whole college.",
+                    "token": "M a s s <space> w i l l <space> b e <space> o n <space> S a t u r d a y <space> m o r n i n g <space> a t <space> n i n e <space> o ' c l o c k <space> a n d <space> g e n e r a l <space> c o m m u n i o n <space> f o r <space> t h e <space> w h o l e <space> c o l l e g e .",
+                    "tokenid": "27 43 61 61 13 65 51 54 54 13 44 47 13 57 56 13 33 43 62 63 60 46 43 67 13 55 57 60 56 51 56 49 13 43 62 13 56 51 56 47 13 57 4 45 54 57 45 53 13 43 56 46 13 49 47 56 47 60 43 54 13 45 57 55 55 63 56 51 57 56 13 48 57 60 13 62 50 47 13 65 50 57 54 47 13 45 57 54 54 47 49 47 9"
+                }
+            ],
+            "utt2spk": "1089_134686"
+        },
+        "1089_134686_000028_000006": {
+            "input": [
+                {
+                    "feat": "/export/b18/jcho/espnet3/egs/libritts/tts+spkid/dump/test_clean/feats.1.ark:4159537",
+                    "name": "input1",
+                    "shape": [
+                        641,
+                        80
+                    ]
+                }
+            ],
+            "output": [
+                {
+                    "name": "target1",
+                    "shape": [
+                        108,
+                        78
+                    ],
+                    "text": "But Saturday and Sunday being free days some boys might be inclined to think that Monday is a free day also.",
+                    "token": "B u t <space> S a t u r d a y <space> a n d <space> S u n d a y <space> b e i n g <space> f r e e <space> d a y s <space> s o m e <space> b o y s <space> m i g h t <space> b e <space> i n c l i n e d <space> t o <space> t h i n k <space> t h a t <space> M o n d a y <space> i s <space> a <space> f r e e <space> d a y <space> a l s o .",
+                    "tokenid": "16 63 62 13 33 43 62 63 60 46 43 67 13 43 56 46 13 33 63 56 46 43 67 13 44 47 51 56 49 13 48 60 47 47 13 46 43 67 61 13 61 57 55 47 13 44 57 67 61 13 55 51 49 50 62 13 44 47 13 51 56 45 54 51 56 47 46 13 62 57 13 62 50 51 56 53 13 62 50 43 62 13 27 57 56 46 43 67 13 51 61 13 43 13 48 60 47 47 13 46 43 67 13 43 54 61 57 9"
+                }
+            ],
+            "utt2spk": "1089_134686"
+        },
+        "1089_134686_000028_000007": {
+            "input": [
+                {
+                    "feat": "/export/b18/jcho/espnet3/egs/libritts/tts+spkid/dump/test_clean/feats.1.ark:4211504",
+                    "name": "input1",
+                    "shape": [
+                        226,
+                        80
+                    ]
+                }
+            ],
+            "output": [
+                {
+                    "name": "target1",
+                    "shape": [
+                        30,
+                        78
+                    ],
+                    "text": "Beware of making that mistake.",
+                    "token": "B e w a r e <space> o f <space> m a k i n g <space> t h a t <space> m i s t a k e .",
+                    "tokenid": "16 47 65 43 60 47 13 57 48 13 55 43 53 51 56 49 13 62 50 43 62 13 55 51 61 62 43 53 47 9"
+                }
+            ],
+            "utt2spk": "1089_134686"
+        },
+        "1089_134686_000028_000008": {
+            "input": [
+                {
+                    "feat": "/export/b18/jcho/espnet3/egs/libritts/tts+spkid/dump/test_clean/feats.1.ark:4230271",
+                    "name": "input1",
+                    "shape": [
+                        345,
+                        80
+                    ]
+                }
+            ],
+            "output": [
+                {
+                    "name": "target1",
+                    "shape": [
+                        54,
+                        78
+                    ],
+                    "text": "I think you, Lawless, are likely to make that mistake.",
+                    "token": "I <space> t h i n k <space> y o u , <space> L a w l e s s , <space> a r e <space> l i k e l y <space> t o <space> m a k e <space> t h a t <space> m i s t a k e .",
+                    "tokenid": "23 13 62 50 51 56 53 13 67 57 63 7 13 26 43 65 54 47 61 61 7 13 43 60 47 13 54 51 53 47 54 67 13 62 57 13 55 43 53 47 13 62 50 43 62 13 55 51 61 62 43 53 47 9"
+                }
+            ],
+            "utt2spk": "1089_134686"
+        },
+        "1089_134686_000029_000000": {
+            "input": [
+                {
+                    "feat": "/export/b18/jcho/espnet3/egs/libritts/tts+spkid/dump/test_clean/feats.2.ark:26",
+                    "name": "input1",
+                    "shape": [
+                        90,
+                        80
+                    ]
+                }
+            ],
+            "output": [
+                {
+                    "name": "target1",
+                    "shape": [
+                        8,
+                        78
+                    ],
+                    "text": "--I sir?",
+                    "token": "- - I <space> s i r ?",
+                    "tokenid": "8 8 23 13 61 51 60 14"
+                }
+            ],
+            "utt2spk": "1089_134686"
+        },
+        "1089_134686_000029_000001": {
+            "input": [
+                {
+                    "feat": "/export/b18/jcho/espnet3/egs/libritts/tts+spkid/dump/test_clean/feats.2.ark:7913",
+                    "name": "input1",
+                    "shape": [
+                        99,
+                        80
+                    ]
+                }
+            ],
+            "output": [
+                {
+                    "name": "target1",
+                    "shape": [
+                        9,
+                        78
+                    ],
+                    "text": "Why, sir?",
+                    "token": "W h y , <space> s i r ?",
+                    "tokenid": "37 50 67 7 13 61 51 60 14"
+                }
+            ],
+            "utt2spk": "1089_134686"
+        },
+        "1089_134686_000030_000000": {
+            "input": [
+                {
+                    "feat": "/export/b18/jcho/espnet3/egs/libritts/tts+spkid/dump/test_clean/feats.2.ark:16520",
+                    "name": "input1",
+                    "shape": [
+                        523,
+                        80
+                    ]
+                }
+            ],
+            "output": [
+                {
+                    "name": "target1",
+                    "shape": [
+                        93,
+                        78
+                    ],
+                    "text": "A little wave of quiet mirth broke forth over the class of boys from the rector's grim smile.",
+                    "token": "A <space> l i t t l e <space> w a v e <space> o f <space> q u i e t <space> m i r t h <space> b r o k e <space> f o r t h <space> o v e r <space> t h e <space> c l a s s <space> o f <space> b o y s <space> f r o m <space> t h e <space> r e c t o r ' s <space> g r i m <space> s m i l e .",
+                    "tokenid": "15 13 54 51 62 62 54 47 13 65 43 64 47 13 57 48 13 59 63 51 47 62 13 55 51 60 62 50 13 44 60 57 53 47 13 48 57 60 62 50 13 57 64 47 60 13 62 50 47 13 45 54 43 61 61 13 57 48 13 44 57 67 61 13 48 60 57 55 13 62 50 47 13 60 47 45 62 57 60 4 61 13 49 60 51 55 13 61 55 51 54 47 9"
+                }
+            ],
+            "utt2spk": "1089_134686"
+        },
+        "1089_134686_000030_000001": {
+            "input": [
+                {
+                    "feat": "/export/b18/jcho/espnet3/egs/libritts/tts+spkid/dump/test_clean/feats.2.ark:59047",
+                    "name": "input1",
+                    "shape": [
+                        550,
+                        80
+                    ]
+                }
+            ],
+            "output": [
+                {
+                    "name": "target1",
+                    "shape": [
+                        80,
+                        78
+                    ],
+                    "text": "Stephen's heart began slowly to fold and fade with fear like a withering flower.",
+                    "token": "S t e p h e n ' s <space> h e a r t <space> b e g a n <space> s l o w l y <space> t o <space> f o l d <space> a n d <space> f a d e <space> w i t h <space> f e a r <space> l i k e <space> a <space> w i t h e r i n g <space> f l o w e r .",
+                    "tokenid": "33 62 47 58 50 47 56 4 61 13 50 47 43 60 62 13 44 47 49 43 56 13 61 54 57 65 54 67 13 62 57 13 48 57 54 46 13 43 56 46 13 48 43 46 47 13 65 51 62 50 13 48 47 43 60 13 54 51 53 47 13 43 13 65 51 62 50 47 60 51 56 49 13 48 54 57 65 47 60 9"
+                }
+            ],
+            "utt2spk": "1089_134686"
+        },
+        "1089_134686_000031_000000": {
+            "input": [
+                {
+                    "feat": "/export/b18/jcho/espnet3/egs/libritts/tts+spkid/dump/test_clean/feats.2.ark:103734",
+                    "name": "input1",
+                    "shape": [
+                        181,
+                        80
+                    ]
+                }
+            ],
+            "output": [
+                {
+                    "name": "target1",
+                    "shape": [
+                        27,
+                        78
+                    ],
+                    "text": "The rector went on gravely:",
+                    "token": "T h e <space> r e c t o r <space> w e n t <space> o n <space> g r a v e l y :",
+                    "tokenid": "34 50 47 13 60 47 45 62 57 60 13 65 47 56 62 13 57 56 13 49 60 43 64 47 54 67 11"
+                }
+            ],
+            "utt2spk": "1089_134686"
+        },
+        "1089_134686_000032_000000": {
+            "input": [
+                {
+                    "feat": "/export/b18/jcho/espnet3/egs/libritts/tts+spkid/dump/test_clean/feats.2.ark:118901",
+                    "name": "input1",
+                    "shape": [
+                        640,
+                        80
+                    ]
+                }
+            ],
+            "output": [
+                {
+                    "name": "target1",
+                    "shape": [
+                        113,
+                        78
+                    ],
+                    "text": "--You are all familiar with the story of the life of saint Francis Xavier, I suppose, the patron of your college.",
+                    "token": "- - Y o u <space> a r e <space> a l l <space> f a m i l i a r <space> w i t h <space> t h e <space> s t o r y <space> o f <space> t h e <space> l i f e <space> o f <space> s a i n t <space> F r a n c i s <space> X a v i e r , <space> I <space> s u p p o s e , <space> t h e <space> p a t r o n <space> o f <space> y o u r <space> c o l l e g e .",
+                    "tokenid": "8 8 39 57 63 13 43 60 47 13 43 54 54 13 48 43 55 51 54 51 43 60 13 65 51 62 50 13 62 50 47 13 61 62 57 60 67 13 57 48 13 62 50 47 13 54 51 48 47 13 57 48 13 61 43 51 56 62 13 20 60 43 56 45 51 61 13 38 43 64 51 47 60 7 13 23 13 61 63 58 58 57 61 47 7 13 62 50 47 13 58 43 62 60 57 56 13 57 48 13 67 57 63 60 13 45 57 54 54 47 49 47 9"
+                }
+            ],
+            "utt2spk": "1089_134686"
+        },
+        "1089_134686_000032_000001": {
+            "input": [
+                {
+                    "feat": "/export/b18/jcho/espnet3/egs/libritts/tts+spkid/dump/test_clean/feats.2.ark:170788",
+                    "name": "input1",
+                    "shape": [
+                        709,
+                        80
+                    ]
+                }
+            ],
+            "output": [
+                {
+                    "name": "target1",
+                    "shape": [
+                        123,
+                        78
+                    ],
+                    "text": "He came of an old and illustrious Spanish family and you remember that he was one of the first followers of saint Ignatius.",
+                    "token": "H e <space> c a m e <space> o f <space> a n <space> o l d <space> a n d <space> i l l u s t r i o u s <space> S p a n i s h <space> f a m i l y <space> a n d <space> y o u <space> r e m e m b e r <space> t h a t <space> h e <space> w a s <space> o n e <space> o f <space> t h e <space> f i r s t <space> f o l l o w e r s <space> o f <space> s a i n t <space> I g n a t i u s .",
+                    "tokenid": "22 47 13 45 43 55 47 13 57 48 13 43 56 13 57 54 46 13 43 56 46 13 51 54 54 63 61 62 60 51 57 63 61 13 33 58 43 56 51 61 50 13 48 43 55 51 54 67 13 43 56 46 13 67 57 63 13 60 47 55 47 55 44 47 60 13 62 50 43 62 13 50 47 13 65 43 61 13 57 56 47 13 57 48 13 62 50 47 13 48 51 60 61 62 13 48 57 54 54 57 65 47 60 61 13 57 48 13 61 43 51 56 62 13 23 49 56 43 62 51 63 61 9"
+                }
+            ],
+            "utt2spk": "1089_134686"
+        },
+        "1089_134686_000032_000004": {
+            "input": [
+                {
+                    "feat": "/export/b18/jcho/espnet3/egs/libritts/tts+spkid/dump/test_clean/feats.2.ark:228195",
+                    "name": "input1",
+                    "shape": [
+                        317,
+                        80
+                    ]
+                }
+            ],
+            "output": [
+                {
+                    "name": "target1",
+                    "shape": [
+                        53,
+                        78
+                    ],
+                    "text": "He is called, as you know, the apostle of the Indies.",
+                    "token": "H e <space> i s <space> c a l l e d , <space> a s <space> y o u <space> k n o w , <space> t h e <space> a p o s t l e <space> o f <space> t h e <space> I n d i e s .",
+                    "tokenid": "22 47 13 51 61 13 45 43 54 54 47 46 7 13 43 61 13 67 57 63 13 53 56 57 65 7 13 62 50 47 13 43 58 57 61 62 54 47 13 57 48 13 62 50 47 13 23 56 46 51 47 61 9"
+                }
+            ],
+            "utt2spk": "1089_134686"
+        },
+        "1089_134686_000032_000005": {
+            "input": [
+                {
+                    "feat": "/export/b18/jcho/espnet3/egs/libritts/tts+spkid/dump/test_clean/feats.2.ark:254242",
+                    "name": "input1",
+                    "shape": [
+                        738,
+                        80
+                    ]
+                }
+            ],
+            "output": [
+                {
+                    "name": "target1",
+                    "shape": [
+                        109,
+                        78
+                    ],
+                    "text": "He went from country to country in the east, from Africa to India, from India to Japan, baptizing the people.",
+                    "token": "H e <space> w e n t <space> f r o m <space> c o u n t r y <space> t o <space> c o u n t r y <space> i n <space> t h e <space> e a s t , <space> f r o m <space> A f r i c a <space> t o <space> I n d i a , <space> f r o m <space> I n d i a <space> t o <space> J a p a n , <space> b a p t i z i n g <space> t h e <space> p e o p l e .",
+                    "tokenid": "22 47 13 65 47 56 62 13 48 60 57 55 13 45 57 63 56 62 60 67 13 62 57 13 45 57 63 56 62 60 67 13 51 56 13 62 50 47 13 47 43 61 62 7 13 48 60 57 55 13 15 48 60 51 45 43 13 62 57 13 23 56 46 51 43 7 13 48 60 57 55 13 23 56 46 51 43 13 62 57 13 24 43 58 43 56 7 13 44 43 58 62 51 68 51 56 49 13 62 50 47 13 58 47 57 58 54 47 9"
+                }
+            ],
+            "utt2spk": "1089_134686"
+        },
+        "1089_134686_000032_000006": {
+            "input": [
+                {
+                    "feat": "/export/b18/jcho/espnet3/egs/libritts/tts+spkid/dump/test_clean/feats.2.ark:313969",
+                    "name": "input1",
+                    "shape": [
+                        521,
+                        80
+                    ]
+                }
+            ],
+            "output": [
+                {
+                    "name": "target1",
+                    "shape": [
+                        75,
+                        78
+                    ],
+                    "text": "He is said to have baptized as many as ten thousand idolaters in one month.",
+                    "token": "H e <space> i s <space> s a i d <space> t o <space> h a v e <space> b a p t i z e d <space> a s <space> m a n y <space> a s <space> t e n <space> t h o u s a n d <space> i d o l a t e r s <space> i n <space> o n e <space> m o n t h .",
+                    "tokenid": "22 47 13 51 61 13 61 43 51 46 13 62 57 13 50 43 64 47 13 44 43 58 62 51 68 47 46 13 43 61 13 55 43 56 67 13 43 61 13 62 47 56 13 62 50 57 63 61 43 56 46 13 51 46 57 54 43 62 47 60 61 13 51 56 13 57 56 47 13 55 57 56 62 50 9"
+                }
+            ],
+            "utt2spk": "1089_134686"
+        },
+        "1089_134686_000032_000007": {
+            "input": [
+                {
+                    "feat": "/export/b18/jcho/espnet3/egs/libritts/tts+spkid/dump/test_clean/feats.2.ark:356336",
+                    "name": "input1",
+                    "shape": [
+                        1472,
+                        80
+                    ]
+                }
+            ],
+            "output": [
+                {
+                    "name": "target1",
+                    "shape": [
+                        233,
+                        78
+                    ],
+                    "text": "It is said that his right arm had grown powerless from having been raised so often over the heads of those whom he baptized. He wished then to go to China to win still more souls for God but he died of fever on the island of Sancian.",
+                    "token": "I t <space> i s <space> s a i d <space> t h a t <space> h i s <space> r i g h t <space> a r m <space> h a d <space> g r o w n <space> p o w e r l e s s <space> f r o m <space> h a v i n g <space> b e e n <space> r a i s e d <space> s o <space> o f t e n <space> o v e r <space> t h e <space> h e a d s <space> o f <space> t h o s e <space> w h o m <space> h e <space> b a p t i z e d . <space> H e <space> w i s h e d <space> t h e n <space> t o <space> g o <space> t o <space> C h i n a <space> t o <space> w i n <space> s t i l l <space> m o r e <space> s o u l s <space> f o r <space> G o d <space> b u t <space> h e <space> d i e d <space> o f <space> f e v e r <space> o n <space> t h e <space> i s l a n d <space> o f <space> S a n c i a n .",
+                    "tokenid": "23 62 13 51 61 13 61 43 51 46 13 62 50 43 62 13 50 51 61 13 60 51 49 50 62 13 43 60 55 13 50 43 46 13 49 60 57 65 56 13 58 57 65 47 60 54 47 61 61 13 48 60 57 55 13 50 43 64 51 56 49 13 44 47 47 56 13 60 43 51 61 47 46 13 61 57 13 57 48 62 47 56 13 57 64 47 60 13 62 50 47 13 50 47 43 46 61 13 57 48 13 62 50 57 61 47 13 65 50 57 55 13 50 47 13 44 43 58 62 51 68 47 46 9 13 22 47 13 65 51 61 50 47 46 13 62 50 47 56 13 62 57 13 49 57 13 62 57 13 17 50 51 56 43 13 62 57 13 65 51 56 13 61 62 51 54 54 13 55 57 60 47 13 61 57 63 54 61 13 48 57 60 13 21 57 46 13 44 63 62 13 50 47 13 46 51 47 46 13 57 48 13 48 47 64 47 60 13 57 56 13 62 50 47 13 51 61 54 43 56 46 13 57 48 13 33 43 56 45 51 43 56 9"
+                }
+            ],
+            "utt2spk": "1089_134686"
+        },
+        "1089_134686_000032_000008": {
+            "input": [
+                {
+                    "feat": "/export/b18/jcho/espnet3/egs/libritts/tts+spkid/dump/test_clean/feats.2.ark:474783",
+                    "name": "input1",
+                    "shape": [
+                        288,
+                        80
+                    ]
+                }
+            ],
+            "output": [
+                {
+                    "name": "target1",
+                    "shape": [
+                        36,
+                        78
+                    ],
+                    "text": "A great saint, saint Francis Xavier!",
+                    "token": "A <space> g r e a t <space> s a i n t , <space> s a i n t <space> F r a n c i s <space> X a v i e r !",
+                    "tokenid": "15 13 49 60 47 43 62 13 61 43 51 56 62 7 13 61 43 51 56 62 13 20 60 43 56 45 51 61 13 38 43 64 51 47 60 2"
+                }
+            ],
+            "utt2spk": "1089_134686"
+        },
+        "1089_134686_000032_000009": {
+            "input": [
+                {
+                    "feat": "/export/b18/jcho/espnet3/egs/libritts/tts+spkid/dump/test_clean/feats.2.ark:498510",
+                    "name": "input1",
+                    "shape": [
+                        173,
+                        80
+                    ]
+                }
+            ],
+            "output": [
+                {
+                    "name": "target1",
+                    "shape": [
+                        23,
+                        78
+                    ],
+                    "text": "A great soldier of God!",
+                    "token": "A <space> g r e a t <space> s o l d i e r <space> o f <space> G o d !",
+                    "tokenid": "15 13 49 60 47 43 62 13 61 57 54 46 51 47 60 13 57 48 13 21 57 46 2"
+                }
+            ],
+            "utt2spk": "1089_134686"
+        },
+        "1089_134686_000034_000000": {
+            "input": [
+                {
+                    "feat": "/export/b18/jcho/espnet3/egs/libritts/tts+spkid/dump/test_clean/feats.2.ark:513037",
+                    "name": "input1",
+                    "shape": [
+                        271,
+                        80
+                    ]
+                }
+            ],
+            "output": [
+                {
+                    "name": "target1",
+                    "shape": [
+                        47,
+                        78
+                    ],
+                    "text": "--He had the faith in him that moves mountains.",
+                    "token": "- - H e <space> h a d <space> t h e <space> f a i t h <space> i n <space> h i m <space> t h a t <space> m o v e s <space> m o u n t a i n s .",
+                    "tokenid": "8 8 22 47 13 50 43 46 13 62 50 47 13 48 43 51 62 50 13 51 56 13 50 51 55 13 62 50 43 62 13 55 57 64 47 61 13 55 57 63 56 62 43 51 56 61 9"
+                }
+            ],
+            "utt2spk": "1089_134686"
+        },
+        "1089_134686_000034_000001": {
+            "input": [
+                {
+                    "feat": "/export/b18/jcho/espnet3/egs/libritts/tts+spkid/dump/test_clean/feats.2.ark:535404",
+                    "name": "input1",
+                    "shape": [
+                        356,
+                        80
+                    ]
+                }
+            ],
+            "output": [
+                {
+                    "name": "target1",
+                    "shape": [
+                        49,
+                        78
+                    ],
+                    "text": "Ten thousand souls won for God in a single month!",
+                    "token": "T e n <space> t h o u s a n d <space> s o u l s <space> w o n <space> f o r <space> G o d <space> i n <space> a <space> s i n g l e <space> m o n t h !",
+                    "tokenid": "34 47 56 13 62 50 57 63 61 43 56 46 13 61 57 63 54 61 13 65 57 56 13 48 57 60 13 21 57 46 13 51 56 13 43 13 61 51 56 49 54 47 13 55 57 56 62 50 2"
+                }
+            ],
+            "utt2spk": "1089_134686"
+        },
+        "1089_134686_000034_000003": {
+            "input": [
+                {
+                    "feat": "/export/b18/jcho/espnet3/egs/libritts/tts+spkid/dump/test_clean/feats.2.ark:564571",
+                    "name": "input1",
+                    "shape": [
+                        1606,
+                        80
+                    ]
+                }
+            ],
+            "output": [
+                {
+                    "name": "target1",
+                    "shape": [
+                        231,
+                        78
+                    ],
+                    "text": "A saint who has great power in heaven, remember: power to intercede for us in our grief; power to obtain whatever we pray for if it be for the good of our souls; power above all to obtain for us the grace to repent if we be in sin.",
+                    "token": "A <space> s a i n t <space> w h o <space> h a s <space> g r e a t <space> p o w e r <space> i n <space> h e a v e n , <space> r e m e m b e r : <space> p o w e r <space> t o <space> i n t e r c e d e <space> f o r <space> u s <space> i n <space> o u r <space> g r i e f ; <space> p o w e r <space> t o <space> o b t a i n <space> w h a t e v e r <space> w e <space> p r a y <space> f o r <space> i f <space> i t <space> b e <space> f o r <space> t h e <space> g o o d <space> o f <space> o u r <space> s o u l s ; <space> p o w e r <space> a b o v e <space> a l l <space> t o <space> o b t a i n <space> f o r <space> u s <space> t h e <space> g r a c e <space> t o <space> r e p e n t <space> i f <space> w e <space> b e <space> i n <space> s i n .",
+                    "tokenid": "15 13 61 43 51 56 62 13 65 50 57 13 50 43 61 13 49 60 47 43 62 13 58 57 65 47 60 13 51 56 13 50 47 43 64 47 56 7 13 60 47 55 47 55 44 47 60 11 13 58 57 65 47 60 13 62 57 13 51 56 62 47 60 45 47 46 47 13 48 57 60 13 63 61 13 51 56 13 57 63 60 13 49 60 51 47 48 12 13 58 57 65 47 60 13 62 57 13 57 44 62 43 51 56 13 65 50 43 62 47 64 47 60 13 65 47 13 58 60 43 67 13 48 57 60 13 51 48 13 51 62 13 44 47 13 48 57 60 13 62 50 47 13 49 57 57 46 13 57 48 13 57 63 60 13 61 57 63 54 61 12 13 58 57 65 47 60 13 43 44 57 64 47 13 43 54 54 13 62 57 13 57 44 62 43 51 56 13 48 57 60 13 63 61 13 62 50 47 13 49 60 43 45 47 13 62 57 13 60 47 58 47 56 62 13 51 48 13 65 47 13 44 47 13 51 56 13 61 51 56 9"
+                }
+            ],
+            "utt2spk": "1089_134686"
+        },
+        "1089_134686_000034_000004": {
+            "input": [
+                {
+                    "feat": "/export/b18/jcho/espnet3/egs/libritts/tts+spkid/dump/test_clean/feats.2.ark:693738",
+                    "name": "input1",
+                    "shape": [
+                        289,
+                        80
+                    ]
+                }
+            ],
+            "output": [
+                {
+                    "name": "target1",
+                    "shape": [
+                        36,
+                        78
+                    ],
+                    "text": "A great saint, saint Francis Xavier!",
+                    "token": "A <space> g r e a t <space> s a i n t , <space> s a i n t <space> F r a n c i s <space> X a v i e r !",
+                    "tokenid": "15 13 49 60 47 43 62 13 61 43 51 56 62 7 13 61 43 51 56 62 13 20 60 43 56 45 51 61 13 38 43 64 51 47 60 2"
+                }
+            ],
+            "utt2spk": "1089_134686"
+        },
+        "1089_134686_000034_000005": {
+            "input": [
+                {
+                    "feat": "/export/b18/jcho/espnet3/egs/libritts/tts+spkid/dump/test_clean/feats.2.ark:717545",
+                    "name": "input1",
+                    "shape": [
+                        203,
+                        80
+                    ]
+                }
+            ],
+            "output": [
+                {
+                    "name": "target1",
+                    "shape": [
+                        24,
+                        78
+                    ],
+                    "text": "A great fisher of souls!",
+                    "token": "A <space> g r e a t <space> f i s h e r <space> o f <space> s o u l s !",
+                    "tokenid": "15 13 49 60 47 43 62 13 48 51 61 50 47 60 13 57 48 13 61 57 63 54 61 2"
+                }
+            ],
+            "utt2spk": "1089_134686"
+        },
+        "1089_134686_000035_000000": {
+            "input": [
+                {
+                    "feat": "/export/b18/jcho/espnet3/egs/libritts/tts+spkid/dump/test_clean/feats.2.ark:734472",
+                    "name": "input1",
+                    "shape": [
+                        943,
+                        80
+                    ]
+                }
+            ],
+            "output": [
+                {
+                    "name": "target1",
+                    "shape": [
+                        158,
+                        78
+                    ],
+                    "text": "He ceased to shake his clasped hands and, resting them against his forehead, looked right and left of them keenly at his listeners out of his dark stern eyes.",
+                    "token": "H e <space> c e a s e d <space> t o <space> s h a k e <space> h i s <space> c l a s p e d <space> h a n d s <space> a n d , <space> r e s t i n g <space> t h e m <space> a g a i n s t <space> h i s <space> f o r e h e a d , <space> l o o k e d <space> r i g h t <space> a n d <space> l e f t <space> o f <space> t h e m <space> k e e n l y <space> a t <space> h i s <space> l i s t e n e r s <space> o u t <space> o f <space> h i s <space> d a r k <space> s t e r n <space> e y e s .",
+                    "tokenid": "22 47 13 45 47 43 61 47 46 13 62 57 13 61 50 43 53 47 13 50 51 61 13 45 54 43 61 58 47 46 13 50 43 56 46 61 13 43 56 46 7 13 60 47 61 62 51 56 49 13 62 50 47 55 13 43 49 43 51 56 61 62 13 50 51 61 13 48 57 60 47 50 47 43 46 7 13 54 57 57 53 47 46 13 60 51 49 50 62 13 43 56 46 13 54 47 48 62 13 57 48 13 62 50 47 55 13 53 47 47 56 54 67 13 43 62 13 50 51 61 13 54 51 61 62 47 56 47 60 61 13 57 63 62 13 57 48 13 50 51 61 13 46 43 60 53 13 61 62 47 60 56 13 47 67 47 61 9"
+                }
+            ],
+            "utt2spk": "1089_134686"
+        },
+        "1089_134691_000001_000000": {
+            "input": [
+                {
+                    "feat": "/export/b18/jcho/espnet3/egs/libritts/tts+spkid/dump/test_clean/feats.2.ark:810599",
+                    "name": "input1",
+                    "shape": [
+                        127,
+                        80
+                    ]
+                }
+            ],
+            "output": [
+                {
+                    "name": "target1",
+                    "shape": [
+                        24,
+                        78
+                    ],
+                    "text": "He could wait no longer.",
+                    "token": "H e <space> c o u l d <space> w a i t <space> n o <space> l o n g e r .",
+                    "tokenid": "22 47 13 45 57 63 54 46 13 65 43 51 62 13 56 57 13 54 57 56 49 47 60 9"
+                }
+            ],
+            "utt2spk": "1089_134691"
+        },
+        "1089_134691_000002_000001": {
+            "input": [
+                {
+                    "feat": "/export/b18/jcho/espnet3/egs/libritts/tts+spkid/dump/test_clean/feats.2.ark:821446",
+                    "name": "input1",
+                    "shape": [
+                        687,
+                        80
+                    ]
+                }
+            ],
+            "output": [
+                {
+                    "name": "target1",
+                    "shape": [
+                        131,
+                        78
+                    ],
+                    "text": "A full hour had passed since his father had gone in with Dan Crosby, the tutor, to find out for him something about the university.",
+                    "token": "A <space> f u l l <space> h o u r <space> h a d <space> p a s s e d <space> s i n c e <space> h i s <space> f a t h e r <space> h a d <space> g o n e <space> i n <space> w i t h <space> D a n <space> C r o s b y , <space> t h e <space> t u t o r , <space> t o <space> f i n d <space> o u t <space> f o r <space> h i m <space> s o m e t h i n g <space> a b o u t <space> t h e <space> u n i v e r s i t y .",
+                    "tokenid": "15 13 48 63 54 54 13 50 57 63 60 13 50 43 46 13 58 43 61 61 47 46 13 61 51 56 45 47 13 50 51 61 13 48 43 62 50 47 60 13 50 43 46 13 49 57 56 47 13 51 56 13 65 51 62 50 13 18 43 56 13 17 60 57 61 44 67 7 13 62 50 47 13 62 63 62 57 60 7 13 62 57 13 48 51 56 46 13 57 63 62 13 48 57 60 13 50 51 55 13 61 57 55 47 62 50 51 56 49 13 43 44 57 63 62 13 62 50 47 13 63 56 51 64 47 60 61 51 62 67 9"
+                }
+            ],
+            "utt2spk": "1089_134691"
+        },
+        "1089_134691_000002_000002": {
+            "input": [
+                {
+                    "feat": "/export/b18/jcho/espnet3/egs/libritts/tts+spkid/dump/test_clean/feats.2.ark:877093",
+                    "name": "input1",
+                    "shape": [
+                        435,
+                        80
+                    ]
+                }
+            ],
+            "output": [
+                {
+                    "name": "target1",
+                    "shape": [
+                        79,
+                        78
+                    ],
+                    "text": "For a full hour he had paced up and down, waiting: but he could wait no longer.",
+                    "token": "F o r <space> a <space> f u l l <space> h o u r <space> h e <space> h a d <space> p a c e d <space> u p <space> a n d <space> d o w n , <space> w a i t i n g : <space> b u t <space> h e <space> c o u l d <space> w a i t <space> n o <space> l o n g e r .",
+                    "tokenid": "20 57 60 13 43 13 48 63 54 54 13 50 57 63 60 13 50 47 13 50 43 46 13 58 43 45 47 46 13 63 58 13 43 56 46 13 46 57 65 56 7 13 65 43 51 62 51 56 49 11 13 44 63 62 13 50 47 13 45 57 63 54 46 13 65 43 51 62 13 56 57 13 54 57 56 49 47 60 9"
+                }
+            ],
+            "utt2spk": "1089_134691"
+        },
+        "1089_134691_000003_000000": {
+            "input": [
+                {
+                    "feat": "/export/b18/jcho/espnet3/egs/libritts/tts+spkid/dump/test_clean/feats.2.ark:912580",
+                    "name": "input1",
+                    "shape": [
+                        1006,
+                        80
+                    ]
+                }
+            ],
+            "output": [
+                {
+                    "name": "target1",
+                    "shape": [
+                        185,
+                        78
+                    ],
+                    "text": "He set off abruptly for the Bull, walking rapidly lest his father's shrill whistle might call him back; and in a few moments he had rounded the curve at the police barrack and was safe.",
+                    "token": "H e <space> s e t <space> o f f <space> a b r u p t l y <space> f o r <space> t h e <space> B u l l , <space> w a l k i n g <space> r a p i d l y <space> l e s t <space> h i s <space> f a t h e r ' s <space> s h r i l l <space> w h i s t l e <space> m i g h t <space> c a l l <space> h i m <space> b a c k ; <space> a n d <space> i n <space> a <space> f e w <space> m o m e n t s <space> h e <space> h a d <space> r o u n d e d <space> t h e <space> c u r v e <space> a t <space> t h e <space> p o l i c e <space> b a r r a c k <space> a n d <space> w a s <space> s a f e .",
+                    "tokenid": "22 47 13 61 47 62 13 57 48 48 13 43 44 60 63 58 62 54 67 13 48 57 60 13 62 50 47 13 16 63 54 54 7 13 65 43 54 53 51 56 49 13 60 43 58 51 46 54 67 13 54 47 61 62 13 50 51 61 13 48 43 62 50 47 60 4 61 13 61 50 60 51 54 54 13 65 50 51 61 62 54 47 13 55 51 49 50 62 13 45 43 54 54 13 50 51 55 13 44 43 45 53 12 13 43 56 46 13 51 56 13 43 13 48 47 65 13 55 57 55 47 56 62 61 13 50 47 13 50 43 46 13 60 57 63 56 46 47 46 13 62 50 47 13 45 63 60 64 47 13 43 62 13 62 50 47 13 58 57 54 51 45 47 13 44 43 60 60 43 45 53 13 43 56 46 13 65 43 61 13 61 43 48 47 9"
+                }
+            ],
+            "utt2spk": "1089_134691"
+        },
+        "1089_134691_000004_000000": {
+            "input": [
+                {
+                    "feat": "/export/b18/jcho/espnet3/egs/libritts/tts+spkid/dump/test_clean/feats.2.ark:993747",
+                    "name": "input1",
+                    "shape": [
+                        472,
+                        80
+                    ]
+                }
+            ],
+            "output": [
+                {
+                    "name": "target1",
+                    "shape": [
+                        82,
+                        78
+                    ],
+                    "text": "Yes, his mother was hostile to the idea, as he had read from her listless silence.",
+                    "token": "Y e s , <space> h i s <space> m o t h e r <space> w a s <space> h o s t i l e <space> t o <space> t h e <space> i d e a , <space> a s <space> h e <space> h a d <space> r e a d <space> f r o m <space> h e r <space> l i s t l e s s <space> s i l e n c e .",
+                    "tokenid": "39 47 61 7 13 50 51 61 13 55 57 62 50 47 60 13 65 43 61 13 50 57 61 62 51 54 47 13 62 57 13 62 50 47 13 51 46 47 43 7 13 43 61 13 50 47 13 50 43 46 13 60 47 43 46 13 48 60 57 55 13 50 47 60 13 54 51 61 62 54 47 61 61 13 61 51 54 47 56 45 47 9"
+                }
+            ],
+            "utt2spk": "1089_134691"
+        }
+    }
+}

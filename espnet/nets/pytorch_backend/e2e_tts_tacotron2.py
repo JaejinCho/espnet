@@ -310,7 +310,6 @@ class Tacotron2(TTSInterface, torch.nn.Module):
             idim (int): Dimension of the inputs.
             odim (int): Dimension of the outputs.
             args (Namespace, optional):
-                - spk_embed_dim (int): Dimension of the speaker embedding.
                 - embed_dim (int): Dimension of character embedding.
                 - elayers (int): The number of encoder blstm layers.
                 - eunits (int): The number of encoder blstm units.
@@ -334,7 +333,7 @@ class Tacotron2(TTSInterface, torch.nn.Module):
                 - dropout_rate (float): Dropout rate.
                 - zoneout_rate (float): Zoneout rate.
                 - reduction_factor (int): Reduction factor.
-                - spk_embed_dim (int): Number of speaker embedding dimenstions.
+                - spk_embed_dim (int): Number of speaker embedding dimension.
                 - spc_dim (int): Number of spectrogram embedding dimenstions (only for use_cbhg=True).
                 - use_cbhg (bool): Whether to use CBHG module.
                 - cbhg_conv_bank_layers (int): The number of convoluional banks in CBHG.

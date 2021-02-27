@@ -44,6 +44,7 @@ class ToggleableShufflingSerialIterator(SerialIterator):
 
     def start_shuffle(self):
         """Starts shuffling (or reshuffles) the batches"""
+        #import ipdb; ipdb.set_trace() # BREAKPOINT
         self._shuffle = True
         if int(chainer._version.__version__[0]) <= 4:
             self._order = np.random.permutation(len(self.dataset))

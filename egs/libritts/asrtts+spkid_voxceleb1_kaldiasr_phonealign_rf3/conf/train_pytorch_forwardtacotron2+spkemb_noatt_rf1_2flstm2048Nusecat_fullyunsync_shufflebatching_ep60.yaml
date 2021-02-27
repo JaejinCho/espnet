@@ -1,0 +1,50 @@
+# (JJ): edited from conf/train_pytorch_forwardtacotron2+spkemb_noatt_rf1.yaml
+# (JJ): edited from conf/train_pytorch_tacotron2+spkemb_noatt_rf3.yaml
+
+# network architecture related
+model-module: espnet.nets.pytorch_backend.e2e_tts_forwardtacotron2_speakerid_update_fullyunsync:Tacotron2
+
+# encoder related
+embed-dim: 512
+elayers: 1
+eunits: 512
+econv-layers: 3 # if set 0, no conv layer is used
+econv-chans: 512
+econv-filts: 5
+
+# decoder related (edited to follow https://github.com/as-ideas/ForwardTacotron)
+dlayers: 2 # using bidirectional lstm for forwardtacotron2
+dunits: 2048
+bidirection: false
+prenet-layers: 2  # if set 0, no prenet is used
+prenet-units: 256
+postnet-layers: 5 # if set 0, no postnet is used
+postnet-chans: 512
+postnet-filts: 5
+use-speaker-embedding: true
+
+# attention related
+num-save-attention: 0 # no attention
+atype: noatt # no attention
+use-batch-norm: true # whether to use batch normalization in conv layer
+use-concate: true   # (TODO) JJ: check this with true. whether to concatenate encoder embedding with decoder lstm outputs
+use-residual: false  # whether to use residual connection in encoder convolution
+use-masking: true    # whether to mask the padded part in loss calculation
+bce-pos-weight: 1.0  # weight for positive samples of stop token in cross-entropy calculation
+reduction-factor: 1  # currently this is 1 for forwardtacotron2
+frame-subsampling-factor: 3 # added for forwardtacotron2. This is frame subsampling factor (in Kaldi ASR)
+
+# minibatch related
+batch-size: 64         # (memory erro) from 192 to 128 to 100 to 64
+batch-sort-key: shuffle # shuffle or input or output. Shuffle will lead to fixed (NO dynamic) batch size as specified in "batch-size"
+maxlen-in: 133         # if input length  > maxlen-in, batchsize is reduced (if use "shuffle", not effect). For atype='noatt', it is same as maxlen-out since 3 x # input frames == (approx.) # output frames
+maxlen-out: 400        # if output length > maxlen-out, batchsize is reduced (if use "shuffle", not effect)
+
+# optimization related
+lr: 1e-3
+eps: 1e-6
+weight-decay: 0.0
+dropout-rate: 0.5
+zoneout-rate: 0.1
+epochs: 60
+patience: 0

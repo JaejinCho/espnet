@@ -1,0 +1,6 @@
+./espnet/bin/tts_decode_speakerid.py
+./espnet/bin/tts_train_speakerid.py
+./espnet/nets/pytorch_backend/e2e_tts_tacotron2_speakerid.py
+./espnet/tts/pytorch_backend/tts_speakerid.py
+./espnet/utils/io_utils_speakerid.py
+./utils/speakerid.py

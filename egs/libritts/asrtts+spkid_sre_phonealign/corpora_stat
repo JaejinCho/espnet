@@ -1,0 +1,385 @@
+babel_amharic
+   88184 data/babel_amharic/feats.scp
+       1 data/babel_amharic/filetype
+   88184 data/babel_amharic/segments
+    1104 data/babel_amharic/spk2utt
+   88184 data/babel_amharic/text
+   88184 data/babel_amharic/utt2num_frames
+   88184 data/babel_amharic/utt2spk
+    1104 data/babel_amharic/wav.scp
+  443129 total
+babel_assamese
+   111362 data/babel_assamese/feats.scp
+        1 data/babel_assamese/filetype
+   111362 data/babel_assamese/segments
+     1364 data/babel_assamese/spk2utt
+   111362 data/babel_assamese/text
+   111362 data/babel_assamese/utt2num_frames
+   111362 data/babel_assamese/utt2spk
+     1364 data/babel_assamese/wav.scp
+   559539 total
+babel_bengali
+   104672 data/babel_bengali/feats.scp
+        1 data/babel_bengali/filetype
+   104672 data/babel_bengali/segments
+     1323 data/babel_bengali/spk2utt
+   104672 data/babel_bengali/text
+   104672 data/babel_bengali/utt2num_frames
+   104672 data/babel_bengali/utt2spk
+     1323 data/babel_bengali/wav.scp
+   526007 total
+babel_cantonese
+   115187 data/babel_cantonese/feats.scp
+        1 data/babel_cantonese/filetype
+   115187 data/babel_cantonese/segments
+     1306 data/babel_cantonese/spk2utt
+   115187 data/babel_cantonese/text
+   115187 data/babel_cantonese/utt2num_frames
+   115187 data/babel_cantonese/utt2spk
+     1306 data/babel_cantonese/wav.scp
+   578548 total
+babel_cebuano
+   93456 data/babel_cebuano/feats.scp
+       1 data/babel_cebuano/filetype
+   93456 data/babel_cebuano/segments
+    1110 data/babel_cebuano/spk2utt
+   93456 data/babel_cebuano/text
+   93456 data/babel_cebuano/utt2num_frames
+   93456 data/babel_cebuano/utt2spk
+    1110 data/babel_cebuano/wav.scp
+  469501 total
+babel_dholuo
+   83817 data/babel_dholuo/feats.scp
+       1 data/babel_dholuo/filetype
+   83817 data/babel_dholuo/segments
+    1084 data/babel_dholuo/spk2utt
+   83817 data/babel_dholuo/text
+   83817 data/babel_dholuo/utt2num_frames
+   83817 data/babel_dholuo/utt2spk
+    1084 data/babel_dholuo/wav.scp
+  421254 total
+babel_georgian
+   160440 data/babel_georgian/feats.scp
+        1 data/babel_georgian/filetype
+   160440 data/babel_georgian/segments
+     2031 data/babel_georgian/spk2utt
+   160440 data/babel_georgian/text
+   160440 data/babel_georgian/utt2num_frames
+   160440 data/babel_georgian/utt2spk
+     2031 data/babel_georgian/wav.scp
+   806263 total
+babel_guarani
+   90666 data/babel_guarani/feats.scp
+       1 data/babel_guarani/filetype
+   90666 data/babel_guarani/segments
+    1101 data/babel_guarani/spk2utt
+   90666 data/babel_guarani/text
+   90666 data/babel_guarani/utt2num_frames
+   90666 data/babel_guarani/utt2spk
+    1101 data/babel_guarani/wav.scp
+  455533 total
+babel_haitian
+   104496 data/babel_haitian/feats.scp
+        1 data/babel_haitian/filetype
+   104496 data/babel_haitian/segments
+     1246 data/babel_haitian/spk2utt
+   104496 data/babel_haitian/text
+   104496 data/babel_haitian/utt2num_frames
+   104496 data/babel_haitian/utt2spk
+     1246 data/babel_haitian/wav.scp
+   524973 total
+babel_igbo
+   89862 data/babel_igbo/feats.scp
+       1 data/babel_igbo/filetype
+   89862 data/babel_igbo/segments
+    1111 data/babel_igbo/spk2utt
+   89862 data/babel_igbo/text
+   89862 data/babel_igbo/utt2num_frames
+   89862 data/babel_igbo/utt2spk
+    1111 data/babel_igbo/wav.scp
+  451533 total
+babel_javanese
+   97665 data/babel_javanese/feats.scp
+       1 data/babel_javanese/filetype
+   97665 data/babel_javanese/segments
+    1059 data/babel_javanese/spk2utt
+   97665 data/babel_javanese/text
+   97665 data/babel_javanese/utt2num_frames
+   97665 data/babel_javanese/utt2spk
+    1059 data/babel_javanese/wav.scp
+  490444 total
+babel_kazakh
+   93138 data/babel_kazakh/feats.scp
+       1 data/babel_kazakh/filetype
+   93138 data/babel_kazakh/segments
+    1163 data/babel_kazakh/spk2utt
+   93138 data/babel_kazakh/text
+   93138 data/babel_kazakh/utt2num_frames
+   93138 data/babel_kazakh/utt2spk
+    1163 data/babel_kazakh/wav.scp
+  468017 total
+babel_kurmanji
+   94524 data/babel_kurmanji/feats.scp
+       1 data/babel_kurmanji/filetype
+   94524 data/babel_kurmanji/segments
+    1117 data/babel_kurmanji/spk2utt
+   94524 data/babel_kurmanji/text
+   94524 data/babel_kurmanji/utt2num_frames
+   94524 data/babel_kurmanji/utt2spk
+    1117 data/babel_kurmanji/wav.scp
+  474855 total
+babel_lao
+   113526 data/babel_lao/feats.scp
+        1 data/babel_lao/filetype
+   113526 data/babel_lao/segments
+     1281 data/babel_lao/spk2utt
+   113526 data/babel_lao/text
+   113526 data/babel_lao/utt2num_frames
+   113526 data/babel_lao/utt2spk
+     1281 data/babel_lao/wav.scp
+   570193 total
+babel_lithuanian
+   90153 data/babel_lithuanian/feats.scp
+       1 data/babel_lithuanian/filetype
+   90153 data/babel_lithuanian/segments
+    1056 data/babel_lithuanian/spk2utt
+   90153 data/babel_lithuanian/text
+   90153 data/babel_lithuanian/utt2num_frames
+   90153 data/babel_lithuanian/utt2spk
+    1056 data/babel_lithuanian/wav.scp
+  452878 total
+babel_mongolian
+   91993 data/babel_mongolian/feats.scp
+       1 data/babel_mongolian/filetype
+   91993 data/babel_mongolian/segments
+    1099 data/babel_mongolian/spk2utt
+   91993 data/babel_mongolian/text
+   91993 data/babel_mongolian/utt2num_frames
+   91993 data/babel_mongolian/utt2spk
+    1099 data/babel_mongolian/wav.scp
+  462164 total
+babel_pashto
+   83917 data/babel_pashto/feats.scp
+       1 data/babel_pashto/filetype
+   83917 data/babel_pashto/segments
+    1163 data/babel_pashto/spk2utt
+   83917 data/babel_pashto/text
+   83917 data/babel_pashto/utt2num_frames
+   83917 data/babel_pashto/utt2spk
+    1163 data/babel_pashto/wav.scp
+  421912 total
+babel_swahili
+   88141 data/babel_swahili/feats.scp
+       1 data/babel_swahili/filetype
+   88141 data/babel_swahili/segments
+    1148 data/babel_swahili/spk2utt
+   88141 data/babel_swahili/text
+   88141 data/babel_swahili/utt2num_frames
+   88141 data/babel_swahili/utt2spk
+    1148 data/babel_swahili/wav.scp
+  443002 total
+babel_tagalog
+   123111 data/babel_tagalog/feats.scp
+        1 data/babel_tagalog/filetype
+   123111 data/babel_tagalog/segments
+     1520 data/babel_tagalog/spk2utt
+   123111 data/babel_tagalog/text
+   123111 data/babel_tagalog/utt2num_frames
+   123111 data/babel_tagalog/utt2spk
+     1520 data/babel_tagalog/wav.scp
+   618596 total
+babel_tamil
+   171552 data/babel_tamil/feats.scp
+        1 data/babel_tamil/filetype
+   171552 data/babel_tamil/segments
+     2019 data/babel_tamil/spk2utt
+   171552 data/babel_tamil/text
+   171552 data/babel_tamil/utt2num_frames
+   171552 data/babel_tamil/utt2spk
+     2019 data/babel_tamil/wav.scp
+   861799 total
+babel_telugu
+   86481 data/babel_telugu/feats.scp
+       1 data/babel_telugu/filetype
+   86481 data/babel_telugu/segments
+    1066 data/babel_telugu/spk2utt
+   86481 data/babel_telugu/text
+   86481 data/babel_telugu/utt2num_frames
+   86481 data/babel_telugu/utt2spk
+    1066 data/babel_telugu/wav.scp
+  434538 total
+babel_tokpisin
+   86920 data/babel_tokpisin/feats.scp
+       1 data/babel_tokpisin/filetype
+   86920 data/babel_tokpisin/segments
+    1101 data/babel_tokpisin/spk2utt
+   86920 data/babel_tokpisin/text
+   86920 data/babel_tokpisin/utt2num_frames
+   86920 data/babel_tokpisin/utt2spk
+    1101 data/babel_tokpisin/wav.scp
+  436803 total
+babel_turkish
+   36238 data/babel_turkish/feats.scp
+       1 data/babel_turkish/filetype
+   36238 data/babel_turkish/segments
+     404 data/babel_turkish/spk2utt
+   36238 data/babel_turkish/text
+   36238 data/babel_turkish/utt2num_frames
+   36238 data/babel_turkish/utt2spk
+     404 data/babel_turkish/wav.scp
+  181999 total
+babel_vietnamese
+   169614 data/babel_vietnamese/feats.scp
+        1 data/babel_vietnamese/filetype
+   169614 data/babel_vietnamese/segments
+     2155 data/babel_vietnamese/spk2utt
+   169614 data/babel_vietnamese/text
+   169614 data/babel_vietnamese/utt2num_frames
+   169614 data/babel_vietnamese/utt2spk
+     2155 data/babel_vietnamese/wav.scp
+   852381 total
+babel_zulu
+   104462 data/babel_zulu/feats.scp
+        1 data/babel_zulu/filetype
+   104462 data/babel_zulu/segments
+     1354 data/babel_zulu/spk2utt
+   104462 data/babel_zulu/text
+   104462 data/babel_zulu/utt2num_frames
+   104462 data/babel_zulu/utt2spk
+     1354 data/babel_zulu/wav.scp
+   525019 total
+fisher_spa
+136 data/fisher_spa_train/spk2utt
+136 data/fisher_spa_dev/spk2utt
+   144918 data/fisher_spa/feats.scp
+        1 data/fisher_spa/filetype
+     5800 data/fisher_spa/fisher_spa_dev.uttlist
+   139118 data/fisher_spa/fisher_spa_train.uttlist
+   144918 data/fisher_spa/segments
+      136 data/fisher_spa/spk2utt
+   144918 data/fisher_spa/text
+   144918 data/fisher_spa/utt2num_frames
+   144918 data/fisher_spa/utt2spk
+   144918 data/fisher_spa/utt2spklab
+     1638 data/fisher_spa/wav.scp
+  1016201 total
+sre16_eval_tr60_tgl
+61 data/sre16_eval_tr60_tgl_train/spk2utt
+61 data/sre16_eval_tr60_tgl_dev/spk2utt
+   45664 data/sre16_eval_tr60_tgl/feats.scp
+       1 data/sre16_eval_tr60_tgl/filetype
+   45664 data/sre16_eval_tr60_tgl/segments
+      61 data/sre16_eval_tr60_tgl/spk2utt
+    1827 data/sre16_eval_tr60_tgl/sre16_eval_tr60_tgl_dev.uttlist
+   43837 data/sre16_eval_tr60_tgl/sre16_eval_tr60_tgl_train.uttlist
+   45664 data/sre16_eval_tr60_tgl/text
+   45664 data/sre16_eval_tr60_tgl/utt2num_frames
+   45664 data/sre16_eval_tr60_tgl/utt2spk
+   45664 data/sre16_eval_tr60_tgl/utt2spklab
+    3063 data/sre16_eval_tr60_tgl/wav.scp
+  322773 total
+sre16_eval_tr60_yue
+60 data/sre16_eval_tr60_yue_train/spk2utt
+60 data/sre16_eval_tr60_yue_dev/spk2utt
+   41124 data/sre16_eval_tr60_yue/feats.scp
+       1 data/sre16_eval_tr60_yue/filetype
+   41124 data/sre16_eval_tr60_yue/segments
+      60 data/sre16_eval_tr60_yue/spk2utt
+    1644 data/sre16_eval_tr60_yue/sre16_eval_tr60_yue_dev.uttlist
+   39480 data/sre16_eval_tr60_yue/sre16_eval_tr60_yue_train.uttlist
+   41124 data/sre16_eval_tr60_yue/text
+   41124 data/sre16_eval_tr60_yue/utt2num_frames
+   41124 data/sre16_eval_tr60_yue/utt2spk
+   41124 data/sre16_eval_tr60_yue/utt2spklab
+    3309 data/sre16_eval_tr60_yue/wav.scp
+  291238 total
+sre16_train_dev_ceb
+10 data/sre16_train_dev_ceb_train/spk2utt
+10 data/sre16_train_dev_ceb_dev/spk2utt
+   6793 data/sre16_train_dev_ceb/feats.scp
+      1 data/sre16_train_dev_ceb/filetype
+   6793 data/sre16_train_dev_ceb/segments
+     10 data/sre16_train_dev_ceb/spk2utt
+    273 data/sre16_train_dev_ceb/sre16_train_dev_ceb_dev.uttlist
+   6520 data/sre16_train_dev_ceb/sre16_train_dev_ceb_train.uttlist
+   6793 data/sre16_train_dev_ceb/text
+   6793 data/sre16_train_dev_ceb/utt2num_frames
+   6793 data/sre16_train_dev_ceb/utt2spk
+   6793 data/sre16_train_dev_ceb/utt2spklab
+    645 data/sre16_train_dev_ceb/wav.scp
+  48207 total
+sre18_cmn2_train_lab
+213 data/sre18_cmn2_train_lab_train/spk2utt
+213 data/sre18_cmn2_train_lab_dev/spk2utt
+   174073 data/sre18_cmn2_train_lab/feats.scp
+        1 data/sre18_cmn2_train_lab/filetype
+   174073 data/sre18_cmn2_train_lab/segments
+      213 data/sre18_cmn2_train_lab/spk2utt
+     6967 data/sre18_cmn2_train_lab/sre18_cmn2_train_lab_dev.uttlist
+   167106 data/sre18_cmn2_train_lab/sre18_cmn2_train_lab_train.uttlist
+   174073 data/sre18_cmn2_train_lab/text
+   174073 data/sre18_cmn2_train_lab/utt2num_frames
+   174073 data/sre18_cmn2_train_lab/utt2spk
+   174073 data/sre18_cmn2_train_lab/utt2spklab
+    15191 data/sre18_cmn2_train_lab/wav.scp
+  1233916 total
+sre_tel
+4685 data/sre_tel_train/spk2utt
+4676 data/sre_tel_dev/spk2utt
+   3556526 data/sre_tel/feats.scp
+         1 data/sre_tel/filetype
+   3556526 data/sre_tel/segments
+      4685 data/sre_tel/spk2utt
+    142239 data/sre_tel/sre_tel_dev.uttlist
+   3414287 data/sre_tel/sre_tel_train.uttlist
+   3556526 data/sre_tel/text
+   3556526 data/sre_tel/utt2num_frames
+   3556526 data/sre_tel/utt2spk
+   3556526 data/sre_tel/utt2spklab
+     86674 data/sre_tel/wav.scp
+  24987042 total
+swbd
+2594 data/swbd_train/spk2utt
+2592 data/swbd_dev/spk2utt
+   1247860 data/swbd/feats.scp
+         1 data/swbd/filetype
+   1247860 data/swbd/segments
+      2594 data/swbd/spk2utt
+     49911 data/swbd/swbd_dev.uttlist
+   1197949 data/swbd/swbd_train.uttlist
+   1247860 data/swbd/text
+   1247860 data/swbd/utt2num_frames
+   1247860 data/swbd/utt2spk
+   1247860 data/swbd/utt2spklab
+     28149 data/swbd/wav.scp
+   8765764 total
+voxcelebcat_tel
+7303 data/voxcelebcat_tel_train/spk2utt
+7303 data/voxcelebcat_tel_dev/spk2utt
+   1590826 data/voxcelebcat_tel/feats.scp
+         1 data/voxcelebcat_tel/filetype
+   1590826 data/voxcelebcat_tel/segments
+      7303 data/voxcelebcat_tel/spk2utt
+   1590826 data/voxcelebcat_tel/text
+   1590826 data/voxcelebcat_tel/utt2num_frames
+   1590826 data/voxcelebcat_tel/utt2spk
+   1590826 data/voxcelebcat_tel/utt2spklab
+     63640 data/voxcelebcat_tel/voxcelebcat_tel_dev.uttlist
+   1527186 data/voxcelebcat_tel/voxcelebcat_tel_train.uttlist
+    171556 data/voxcelebcat_tel/wav.scp
+  11314642 total
+sre16_train_dev_cmn
+10 data/sre16_train_dev_cmn_train/spk2utt
+10 data/sre16_train_dev_cmn_dev/spk2utt
+   6636 data/sre16_train_dev_cmn/feats.scp
+      1 data/sre16_train_dev_cmn/filetype
+   6636 data/sre16_train_dev_cmn/segments
+     10 data/sre16_train_dev_cmn/spk2utt
+    265 data/sre16_train_dev_cmn/sre16_train_dev_cmn_dev.uttlist
+   6371 data/sre16_train_dev_cmn/sre16_train_dev_cmn_train.uttlist
+   6636 data/sre16_train_dev_cmn/text
+   6636 data/sre16_train_dev_cmn/utt2num_frames
+   6636 data/sre16_train_dev_cmn/utt2spk
+   6636 data/sre16_train_dev_cmn/utt2spklab
+    659 data/sre16_train_dev_cmn/wav.scp
+  47122 total

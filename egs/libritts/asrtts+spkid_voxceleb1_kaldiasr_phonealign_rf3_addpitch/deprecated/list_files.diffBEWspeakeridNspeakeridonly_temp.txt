@@ -1,0 +1,12 @@
+# 1) speakerid: for tts + spkid, 2) speakeridonly_temp: only spkid (tts loss is NOT calculated at all)
+
+../../../espnet/bin/tts_train_speakeridonly_temp.py ../../../espnet/bin/tts_train_speakerid.py
+
+../../../espnet/tts/pytorch_backend/tts_speakeridonly_temp.py ../../../espnet/tts/pytorch_backend/tts_speakerid.py
+
+../../../espnet/nets/pytorch_backend/e2e_tts_tacotron2_speakeridonly_temp.py ../../../espnet/nets/pytorch_backend/e2e_tts_tacotron2_speakerid.py
+
+
+
+# This is just for any scripts where speakerid functionality is added
+../../../espnet/utils/io_utils_speakerid.py

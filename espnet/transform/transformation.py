@@ -64,6 +64,7 @@ class Transformation(object):
     """
 
     def __init__(self, conffile=None):
+        #import ipdb; ipdb.set_trace() # BREAKPOINT
         if conffile is not None:
             if isinstance(conffile, dict):
                 self.conf = copy.deepcopy(conffile)
@@ -111,6 +112,7 @@ class Transformation(object):
         :return: batch:
         :rtype: List[np.ndarray]
         """
+        #import ipdb; ipdb.set_trace() # BREAKPOINT
         if not isinstance(xs, Sequence):
             is_batch = False
             xs = [xs]

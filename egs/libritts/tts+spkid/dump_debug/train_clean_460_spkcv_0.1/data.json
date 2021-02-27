@@ -1,0 +1,2904 @@
+{
+    "utts": {
+        "100_121669_000018_000000": {
+            "input": [
+                {
+                    "feat": "/export/b18/jcho/espnet3/egs/libritts/tts+spkid/dump/train_clean_460_spkcv_0.1/feats.1.ark:25",
+                    "name": "input1",
+                    "shape": [
+                        783,
+                        80
+                    ]
+                }
+            ],
+            "output": [
+                {
+                    "name": "target1",
+                    "shape": [
+                        152,
+                        78
+                    ],
+                    "text": "The farmer had stopped sawing to rest, just then; and when he heard the singing he rushed out of the shed, and chased Tom away with a big stick of wood.",
+                    "token": "T h e <space> f a r m e r <space> h a d <space> s t o p p e d <space> s a w i n g <space> t o <space> r e s t , <space> j u s t <space> t h e n ; <space> a n d <space> w h e n <space> h e <space> h e a r d <space> t h e <space> s i n g i n g <space> h e <space> r u s h e d <space> o u t <space> o f <space> t h e <space> s h e d , <space> a n d <space> c h a s e d <space> T o m <space> a w a y <space> w i t h <space> a <space> b i g <space> s t i c k <space> o f <space> w o o d .",
+                    "tokenid": "34 50 47 13 48 43 60 55 47 60 13 50 43 46 13 61 62 57 58 58 47 46 13 61 43 65 51 56 49 13 62 57 13 60 47 61 62 7 13 52 63 61 62 13 62 50 47 56 12 13 43 56 46 13 65 50 47 56 13 50 47 13 50 47 43 60 46 13 62 50 47 13 61 51 56 49 51 56 49 13 50 47 13 60 63 61 50 47 46 13 57 63 62 13 57 48 13 62 50 47 13 61 50 47 46 7 13 43 56 46 13 45 50 43 61 47 46 13 34 57 55 13 43 65 43 67 13 65 51 62 50 13 43 13 44 51 49 13 61 62 51 45 53 13 57 48 13 65 57 57 46 9"
+                },
+                {
+                    "name": "target2",
+                    "spklab": "0"
+                }
+            ],
+            "utt2spk": "100_121669"
+        },
+        "100_121669_000020_000000": {
+            "input": [
+                {
+                    "feat": "/export/b18/jcho/espnet3/egs/libritts/tts+spkid/dump/train_clean_460_spkcv_0.1/feats.1.ark:63351",
+                    "name": "input1",
+                    "shape": [
+                        176,
+                        80
+                    ]
+                }
+            ],
+            "output": [
+                {
+                    "name": "target1",
+                    "shape": [
+                        31,
+                        78
+                    ],
+                    "text": "\"How big was it?\" asked Barney.",
+                    "token": "\" H o w <space> b i g <space> w a s <space> i t ? \" <space> a s k e d <space> B a r n e y .",
+                    "tokenid": "3 22 57 65 13 44 51 49 13 65 43 61 13 51 62 14 3 13 43 61 53 47 46 13 16 43 60 56 47 67 9"
+                },
+                {
+                    "name": "target2",
+                    "spklab": "0"
+                }
+            ],
+            "utt2spk": "100_121669"
+        },
+        "100_121669_000044_000000": {
+            "input": [
+                {
+                    "feat": "/export/b18/jcho/espnet3/egs/libritts/tts+spkid/dump/train_clean_460_spkcv_0.1/feats.1.ark:78117",
+                    "name": "input1",
+                    "shape": [
+                        719,
+                        80
+                    ]
+                }
+            ],
+            "output": [
+                {
+                    "name": "target1",
+                    "shape": [
+                        120,
+                        78
+                    ],
+                    "text": "It was dark before he came back to his home, and his father was still asleep; so Tom crept into the hut and went to bed.",
+                    "token": "I t <space> w a s <space> d a r k <space> b e f o r e <space> h e <space> c a m e <space> b a c k <space> t o <space> h i s <space> h o m e , <space> a n d <space> h i s <space> f a t h e r <space> w a s <space> s t i l l <space> a s l e e p ; <space> s o <space> T o m <space> c r e p t <space> i n t o <space> t h e <space> h u t <space> a n d <space> w e n t <space> t o <space> b e d .",
+                    "tokenid": "23 62 13 65 43 61 13 46 43 60 53 13 44 47 48 57 60 47 13 50 47 13 45 43 55 47 13 44 43 45 53 13 62 57 13 50 51 61 13 50 57 55 47 7 13 43 56 46 13 50 51 61 13 48 43 62 50 47 60 13 65 43 61 13 61 62 51 54 54 13 43 61 54 47 47 58 12 13 61 57 13 34 57 55 13 45 60 47 58 62 13 51 56 62 57 13 62 50 47 13 50 63 62 13 43 56 46 13 65 47 56 62 13 62 57 13 44 47 46 9"
+                },
+                {
+                    "name": "target2",
+                    "spklab": "0"
+                }
+            ],
+            "utt2spk": "100_121669"
+        },
+        "100_121674_000004_000000": {
+            "input": [
+                {
+                    "feat": "/export/b18/jcho/espnet3/egs/libritts/tts+spkid/dump/train_clean_460_spkcv_0.1/feats.1.ark:136323",
+                    "name": "input1",
+                    "shape": [
+                        1333,
+                        80
+                    ]
+                }
+            ],
+            "output": [
+                {
+                    "name": "target1",
+                    "shape": [
+                        239,
+                        78
+                    ],
+                    "text": "She came to know every flower that grew, and to call them by name, and she always stepped very carefully to avoid treading on them, for Dorothy was a kind hearted child and did not like to crush the pretty flowers that bloomed in her path.",
+                    "token": "S h e <space> c a m e <space> t o <space> k n o w <space> e v e r y <space> f l o w e r <space> t h a t <space> g r e w , <space> a n d <space> t o <space> c a l l <space> t h e m <space> b y <space> n a m e , <space> a n d <space> s h e <space> a l w a y s <space> s t e p p e d <space> v e r y <space> c a r e f u l l y <space> t o <space> a v o i d <space> t r e a d i n g <space> o n <space> t h e m , <space> f o r <space> D o r o t h y <space> w a s <space> a <space> k i n d <space> h e a r t e d <space> c h i l d <space> a n d <space> d i d <space> n o t <space> l i k e <space> t o <space> c r u s h <space> t h e <space> p r e t t y <space> f l o w e r s <space> t h a t <space> b l o o m e d <space> i n <space> h e r <space> p a t h .",
+                    "tokenid": "33 50 47 13 45 43 55 47 13 62 57 13 53 56 57 65 13 47 64 47 60 67 13 48 54 57 65 47 60 13 62 50 43 62 13 49 60 47 65 7 13 43 56 46 13 62 57 13 45 43 54 54 13 62 50 47 55 13 44 67 13 56 43 55 47 7 13 43 56 46 13 61 50 47 13 43 54 65 43 67 61 13 61 62 47 58 58 47 46 13 64 47 60 67 13 45 43 60 47 48 63 54 54 67 13 62 57 13 43 64 57 51 46 13 62 60 47 43 46 51 56 49 13 57 56 13 62 50 47 55 7 13 48 57 60 13 18 57 60 57 62 50 67 13 65 43 61 13 43 13 53 51 56 46 13 50 47 43 60 62 47 46 13 45 50 51 54 46 13 43 56 46 13 46 51 46 13 56 57 62 13 54 51 53 47 13 62 57 13 45 60 63 61 50 13 62 50 47 13 58 60 47 62 62 67 13 48 54 57 65 47 60 61 13 62 50 43 62 13 44 54 57 57 55 47 46 13 51 56 13 50 47 60 13 58 43 62 50 9"
+                },
+                {
+                    "name": "target2",
+                    "spklab": "1"
+                }
+            ],
+            "utt2spk": "100_121674"
+        },
+        "100_121674_000004_000002": {
+            "input": [
+                {
+                    "feat": "/export/b18/jcho/espnet3/egs/libritts/tts+spkid/dump/train_clean_460_spkcv_0.1/feats.1.ark:243649",
+                    "name": "input1",
+                    "shape": [
+                        713,
+                        80
+                    ]
+                }
+            ],
+            "output": [
+                {
+                    "name": "target1",
+                    "shape": [
+                        124,
+                        78
+                    ],
+                    "text": "And the animals loved Dorothy in turn, for the word passed around amongst them that she could be trusted to do them no harm.",
+                    "token": "A n d <space> t h e <space> a n i m a l s <space> l o v e d <space> D o r o t h y <space> i n <space> t u r n , <space> f o r <space> t h e <space> w o r d <space> p a s s e d <space> a r o u n d <space> a m o n g s t <space> t h e m <space> t h a t <space> s h e <space> c o u l d <space> b e <space> t r u s t e d <space> t o <space> d o <space> t h e m <space> n o <space> h a r m .",
+                    "tokenid": "15 56 46 13 62 50 47 13 43 56 51 55 43 54 61 13 54 57 64 47 46 13 18 57 60 57 62 50 67 13 51 56 13 62 63 60 56 7 13 48 57 60 13 62 50 47 13 65 57 60 46 13 58 43 61 61 47 46 13 43 60 57 63 56 46 13 43 55 57 56 49 61 62 13 62 50 47 55 13 62 50 43 62 13 61 50 47 13 45 57 63 54 46 13 44 47 13 62 60 63 61 62 47 46 13 62 57 13 46 57 13 62 50 47 55 13 56 57 13 50 43 60 55 9"
+                },
+                {
+                    "name": "target2",
+                    "spklab": "1"
+                }
+            ],
+            "utt2spk": "100_121674"
+        },
+        "100_121674_000004_000003": {
+            "input": [
+                {
+                    "feat": "/export/b18/jcho/espnet3/egs/libritts/tts+spkid/dump/train_clean_460_spkcv_0.1/feats.1.ark:301375",
+                    "name": "input1",
+                    "shape": [
+                        1521,
+                        80
+                    ]
+                }
+            ],
+            "output": [
+                {
+                    "name": "target1",
+                    "shape": [
+                        257,
+                        78
+                    ],
+                    "text": "For the horse, whose soft nose Dorothy often gently stroked, told the cow of her kindness, and the cow told the dog, and the dog told the cat, and the cat told her black kitten, and the black kitten told the rabbit when one day they met in the turnip patch.",
+                    "token": "F o r <space> t h e <space> h o r s e , <space> w h o s e <space> s o f t <space> n o s e <space> D o r o t h y <space> o f t e n <space> g e n t l y <space> s t r o k e d , <space> t o l d <space> t h e <space> c o w <space> o f <space> h e r <space> k i n d n e s s , <space> a n d <space> t h e <space> c o w <space> t o l d <space> t h e <space> d o g , <space> a n d <space> t h e <space> d o g <space> t o l d <space> t h e <space> c a t , <space> a n d <space> t h e <space> c a t <space> t o l d <space> h e r <space> b l a c k <space> k i t t e n , <space> a n d <space> t h e <space> b l a c k <space> k i t t e n <space> t o l d <space> t h e <space> r a b b i t <space> w h e n <space> o n e <space> d a y <space> t h e y <space> m e t <space> i n <space> t h e <space> t u r n i p <space> p a t c h .",
+                    "tokenid": "20 57 60 13 62 50 47 13 50 57 60 61 47 7 13 65 50 57 61 47 13 61 57 48 62 13 56 57 61 47 13 18 57 60 57 62 50 67 13 57 48 62 47 56 13 49 47 56 62 54 67 13 61 62 60 57 53 47 46 7 13 62 57 54 46 13 62 50 47 13 45 57 65 13 57 48 13 50 47 60 13 53 51 56 46 56 47 61 61 7 13 43 56 46 13 62 50 47 13 45 57 65 13 62 57 54 46 13 62 50 47 13 46 57 49 7 13 43 56 46 13 62 50 47 13 46 57 49 13 62 57 54 46 13 62 50 47 13 45 43 62 7 13 43 56 46 13 62 50 47 13 45 43 62 13 62 57 54 46 13 50 47 60 13 44 54 43 45 53 13 53 51 62 62 47 56 7 13 43 56 46 13 62 50 47 13 44 54 43 45 53 13 53 51 62 62 47 56 13 62 57 54 46 13 62 50 47 13 60 43 44 44 51 62 13 65 50 47 56 13 57 56 47 13 46 43 67 13 62 50 47 67 13 55 47 62 13 51 56 13 62 50 47 13 62 63 60 56 51 58 13 58 43 62 45 50 9"
+                },
+                {
+                    "name": "target2",
+                    "spklab": "1"
+                }
+            ],
+            "utt2spk": "100_121674"
+        },
+        "100_121674_000013_000000": {
+            "input": [
+                {
+                    "feat": "/export/b18/jcho/espnet3/egs/libritts/tts+spkid/dump/train_clean_460_spkcv_0.1/feats.1.ark:423741",
+                    "name": "input1",
+                    "shape": [
+                        538,
+                        80
+                    ]
+                }
+            ],
+            "output": [
+                {
+                    "name": "target1",
+                    "shape": [
+                        95,
+                        78
+                    ],
+                    "text": "\"I live in the ground, far down in a cool, pleasant hole I have dug in the midst of the forest.",
+                    "token": "\" I <space> l i v e <space> i n <space> t h e <space> g r o u n d , <space> f a r <space> d o w n <space> i n <space> a <space> c o o l , <space> p l e a s a n t <space> h o l e <space> I <space> h a v e <space> d u g <space> i n <space> t h e <space> m i d s t <space> o f <space> t h e <space> f o r e s t .",
+                    "tokenid": "3 23 13 54 51 64 47 13 51 56 13 62 50 47 13 49 60 57 63 56 46 7 13 48 43 60 13 46 57 65 56 13 51 56 13 43 13 45 57 57 54 7 13 58 54 47 43 61 43 56 62 13 50 57 54 47 13 23 13 50 43 64 47 13 46 63 49 13 51 56 13 62 50 47 13 55 51 46 61 62 13 57 48 13 62 50 47 13 48 57 60 47 61 62 9"
+                },
+                {
+                    "name": "target2",
+                    "spklab": "1"
+                }
+            ],
+            "utt2spk": "100_121674"
+        },
+        "100_121674_000016_000000": {
+            "input": [
+                {
+                    "feat": "/export/b18/jcho/espnet3/egs/libritts/tts+spkid/dump/train_clean_460_spkcv_0.1/feats.1.ark:467467",
+                    "name": "input1",
+                    "shape": [
+                        240,
+                        80
+                    ]
+                }
+            ],
+            "output": [
+                {
+                    "name": "target1",
+                    "shape": [
+                        51,
+                        78
+                    ],
+                    "text": "\"And do you ever see him?\" asked the girl, eagerly.",
+                    "token": "\" A n d <space> d o <space> y o u <space> e v e r <space> s e e <space> h i m ? \" <space> a s k e d <space> t h e <space> g i r l , <space> e a g e r l y .",
+                    "tokenid": "3 15 56 46 13 46 57 13 67 57 63 13 47 64 47 60 13 61 47 47 13 50 51 55 14 3 13 43 61 53 47 46 13 62 50 47 13 49 51 60 54 7 13 47 43 49 47 60 54 67 9"
+                },
+                {
+                    "name": "target2",
+                    "spklab": "1"
+                }
+            ],
+            "utt2spk": "100_121674"
+        },
+        "100_121674_000026_000002": {
+            "input": [
+                {
+                    "feat": "/export/b18/jcho/espnet3/egs/libritts/tts+spkid/dump/train_clean_460_spkcv_0.1/feats.1.ark:487353",
+                    "name": "input1",
+                    "shape": [
+                        1116,
+                        80
+                    ]
+                }
+            ],
+            "output": [
+                {
+                    "name": "target1",
+                    "shape": [
+                        196,
+                        78
+                    ],
+                    "text": "But after a time it was all finished, and then he stuffed the fur full of sawdust and sewed it up neatly; after which he put in some glass eyes that made the toy rabbit look wonderfully life like.",
+                    "token": "B u t <space> a f t e r <space> a <space> t i m e <space> i t <space> w a s <space> a l l <space> f i n i s h e d , <space> a n d <space> t h e n <space> h e <space> s t u f f e d <space> t h e <space> f u r <space> f u l l <space> o f <space> s a w d u s t <space> a n d <space> s e w e d <space> i t <space> u p <space> n e a t l y ; <space> a f t e r <space> w h i c h <space> h e <space> p u t <space> i n <space> s o m e <space> g l a s s <space> e y e s <space> t h a t <space> m a d e <space> t h e <space> t o y <space> r a b b i t <space> l o o k <space> w o n d e r f u l l y <space> l i f e <space> l i k e .",
+                    "tokenid": "16 63 62 13 43 48 62 47 60 13 43 13 62 51 55 47 13 51 62 13 65 43 61 13 43 54 54 13 48 51 56 51 61 50 47 46 7 13 43 56 46 13 62 50 47 56 13 50 47 13 61 62 63 48 48 47 46 13 62 50 47 13 48 63 60 13 48 63 54 54 13 57 48 13 61 43 65 46 63 61 62 13 43 56 46 13 61 47 65 47 46 13 51 62 13 63 58 13 56 47 43 62 54 67 12 13 43 48 62 47 60 13 65 50 51 45 50 13 50 47 13 58 63 62 13 51 56 13 61 57 55 47 13 49 54 43 61 61 13 47 67 47 61 13 62 50 43 62 13 55 43 46 47 13 62 50 47 13 62 57 67 13 60 43 44 44 51 62 13 54 57 57 53 13 65 57 56 46 47 60 48 63 54 54 67 13 54 51 48 47 13 54 51 53 47 9"
+                },
+                {
+                    "name": "target2",
+                    "spklab": "1"
+                }
+            ],
+            "utt2spk": "100_121674"
+        },
+        "100_121674_000040_000000": {
+            "input": [
+                {
+                    "feat": "/export/b18/jcho/espnet3/egs/libritts/tts+spkid/dump/train_clean_460_spkcv_0.1/feats.1.ark:577319",
+                    "name": "input1",
+                    "shape": [
+                        563,
+                        80
+                    ]
+                }
+            ],
+            "output": [
+                {
+                    "name": "target1",
+                    "shape": [
+                        118,
+                        78
+                    ],
+                    "text": "\"But what became of the magic collar?\" asked Dorothy, who had listened with breathless interest to the rabbit's story.",
+                    "token": "\" B u t <space> w h a t <space> b e c a m e <space> o f <space> t h e <space> m a g i c <space> c o l l a r ? \" <space> a s k e d <space> D o r o t h y , <space> w h o <space> h a d <space> l i s t e n e d <space> w i t h <space> b r e a t h l e s s <space> i n t e r e s t <space> t o <space> t h e <space> r a b b i t ' s <space> s t o r y .",
+                    "tokenid": "3 16 63 62 13 65 50 43 62 13 44 47 45 43 55 47 13 57 48 13 62 50 47 13 55 43 49 51 45 13 45 57 54 54 43 60 14 3 13 43 61 53 47 46 13 18 57 60 57 62 50 67 7 13 65 50 57 13 50 43 46 13 54 51 61 62 47 56 47 46 13 65 51 62 50 13 44 60 47 43 62 50 54 47 61 61 13 51 56 62 47 60 47 61 62 13 62 57 13 62 50 47 13 60 43 44 44 51 62 4 61 13 61 62 57 60 67 9"
+                },
+                {
+                    "name": "target2",
+                    "spklab": "1"
+                }
+            ],
+            "utt2spk": "100_121674"
+        },
+        "100_122655_000007_000009": {
+            "input": [
+                {
+                    "feat": "/export/b18/jcho/espnet3/egs/libritts/tts+spkid/dump/train_clean_460_spkcv_0.1/feats.1.ark:623045",
+                    "name": "input1",
+                    "shape": [
+                        605,
+                        80
+                    ]
+                }
+            ],
+            "output": [
+                {
+                    "name": "target1",
+                    "shape": [
+                        85,
+                        78
+                    ],
+                    "text": "Thus occupied, and mutually entertained, days passed like hours, and weeks like days.",
+                    "token": "T h u s <space> o c c u p i e d , <space> a n d <space> m u t u a l l y <space> e n t e r t a i n e d , <space> d a y s <space> p a s s e d <space> l i k e <space> h o u r s , <space> a n d <space> w e e k s <space> l i k e <space> d a y s .",
+                    "tokenid": "34 50 63 61 13 57 45 45 63 58 51 47 46 7 13 43 56 46 13 55 63 62 63 43 54 54 67 13 47 56 62 47 60 62 43 51 56 47 46 7 13 46 43 67 61 13 58 43 61 61 47 46 13 54 51 53 47 13 50 57 63 60 61 7 13 43 56 46 13 65 47 47 53 61 13 54 51 53 47 13 46 43 67 61 9"
+                },
+                {
+                    "name": "target2",
+                    "spklab": "2"
+                }
+            ],
+            "utt2spk": "100_122655"
+        },
+        "100_122655_000029_000000": {
+            "input": [
+                {
+                    "feat": "/export/b18/jcho/espnet3/egs/libritts/tts+spkid/dump/train_clean_460_spkcv_0.1/feats.1.ark:672131",
+                    "name": "input1",
+                    "shape": [
+                        413,
+                        80
+                    ]
+                }
+            ],
+            "output": [
+                {
+                    "name": "target1",
+                    "shape": [
+                        45,
+                        78
+                    ],
+                    "text": "\"Well?\" I said, as he again paused-\"proceed.\"",
+                    "token": "\" W e l l ? \" <space> I <space> s a i d , <space> a s <space> h e <space> a g a i n <space> p a u s e d - \" p r o c e e d . \"",
+                    "tokenid": "3 37 47 54 54 14 3 13 23 13 61 43 51 46 7 13 43 61 13 50 47 13 43 49 43 51 56 13 58 43 63 61 47 46 8 3 58 60 57 45 47 47 46 9 3"
+                },
+                {
+                    "name": "target2",
+                    "spklab": "2"
+                }
+            ],
+            "utt2spk": "100_122655"
+        },
+        "100_122655_000036_000001": {
+            "input": [
+                {
+                    "feat": "/export/b18/jcho/espnet3/egs/libritts/tts+spkid/dump/train_clean_460_spkcv_0.1/feats.1.ark:705857",
+                    "name": "input1",
+                    "shape": [
+                        734,
+                        80
+                    ]
+                }
+            ],
+            "output": [
+                {
+                    "name": "target1",
+                    "shape": [
+                        115,
+                        78
+                    ],
+                    "text": "\"It is a village school: your scholars will be only poor girls-cottagers' children-at the best, farmers' daughters.",
+                    "token": "\" I t <space> i s <space> a <space> v i l l a g e <space> s c h o o l : <space> y o u r <space> s c h o l a r s <space> w i l l <space> b e <space> o n l y <space> p o o r <space> g i r l s - c o t t a g e r s ' <space> c h i l d r e n - a t <space> t h e <space> b e s t , <space> f a r m e r s ' <space> d a u g h t e r s .",
+                    "tokenid": "3 23 62 13 51 61 13 43 13 64 51 54 54 43 49 47 13 61 45 50 57 57 54 11 13 67 57 63 60 13 61 45 50 57 54 43 60 61 13 65 51 54 54 13 44 47 13 57 56 54 67 13 58 57 57 60 13 49 51 60 54 61 8 45 57 62 62 43 49 47 60 61 4 13 45 50 51 54 46 60 47 56 8 43 62 13 62 50 47 13 44 47 61 62 7 13 48 43 60 55 47 60 61 4 13 46 43 63 49 50 62 47 60 61 9"
+                },
+                {
+                    "name": "target2",
+                    "spklab": "2"
+                }
+            ],
+            "utt2spk": "100_122655"
+        },
+        "100_122655_000042_000000": {
+            "input": [
+                {
+                    "feat": "/export/b18/jcho/espnet3/egs/libritts/tts+spkid/dump/train_clean_460_spkcv_0.1/feats.1.ark:765263",
+                    "name": "input1",
+                    "shape": [
+                        452,
+                        80
+                    ]
+                }
+            ],
+            "output": [
+                {
+                    "name": "target1",
+                    "shape": [
+                        79,
+                        78
+                    ],
+                    "text": "\"I will go to my house to morrow, and open the school, if you like, next week.\"",
+                    "token": "\" I <space> w i l l <space> g o <space> t o <space> m y <space> h o u s e <space> t o <space> m o r r o w , <space> a n d <space> o p e n <space> t h e <space> s c h o o l , <space> i f <space> y o u <space> l i k e , <space> n e x t <space> w e e k . \"",
+                    "tokenid": "3 23 13 65 51 54 54 13 49 57 13 62 57 13 55 67 13 50 57 63 61 47 13 62 57 13 55 57 60 60 57 65 7 13 43 56 46 13 57 58 47 56 13 62 50 47 13 61 45 50 57 57 54 7 13 51 48 13 67 57 63 13 54 51 53 47 7 13 56 47 66 62 13 65 47 47 53 9 3"
+                },
+                {
+                    "name": "target2",
+                    "spklab": "2"
+                }
+            ],
+            "utt2spk": "100_122655"
+        },
+        "100_122655_000054_000001": {
+            "input": [
+                {
+                    "feat": "/export/b18/jcho/espnet3/egs/libritts/tts+spkid/dump/train_clean_460_spkcv_0.1/feats.1.ark:802109",
+                    "name": "input1",
+                    "shape": [
+                        437,
+                        80
+                    ]
+                }
+            ],
+            "output": [
+                {
+                    "name": "target1",
+                    "shape": [
+                        78,
+                        78
+                    ],
+                    "text": "I mean, that human affections and sympathies have a most powerful hold on you.",
+                    "token": "I <space> m e a n , <space> t h a t <space> h u m a n <space> a f f e c t i o n s <space> a n d <space> s y m p a t h i e s <space> h a v e <space> a <space> m o s t <space> p o w e r f u l <space> h o l d <space> o n <space> y o u .",
+                    "tokenid": "23 13 55 47 43 56 7 13 62 50 43 62 13 50 63 55 43 56 13 43 48 48 47 45 62 51 57 56 61 13 43 56 46 13 61 67 55 58 43 62 50 51 47 61 13 50 43 64 47 13 43 13 55 57 61 62 13 58 57 65 47 60 48 63 54 13 50 57 54 46 13 57 56 13 67 57 63 9"
+                },
+                {
+                    "name": "target2",
+                    "spklab": "2"
+                }
+            ],
+            "utt2spk": "100_122655"
+        },
+        "100_122655_000057_000000": {
+            "input": [
+                {
+                    "feat": "/export/b18/jcho/espnet3/egs/libritts/tts+spkid/dump/train_clean_460_spkcv_0.1/feats.1.ark:837755",
+                    "name": "input1",
+                    "shape": [
+                        650,
+                        80
+                    ]
+                }
+            ],
+            "output": [
+                {
+                    "name": "target1",
+                    "shape": [
+                        113,
+                        78
+                    ],
+                    "text": "\"He will sacrifice all to his long framed resolves,\" she said: \"natural affection and feelings more potent still.",
+                    "token": "\" H e <space> w i l l <space> s a c r i f i c e <space> a l l <space> t o <space> h i s <space> l o n g <space> f r a m e d <space> r e s o l v e s , \" <space> s h e <space> s a i d : <space> \" n a t u r a l <space> a f f e c t i o n <space> a n d <space> f e e l i n g s <space> m o r e <space> p o t e n t <space> s t i l l .",
+                    "tokenid": "3 22 47 13 65 51 54 54 13 61 43 45 60 51 48 51 45 47 13 43 54 54 13 62 57 13 50 51 61 13 54 57 56 49 13 48 60 43 55 47 46 13 60 47 61 57 54 64 47 61 7 3 13 61 50 47 13 61 43 51 46 11 13 3 56 43 62 63 60 43 54 13 43 48 48 47 45 62 51 57 56 13 43 56 46 13 48 47 47 54 51 56 49 61 13 55 57 60 47 13 58 57 62 47 56 62 13 61 62 51 54 54 9"
+                },
+                {
+                    "name": "target2",
+                    "spklab": "2"
+                }
+            ],
+            "utt2spk": "100_122655"
+        },
+        "100_122655_000058_000000": {
+            "input": [
+                {
+                    "feat": "/export/b18/jcho/espnet3/egs/libritts/tts+spkid/dump/train_clean_460_spkcv_0.1/feats.1.ark:890441",
+                    "name": "input1",
+                    "shape": [
+                        407,
+                        80
+                    ]
+                }
+            ],
+            "output": [
+                {
+                    "name": "target1",
+                    "shape": [
+                        85,
+                        78
+                    ],
+                    "text": "\"We are now without father: we shall soon be without home and brother,\" she murmured.",
+                    "token": "\" W e <space> a r e <space> n o w <space> w i t h o u t <space> f a t h e r : <space> w e <space> s h a l l <space> s o o n <space> b e <space> w i t h o u t <space> h o m e <space> a n d <space> b r o t h e r , \" <space> s h e <space> m u r m u r e d .",
+                    "tokenid": "3 37 47 13 43 60 47 13 56 57 65 13 65 51 62 50 57 63 62 13 48 43 62 50 47 60 11 13 65 47 13 61 50 43 54 54 13 61 57 57 56 13 44 47 13 65 51 62 50 57 63 62 13 50 57 55 47 13 43 56 46 13 44 60 57 62 50 47 60 7 3 13 61 50 47 13 55 63 60 55 63 60 47 46 9"
+                },
+                {
+                    "name": "target2",
+                    "spklab": "2"
+                }
+            ],
+            "utt2spk": "100_122655"
+        },
+        "100_122655_000065_000000": {
+            "input": [
+                {
+                    "feat": "/export/b18/jcho/espnet3/egs/libritts/tts+spkid/dump/train_clean_460_spkcv_0.1/feats.1.ark:923687",
+                    "name": "input1",
+                    "shape": [
+                        562,
+                        80
+                    ]
+                }
+            ],
+            "output": [
+                {
+                    "name": "target1",
+                    "shape": [
+                        85,
+                        78
+                    ],
+                    "text": "\"What then, Die?\" he replied, maintaining a marble immobility of feature. \"What then?",
+                    "token": "\" W h a t <space> t h e n , <space> D i e ? \" <space> h e <space> r e p l i e d , <space> m a i n t a i n i n g <space> a <space> m a r b l e <space> i m m o b i l i t y <space> o f <space> f e a t u r e . <space> \" W h a t <space> t h e n ?",
+                    "tokenid": "3 37 50 43 62 13 62 50 47 56 7 13 18 51 47 14 3 13 50 47 13 60 47 58 54 51 47 46 7 13 55 43 51 56 62 43 51 56 51 56 49 13 43 13 55 43 60 44 54 47 13 51 55 55 57 44 51 54 51 62 67 13 57 48 13 48 47 43 62 63 60 47 9 13 3 37 50 43 62 13 62 50 47 56 14"
+                },
+                {
+                    "name": "target2",
+                    "spklab": "2"
+                }
+            ],
+            "utt2spk": "100_122655"
+        },
+        "100_122655_000067_000001": {
+            "input": [
+                {
+                    "feat": "/export/b18/jcho/espnet3/egs/libritts/tts+spkid/dump/train_clean_460_spkcv_0.1/feats.1.ark:969333",
+                    "name": "input1",
+                    "shape": [
+                        237,
+                        80
+                    ]
+                }
+            ],
+            "output": [
+                {
+                    "name": "target1",
+                    "shape": [
+                        37,
+                        78
+                    ],
+                    "text": "We can yet live,\" said Diana at last.",
+                    "token": "W e <space> c a n <space> y e t <space> l i v e , \" <space> s a i d <space> D i a n a <space> a t <space> l a s t .",
+                    "tokenid": "37 47 13 45 43 56 13 67 47 62 13 54 51 64 47 7 3 13 61 43 51 46 13 18 51 43 56 43 13 43 62 13 54 43 61 62 9"
+                },
+                {
+                    "name": "target2",
+                    "spklab": "2"
+                }
+            ],
+            "utt2spk": "100_122655"
+        },
+        "100_122655_000072_000000": {
+            "input": [
+                {
+                    "feat": "/export/b18/jcho/espnet3/egs/libritts/tts+spkid/dump/train_clean_460_spkcv_0.1/feats.1.ark:988979",
+                    "name": "input1",
+                    "shape": [
+                        1082,
+                        80
+                    ]
+                }
+            ],
+            "output": [
+                {
+                    "name": "target1",
+                    "shape": [
+                        202,
+                        78
+                    ],
+                    "text": "\"Jane, you will wonder at us and our mysteries,\" she said, \"and think us hard hearted beings not to be more moved at the death of so near a relation as an uncle; but we have never seen him or known him.",
+                    "token": "\" J a n e , <space> y o u <space> w i l l <space> w o n d e r <space> a t <space> u s <space> a n d <space> o u r <space> m y s t e r i e s , \" <space> s h e <space> s a i d , <space> \" a n d <space> t h i n k <space> u s <space> h a r d <space> h e a r t e d <space> b e i n g s <space> n o t <space> t o <space> b e <space> m o r e <space> m o v e d <space> a t <space> t h e <space> d e a t h <space> o f <space> s o <space> n e a r <space> a <space> r e l a t i o n <space> a s <space> a n <space> u n c l e ; <space> b u t <space> w e <space> h a v e <space> n e v e r <space> s e e n <space> h i m <space> o r <space> k n o w n <space> h i m .",
+                    "tokenid": "3 24 43 56 47 7 13 67 57 63 13 65 51 54 54 13 65 57 56 46 47 60 13 43 62 13 63 61 13 43 56 46 13 57 63 60 13 55 67 61 62 47 60 51 47 61 7 3 13 61 50 47 13 61 43 51 46 7 13 3 43 56 46 13 62 50 51 56 53 13 63 61 13 50 43 60 46 13 50 47 43 60 62 47 46 13 44 47 51 56 49 61 13 56 57 62 13 62 57 13 44 47 13 55 57 60 47 13 55 57 64 47 46 13 43 62 13 62 50 47 13 46 47 43 62 50 13 57 48 13 61 57 13 56 47 43 60 13 43 13 60 47 54 43 62 51 57 56 13 43 61 13 43 56 13 63 56 45 54 47 12 13 44 63 62 13 65 47 13 50 43 64 47 13 56 47 64 47 60 13 61 47 47 56 13 50 51 55 13 57 60 13 53 56 57 65 56 13 50 51 55 9"
+                },
+                {
+                    "name": "target2",
+                    "spklab": "2"
+                }
+            ],
+            "utt2spk": "100_122655"
+        },
+        "100_122655_000072_000002": {
+            "input": [
+                {
+                    "feat": "/export/b18/jcho/espnet3/egs/libritts/tts+spkid/dump/train_clean_460_spkcv_0.1/feats.1.ark:1076225",
+                    "name": "input1",
+                    "shape": [
+                        218,
+                        80
+                    ]
+                }
+            ],
+            "output": [
+                {
+                    "name": "target1",
+                    "shape": [
+                        37,
+                        78
+                    ],
+                    "text": "My father and he quarrelled long ago.",
+                    "token": "M y <space> f a t h e r <space> a n d <space> h e <space> q u a r r e l l e d <space> l o n g <space> a g o .",
+                    "tokenid": "27 67 13 48 43 62 50 47 60 13 43 56 46 13 50 47 13 59 63 43 60 60 47 54 54 47 46 13 54 57 56 49 13 43 49 57 9"
+                },
+                {
+                    "name": "target2",
+                    "spklab": "2"
+                }
+            ],
+            "utt2spk": "100_122655"
+        },
+        "100_122655_000073_000000": {
+            "input": [
+                {
+                    "feat": "/export/b18/jcho/espnet3/egs/libritts/tts+spkid/dump/train_clean_460_spkcv_0.1/feats.1.ark:1094351",
+                    "name": "input1",
+                    "shape": [
+                        735,
+                        80
+                    ]
+                }
+            ],
+            "output": [
+                {
+                    "name": "target1",
+                    "shape": [
+                        120,
+                        78
+                    ],
+                    "text": "This explanation given, the subject was dropped, and no further reference made to it by either mr Rivers or his sisters.",
+                    "token": "T h i s <space> e x p l a n a t i o n <space> g i v e n , <space> t h e <space> s u b j e c t <space> w a s <space> d r o p p e d , <space> a n d <space> n o <space> f u r t h e r <space> r e f e r e n c e <space> m a d e <space> t o <space> i t <space> b y <space> e i t h e r <space> m r <space> R i v e r s <space> o r <space> h i s <space> s i s t e r s .",
+                    "tokenid": "34 50 51 61 13 47 66 58 54 43 56 43 62 51 57 56 13 49 51 64 47 56 7 13 62 50 47 13 61 63 44 52 47 45 62 13 65 43 61 13 46 60 57 58 58 47 46 7 13 43 56 46 13 56 57 13 48 63 60 62 50 47 60 13 60 47 48 47 60 47 56 45 47 13 55 43 46 47 13 62 57 13 51 62 13 44 67 13 47 51 62 50 47 60 13 55 60 13 32 51 64 47 60 61 13 57 60 13 50 51 61 13 61 51 61 62 47 60 61 9"
+                },
+                {
+                    "name": "target2",
+                    "spklab": "2"
+                }
+            ],
+            "utt2spk": "100_122655"
+        },
+        "1012_133424_000012_000001": {
+            "input": [
+                {
+                    "feat": "/export/b18/jcho/espnet3/egs/libritts/tts+spkid/dump/train_clean_460_spkcv_0.1/feats.1.ark:1153838",
+                    "name": "input1",
+                    "shape": [
+                        778,
+                        80
+                    ]
+                }
+            ],
+            "output": [
+                {
+                    "name": "target1",
+                    "shape": [
+                        143,
+                        78
+                    ],
+                    "text": "But she was a young mother and she did not know this; she thought you simply must stick to your rule about half an hour after the mid day meal.",
+                    "token": "B u t <space> s h e <space> w a s <space> a <space> y o u n g <space> m o t h e r <space> a n d <space> s h e <space> d i d <space> n o t <space> k n o w <space> t h i s ; <space> s h e <space> t h o u g h t <space> y o u <space> s i m p l y <space> m u s t <space> s t i c k <space> t o <space> y o u r <space> r u l e <space> a b o u t <space> h a l f <space> a n <space> h o u r <space> a f t e r <space> t h e <space> m i d <space> d a y <space> m e a l .",
+                    "tokenid": "16 63 62 13 61 50 47 13 65 43 61 13 43 13 67 57 63 56 49 13 55 57 62 50 47 60 13 43 56 46 13 61 50 47 13 46 51 46 13 56 57 62 13 53 56 57 65 13 62 50 51 61 12 13 61 50 47 13 62 50 57 63 49 50 62 13 67 57 63 13 61 51 55 58 54 67 13 55 63 61 62 13 61 62 51 45 53 13 62 57 13 67 57 63 60 13 60 63 54 47 13 43 44 57 63 62 13 50 43 54 48 13 43 56 13 50 57 63 60 13 43 48 62 47 60 13 62 50 47 13 55 51 46 13 46 43 67 13 55 47 43 54 9"
+                },
+                {
+                    "name": "target2",
+                    "spklab": "3"
+                }
+            ],
+            "utt2spk": "1012_133424"
+        },
+        "1012_133424_000012_000004": {
+            "input": [
+                {
+                    "feat": "/export/b18/jcho/espnet3/egs/libritts/tts+spkid/dump/train_clean_460_spkcv_0.1/feats.1.ark:1216765",
+                    "name": "input1",
+                    "shape": [
+                        221,
+                        80
+                    ]
+                }
+            ],
+            "output": [
+                {
+                    "name": "target1",
+                    "shape": [
+                        53,
+                        78
+                    ],
+                    "text": "She stood over them to let them have their sleep out.",
+                    "token": "S h e <space> s t o o d <space> o v e r <space> t h e m <space> t o <space> l e t <space> t h e m <space> h a v e <space> t h e i r <space> s l e e p <space> o u t .",
+                    "tokenid": "33 50 47 13 61 62 57 57 46 13 57 64 47 60 13 62 50 47 55 13 62 57 13 54 47 62 13 62 50 47 55 13 50 43 64 47 13 62 50 47 51 60 13 61 54 47 47 58 13 57 63 62 9"
+                },
+                {
+                    "name": "target2",
+                    "spklab": "3"
+                }
+            ],
+            "utt2spk": "1012_133424"
+        },
+        "1012_133424_000018_000001": {
+            "input": [
+                {
+                    "feat": "/export/b18/jcho/espnet3/egs/libritts/tts+spkid/dump/train_clean_460_spkcv_0.1/feats.1.ark:1235132",
+                    "name": "input1",
+                    "shape": [
+                        654,
+                        80
+                    ]
+                }
+            ],
+            "output": [
+                {
+                    "name": "target1",
+                    "shape": [
+                        121,
+                        78
+                    ],
+                    "text": "It was the pirate dinghy, with three figures in her, Smee and Starkey, and the third a captive, no other than Tiger Lily.",
+                    "token": "I t <space> w a s <space> t h e <space> p i r a t e <space> d i n g h y , <space> w i t h <space> t h r e e <space> f i g u r e s <space> i n <space> h e r , <space> S m e e <space> a n d <space> S t a r k e y , <space> a n d <space> t h e <space> t h i r d <space> a <space> c a p t i v e , <space> n o <space> o t h e r <space> t h a n <space> T i g e r <space> L i l y .",
+                    "tokenid": "23 62 13 65 43 61 13 62 50 47 13 58 51 60 43 62 47 13 46 51 56 49 50 67 7 13 65 51 62 50 13 62 50 60 47 47 13 48 51 49 63 60 47 61 13 51 56 13 50 47 60 7 13 33 55 47 47 13 43 56 46 13 33 62 43 60 53 47 67 7 13 43 56 46 13 62 50 47 13 62 50 51 60 46 13 43 13 45 43 58 62 51 64 47 7 13 56 57 13 57 62 50 47 60 13 62 50 43 56 13 34 51 49 47 60 13 26 51 54 67 9"
+                },
+                {
+                    "name": "target2",
+                    "spklab": "3"
+                }
+            ],
+            "utt2spk": "1012_133424"
+        },
+        "1012_133424_000037_000000": {
+            "input": [
+                {
+                    "feat": "/export/b18/jcho/espnet3/egs/libritts/tts+spkid/dump/train_clean_460_spkcv_0.1/feats.1.ark:1288139",
+                    "name": "input1",
+                    "shape": [
+                        1015,
+                        80
+                    ]
+                }
+            ],
+            "output": [
+                {
+                    "name": "target1",
+                    "shape": [
+                        193,
+                        78
+                    ],
+                    "text": "Of course Wendy was very elated over Peter's cleverness; but she knew that he would be elated also and very likely crow and thus betray himself, so at once her hand went out to cover his mouth.",
+                    "token": "O f <space> c o u r s e <space> W e n d y <space> w a s <space> v e r y <space> e l a t e d <space> o v e r <space> P e t e r ' s <space> c l e v e r n e s s ; <space> b u t <space> s h e <space> k n e w <space> t h a t <space> h e <space> w o u l d <space> b e <space> e l a t e d <space> a l s o <space> a n d <space> v e r y <space> l i k e l y <space> c r o w <space> a n d <space> t h u s <space> b e t r a y <space> h i m s e l f , <space> s o <space> a t <space> o n c e <space> h e r <space> h a n d <space> w e n t <space> o u t <space> t o <space> c o v e r <space> h i s <space> m o u t h .",
+                    "tokenid": "29 48 13 45 57 63 60 61 47 13 37 47 56 46 67 13 65 43 61 13 64 47 60 67 13 47 54 43 62 47 46 13 57 64 47 60 13 30 47 62 47 60 4 61 13 45 54 47 64 47 60 56 47 61 61 12 13 44 63 62 13 61 50 47 13 53 56 47 65 13 62 50 43 62 13 50 47 13 65 57 63 54 46 13 44 47 13 47 54 43 62 47 46 13 43 54 61 57 13 43 56 46 13 64 47 60 67 13 54 51 53 47 54 67 13 45 60 57 65 13 43 56 46 13 62 50 63 61 13 44 47 62 60 43 67 13 50 51 55 61 47 54 48 7 13 61 57 13 43 62 13 57 56 45 47 13 50 47 60 13 50 43 56 46 13 65 47 56 62 13 57 63 62 13 62 57 13 45 57 64 47 60 13 50 51 61 13 55 57 63 62 50 9"
+                },
+                {
+                    "name": "target2",
+                    "spklab": "3"
+                }
+            ],
+            "utt2spk": "1012_133424"
+        },
+        "1012_133424_000048_000000": {
+            "input": [
+                {
+                    "feat": "/export/b18/jcho/espnet3/egs/libritts/tts+spkid/dump/train_clean_460_spkcv_0.1/feats.1.ark:1370026",
+                    "name": "input1",
+                    "shape": [
+                        180,
+                        80
+                    ]
+                }
+            ],
+            "output": [
+                {
+                    "name": "target1",
+                    "shape": [
+                        35,
+                        78
+                    ],
+                    "text": "Then at last he spoke passionately.",
+                    "token": "T h e n <space> a t <space> l a s t <space> h e <space> s p o k e <space> p a s s i o n a t e l y .",
+                    "tokenid": "34 50 47 56 13 43 62 13 54 43 61 62 13 50 47 13 61 58 57 53 47 13 58 43 61 61 51 57 56 43 62 47 54 67 9"
+                },
+                {
+                    "name": "target2",
+                    "spklab": "3"
+                }
+            ],
+            "utt2spk": "1012_133424"
+        },
+        "1012_133424_000049_000000": {
+            "input": [
+                {
+                    "feat": "/export/b18/jcho/espnet3/egs/libritts/tts+spkid/dump/train_clean_460_spkcv_0.1/feats.1.ark:1385113",
+                    "name": "input1",
+                    "shape": [
+                        391,
+                        80
+                    ]
+                }
+            ],
+            "output": [
+                {
+                    "name": "target1",
+                    "shape": [
+                        60,
+                        78
+                    ],
+                    "text": "\"The game's up,\" he cried, \"those boys have found a mother.\"",
+                    "token": "\" T h e <space> g a m e ' s <space> u p , \" <space> h e <space> c r i e d , <space> \" t h o s e <space> b o y s <space> h a v e <space> f o u n d <space> a <space> m o t h e r . \"",
+                    "tokenid": "3 34 50 47 13 49 43 55 47 4 61 13 63 58 7 3 13 50 47 13 45 60 51 47 46 7 13 3 62 50 57 61 47 13 44 57 67 61 13 50 43 64 47 13 48 57 63 56 46 13 43 13 55 57 62 50 47 60 9 3"
+                },
+                {
+                    "name": "target2",
+                    "spklab": "3"
+                }
+            ],
+            "utt2spk": "1012_133424"
+        },
+        "1012_133424_000086_000001": {
+            "input": [
+                {
+                    "feat": "/export/b18/jcho/espnet3/egs/libritts/tts+spkid/dump/train_clean_460_spkcv_0.1/feats.1.ark:1417080",
+                    "name": "input1",
+                    "shape": [
+                        451,
+                        80
+                    ]
+                }
+            ],
+            "output": [
+                {
+                    "name": "target1",
+                    "shape": [
+                        67,
+                        78
+                    ],
+                    "text": "\"If you are Hook,\" he said almost humbly, \"come tell me, who am I?\"",
+                    "token": "\" I f <space> y o u <space> a r e <space> H o o k , \" <space> h e <space> s a i d <space> a l m o s t <space> h u m b l y , <space> \" c o m e <space> t e l l <space> m e , <space> w h o <space> a m <space> I ? \"",
+                    "tokenid": "3 23 48 13 67 57 63 13 43 60 47 13 22 57 57 53 7 3 13 50 47 13 61 43 51 46 13 43 54 55 57 61 62 13 50 63 55 44 54 67 7 13 3 45 57 55 47 13 62 47 54 54 13 55 47 7 13 65 50 57 13 43 55 13 23 14 3"
+                },
+                {
+                    "name": "target2",
+                    "spklab": "3"
+                }
+            ],
+            "utt2spk": "1012_133424"
+        },
+        "1012_133424_000123_000000": {
+            "input": [
+                {
+                    "feat": "/export/b18/jcho/espnet3/egs/libritts/tts+spkid/dump/train_clean_460_spkcv_0.1/feats.1.ark:1453847",
+                    "name": "input1",
+                    "shape": [
+                        376,
+                        80
+                    ]
+                }
+            ],
+            "output": [
+                {
+                    "name": "target1",
+                    "shape": [
+                        70,
+                        78
+                    ],
+                    "text": "He leaped as he spoke, and simultaneously came the gay voice of peter.",
+                    "token": "H e <space> l e a p e d <space> a s <space> h e <space> s p o k e , <space> a n d <space> s i m u l t a n e o u s l y <space> c a m e <space> t h e <space> g a y <space> v o i c e <space> o f <space> p e t e r .",
+                    "tokenid": "22 47 13 54 47 43 58 47 46 13 43 61 13 50 47 13 61 58 57 53 47 7 13 43 56 46 13 61 51 55 63 54 62 43 56 47 57 63 61 54 67 13 45 43 55 47 13 62 50 47 13 49 43 67 13 64 57 51 45 47 13 57 48 13 58 47 62 47 60 9"
+                },
+                {
+                    "name": "target2",
+                    "spklab": "3"
+                }
+            ],
+            "utt2spk": "1012_133424"
+        },
+        "1012_133424_000135_000002": {
+            "input": [
+                {
+                    "feat": "/export/b18/jcho/espnet3/egs/libritts/tts+spkid/dump/train_clean_460_spkcv_0.1/feats.1.ark:1484614",
+                    "name": "input1",
+                    "shape": [
+                        173,
+                        80
+                    ]
+                }
+            ],
+            "output": [
+                {
+                    "name": "target1",
+                    "shape": [
+                        31,
+                        78
+                    ],
+                    "text": "He could only stare, horrified.",
+                    "token": "H e <space> c o u l d <space> o n l y <space> s t a r e , <space> h o r r i f i e d .",
+                    "tokenid": "22 47 13 45 57 63 54 46 13 57 56 54 67 13 61 62 43 60 47 7 13 50 57 60 60 51 48 51 47 46 9"
+                },
+                {
+                    "name": "target2",
+                    "spklab": "3"
+                }
+            ],
+            "utt2spk": "1012_133424"
+        },
+        "1012_133424_000137_000003": {
+            "input": [
+                {
+                    "feat": "/export/b18/jcho/espnet3/egs/libritts/tts+spkid/dump/train_clean_460_spkcv_0.1/feats.1.ark:1499141",
+                    "name": "input1",
+                    "shape": [
+                        268,
+                        80
+                    ]
+                }
+            ],
+            "output": [
+                {
+                    "name": "target1",
+                    "shape": [
+                        59,
+                        78
+                    ],
+                    "text": "\"They must be swimming back or flying,\" the boys concluded.",
+                    "token": "\" T h e y <space> m u s t <space> b e <space> s w i m m i n g <space> b a c k <space> o r <space> f l y i n g , \" <space> t h e <space> b o y s <space> c o n c l u d e d .",
+                    "tokenid": "3 34 50 47 67 13 55 63 61 62 13 44 47 13 61 65 51 55 55 51 56 49 13 44 43 45 53 13 57 60 13 48 54 67 51 56 49 7 3 13 62 50 47 13 44 57 67 61 13 45 57 56 45 54 63 46 47 46 9"
+                },
+                {
+                    "name": "target2",
+                    "spklab": "3"
+                }
+            ],
+            "utt2spk": "1012_133424"
+        },
+        "1012_133424_000146_000000": {
+            "input": [
+                {
+                    "feat": "/export/b18/jcho/espnet3/egs/libritts/tts+spkid/dump/train_clean_460_spkcv_0.1/feats.1.ark:1521268",
+                    "name": "input1",
+                    "shape": [
+                        150,
+                        80
+                    ]
+                }
+            ],
+            "output": [
+                {
+                    "name": "target1",
+                    "shape": [
+                        30,
+                        78
+                    ],
+                    "text": "\"Shall we swim or fly, peter?\"",
+                    "token": "\" S h a l l <space> w e <space> s w i m <space> o r <space> f l y , <space> p e t e r ? \"",
+                    "tokenid": "3 33 50 43 54 54 13 65 47 13 61 65 51 55 13 57 60 13 48 54 67 7 13 58 47 62 47 60 14 3"
+                },
+                {
+                    "name": "target2",
+                    "spklab": "3"
+                }
+            ],
+            "utt2spk": "1012_133424"
+        },
+        "1018_133447_000000_000000": {
+            "input": [
+                {
+                    "feat": "/export/b18/jcho/espnet3/egs/libritts/tts+spkid/dump/train_clean_460_spkcv_0.1/feats.1.ark:1533955",
+                    "name": "input1",
+                    "shape": [
+                        166,
+                        80
+                    ]
+                }
+            ],
+            "output": [
+                {
+                    "name": "target1",
+                    "shape": [
+                        29,
+                        78
+                    ],
+                    "text": "This is a LibriVox recording.",
+                    "token": "T h i s <space> i s <space> a <space> L i b r i V o x <space> r e c o r d i n g .",
+                    "tokenid": "34 50 51 61 13 51 61 13 43 13 26 51 44 60 51 36 57 66 13 60 47 45 57 60 46 51 56 49 9"
+                },
+                {
+                    "name": "target2",
+                    "spklab": "4"
+                }
+            ],
+            "utt2spk": "1018_133447"
+        },
+        "1018_133447_000005_000002": {
+            "input": [
+                {
+                    "feat": "/export/b18/jcho/espnet3/egs/libritts/tts+spkid/dump/train_clean_460_spkcv_0.1/feats.1.ark:1547922",
+                    "name": "input1",
+                    "shape": [
+                        1525,
+                        80
+                    ]
+                }
+            ],
+            "output": [
+                {
+                    "name": "target1",
+                    "shape": [
+                        249,
+                        78
+                    ],
+                    "text": "There before their eyes, set in the centre of a great green sward, fringed by tall elms and giant beeches, rises the vast fabric of the thirteenth century Cathedral, its high spire piercing the skies in which rooks are for ever circling and calling.",
+                    "token": "T h e r e <space> b e f o r e <space> t h e i r <space> e y e s , <space> s e t <space> i n <space> t h e <space> c e n t r e <space> o f <space> a <space> g r e a t <space> g r e e n <space> s w a r d , <space> f r i n g e d <space> b y <space> t a l l <space> e l m s <space> a n d <space> g i a n t <space> b e e c h e s , <space> r i s e s <space> t h e <space> v a s t <space> f a b r i c <space> o f <space> t h e <space> t h i r t e e n t h <space> c e n t u r y <space> C a t h e d r a l , <space> i t s <space> h i g h <space> s p i r e <space> p i e r c i n g <space> t h e <space> s k i e s <space> i n <space> w h i c h <space> r o o k s <space> a r e <space> f o r <space> e v e r <space> c i r c l i n g <space> a n d <space> c a l l i n g .",
+                    "tokenid": "34 50 47 60 47 13 44 47 48 57 60 47 13 62 50 47 51 60 13 47 67 47 61 7 13 61 47 62 13 51 56 13 62 50 47 13 45 47 56 62 60 47 13 57 48 13 43 13 49 60 47 43 62 13 49 60 47 47 56 13 61 65 43 60 46 7 13 48 60 51 56 49 47 46 13 44 67 13 62 43 54 54 13 47 54 55 61 13 43 56 46 13 49 51 43 56 62 13 44 47 47 45 50 47 61 7 13 60 51 61 47 61 13 62 50 47 13 64 43 61 62 13 48 43 44 60 51 45 13 57 48 13 62 50 47 13 62 50 51 60 62 47 47 56 62 50 13 45 47 56 62 63 60 67 13 17 43 62 50 47 46 60 43 54 7 13 51 62 61 13 50 51 49 50 13 61 58 51 60 47 13 58 51 47 60 45 51 56 49 13 62 50 47 13 61 53 51 47 61 13 51 56 13 65 50 51 45 50 13 60 57 57 53 61 13 43 60 47 13 48 57 60 13 47 64 47 60 13 45 51 60 45 54 51 56 49 13 43 56 46 13 45 43 54 54 51 56 49 9"
+                },
+                {
+                    "name": "target2",
+                    "spklab": "4"
+                }
+            ],
+            "utt2spk": "1018_133447"
+        },
+        "1018_133447_000014_000000": {
+            "input": [
+                {
+                    "feat": "/export/b18/jcho/espnet3/egs/libritts/tts+spkid/dump/train_clean_460_spkcv_0.1/feats.1.ark:1670609",
+                    "name": "input1",
+                    "shape": [
+                        295,
+                        80
+                    ]
+                }
+            ],
+            "output": [
+                {
+                    "name": "target1",
+                    "shape": [
+                        54,
+                        78
+                    ],
+                    "text": "Mary Bewery took the empty cup and began to refill it.",
+                    "token": "M a r y <space> B e w e r y <space> t o o k <space> t h e <space> e m p t y <space> c u p <space> a n d <space> b e g a n <space> t o <space> r e f i l l <space> i t .",
+                    "tokenid": "27 43 60 67 13 16 47 65 47 60 67 13 62 57 57 53 13 62 50 47 13 47 55 58 62 67 13 45 63 58 13 43 56 46 13 44 47 49 43 56 13 62 57 13 60 47 48 51 54 54 13 51 62 9"
+                },
+                {
+                    "name": "target2",
+                    "spklab": "4"
+                }
+            ],
+            "utt2spk": "1018_133447"
+        },
+        "1018_133447_000024_000001": {
+            "input": [
+                {
+                    "feat": "/export/b18/jcho/espnet3/egs/libritts/tts+spkid/dump/train_clean_460_spkcv_0.1/feats.1.ark:1694896",
+                    "name": "input1",
+                    "shape": [
+                        111,
+                        80
+                    ]
+                }
+            ],
+            "output": [
+                {
+                    "name": "target1",
+                    "shape": [
+                        18,
+                        78
+                    ],
+                    "text": "\"Since last time?\"",
+                    "token": "\" S i n c e <space> l a s t <space> t i m e ? \"",
+                    "tokenid": "3 33 51 56 45 47 13 54 43 61 62 13 62 51 55 47 14 3"
+                },
+                {
+                    "name": "target2",
+                    "spklab": "4"
+                }
+            ],
+            "utt2spk": "1018_133447"
+        },
+        "1018_133447_000027_000000": {
+            "input": [
+                {
+                    "feat": "/export/b18/jcho/espnet3/egs/libritts/tts+spkid/dump/train_clean_460_spkcv_0.1/feats.1.ark:1704463",
+                    "name": "input1",
+                    "shape": [
+                        268,
+                        80
+                    ]
+                }
+            ],
+            "output": [
+                {
+                    "name": "target1",
+                    "shape": [
+                        45,
+                        78
+                    ],
+                    "text": "\"But-what shall you do?\" she asked anxiously.",
+                    "token": "\" B u t - w h a t <space> s h a l l <space> y o u <space> d o ? \" <space> s h e <space> a s k e d <space> a n x i o u s l y .",
+                    "tokenid": "3 16 63 62 8 65 50 43 62 13 61 50 43 54 54 13 67 57 63 13 46 57 14 3 13 61 50 47 13 43 61 53 47 46 13 43 56 66 51 57 63 61 54 67 9"
+                },
+                {
+                    "name": "target2",
+                    "spklab": "4"
+                }
+            ],
+            "utt2spk": "1018_133447"
+        },
+        "1018_133447_000028_000002": {
+            "input": [
+                {
+                    "feat": "/export/b18/jcho/espnet3/egs/libritts/tts+spkid/dump/train_clean_460_spkcv_0.1/feats.1.ark:1726590",
+                    "name": "input1",
+                    "shape": [
+                        487,
+                        80
+                    ]
+                }
+            ],
+            "output": [
+                {
+                    "name": "target1",
+                    "shape": [
+                        95,
+                        78
+                    ],
+                    "text": "He's a clever enough fellow, and a good assistant, but I don't like him, personally-never did.\"",
+                    "token": "H e ' s <space> a <space> c l e v e r <space> e n o u g h <space> f e l l o w , <space> a n d <space> a <space> g o o d <space> a s s i s t a n t , <space> b u t <space> I <space> d o n ' t <space> l i k e <space> h i m , <space> p e r s o n a l l y - n e v e r <space> d i d . \"",
+                    "tokenid": "22 47 4 61 13 43 13 45 54 47 64 47 60 13 47 56 57 63 49 50 13 48 47 54 54 57 65 7 13 43 56 46 13 43 13 49 57 57 46 13 43 61 61 51 61 62 43 56 62 7 13 44 63 62 13 23 13 46 57 56 4 62 13 54 51 53 47 13 50 51 55 7 13 58 47 60 61 57 56 43 54 54 67 8 56 47 64 47 60 13 46 51 46 9 3"
+                },
+                {
+                    "name": "target2",
+                    "spklab": "4"
+                }
+            ],
+            "utt2spk": "1018_133447"
+        },
+        "1018_133447_000031_000000": {
+            "input": [
+                {
+                    "feat": "/export/b18/jcho/espnet3/egs/libritts/tts+spkid/dump/train_clean_460_spkcv_0.1/feats.1.ark:1766237",
+                    "name": "input1",
+                    "shape": [
+                        580,
+                        80
+                    ]
+                }
+            ],
+            "output": [
+                {
+                    "name": "target1",
+                    "shape": [
+                        121,
+                        78
+                    ],
+                    "text": "He stopped short at that, and turning away, looked out across the garden as if some recollection had suddenly struck him.",
+                    "token": "H e <space> s t o p p e d <space> s h o r t <space> a t <space> t h a t , <space> a n d <space> t u r n i n g <space> a w a y , <space> l o o k e d <space> o u t <space> a c r o s s <space> t h e <space> g a r d e n <space> a s <space> i f <space> s o m e <space> r e c o l l e c t i o n <space> h a d <space> s u d d e n l y <space> s t r u c k <space> h i m .",
+                    "tokenid": "22 47 13 61 62 57 58 58 47 46 13 61 50 57 60 62 13 43 62 13 62 50 43 62 7 13 43 56 46 13 62 63 60 56 51 56 49 13 43 65 43 67 7 13 54 57 57 53 47 46 13 57 63 62 13 43 45 60 57 61 61 13 62 50 47 13 49 43 60 46 47 56 13 43 61 13 51 48 13 61 57 55 47 13 60 47 45 57 54 54 47 45 62 51 57 56 13 50 43 46 13 61 63 46 46 47 56 54 67 13 61 62 60 63 45 53 13 50 51 55 9"
+                },
+                {
+                    "name": "target2",
+                    "spklab": "4"
+                }
+            ],
+            "utt2spk": "1018_133447"
+        },
+        "1018_133447_000032_000001": {
+            "input": [
+                {
+                    "feat": "/export/b18/jcho/espnet3/egs/libritts/tts+spkid/dump/train_clean_460_spkcv_0.1/feats.1.ark:1813324",
+                    "name": "input1",
+                    "shape": [
+                        60,
+                        80
+                    ]
+                }
+            ],
+            "output": [
+                {
+                    "name": "target1",
+                    "shape": [
+                        7,
+                        78
+                    ],
+                    "text": "\"What?\"",
+                    "token": "\" W h a t ? \"",
+                    "tokenid": "3 37 50 43 62 14 3"
+                },
+                {
+                    "name": "target2",
+                    "spklab": "4"
+                }
+            ],
+            "utt2spk": "1018_133447"
+        },
+        "1018_133447_000035_000000": {
+            "input": [
+                {
+                    "feat": "/export/b18/jcho/espnet3/egs/libritts/tts+spkid/dump/train_clean_460_spkcv_0.1/feats.1.ark:1818811",
+                    "name": "input1",
+                    "shape": [
+                        469,
+                        80
+                    ]
+                }
+            ],
+            "output": [
+                {
+                    "name": "target1",
+                    "shape": [
+                        95,
+                        78
+                    ],
+                    "text": "\"I don't know if parents and guardians count for much in these degenerate days,\" said Ransford.",
+                    "token": "\" I <space> d o n ' t <space> k n o w <space> i f <space> p a r e n t s <space> a n d <space> g u a r d i a n s <space> c o u n t <space> f o r <space> m u c h <space> i n <space> t h e s e <space> d e g e n e r a t e <space> d a y s , \" <space> s a i d <space> R a n s f o r d .",
+                    "tokenid": "3 23 13 46 57 56 4 62 13 53 56 57 65 13 51 48 13 58 43 60 47 56 62 61 13 43 56 46 13 49 63 43 60 46 51 43 56 61 13 45 57 63 56 62 13 48 57 60 13 55 63 45 50 13 51 56 13 62 50 47 61 47 13 46 47 49 47 56 47 60 43 62 47 13 46 43 67 61 7 3 13 61 43 51 46 13 32 43 56 61 48 57 60 46 9"
+                },
+                {
+                    "name": "target2",
+                    "spklab": "4"
+                }
+            ],
+            "utt2spk": "1018_133447"
+        },
+        "1018_133447_000043_000000": {
+            "input": [
+                {
+                    "feat": "/export/b18/jcho/espnet3/egs/libritts/tts+spkid/dump/train_clean_460_spkcv_0.1/feats.1.ark:1857018",
+                    "name": "input1",
+                    "shape": [
+                        624,
+                        80
+                    ]
+                }
+            ],
+            "output": [
+                {
+                    "name": "target1",
+                    "shape": [
+                        124,
+                        78
+                    ],
+                    "text": "Ransford laid down his letters again, and thrusting his hands in his pockets, squared his shoulders against the mantelpiece.",
+                    "token": "R a n s f o r d <space> l a i d <space> d o w n <space> h i s <space> l e t t e r s <space> a g a i n , <space> a n d <space> t h r u s t i n g <space> h i s <space> h a n d s <space> i n <space> h i s <space> p o c k e t s , <space> s q u a r e d <space> h i s <space> s h o u l d e r s <space> a g a i n s t <space> t h e <space> m a n t e l p i e c e .",
+                    "tokenid": "32 43 56 61 48 57 60 46 13 54 43 51 46 13 46 57 65 56 13 50 51 61 13 54 47 62 62 47 60 61 13 43 49 43 51 56 7 13 43 56 46 13 62 50 60 63 61 62 51 56 49 13 50 51 61 13 50 43 56 46 61 13 51 56 13 50 51 61 13 58 57 45 53 47 62 61 7 13 61 59 63 43 60 47 46 13 50 51 61 13 61 50 57 63 54 46 47 60 61 13 43 49 43 51 56 61 62 13 62 50 47 13 55 43 56 62 47 54 58 51 47 45 47 9"
+                },
+                {
+                    "name": "target2",
+                    "spklab": "4"
+                }
+            ],
+            "utt2spk": "1018_133447"
+        },
+        "1018_133447_000052_000000": {
+            "input": [
+                {
+                    "feat": "/export/b18/jcho/espnet3/egs/libritts/tts+spkid/dump/train_clean_460_spkcv_0.1/feats.1.ark:1907625",
+                    "name": "input1",
+                    "shape": [
+                        802,
+                        80
+                    ]
+                }
+            ],
+            "output": [
+                {
+                    "name": "target1",
+                    "shape": [
+                        164,
+                        78
+                    ],
+                    "text": "\"There's something I should very much like to know-personally,\" she answered, after a pause which lasted so long that Ransford began to feel uncomfortable under it.",
+                    "token": "\" T h e r e ' s <space> s o m e t h i n g <space> I <space> s h o u l d <space> v e r y <space> m u c h <space> l i k e <space> t o <space> k n o w - p e r s o n a l l y , \" <space> s h e <space> a n s w e r e d , <space> a f t e r <space> a <space> p a u s e <space> w h i c h <space> l a s t e d <space> s o <space> l o n g <space> t h a t <space> R a n s f o r d <space> b e g a n <space> t o <space> f e e l <space> u n c o m f o r t a b l e <space> u n d e r <space> i t .",
+                    "tokenid": "3 34 50 47 60 47 4 61 13 61 57 55 47 62 50 51 56 49 13 23 13 61 50 57 63 54 46 13 64 47 60 67 13 55 63 45 50 13 54 51 53 47 13 62 57 13 53 56 57 65 8 58 47 60 61 57 56 43 54 54 67 7 3 13 61 50 47 13 43 56 61 65 47 60 47 46 7 13 43 48 62 47 60 13 43 13 58 43 63 61 47 13 65 50 51 45 50 13 54 43 61 62 47 46 13 61 57 13 54 57 56 49 13 62 50 43 62 13 32 43 56 61 48 57 60 46 13 44 47 49 43 56 13 62 57 13 48 47 47 54 13 63 56 45 57 55 48 57 60 62 43 44 54 47 13 63 56 46 47 60 13 51 62 9"
+                },
+                {
+                    "name": "target2",
+                    "spklab": "4"
+                }
+            ],
+            "utt2spk": "1018_133447"
+        },
+        "1018_133447_000054_000007": {
+            "input": [
+                {
+                    "feat": "/export/b18/jcho/espnet3/egs/libritts/tts+spkid/dump/train_clean_460_spkcv_0.1/feats.1.ark:1972472",
+                    "name": "input1",
+                    "shape": [
+                        361,
+                        80
+                    ]
+                }
+            ],
+            "output": [
+                {
+                    "name": "target1",
+                    "shape": [
+                        50,
+                        78
+                    ],
+                    "text": "I-I dare say I've a tendency to let things slide.\"",
+                    "token": "I - I <space> d a r e <space> s a y <space> I ' v e <space> a <space> t e n d e n c y <space> t o <space> l e t <space> t h i n g s <space> s l i d e . \"",
+                    "tokenid": "23 8 23 13 46 43 60 47 13 61 43 67 13 23 4 64 47 13 43 13 62 47 56 46 47 56 45 67 13 62 57 13 54 47 62 13 62 50 51 56 49 61 13 61 54 51 46 47 9 3"
+                },
+                {
+                    "name": "target2",
+                    "spklab": "4"
+                }
+            ],
+            "utt2spk": "1018_133447"
+        },
+        "1018_133447_000059_000000": {
+            "input": [
+                {
+                    "feat": "/export/b18/jcho/espnet3/egs/libritts/tts+spkid/dump/train_clean_460_spkcv_0.1/feats.1.ark:2002039",
+                    "name": "input1",
+                    "shape": [
+                        202,
+                        80
+                    ]
+                }
+            ],
+            "output": [
+                {
+                    "name": "target1",
+                    "shape": [
+                        36,
+                        78
+                    ],
+                    "text": "\"I'm quite satisfied,\" she answered.",
+                    "token": "\" I ' m <space> q u i t e <space> s a t i s f i e d , \" <space> s h e <space> a n s w e r e d .",
+                    "tokenid": "3 23 4 55 13 59 63 51 62 47 13 61 43 62 51 61 48 51 47 46 7 3 13 61 50 47 13 43 56 61 65 47 60 47 46 9"
+                },
+                {
+                    "name": "target2",
+                    "spklab": "4"
+                }
+            ],
+            "utt2spk": "1018_133447"
+        },
+        "1018_133447_000063_000006": {
+            "input": [
+                {
+                    "feat": "/export/b18/jcho/espnet3/egs/libritts/tts+spkid/dump/train_clean_460_spkcv_0.1/feats.1.ark:2018886",
+                    "name": "input1",
+                    "shape": [
+                        615,
+                        80
+                    ]
+                }
+            ],
+            "output": [
+                {
+                    "name": "target1",
+                    "shape": [
+                        87,
+                        78
+                    ],
+                    "text": "She's no idea of it-and she shan't have; I must-must continue to be-only the guardian!\"",
+                    "token": "S h e ' s <space> n o <space> i d e a <space> o f <space> i t - a n d <space> s h e <space> s h a n ' t <space> h a v e ; <space> I <space> m u s t - m u s t <space> c o n t i n u e <space> t o <space> b e - o n l y <space> t h e <space> g u a r d i a n ! \"",
+                    "tokenid": "33 50 47 4 61 13 56 57 13 51 46 47 43 13 57 48 13 51 62 8 43 56 46 13 61 50 47 13 61 50 43 56 4 62 13 50 43 64 47 12 13 23 13 55 63 61 62 8 55 63 61 62 13 45 57 56 62 51 56 63 47 13 62 57 13 44 47 8 57 56 54 67 13 62 50 47 13 49 63 43 60 46 51 43 56 2 3"
+                },
+                {
+                    "name": "target2",
+                    "spklab": "4"
+                }
+            ],
+            "utt2spk": "1018_133447"
+        },
+        "1018_135221_000012_000000": {
+            "input": [
+                {
+                    "feat": "/export/b18/jcho/espnet3/egs/libritts/tts+spkid/dump/train_clean_460_spkcv_0.1/feats.1.ark:2068773",
+                    "name": "input1",
+                    "shape": [
+                        226,
+                        80
+                    ]
+                }
+            ],
+            "output": [
+                {
+                    "name": "target1",
+                    "shape": [
+                        36,
+                        78
+                    ],
+                    "text": "So I hesitated, yet what could I do?",
+                    "token": "S o <space> I <space> h e s i t a t e d , <space> y e t <space> w h a t <space> c o u l d <space> I <space> d o ?",
+                    "tokenid": "33 57 13 23 13 50 47 61 51 62 43 62 47 46 7 13 67 47 62 13 65 50 43 62 13 45 57 63 54 46 13 23 13 46 57 14"
+                },
+                {
+                    "name": "target2",
+                    "spklab": "5"
+                }
+            ],
+            "utt2spk": "1018_135221"
+        },
+        "1018_135221_000019_000002": {
+            "input": [
+                {
+                    "feat": "/export/b18/jcho/espnet3/egs/libritts/tts+spkid/dump/train_clean_460_spkcv_0.1/feats.1.ark:2087540",
+                    "name": "input1",
+                    "shape": [
+                        589,
+                        80
+                    ]
+                }
+            ],
+            "output": [
+                {
+                    "name": "target1",
+                    "shape": [
+                        118,
+                        78
+                    ],
+                    "text": "Then the chief, who had stood looking on with a smile on his face took off his rich furred mantle and handed it to me.",
+                    "token": "T h e n <space> t h e <space> c h i e f , <space> w h o <space> h a d <space> s t o o d <space> l o o k i n g <space> o n <space> w i t h <space> a <space> s m i l e <space> o n <space> h i s <space> f a c e <space> t o o k <space> o f f <space> h i s <space> r i c h <space> f u r r e d <space> m a n t l e <space> a n d <space> h a n d e d <space> i t <space> t o <space> m e .",
+                    "tokenid": "34 50 47 56 13 62 50 47 13 45 50 51 47 48 7 13 65 50 57 13 50 43 46 13 61 62 57 57 46 13 54 57 57 53 51 56 49 13 57 56 13 65 51 62 50 13 43 13 61 55 51 54 47 13 57 56 13 50 51 61 13 48 43 45 47 13 62 57 57 53 13 57 48 48 13 50 51 61 13 60 51 45 50 13 48 63 60 60 47 46 13 55 43 56 62 54 47 13 43 56 46 13 50 43 56 46 47 46 13 51 62 13 62 57 13 55 47 9"
+                },
+                {
+                    "name": "target2",
+                    "spklab": "5"
+                }
+            ],
+            "utt2spk": "1018_135221"
+        },
+        "101_126859_000003_000000": {
+            "input": [
+                {
+                    "feat": "/export/b18/jcho/espnet3/egs/libritts/tts+spkid/dump/train_clean_460_spkcv_0.1/feats.1.ark:2135346",
+                    "name": "input1",
+                    "shape": [
+                        351,
+                        80
+                    ]
+                }
+            ],
+            "output": [
+                {
+                    "name": "target1",
+                    "shape": [
+                        56,
+                        78
+                    ],
+                    "text": "BY the edge of the river they stopped and said farewell.",
+                    "token": "B Y <space> t h e <space> e d g e <space> o f <space> t h e <space> r i v e r <space> t h e y <space> s t o p p e d <space> a n d <space> s a i d <space> f a r e w e l l .",
+                    "tokenid": "16 39 13 62 50 47 13 47 46 49 47 13 57 48 13 62 50 47 13 60 51 64 47 60 13 62 50 47 67 13 61 62 57 58 58 47 46 13 43 56 46 13 61 43 51 46 13 48 43 60 47 65 47 54 54 9"
+                },
+                {
+                    "name": "target2",
+                    "spklab": "6"
+                }
+            ],
+            "utt2spk": "101_126859"
+        },
+        "101_126859_000009_000003": {
+            "input": [
+                {
+                    "feat": "/export/b18/jcho/espnet3/egs/libritts/tts+spkid/dump/train_clean_460_spkcv_0.1/feats.1.ark:2164112",
+                    "name": "input1",
+                    "shape": [
+                        317,
+                        80
+                    ]
+                }
+            ],
+            "output": [
+                {
+                    "name": "target1",
+                    "shape": [
+                        43,
+                        78
+                    ],
+                    "text": "They seemed to have disappeared altogether.",
+                    "token": "T h e y <space> s e e m e d <space> t o <space> h a v e <space> d i s a p p e a r e d <space> a l t o g e t h e r .",
+                    "tokenid": "34 50 47 67 13 61 47 47 55 47 46 13 62 57 13 50 43 64 47 13 46 51 61 43 58 58 47 43 60 47 46 13 43 54 62 57 49 47 62 50 47 60 9"
+                },
+                {
+                    "name": "target2",
+                    "spklab": "6"
+                }
+            ],
+            "utt2spk": "101_126859"
+        },
+        "101_126859_000013_000004": {
+            "input": [
+                {
+                    "feat": "/export/b18/jcho/espnet3/egs/libritts/tts+spkid/dump/train_clean_460_spkcv_0.1/feats.1.ark:2190158",
+                    "name": "input1",
+                    "shape": [
+                        527,
+                        80
+                    ]
+                }
+            ],
+            "output": [
+                {
+                    "name": "target1",
+                    "shape": [
+                        70,
+                        78
+                    ],
+                    "text": "This White Man shall scrub my kitchen floor for the rest of his life!\"",
+                    "token": "T h i s <space> W h i t e <space> M a n <space> s h a l l <space> s c r u b <space> m y <space> k i t c h e n <space> f l o o r <space> f o r <space> t h e <space> r e s t <space> o f <space> h i s <space> l i f e ! \"",
+                    "tokenid": "34 50 51 61 13 37 50 51 62 47 13 27 43 56 13 61 50 43 54 54 13 61 45 60 63 44 13 55 67 13 53 51 62 45 50 47 56 13 48 54 57 57 60 13 48 57 60 13 62 50 47 13 60 47 61 62 13 57 48 13 50 51 61 13 54 51 48 47 2 3"
+                },
+                {
+                    "name": "target2",
+                    "spklab": "6"
+                }
+            ],
+            "utt2spk": "101_126859"
+        },
+        "101_126859_000020_000000": {
+            "input": [
+                {
+                    "feat": "/export/b18/jcho/espnet3/egs/libritts/tts+spkid/dump/train_clean_460_spkcv_0.1/feats.1.ark:2233004",
+                    "name": "input1",
+                    "shape": [
+                        571,
+                        80
+                    ]
+                }
+            ],
+            "output": [
+                {
+                    "name": "target1",
+                    "shape": [
+                        86,
+                        78
+                    ],
+                    "text": "Presently she spied Chee Chee swinging through the trees still looking for the Doctor.",
+                    "token": "P r e s e n t l y <space> s h e <space> s p i e d <space> C h e e <space> C h e e <space> s w i n g i n g <space> t h r o u g h <space> t h e <space> t r e e s <space> s t i l l <space> l o o k i n g <space> f o r <space> t h e <space> D o c t o r .",
+                    "tokenid": "30 60 47 61 47 56 62 54 67 13 61 50 47 13 61 58 51 47 46 13 17 50 47 47 13 17 50 47 47 13 61 65 51 56 49 51 56 49 13 62 50 60 57 63 49 50 13 62 50 47 13 62 60 47 47 61 13 61 62 51 54 54 13 54 57 57 53 51 56 49 13 48 57 60 13 62 50 47 13 18 57 45 62 57 60 9"
+                },
+                {
+                    "name": "target2",
+                    "spklab": "6"
+                }
+            ],
+            "utt2spk": "101_126859"
+        },
+        "101_126859_000021_000001": {
+            "input": [
+                {
+                    "feat": "/export/b18/jcho/espnet3/egs/libritts/tts+spkid/dump/train_clean_460_spkcv_0.1/feats.1.ark:2279370",
+                    "name": "input1",
+                    "shape": [
+                        556,
+                        80
+                    ]
+                }
+            ],
+            "output": [
+                {
+                    "name": "target1",
+                    "shape": [
+                        80,
+                        78
+                    ],
+                    "text": "\"We lost our way in the jungle and blundered into the palace garden by mistake.\"",
+                    "token": "\" W e <space> l o s t <space> o u r <space> w a y <space> i n <space> t h e <space> j u n g l e <space> a n d <space> b l u n d e r e d <space> i n t o <space> t h e <space> p a l a c e <space> g a r d e n <space> b y <space> m i s t a k e . \"",
+                    "tokenid": "3 37 47 13 54 57 61 62 13 57 63 60 13 65 43 67 13 51 56 13 62 50 47 13 52 63 56 49 54 47 13 43 56 46 13 44 54 63 56 46 47 60 47 46 13 51 56 62 57 13 62 50 47 13 58 43 54 43 45 47 13 49 43 60 46 47 56 13 44 67 13 55 51 61 62 43 53 47 9 3"
+                },
+                {
+                    "name": "target2",
+                    "spklab": "6"
+                }
+            ],
+            "utt2spk": "101_126859"
+        },
+        "101_126859_000025_000000": {
+            "input": [
+                {
+                    "feat": "/export/b18/jcho/espnet3/egs/libritts/tts+spkid/dump/train_clean_460_spkcv_0.1/feats.1.ark:2324536",
+                    "name": "input1",
+                    "shape": [
+                        495,
+                        80
+                    ]
+                }
+            ],
+            "output": [
+                {
+                    "name": "target1",
+                    "shape": [
+                        66,
+                        78
+                    ],
+                    "text": "Chee Chee and Polynesia watched him, keeping very quiet and still.",
+                    "token": "C h e e <space> C h e e <space> a n d <space> P o l y n e s i a <space> w a t c h e d <space> h i m , <space> k e e p i n g <space> v e r y <space> q u i e t <space> a n d <space> s t i l l .",
+                    "tokenid": "17 50 47 47 13 17 50 47 47 13 43 56 46 13 30 57 54 67 56 47 61 51 43 13 65 43 62 45 50 47 46 13 50 51 55 7 13 53 47 47 58 51 56 49 13 64 47 60 67 13 59 63 51 47 62 13 43 56 46 13 61 62 51 54 54 9"
+                },
+                {
+                    "name": "target2",
+                    "spklab": "6"
+                }
+            ],
+            "utt2spk": "101_126859"
+        },
+        "101_126859_000030_000000": {
+            "input": [
+                {
+                    "feat": "/export/b18/jcho/espnet3/egs/libritts/tts+spkid/dump/train_clean_460_spkcv_0.1/feats.1.ark:2364822",
+                    "name": "input1",
+                    "shape": [
+                        488,
+                        80
+                    ]
+                }
+            ],
+            "output": [
+                {
+                    "name": "target1",
+                    "shape": [
+                        61,
+                        78
+                    ],
+                    "text": "The King's son started up off the seat and looked all around.",
+                    "token": "T h e <space> K i n g ' s <space> s o n <space> s t a r t e d <space> u p <space> o f f <space> t h e <space> s e a t <space> a n d <space> l o o k e d <space> a l l <space> a r o u n d .",
+                    "tokenid": "34 50 47 13 25 51 56 49 4 61 13 61 57 56 13 61 62 43 60 62 47 46 13 63 58 13 57 48 48 13 62 50 47 13 61 47 43 62 13 43 56 46 13 54 57 57 53 47 46 13 43 54 54 13 43 60 57 63 56 46 9"
+                },
+                {
+                    "name": "target2",
+                    "spklab": "6"
+                }
+            ],
+            "utt2spk": "101_126859"
+        },
+        "101_126860_000003_000000": {
+            "input": [
+                {
+                    "feat": "/export/b18/jcho/espnet3/egs/libritts/tts+spkid/dump/train_clean_460_spkcv_0.1/feats.1.ark:2404548",
+                    "name": "input1",
+                    "shape": [
+                        169,
+                        80
+                    ]
+                }
+            ],
+            "output": [
+                {
+                    "name": "target1",
+                    "shape": [
+                        18,
+                        78
+                    ],
+                    "text": "MEDICINE AND MAGIC",
+                    "token": "M E D I C I N E <space> A N D <space> M A G I C",
+                    "tokenid": "27 19 18 23 17 23 28 19 13 15 28 18 13 27 15 21 23 17"
+                },
+                {
+                    "name": "target2",
+                    "spklab": "7"
+                }
+            ],
+            "utt2spk": "101_126860"
+        },
+        "101_126860_000017_000000": {
+            "input": [
+                {
+                    "feat": "/export/b18/jcho/espnet3/egs/libritts/tts+spkid/dump/train_clean_460_spkcv_0.1/feats.1.ark:2418754",
+                    "name": "input1",
+                    "shape": [
+                        826,
+                        80
+                    ]
+                }
+            ],
+            "output": [
+                {
+                    "name": "target1",
+                    "shape": [
+                        109,
+                        78
+                    ],
+                    "text": "\"Yes, all over,\" said Bumpo-\"and I would like my eyes blue too, but I suppose that would be very hard to do.\"",
+                    "token": "\" Y e s , <space> a l l <space> o v e r , \" <space> s a i d <space> B u m p o - \" a n d <space> I <space> w o u l d <space> l i k e <space> m y <space> e y e s <space> b l u e <space> t o o , <space> b u t <space> I <space> s u p p o s e <space> t h a t <space> w o u l d <space> b e <space> v e r y <space> h a r d <space> t o <space> d o . \"",
+                    "tokenid": "3 39 47 61 7 13 43 54 54 13 57 64 47 60 7 3 13 61 43 51 46 13 16 63 55 58 57 8 3 43 56 46 13 23 13 65 57 63 54 46 13 54 51 53 47 13 55 67 13 47 67 47 61 13 44 54 63 47 13 62 57 57 7 13 44 63 62 13 23 13 61 63 58 58 57 61 47 13 62 50 43 62 13 65 57 63 54 46 13 44 47 13 64 47 60 67 13 50 43 60 46 13 62 57 13 46 57 9 3"
+                },
+                {
+                    "name": "target2",
+                    "spklab": "7"
+                }
+            ],
+            "utt2spk": "101_126860"
+        },
+        "101_126860_000026_000000": {
+            "input": [
+                {
+                    "feat": "/export/b18/jcho/espnet3/egs/libritts/tts+spkid/dump/train_clean_460_spkcv_0.1/feats.1.ark:2485520",
+                    "name": "input1",
+                    "shape": [
+                        1080,
+                        80
+                    ]
+                }
+            ],
+            "output": [
+                {
+                    "name": "target1",
+                    "shape": [
+                        150,
+                        78
+                    ],
+                    "text": "Bumpo begged that he might keep the looking glass, as it was the only one in the Kingdom of Jolliginki, and he wanted to look at himself all day long.",
+                    "token": "B u m p o <space> b e g g e d <space> t h a t <space> h e <space> m i g h t <space> k e e p <space> t h e <space> l o o k i n g <space> g l a s s , <space> a s <space> i t <space> w a s <space> t h e <space> o n l y <space> o n e <space> i n <space> t h e <space> K i n g d o m <space> o f <space> J o l l i g i n k i , <space> a n d <space> h e <space> w a n t e d <space> t o <space> l o o k <space> a t <space> h i m s e l f <space> a l l <space> d a y <space> l o n g .",
+                    "tokenid": "16 63 55 58 57 13 44 47 49 49 47 46 13 62 50 43 62 13 50 47 13 55 51 49 50 62 13 53 47 47 58 13 62 50 47 13 54 57 57 53 51 56 49 13 49 54 43 61 61 7 13 43 61 13 51 62 13 65 43 61 13 62 50 47 13 57 56 54 67 13 57 56 47 13 51 56 13 62 50 47 13 25 51 56 49 46 57 55 13 57 48 13 24 57 54 54 51 49 51 56 53 51 7 13 43 56 46 13 50 47 13 65 43 56 62 47 46 13 62 57 13 54 57 57 53 13 43 62 13 50 51 55 61 47 54 48 13 43 54 54 13 46 43 67 13 54 57 56 49 9"
+                },
+                {
+                    "name": "target2",
+                    "spklab": "7"
+                }
+            ],
+            "utt2spk": "101_126860"
+        },
+        "101_126860_000030_000004": {
+            "input": [
+                {
+                    "feat": "/export/b18/jcho/espnet3/egs/libritts/tts+spkid/dump/train_clean_460_spkcv_0.1/feats.1.ark:2572606",
+                    "name": "input1",
+                    "shape": [
+                        631,
+                        80
+                    ]
+                }
+            ],
+            "output": [
+                {
+                    "name": "target1",
+                    "shape": [
+                        107,
+                        78
+                    ],
+                    "text": "But I had to do something, didn't I?--I couldn't possibly scrub the King's kitchen for the rest of my life.",
+                    "token": "B u t <space> I <space> h a d <space> t o <space> d o <space> s o m e t h i n g , <space> d i d n ' t <space> I ? - - I <space> c o u l d n ' t <space> p o s s i b l y <space> s c r u b <space> t h e <space> K i n g ' s <space> k i t c h e n <space> f o r <space> t h e <space> r e s t <space> o f <space> m y <space> l i f e .",
+                    "tokenid": "16 63 62 13 23 13 50 43 46 13 62 57 13 46 57 13 61 57 55 47 62 50 51 56 49 7 13 46 51 46 56 4 62 13 23 14 8 8 23 13 45 57 63 54 46 56 4 62 13 58 57 61 61 51 44 54 67 13 61 45 60 63 44 13 62 50 47 13 25 51 56 49 4 61 13 53 51 62 45 50 47 56 13 48 57 60 13 62 50 47 13 60 47 61 62 13 57 48 13 55 67 13 54 51 48 47 9"
+                },
+                {
+                    "name": "target2",
+                    "spklab": "7"
+                }
+            ],
+            "utt2spk": "101_126860"
+        },
+        "101_126860_000038_000000": {
+            "input": [
+                {
+                    "feat": "/export/b18/jcho/espnet3/egs/libritts/tts+spkid/dump/train_clean_460_spkcv_0.1/feats.1.ark:2623772",
+                    "name": "input1",
+                    "shape": [
+                        558,
+                        80
+                    ]
+                }
+            ],
+            "output": [
+                {
+                    "name": "target1",
+                    "shape": [
+                        82,
+                        78
+                    ],
+                    "text": "And when the Doctor stood upon the boat, he looked over the side across the water.",
+                    "token": "A n d <space> w h e n <space> t h e <space> D o c t o r <space> s t o o d <space> u p o n <space> t h e <space> b o a t , <space> h e <space> l o o k e d <space> o v e r <space> t h e <space> s i d e <space> a c r o s s <space> t h e <space> w a t e r .",
+                    "tokenid": "15 56 46 13 65 50 47 56 13 62 50 47 13 18 57 45 62 57 60 13 61 62 57 57 46 13 63 58 57 56 13 62 50 47 13 44 57 43 62 7 13 50 47 13 54 57 57 53 47 46 13 57 64 47 60 13 62 50 47 13 61 51 46 47 13 43 45 60 57 61 61 13 62 50 47 13 65 43 62 47 60 9"
+                },
+                {
+                    "name": "target2",
+                    "spklab": "7"
+                }
+            ],
+            "utt2spk": "101_126860"
+        },
+        "101_126860_000040_000001": {
+            "input": [
+                {
+                    "feat": "/export/b18/jcho/espnet3/egs/libritts/tts+spkid/dump/train_clean_460_spkcv_0.1/feats.1.ark:2669098",
+                    "name": "input1",
+                    "shape": [
+                        357,
+                        80
+                    ]
+                }
+            ],
+            "output": [
+                {
+                    "name": "target1",
+                    "shape": [
+                        56,
+                        78
+                    ],
+                    "text": "And the animals all stopped saying Good by and listened.",
+                    "token": "A n d <space> t h e <space> a n i m a l s <space> a l l <space> s t o p p e d <space> s a y i n g <space> G o o d <space> b y <space> a n d <space> l i s t e n e d .",
+                    "tokenid": "15 56 46 13 62 50 47 13 43 56 51 55 43 54 61 13 43 54 54 13 61 62 57 58 58 47 46 13 61 43 67 51 56 49 13 21 57 57 46 13 44 67 13 43 56 46 13 54 51 61 62 47 56 47 46 9"
+                },
+                {
+                    "name": "target2",
+                    "spklab": "7"
+                }
+            ],
+            "utt2spk": "101_126860"
+        },
+        "101_126860_000042_000000": {
+            "input": [
+                {
+                    "feat": "/export/b18/jcho/espnet3/egs/libritts/tts+spkid/dump/train_clean_460_spkcv_0.1/feats.1.ark:2698344",
+                    "name": "input1",
+                    "shape": [
+                        451,
+                        80
+                    ]
+                }
+            ],
+            "output": [
+                {
+                    "name": "target1",
+                    "shape": [
+                        66,
+                        78
+                    ],
+                    "text": "And Jip, with his nose pointing and his tail quite straight, said,",
+                    "token": "A n d <space> J i p , <space> w i t h <space> h i s <space> n o s e <space> p o i n t i n g <space> a n d <space> h i s <space> t a i l <space> q u i t e <space> s t r a i g h t , <space> s a i d ,",
+                    "tokenid": "15 56 46 13 24 51 58 7 13 65 51 62 50 13 50 51 61 13 56 57 61 47 13 58 57 51 56 62 51 56 49 13 43 56 46 13 50 51 61 13 62 43 51 54 13 59 63 51 62 47 13 61 62 60 43 51 49 50 62 7 13 61 43 51 46 7"
+                },
+                {
+                    "name": "target2",
+                    "spklab": "7"
+                }
+            ],
+            "utt2spk": "101_126860"
+        },
+        "101_126860_000044_000000": {
+            "input": [
+                {
+                    "feat": "/export/b18/jcho/espnet3/egs/libritts/tts+spkid/dump/train_clean_460_spkcv_0.1/feats.1.ark:2735110",
+                    "name": "input1",
+                    "shape": [
+                        187,
+                        80
+                    ]
+                }
+            ],
+            "output": [
+                {
+                    "name": "target1",
+                    "shape": [
+                        28,
+                        78
+                    ],
+                    "text": "And then they all looked up.",
+                    "token": "A n d <space> t h e n <space> t h e y <space> a l l <space> l o o k e d <space> u p .",
+                    "tokenid": "15 56 46 13 62 50 47 56 13 62 50 47 67 13 43 54 54 13 54 57 57 53 47 46 13 63 58 9"
+                },
+                {
+                    "name": "target2",
+                    "spklab": "7"
+                }
+            ],
+            "utt2spk": "101_126860"
+        },
+        "101_126861_000025_000000": {
+            "input": [
+                {
+                    "feat": "/export/b18/jcho/espnet3/egs/libritts/tts+spkid/dump/train_clean_460_spkcv_0.1/feats.1.ark:2750756",
+                    "name": "input1",
+                    "shape": [
+                        1422,
+                        80
+                    ]
+                }
+            ],
+            "output": [
+                {
+                    "name": "target1",
+                    "shape": [
+                        192,
+                        78
+                    ],
+                    "text": "When the swallows heard this, they all came down on to the Doctor's ship; and they told him to unravel some pieces of long rope and make them into a lot of thin strings as quickly as he could.",
+                    "token": "W h e n <space> t h e <space> s w a l l o w s <space> h e a r d <space> t h i s , <space> t h e y <space> a l l <space> c a m e <space> d o w n <space> o n <space> t o <space> t h e <space> D o c t o r ' s <space> s h i p ; <space> a n d <space> t h e y <space> t o l d <space> h i m <space> t o <space> u n r a v e l <space> s o m e <space> p i e c e s <space> o f <space> l o n g <space> r o p e <space> a n d <space> m a k e <space> t h e m <space> i n t o <space> a <space> l o t <space> o f <space> t h i n <space> s t r i n g s <space> a s <space> q u i c k l y <space> a s <space> h e <space> c o u l d .",
+                    "tokenid": "37 50 47 56 13 62 50 47 13 61 65 43 54 54 57 65 61 13 50 47 43 60 46 13 62 50 51 61 7 13 62 50 47 67 13 43 54 54 13 45 43 55 47 13 46 57 65 56 13 57 56 13 62 57 13 62 50 47 13 18 57 45 62 57 60 4 61 13 61 50 51 58 12 13 43 56 46 13 62 50 47 67 13 62 57 54 46 13 50 51 55 13 62 57 13 63 56 60 43 64 47 54 13 61 57 55 47 13 58 51 47 45 47 61 13 57 48 13 54 57 56 49 13 60 57 58 47 13 43 56 46 13 55 43 53 47 13 62 50 47 55 13 51 56 62 57 13 43 13 54 57 62 13 57 48 13 62 50 51 56 13 61 62 60 51 56 49 61 13 43 61 13 59 63 51 45 53 54 67 13 43 61 13 50 47 13 45 57 63 54 46 9"
+                },
+                {
+                    "name": "target2",
+                    "spklab": "8"
+                }
+            ],
+            "utt2spk": "101_126861"
+        },
+        "1025_92814_000018_000002": {
+            "input": [
+                {
+                    "feat": "/export/b18/jcho/espnet3/egs/libritts/tts+spkid/dump/train_clean_460_spkcv_0.1/feats.1.ark:2865202",
+                    "name": "input1",
+                    "shape": [
+                        112,
+                        80
+                    ]
+                }
+            ],
+            "output": [
+                {
+                    "name": "target1",
+                    "shape": [
+                        16,
+                        78
+                    ],
+                    "text": "\"Not any Dagoes.",
+                    "token": "\" N o t <space> a n y <space> D a g o e s .",
+                    "tokenid": "3 28 57 62 13 43 56 67 13 18 43 49 57 47 61 9"
+                },
+                {
+                    "name": "target2",
+                    "spklab": "10"
+                }
+            ],
+            "utt2spk": "1025_92814"
+        },
+        "1025_92814_000022_000000": {
+            "input": [
+                {
+                    "feat": "/export/b18/jcho/espnet3/egs/libritts/tts+spkid/dump/train_clean_460_spkcv_0.1/feats.1.ark:2874848",
+                    "name": "input1",
+                    "shape": [
+                        525,
+                        80
+                    ]
+                }
+            ],
+            "output": [
+                {
+                    "name": "target1",
+                    "shape": [
+                        94,
+                        78
+                    ],
+                    "text": "mr McGowan looked ill at ease and harassed-a condition opposed to his usual line of demeanour.",
+                    "token": "m r <space> M c G o w a n <space> l o o k e d <space> i l l <space> a t <space> e a s e <space> a n d <space> h a r a s s e d - a <space> c o n d i t i o n <space> o p p o s e d <space> t o <space> h i s <space> u s u a l <space> l i n e <space> o f <space> d e m e a n o u r .",
+                    "tokenid": "55 60 13 27 45 21 57 65 43 56 13 54 57 57 53 47 46 13 51 54 54 13 43 62 13 47 43 61 47 13 43 56 46 13 50 43 60 43 61 61 47 46 8 43 13 45 57 56 46 51 62 51 57 56 13 57 58 58 57 61 47 46 13 62 57 13 50 51 61 13 63 61 63 43 54 13 54 51 56 47 13 57 48 13 46 47 55 47 43 56 57 63 60 9"
+                },
+                {
+                    "name": "target2",
+                    "spklab": "10"
+                }
+            ],
+            "utt2spk": "1025_92814"
+        },
+        "1025_92814_000022_000001": {
+            "input": [
+                {
+                    "feat": "/export/b18/jcho/espnet3/egs/libritts/tts+spkid/dump/train_clean_460_spkcv_0.1/feats.1.ark:2917534",
+                    "name": "input1",
+                    "shape": [
+                        625,
+                        80
+                    ]
+                }
+            ],
+            "output": [
+                {
+                    "name": "target1",
+                    "shape": [
+                        107,
+                        78
+                    ],
+                    "text": "He made a patent medicine almanac into a roll and fitted it with unprofitable carefulness about his finger.",
+                    "token": "H e <space> m a d e <space> a <space> p a t e n t <space> m e d i c i n e <space> a l m a n a c <space> i n t o <space> a <space> r o l l <space> a n d <space> f i t t e d <space> i t <space> w i t h <space> u n p r o f i t a b l e <space> c a r e f u l n e s s <space> a b o u t <space> h i s <space> f i n g e r .",
+                    "tokenid": "22 47 13 55 43 46 47 13 43 13 58 43 62 47 56 62 13 55 47 46 51 45 51 56 47 13 43 54 55 43 56 43 45 13 51 56 62 57 13 43 13 60 57 54 54 13 43 56 46 13 48 51 62 62 47 46 13 51 62 13 65 51 62 50 13 63 56 58 60 57 48 51 62 43 44 54 47 13 45 43 60 47 48 63 54 56 47 61 61 13 43 44 57 63 62 13 50 51 61 13 48 51 56 49 47 60 9"
+                },
+                {
+                    "name": "target2",
+                    "spklab": "10"
+                }
+            ],
+            "utt2spk": "1025_92814"
+        },
+        "1025_92814_000035_000001": {
+            "input": [
+                {
+                    "feat": "/export/b18/jcho/espnet3/egs/libritts/tts+spkid/dump/train_clean_460_spkcv_0.1/feats.1.ark:2968220",
+                    "name": "input1",
+                    "shape": [
+                        335,
+                        80
+                    ]
+                }
+            ],
+            "output": [
+                {
+                    "name": "target1",
+                    "shape": [
+                        67,
+                        78
+                    ],
+                    "text": "To you alone of my acquaintance would I intrust a powder like that.",
+                    "token": "T o <space> y o u <space> a l o n e <space> o f <space> m y <space> a c q u a i n t a n c e <space> w o u l d <space> I <space> i n t r u s t <space> a <space> p o w d e r <space> l i k e <space> t h a t .",
+                    "tokenid": "34 57 13 67 57 63 13 43 54 57 56 47 13 57 48 13 55 67 13 43 45 59 63 43 51 56 62 43 56 45 47 13 65 57 63 54 46 13 23 13 51 56 62 60 63 61 62 13 43 13 58 57 65 46 47 60 13 54 51 53 47 13 62 50 43 62 9"
+                },
+                {
+                    "name": "target2",
+                    "spklab": "10"
+                }
+            ],
+            "utt2spk": "1025_92814"
+        },
+        "1025_92814_000036_000003": {
+            "input": [
+                {
+                    "feat": "/export/b18/jcho/espnet3/egs/libritts/tts+spkid/dump/train_clean_460_spkcv_0.1/feats.1.ark:2995706",
+                    "name": "input1",
+                    "shape": [
+                        1340,
+                        80
+                    ]
+                }
+            ],
+            "output": [
+                {
+                    "name": "target1",
+                    "shape": [
+                        249,
+                        78
+                    ],
+                    "text": "Taken by an adult this powder would insure several hours of heavy slumber without danger to the sleeper. This he handed to Chunk McGowan, telling him to administer it in a liquid if possible, and received the hearty thanks of the backyard Lochinvar.",
+                    "token": "T a k e n <space> b y <space> a n <space> a d u l t <space> t h i s <space> p o w d e r <space> w o u l d <space> i n s u r e <space> s e v e r a l <space> h o u r s <space> o f <space> h e a v y <space> s l u m b e r <space> w i t h o u t <space> d a n g e r <space> t o <space> t h e <space> s l e e p e r . <space> T h i s <space> h e <space> h a n d e d <space> t o <space> C h u n k <space> M c G o w a n , <space> t e l l i n g <space> h i m <space> t o <space> a d m i n i s t e r <space> i t <space> i n <space> a <space> l i q u i d <space> i f <space> p o s s i b l e , <space> a n d <space> r e c e i v e d <space> t h e <space> h e a r t y <space> t h a n k s <space> o f <space> t h e <space> b a c k y a r d <space> L o c h i n v a r .",
+                    "tokenid": "34 43 53 47 56 13 44 67 13 43 56 13 43 46 63 54 62 13 62 50 51 61 13 58 57 65 46 47 60 13 65 57 63 54 46 13 51 56 61 63 60 47 13 61 47 64 47 60 43 54 13 50 57 63 60 61 13 57 48 13 50 47 43 64 67 13 61 54 63 55 44 47 60 13 65 51 62 50 57 63 62 13 46 43 56 49 47 60 13 62 57 13 62 50 47 13 61 54 47 47 58 47 60 9 13 34 50 51 61 13 50 47 13 50 43 56 46 47 46 13 62 57 13 17 50 63 56 53 13 27 45 21 57 65 43 56 7 13 62 47 54 54 51 56 49 13 50 51 55 13 62 57 13 43 46 55 51 56 51 61 62 47 60 13 51 62 13 51 56 13 43 13 54 51 59 63 51 46 13 51 48 13 58 57 61 61 51 44 54 47 7 13 43 56 46 13 60 47 45 47 51 64 47 46 13 62 50 47 13 50 47 43 60 62 67 13 62 50 43 56 53 61 13 57 48 13 62 50 47 13 44 43 45 53 67 43 60 46 13 26 57 45 50 51 56 64 43 60 9"
+                },
+                {
+                    "name": "target2",
+                    "spklab": "10"
+                }
+            ],
+            "utt2spk": "1025_92814"
+        },
+        "1025_92814_000038_000003": {
+            "input": [
+                {
+                    "feat": "/export/b18/jcho/espnet3/egs/libritts/tts+spkid/dump/train_clean_460_spkcv_0.1/feats.1.ark:3103592",
+                    "name": "input1",
+                    "shape": [
+                        347,
+                        80
+                    ]
+                }
+            ],
+            "output": [
+                {
+                    "name": "target1",
+                    "shape": [
+                        73,
+                        78
+                    ],
+                    "text": "I'll just go up there myself after supper and load the shot gun and wait.",
+                    "token": "I ' l l <space> j u s t <space> g o <space> u p <space> t h e r e <space> m y s e l f <space> a f t e r <space> s u p p e r <space> a n d <space> l o a d <space> t h e <space> s h o t <space> g u n <space> a n d <space> w a i t .",
+                    "tokenid": "23 4 54 54 13 52 63 61 62 13 49 57 13 63 58 13 62 50 47 60 47 13 55 67 61 47 54 48 13 43 48 62 47 60 13 61 63 58 58 47 60 13 43 56 46 13 54 57 43 46 13 62 50 47 13 61 50 57 62 13 49 63 56 13 43 56 46 13 65 43 51 62 9"
+                },
+                {
+                    "name": "target2",
+                    "spklab": "10"
+                }
+            ],
+            "utt2spk": "1025_92814"
+        },
+        "1025_92820_000011_000000": {
+            "input": [
+                {
+                    "feat": "/export/b18/jcho/espnet3/egs/libritts/tts+spkid/dump/train_clean_460_spkcv_0.1/feats.1.ark:3132038",
+                    "name": "input1",
+                    "shape": [
+                        454,
+                        80
+                    ]
+                }
+            ],
+            "output": [
+                {
+                    "name": "target1",
+                    "shape": [
+                        96,
+                        78
+                    ],
+                    "text": "\"I beg your pardon for addressing you,\" he said, \"but I perceive that you are disturbed in mind.",
+                    "token": "\" I <space> b e g <space> y o u r <space> p a r d o n <space> f o r <space> a d d r e s s i n g <space> y o u , \" <space> h e <space> s a i d , <space> \" b u t <space> I <space> p e r c e i v e <space> t h a t <space> y o u <space> a r e <space> d i s t u r b e d <space> i n <space> m i n d .",
+                    "tokenid": "3 23 13 44 47 49 13 67 57 63 60 13 58 43 60 46 57 56 13 48 57 60 13 43 46 46 60 47 61 61 51 56 49 13 67 57 63 7 3 13 50 47 13 61 43 51 46 7 13 3 44 63 62 13 23 13 58 47 60 45 47 51 64 47 13 62 50 43 62 13 67 57 63 13 43 60 47 13 46 51 61 62 63 60 44 47 46 13 51 56 13 55 51 56 46 9"
+                },
+                {
+                    "name": "target2",
+                    "spklab": "11"
+                }
+            ],
+            "utt2spk": "1025_92820"
+        },
+        "1025_92820_000012_000000": {
+            "input": [
+                {
+                    "feat": "/export/b18/jcho/espnet3/egs/libritts/tts+spkid/dump/train_clean_460_spkcv_0.1/feats.1.ark:3169044",
+                    "name": "input1",
+                    "shape": [
+                        214,
+                        80
+                    ]
+                }
+            ],
+            "output": [
+                {
+                    "name": "target1",
+                    "shape": [
+                        47,
+                        78
+                    ],
+                    "text": "The young man looked up brightly at the Prince.",
+                    "token": "T h e <space> y o u n g <space> m a n <space> l o o k e d <space> u p <space> b r i g h t l y <space> a t <space> t h e <space> P r i n c e .",
+                    "tokenid": "34 50 47 13 67 57 63 56 49 13 55 43 56 13 54 57 57 53 47 46 13 63 58 13 44 60 51 49 50 62 54 67 13 43 62 13 62 50 47 13 30 60 51 56 45 47 9"
+                },
+                {
+                    "name": "target2",
+                    "spklab": "11"
+                }
+            ],
+            "utt2spk": "1025_92820"
+        },
+        "1025_92820_000020_000000": {
+            "input": [
+                {
+                    "feat": "/export/b18/jcho/espnet3/egs/libritts/tts+spkid/dump/train_clean_460_spkcv_0.1/feats.1.ark:3186850",
+                    "name": "input1",
+                    "shape": [
+                        674,
+                        80
+                    ]
+                }
+            ],
+            "output": [
+                {
+                    "name": "target1",
+                    "shape": [
+                        127,
+                        78
+                    ],
+                    "text": "\"Remain!\" commanded Prince Michael, in so potent a voice that the disturbed one wheeled around with a somewhat chagrined laugh.",
+                    "token": "\" R e m a i n ! \" <space> c o m m a n d e d <space> P r i n c e <space> M i c h a e l , <space> i n <space> s o <space> p o t e n t <space> a <space> v o i c e <space> t h a t <space> t h e <space> d i s t u r b e d <space> o n e <space> w h e e l e d <space> a r o u n d <space> w i t h <space> a <space> s o m e w h a t <space> c h a g r i n e d <space> l a u g h .",
+                    "tokenid": "3 32 47 55 43 51 56 2 3 13 45 57 55 55 43 56 46 47 46 13 30 60 51 56 45 47 13 27 51 45 50 43 47 54 7 13 51 56 13 61 57 13 58 57 62 47 56 62 13 43 13 64 57 51 45 47 13 62 50 43 62 13 62 50 47 13 46 51 61 62 63 60 44 47 46 13 57 56 47 13 65 50 47 47 54 47 46 13 43 60 57 63 56 46 13 65 51 62 50 13 43 13 61 57 55 47 65 50 43 62 13 45 50 43 49 60 51 56 47 46 13 54 43 63 49 50 9"
+                },
+                {
+                    "name": "target2",
+                    "spklab": "11"
+                }
+            ],
+            "utt2spk": "1025_92820"
+        },
+        "1025_92820_000025_000001": {
+            "input": [
+                {
+                    "feat": "/export/b18/jcho/espnet3/egs/libritts/tts+spkid/dump/train_clean_460_spkcv_0.1/feats.1.ark:3241456",
+                    "name": "input1",
+                    "shape": [
+                        673,
+                        80
+                    ]
+                }
+            ],
+            "output": [
+                {
+                    "name": "target1",
+                    "shape": [
+                        134,
+                        78
+                    ],
+                    "text": "'There is one thing certain; I will either fully forgive you, or I will never see your face again. There will be no half-way business.",
+                    "token": "' T h e r e <space> i s <space> o n e <space> t h i n g <space> c e r t a i n ; <space> I <space> w i l l <space> e i t h e r <space> f u l l y <space> f o r g i v e <space> y o u , <space> o r <space> I <space> w i l l <space> n e v e r <space> s e e <space> y o u r <space> f a c e <space> a g a i n . <space> T h e r e <space> w i l l <space> b e <space> n o <space> h a l f - w a y <space> b u s i n e s s .",
+                    "tokenid": "4 34 50 47 60 47 13 51 61 13 57 56 47 13 62 50 51 56 49 13 45 47 60 62 43 51 56 12 13 23 13 65 51 54 54 13 47 51 62 50 47 60 13 48 63 54 54 67 13 48 57 60 49 51 64 47 13 67 57 63 7 13 57 60 13 23 13 65 51 54 54 13 56 47 64 47 60 13 61 47 47 13 67 57 63 60 13 48 43 45 47 13 43 49 43 51 56 9 13 34 50 47 60 47 13 65 51 54 54 13 44 47 13 56 57 13 50 43 54 48 8 65 43 67 13 44 63 61 51 56 47 61 61 9"
+                },
+                {
+                    "name": "target2",
+                    "spklab": "11"
+                }
+            ],
+            "utt2spk": "1025_92820"
+        },
+        "1025_92820_000025_000007": {
+            "input": [
+                {
+                    "feat": "/export/b18/jcho/espnet3/egs/libritts/tts+spkid/dump/train_clean_460_spkcv_0.1/feats.1.ark:3295982",
+                    "name": "input1",
+                    "shape": [
+                        346,
+                        80
+                    ]
+                }
+            ],
+            "output": [
+                {
+                    "name": "target1",
+                    "shape": [
+                        76,
+                        78
+                    ],
+                    "text": "Do you wonder that I am a little disturbed, my Prince of Rags and Whiskers?\"",
+                    "token": "D o <space> y o u <space> w o n d e r <space> t h a t <space> I <space> a m <space> a <space> l i t t l e <space> d i s t u r b e d , <space> m y <space> P r i n c e <space> o f <space> R a g s <space> a n d <space> W h i s k e r s ? \"",
+                    "tokenid": "18 57 13 67 57 63 13 65 57 56 46 47 60 13 62 50 43 62 13 23 13 43 55 13 43 13 54 51 62 62 54 47 13 46 51 61 62 63 60 44 47 46 7 13 55 67 13 30 60 51 56 45 47 13 57 48 13 32 43 49 61 13 43 56 46 13 37 50 51 61 53 47 60 61 14 3"
+                },
+                {
+                    "name": "target2",
+                    "spklab": "11"
+                }
+            ],
+            "utt2spk": "1025_92820"
+        },
+        "1025_92820_000026_000000": {
+            "input": [
+                {
+                    "feat": "/export/b18/jcho/espnet3/egs/libritts/tts+spkid/dump/train_clean_460_spkcv_0.1/feats.1.ark:3324348",
+                    "name": "input1",
+                    "shape": [
+                        645,
+                        80
+                    ]
+                }
+            ],
+            "output": [
+                {
+                    "name": "target1",
+                    "shape": [
+                        126,
+                        78
+                    ],
+                    "text": "\"Let me repeat to you,\" said Prince Michael, in his even, well modulated tones, \"that women are the natural enemies of clocks.",
+                    "token": "\" L e t <space> m e <space> r e p e a t <space> t o <space> y o u , \" <space> s a i d <space> P r i n c e <space> M i c h a e l , <space> i n <space> h i s <space> e v e n , <space> w e l l <space> m o d u l a t e d <space> t o n e s , <space> \" t h a t <space> w o m e n <space> a r e <space> t h e <space> n a t u r a l <space> e n e m i e s <space> o f <space> c l o c k s .",
+                    "tokenid": "3 26 47 62 13 55 47 13 60 47 58 47 43 62 13 62 57 13 67 57 63 7 3 13 61 43 51 46 13 30 60 51 56 45 47 13 27 51 45 50 43 47 54 7 13 51 56 13 50 51 61 13 47 64 47 56 7 13 65 47 54 54 13 55 57 46 63 54 43 62 47 46 13 62 57 56 47 61 7 13 3 62 50 43 62 13 65 57 55 47 56 13 43 60 47 13 62 50 47 13 56 43 62 63 60 43 54 13 47 56 47 55 51 47 61 13 57 48 13 45 54 57 45 53 61 9"
+                },
+                {
+                    "name": "target2",
+                    "spklab": "11"
+                }
+            ],
+            "utt2spk": "1025_92820"
+        },
+        "1025_92820_000046_000001": {
+            "input": [
+                {
+                    "feat": "/export/b18/jcho/espnet3/egs/libritts/tts+spkid/dump/train_clean_460_spkcv_0.1/feats.1.ark:3376634",
+                    "name": "input1",
+                    "shape": [
+                        151,
+                        80
+                    ]
+                }
+            ],
+            "output": [
+                {
+                    "name": "target1",
+                    "shape": [
+                        30,
+                        78
+                    ],
+                    "text": "\"He hits the pipe every night.",
+                    "token": "\" H e <space> h i t s <space> t h e <space> p i p e <space> e v e r y <space> n i g h t .",
+                    "tokenid": "3 22 47 13 50 51 62 61 13 62 50 47 13 58 51 58 47 13 47 64 47 60 67 13 56 51 49 50 62 9"
+                },
+                {
+                    "name": "target2",
+                    "spklab": "11"
+                }
+            ],
+            "utt2spk": "1025_92820"
+        },
+        "1027_125140_000009_000000": {
+            "input": [
+                {
+                    "feat": "/export/b18/jcho/espnet3/egs/libritts/tts+spkid/dump/train_clean_460_spkcv_0.1/feats.1.ark:3389401",
+                    "name": "input1",
+                    "shape": [
+                        1078,
+                        80
+                    ]
+                }
+            ],
+            "output": [
+                {
+                    "name": "target1",
+                    "shape": [
+                        183,
+                        78
+                    ],
+                    "text": "Indeed, the Reverend Frank Milvey was a forbearing man, who noticed many sad warps and blights in the vineyard wherein he worked, and did not profess that they made him savagely wise.",
+                    "token": "I n d e e d , <space> t h e <space> R e v e r e n d <space> F r a n k <space> M i l v e y <space> w a s <space> a <space> f o r b e a r i n g <space> m a n , <space> w h o <space> n o t i c e d <space> m a n y <space> s a d <space> w a r p s <space> a n d <space> b l i g h t s <space> i n <space> t h e <space> v i n e y a r d <space> w h e r e i n <space> h e <space> w o r k e d , <space> a n d <space> d i d <space> n o t <space> p r o f e s s <space> t h a t <space> t h e y <space> m a d e <space> h i m <space> s a v a g e l y <space> w i s e .",
+                    "tokenid": "23 56 46 47 47 46 7 13 62 50 47 13 32 47 64 47 60 47 56 46 13 20 60 43 56 53 13 27 51 54 64 47 67 13 65 43 61 13 43 13 48 57 60 44 47 43 60 51 56 49 13 55 43 56 7 13 65 50 57 13 56 57 62 51 45 47 46 13 55 43 56 67 13 61 43 46 13 65 43 60 58 61 13 43 56 46 13 44 54 51 49 50 62 61 13 51 56 13 62 50 47 13 64 51 56 47 67 43 60 46 13 65 50 47 60 47 51 56 13 50 47 13 65 57 60 53 47 46 7 13 43 56 46 13 46 51 46 13 56 57 62 13 58 60 57 48 47 61 61 13 62 50 43 62 13 62 50 47 67 13 55 43 46 47 13 50 51 55 13 61 43 64 43 49 47 54 67 13 65 51 61 47 9"
+                },
+                {
+                    "name": "target2",
+                    "spklab": "12"
+                }
+            ],
+            "utt2spk": "1027_125140"
+        },
+        "1027_125140_000030_000001": {
+            "input": [
+                {
+                    "feat": "/export/b18/jcho/espnet3/egs/libritts/tts+spkid/dump/train_clean_460_spkcv_0.1/feats.1.ark:3476328",
+                    "name": "input1",
+                    "shape": [
+                        511,
+                        80
+                    ]
+                }
+            ],
+            "output": [
+                {
+                    "name": "target1",
+                    "shape": [
+                        83,
+                        78
+                    ],
+                    "text": "Sometimes you have a kind of kept down manner with you, which is not like your age.",
+                    "token": "S o m e t i m e s <space> y o u <space> h a v e <space> a <space> k i n d <space> o f <space> k e p t <space> d o w n <space> m a n n e r <space> w i t h <space> y o u , <space> w h i c h <space> i s <space> n o t <space> l i k e <space> y o u r <space> a g e .",
+                    "tokenid": "33 57 55 47 62 51 55 47 61 13 67 57 63 13 50 43 64 47 13 43 13 53 51 56 46 13 57 48 13 53 47 58 62 13 46 57 65 56 13 55 43 56 56 47 60 13 65 51 62 50 13 67 57 63 7 13 65 50 51 45 50 13 51 61 13 56 57 62 13 54 51 53 47 13 67 57 63 60 13 43 49 47 9"
+                },
+                {
+                    "name": "target2",
+                    "spklab": "12"
+                }
+            ],
+            "utt2spk": "1027_125140"
+        },
+        "1027_125140_000031_000000": {
+            "input": [
+                {
+                    "feat": "/export/b18/jcho/espnet3/egs/libritts/tts+spkid/dump/train_clean_460_spkcv_0.1/feats.1.ark:3517895",
+                    "name": "input1",
+                    "shape": [
+                        200,
+                        80
+                    ]
+                }
+            ],
+            "output": [
+                {
+                    "name": "target1",
+                    "shape": [
+                        22,
+                        78
+                    ],
+                    "text": "'I am not yet thirty.'",
+                    "token": "' I <space> a m <space> n o t <space> y e t <space> t h i r t y . '",
+                    "tokenid": "4 23 13 43 55 13 56 57 62 13 67 47 62 13 62 50 51 60 62 67 9 4"
+                },
+                {
+                    "name": "target2",
+                    "spklab": "12"
+                }
+            ],
+            "utt2spk": "1027_125140"
+        },
+        "1027_125140_000042_000000": {
+            "input": [
+                {
+                    "feat": "/export/b18/jcho/espnet3/egs/libritts/tts+spkid/dump/train_clean_460_spkcv_0.1/feats.1.ark:3534582",
+                    "name": "input1",
+                    "shape": [
+                        352,
+                        80
+                    ]
+                }
+            ],
+            "output": [
+                {
+                    "name": "target1",
+                    "shape": [
+                        65,
+                        78
+                    ],
+                    "text": "'I say again, it is a matter of feeling,' returned the Secretary.",
+                    "token": "' I <space> s a y <space> a g a i n , <space> i t <space> i s <space> a <space> m a t t e r <space> o f <space> f e e l i n g , ' <space> r e t u r n e d <space> t h e <space> S e c r e t a r y .",
+                    "tokenid": "4 23 13 61 43 67 13 43 49 43 51 56 7 13 51 62 13 51 61 13 43 13 55 43 62 62 47 60 13 57 48 13 48 47 47 54 51 56 49 7 4 13 60 47 62 63 60 56 47 46 13 62 50 47 13 33 47 45 60 47 62 43 60 67 9"
+                },
+                {
+                    "name": "target2",
+                    "spklab": "12"
+                }
+            ],
+            "utt2spk": "1027_125140"
+        },
+        "1027_125140_000049_000000": {
+            "input": [
+                {
+                    "feat": "/export/b18/jcho/espnet3/egs/libritts/tts+spkid/dump/train_clean_460_spkcv_0.1/feats.1.ark:3563429",
+                    "name": "input1",
+                    "shape": [
+                        1336,
+                        80
+                    ]
+                }
+            ],
+            "output": [
+                {
+                    "name": "target1",
+                    "shape": [
+                        227,
+                        78
+                    ],
+                    "text": "'Well, my dear,' returned Mrs Boffin, giving her a squeeze, 'it's kind of you to find that reason out, and I hope it may have been so, and indeed to a certain extent I believe it was so, but I am afraid not to the whole extent.",
+                    "token": "' W e l l , <space> m y <space> d e a r , ' <space> r e t u r n e d <space> M r s <space> B o f f i n , <space> g i v i n g <space> h e r <space> a <space> s q u e e z e , <space> ' i t ' s <space> k i n d <space> o f <space> y o u <space> t o <space> f i n d <space> t h a t <space> r e a s o n <space> o u t , <space> a n d <space> I <space> h o p e <space> i t <space> m a y <space> h a v e <space> b e e n <space> s o , <space> a n d <space> i n d e e d <space> t o <space> a <space> c e r t a i n <space> e x t e n t <space> I <space> b e l i e v e <space> i t <space> w a s <space> s o , <space> b u t <space> I <space> a m <space> a f r a i d <space> n o t <space> t o <space> t h e <space> w h o l e <space> e x t e n t .",
+                    "tokenid": "4 37 47 54 54 7 13 55 67 13 46 47 43 60 7 4 13 60 47 62 63 60 56 47 46 13 27 60 61 13 16 57 48 48 51 56 7 13 49 51 64 51 56 49 13 50 47 60 13 43 13 61 59 63 47 47 68 47 7 13 4 51 62 4 61 13 53 51 56 46 13 57 48 13 67 57 63 13 62 57 13 48 51 56 46 13 62 50 43 62 13 60 47 43 61 57 56 13 57 63 62 7 13 43 56 46 13 23 13 50 57 58 47 13 51 62 13 55 43 67 13 50 43 64 47 13 44 47 47 56 13 61 57 7 13 43 56 46 13 51 56 46 47 47 46 13 62 57 13 43 13 45 47 60 62 43 51 56 13 47 66 62 47 56 62 13 23 13 44 47 54 51 47 64 47 13 51 62 13 65 43 61 13 61 57 7 13 44 63 62 13 23 13 43 55 13 43 48 60 43 51 46 13 56 57 62 13 62 57 13 62 50 47 13 65 50 57 54 47 13 47 66 62 47 56 62 9"
+                },
+                {
+                    "name": "target2",
+                    "spklab": "12"
+                }
+            ],
+            "utt2spk": "1027_125140"
+        },
+        "1027_125140_000054_000000": {
+            "input": [
+                {
+                    "feat": "/export/b18/jcho/espnet3/egs/libritts/tts+spkid/dump/train_clean_460_spkcv_0.1/feats.1.ark:3670996",
+                    "name": "input1",
+                    "shape": [
+                        201,
+                        80
+                    ]
+                }
+            ],
+            "output": [
+                {
+                    "name": "target1",
+                    "shape": [
+                        37,
+                        78
+                    ],
+                    "text": "'Nor prepossessing then?' said Bella.",
+                    "token": "' N o r <space> p r e p o s s e s s i n g <space> t h e n ? ' <space> s a i d <space> B e l l a .",
+                    "tokenid": "4 28 57 60 13 58 60 47 58 57 61 61 47 61 61 51 56 49 13 62 50 47 56 14 4 13 61 43 51 46 13 16 47 54 54 43 9"
+                },
+                {
+                    "name": "target2",
+                    "spklab": "12"
+                }
+            ],
+            "utt2spk": "1027_125140"
+        },
+        "1027_125140_000067_000000": {
+            "input": [
+                {
+                    "feat": "/export/b18/jcho/espnet3/egs/libritts/tts+spkid/dump/train_clean_460_spkcv_0.1/feats.1.ark:3687763",
+                    "name": "input1",
+                    "shape": [
+                        286,
+                        80
+                    ]
+                }
+            ],
+            "output": [
+                {
+                    "name": "target1",
+                    "shape": [
+                        54,
+                        78
+                    ],
+                    "text": "'Striking right out, mum, and coming round beautiful.'",
+                    "token": "' S t r i k i n g <space> r i g h t <space> o u t , <space> m u m , <space> a n d <space> c o m i n g <space> r o u n d <space> b e a u t i f u l . '",
+                    "tokenid": "4 33 62 60 51 53 51 56 49 13 60 51 49 50 62 13 57 63 62 7 13 55 63 55 7 13 43 56 46 13 45 57 55 51 56 49 13 60 57 63 56 46 13 44 47 43 63 62 51 48 63 54 9 4"
+                },
+                {
+                    "name": "target2",
+                    "spklab": "12"
+                }
+            ],
+            "utt2spk": "1027_125140"
+        },
+        "1027_125140_000074_000001": {
+            "input": [
+                {
+                    "feat": "/export/b18/jcho/espnet3/egs/libritts/tts+spkid/dump/train_clean_460_spkcv_0.1/feats.1.ark:3711330",
+                    "name": "input1",
+                    "shape": [
+                        189,
+                        80
+                    ]
+                }
+            ],
+            "output": [
+                {
+                    "name": "target1",
+                    "shape": [
+                        27,
+                        78
+                    ],
+                    "text": "Mrs Higden goes before all.",
+                    "token": "M r s <space> H i g d e n <space> g o e s <space> b e f o r e <space> a l l .",
+                    "tokenid": "27 60 61 13 22 51 49 46 47 56 13 49 57 47 61 13 44 47 48 57 60 47 13 43 54 54 9"
+                },
+                {
+                    "name": "target2",
+                    "spklab": "12"
+                }
+            ],
+            "utt2spk": "1027_125140"
+        },
+        "1027_125140_000074_000003": {
+            "input": [
+                {
+                    "feat": "/export/b18/jcho/espnet3/egs/libritts/tts+spkid/dump/train_clean_460_spkcv_0.1/feats.1.ark:3727137",
+                    "name": "input1",
+                    "shape": [
+                        316,
+                        80
+                    ]
+                }
+            ],
+            "output": [
+                {
+                    "name": "target1",
+                    "shape": [
+                        44,
+                        78
+                    ],
+                    "text": "And she must be turned for, must Mrs Higden.",
+                    "token": "A n d <space> s h e <space> m u s t <space> b e <space> t u r n e d <space> f o r , <space> m u s t <space> M r s <space> H i g d e n .",
+                    "tokenid": "15 56 46 13 61 50 47 13 55 63 61 62 13 44 47 13 62 63 60 56 47 46 13 48 57 60 7 13 55 63 61 62 13 27 60 61 13 22 51 49 46 47 56 9"
+                },
+                {
+                    "name": "target2",
+                    "spklab": "12"
+                }
+            ],
+            "utt2spk": "1027_125140"
+        },
+        "1027_125140_000076_000003": {
+            "input": [
+                {
+                    "feat": "/export/b18/jcho/espnet3/egs/libritts/tts+spkid/dump/train_clean_460_spkcv_0.1/feats.1.ark:3753104",
+                    "name": "input1",
+                    "shape": [
+                        765,
+                        80
+                    ]
+                }
+            ],
+            "output": [
+                {
+                    "name": "target1",
+                    "shape": [
+                        130,
+                        78
+                    ],
+                    "text": "Or even if I any ways should want a wink or two,' added Sloppy, after a moment's apologetic reflection, 'I could take 'em turning.",
+                    "token": "O r <space> e v e n <space> i f <space> I <space> a n y <space> w a y s <space> s h o u l d <space> w a n t <space> a <space> w i n k <space> o r <space> t w o , ' <space> a d d e d <space> S l o p p y , <space> a f t e r <space> a <space> m o m e n t ' s <space> a p o l o g e t i c <space> r e f l e c t i o n , <space> ' I <space> c o u l d <space> t a k e <space> ' e m <space> t u r n i n g .",
+                    "tokenid": "29 60 13 47 64 47 56 13 51 48 13 23 13 43 56 67 13 65 43 67 61 13 61 50 57 63 54 46 13 65 43 56 62 13 43 13 65 51 56 53 13 57 60 13 62 65 57 7 4 13 43 46 46 47 46 13 33 54 57 58 58 67 7 13 43 48 62 47 60 13 43 13 55 57 55 47 56 62 4 61 13 43 58 57 54 57 49 47 62 51 45 13 60 47 48 54 47 45 62 51 57 56 7 13 4 23 13 45 57 63 54 46 13 62 43 53 47 13 4 47 55 13 62 63 60 56 51 56 49 9"
+                },
+                {
+                    "name": "target2",
+                    "spklab": "12"
+                }
+            ],
+            "utt2spk": "1027_125140"
+        },
+        "1027_125147_000004_000002": {
+            "input": [
+                {
+                    "feat": "/export/b18/jcho/espnet3/egs/libritts/tts+spkid/dump/train_clean_460_spkcv_0.1/feats.1.ark:3814991",
+                    "name": "input1",
+                    "shape": [
+                        2001,
+                        80
+                    ]
+                }
+            ],
+            "output": [
+                {
+                    "name": "target1",
+                    "shape": [
+                        289,
+                        78
+                    ],
+                    "text": "Even in the surrounding country it was a foggy day, but there the fog was grey, whereas in London it was, at about the boundary line, dark yellow, and a little within it brown, and then browner, and then browner, until at the heart of the City-which call Saint Mary Axe-it was rusty black.",
+                    "token": "E v e n <space> i n <space> t h e <space> s u r r o u n d i n g <space> c o u n t r y <space> i t <space> w a s <space> a <space> f o g g y <space> d a y , <space> b u t <space> t h e r e <space> t h e <space> f o g <space> w a s <space> g r e y , <space> w h e r e a s <space> i n <space> L o n d o n <space> i t <space> w a s , <space> a t <space> a b o u t <space> t h e <space> b o u n d a r y <space> l i n e , <space> d a r k <space> y e l l o w , <space> a n d <space> a <space> l i t t l e <space> w i t h i n <space> i t <space> b r o w n , <space> a n d <space> t h e n <space> b r o w n e r , <space> a n d <space> t h e n <space> b r o w n e r , <space> u n t i l <space> a t <space> t h e <space> h e a r t <space> o f <space> t h e <space> C i t y - w h i c h <space> c a l l <space> S a i n t <space> M a r y <space> A x e - i t <space> w a s <space> r u s t y <space> b l a c k .",
+                    "tokenid": "19 64 47 56 13 51 56 13 62 50 47 13 61 63 60 60 57 63 56 46 51 56 49 13 45 57 63 56 62 60 67 13 51 62 13 65 43 61 13 43 13 48 57 49 49 67 13 46 43 67 7 13 44 63 62 13 62 50 47 60 47 13 62 50 47 13 48 57 49 13 65 43 61 13 49 60 47 67 7 13 65 50 47 60 47 43 61 13 51 56 13 26 57 56 46 57 56 13 51 62 13 65 43 61 7 13 43 62 13 43 44 57 63 62 13 62 50 47 13 44 57 63 56 46 43 60 67 13 54 51 56 47 7 13 46 43 60 53 13 67 47 54 54 57 65 7 13 43 56 46 13 43 13 54 51 62 62 54 47 13 65 51 62 50 51 56 13 51 62 13 44 60 57 65 56 7 13 43 56 46 13 62 50 47 56 13 44 60 57 65 56 47 60 7 13 43 56 46 13 62 50 47 56 13 44 60 57 65 56 47 60 7 13 63 56 62 51 54 13 43 62 13 62 50 47 13 50 47 43 60 62 13 57 48 13 62 50 47 13 17 51 62 67 8 65 50 51 45 50 13 45 43 54 54 13 33 43 51 56 62 13 27 43 60 67 13 15 66 47 8 51 62 13 65 43 61 13 60 63 61 62 67 13 44 54 43 45 53 9"
+                },
+                {
+                    "name": "target2",
+                    "spklab": "13"
+                }
+            ],
+            "utt2spk": "1027_125147"
+        },
+        "1027_125147_000007_000001": {
+            "input": [
+                {
+                    "feat": "/export/b18/jcho/espnet3/egs/libritts/tts+spkid/dump/train_clean_460_spkcv_0.1/feats.1.ark:3975758",
+                    "name": "input1",
+                    "shape": [
+                        821,
+                        80
+                    ]
+                }
+            ],
+            "output": [
+                {
+                    "name": "target1",
+                    "shape": [
+                        142,
+                        78
+                    ],
+                    "text": "Making free with neither bell nor knocker, he struck upon the door with the top of his staff, and, having listened, sat down on the threshold.",
+                    "token": "M a k i n g <space> f r e e <space> w i t h <space> n e i t h e r <space> b e l l <space> n o r <space> k n o c k e r , <space> h e <space> s t r u c k <space> u p o n <space> t h e <space> d o o r <space> w i t h <space> t h e <space> t o p <space> o f <space> h i s <space> s t a f f , <space> a n d , <space> h a v i n g <space> l i s t e n e d , <space> s a t <space> d o w n <space> o n <space> t h e <space> t h r e s h o l d .",
+                    "tokenid": "27 43 53 51 56 49 13 48 60 47 47 13 65 51 62 50 13 56 47 51 62 50 47 60 13 44 47 54 54 13 56 57 60 13 53 56 57 45 53 47 60 7 13 50 47 13 61 62 60 63 45 53 13 63 58 57 56 13 62 50 47 13 46 57 57 60 13 65 51 62 50 13 62 50 47 13 62 57 58 13 57 48 13 50 51 61 13 61 62 43 48 48 7 13 43 56 46 7 13 50 43 64 51 56 49 13 54 51 61 62 47 56 47 46 7 13 61 43 62 13 46 57 65 56 13 57 56 13 62 50 47 13 62 50 60 47 61 50 57 54 46 9"
+                },
+                {
+                    "name": "target2",
+                    "spklab": "13"
+                }
+            ],
+            "utt2spk": "1027_125147"
+        },
+        "1027_125147_000019_000001": {
+            "input": [
+                {
+                    "feat": "/export/b18/jcho/espnet3/egs/libritts/tts+spkid/dump/train_clean_460_spkcv_0.1/feats.1.ark:4042125",
+                    "name": "input1",
+                    "shape": [
+                        204,
+                        80
+                    ]
+                }
+            ],
+            "output": [
+                {
+                    "name": "target1",
+                    "shape": [
+                        44,
+                        78
+                    ],
+                    "text": "'But you're always bragging about something.",
+                    "token": "' B u t <space> y o u ' r e <space> a l w a y s <space> b r a g g i n g <space> a b o u t <space> s o m e t h i n g .",
+                    "tokenid": "4 16 63 62 13 67 57 63 4 60 47 13 43 54 65 43 67 61 13 44 60 43 49 49 51 56 49 13 43 44 57 63 62 13 61 57 55 47 62 50 51 56 49 9"
+                },
+                {
+                    "name": "target2",
+                    "spklab": "13"
+                }
+            ],
+            "utt2spk": "1027_125147"
+        },
+        "1027_125147_000027_000001": {
+            "input": [
+                {
+                    "feat": "/export/b18/jcho/espnet3/egs/libritts/tts+spkid/dump/train_clean_460_spkcv_0.1/feats.1.ark:4059132",
+                    "name": "input1",
+                    "shape": [
+                        153,
+                        80
+                    ]
+                }
+            ],
+            "output": [
+                {
+                    "name": "target1",
+                    "shape": [
+                        33,
+                        78
+                    ],
+                    "text": "First of all, light that candle.'",
+                    "token": "F i r s t <space> o f <space> a l l , <space> l i g h t <space> t h a t <space> c a n d l e . '",
+                    "tokenid": "20 51 60 61 62 13 57 48 13 43 54 54 7 13 54 51 49 50 62 13 62 50 43 62 13 45 43 56 46 54 47 9 4"
+                },
+                {
+                    "name": "target2",
+                    "spklab": "13"
+                }
+            ],
+            "utt2spk": "1027_125147"
+        },
+        "1027_125147_000028_000001": {
+            "input": [
+                {
+                    "feat": "/export/b18/jcho/espnet3/egs/libritts/tts+spkid/dump/train_clean_460_spkcv_0.1/feats.1.ark:4072059",
+                    "name": "input1",
+                    "shape": [
+                        355,
+                        80
+                    ]
+                }
+            ],
+            "output": [
+                {
+                    "name": "target1",
+                    "shape": [
+                        65,
+                        78
+                    ],
+                    "text": "Fledgeby told it again with great care, and rang every sovereign.",
+                    "token": "F l e d g e b y <space> t o l d <space> i t <space> a g a i n <space> w i t h <space> g r e a t <space> c a r e , <space> a n d <space> r a n g <space> e v e r y <space> s o v e r e i g n .",
+                    "tokenid": "20 54 47 46 49 47 44 67 13 62 57 54 46 13 51 62 13 43 49 43 51 56 13 65 51 62 50 13 49 60 47 43 62 13 45 43 60 47 7 13 43 56 46 13 60 43 56 49 13 47 64 47 60 67 13 61 57 64 47 60 47 51 49 56 9"
+                },
+                {
+                    "name": "target2",
+                    "spklab": "13"
+                }
+            ],
+            "utt2spk": "1027_125147"
+        },
+        "1027_125147_000036_000000": {
+            "input": [
+                {
+                    "feat": "/export/b18/jcho/espnet3/egs/libritts/tts+spkid/dump/train_clean_460_spkcv_0.1/feats.1.ark:4101146",
+                    "name": "input1",
+                    "shape": [
+                        157,
+                        80
+                    ]
+                }
+            ],
+            "output": [
+                {
+                    "name": "target1",
+                    "shape": [
+                        20,
+                        78
+                    ],
+                    "text": "'Not in generosity?'",
+                    "token": "' N o t <space> i n <space> g e n e r o s i t y ? '",
+                    "tokenid": "4 28 57 62 13 51 56 13 49 47 56 47 60 57 61 51 62 67 14 4"
+                },
+                {
+                    "name": "target2",
+                    "spklab": "13"
+                }
+            ],
+            "utt2spk": "1027_125147"
+        },
+        "1027_125147_000042_000000": {
+            "input": [
+                {
+                    "feat": "/export/b18/jcho/espnet3/egs/libritts/tts+spkid/dump/train_clean_460_spkcv_0.1/feats.1.ark:4114393",
+                    "name": "input1",
+                    "shape": [
+                        548,
+                        80
+                    ]
+                }
+            ],
+            "output": [
+                {
+                    "name": "target1",
+                    "shape": [
+                        99,
+                        78
+                    ],
+                    "text": "'In parcels as set forth,' returned the old man, looking over his master's shoulder; 'or the lump.'",
+                    "token": "' I n <space> p a r c e l s <space> a s <space> s e t <space> f o r t h , ' <space> r e t u r n e d <space> t h e <space> o l d <space> m a n , <space> l o o k i n g <space> o v e r <space> h i s <space> m a s t e r ' s <space> s h o u l d e r ; <space> ' o r <space> t h e <space> l u m p . '",
+                    "tokenid": "4 23 56 13 58 43 60 45 47 54 61 13 43 61 13 61 47 62 13 48 57 60 62 50 7 4 13 60 47 62 63 60 56 47 46 13 62 50 47 13 57 54 46 13 55 43 56 7 13 54 57 57 53 51 56 49 13 57 64 47 60 13 50 51 61 13 55 43 61 62 47 60 4 61 13 61 50 57 63 54 46 47 60 12 13 4 57 60 13 62 50 47 13 54 63 55 58 9 4"
+                },
+                {
+                    "name": "target2",
+                    "spklab": "13"
+                }
+            ],
+            "utt2spk": "1027_125147"
+        },
+        "1027_125147_000045_000001": {
+            "input": [
+                {
+                    "feat": "/export/b18/jcho/espnet3/egs/libritts/tts+spkid/dump/train_clean_460_spkcv_0.1/feats.1.ark:4158920",
+                    "name": "input1",
+                    "shape": [
+                        29,
+                        80
+                    ]
+                }
+            ],
+            "output": [
+                {
+                    "name": "target1",
+                    "shape": [
+                        6,
+                        78
+                    ],
+                    "text": "'Hark!",
+                    "token": "' H a r k !",
+                    "tokenid": "4 22 43 60 53 2"
+                },
+                {
+                    "name": "target2",
+                    "spklab": "13"
+                }
+            ],
+            "utt2spk": "1027_125147"
+        },
+        "1027_125147_000082_000000": {
+            "input": [
+                {
+                    "feat": "/export/b18/jcho/espnet3/egs/libritts/tts+spkid/dump/train_clean_460_spkcv_0.1/feats.1.ark:4161927",
+                    "name": "input1",
+                    "shape": [
+                        586,
+                        80
+                    ]
+                }
+            ],
+            "output": [
+                {
+                    "name": "target1",
+                    "shape": [
+                        91,
+                        78
+                    ],
+                    "text": "Mr Fledgeby took it, saying, 'And if we ever find out who did this, we'll mark that person.",
+                    "token": "M r <space> F l e d g e b y <space> t o o k <space> i t , <space> s a y i n g , <space> ' A n d <space> i f <space> w e <space> e v e r <space> f i n d <space> o u t <space> w h o <space> d i d <space> t h i s , <space> w e ' l l <space> m a r k <space> t h a t <space> p e r s o n .",
+                    "tokenid": "27 60 13 20 54 47 46 49 47 44 67 13 62 57 57 53 13 51 62 7 13 61 43 67 51 56 49 7 13 4 15 56 46 13 51 48 13 65 47 13 47 64 47 60 13 48 51 56 46 13 57 63 62 13 65 50 57 13 46 51 46 13 62 50 51 61 7 13 65 47 4 54 54 13 55 43 60 53 13 62 50 43 62 13 58 47 60 61 57 56 9"
+                },
+                {
+                    "name": "target2",
+                    "spklab": "13"
+                }
+            ],
+            "utt2spk": "1027_125147"
+        },
+        "1027_125147_000092_000001": {
+            "input": [
+                {
+                    "feat": "/export/b18/jcho/espnet3/egs/libritts/tts+spkid/dump/train_clean_460_spkcv_0.1/feats.1.ark:4209494",
+                    "name": "input1",
+                    "shape": [
+                        137,
+                        80
+                    ]
+                }
+            ],
+            "output": [
+                {
+                    "name": "target1",
+                    "shape": [
+                        24,
+                        78
+                    ],
+                    "text": "I only asked a question.",
+                    "token": "I <space> o n l y <space> a s k e d <space> a <space> q u e s t i o n .",
+                    "tokenid": "23 13 57 56 54 67 13 43 61 53 47 46 13 43 13 59 63 47 61 62 51 57 56 9"
+                },
+                {
+                    "name": "target2",
+                    "spklab": "13"
+                }
+            ],
+            "utt2spk": "1027_125147"
+        },
+        "1027_125147_000114_000000": {
+            "input": [
+                {
+                    "feat": "/export/b18/jcho/espnet3/egs/libritts/tts+spkid/dump/train_clean_460_spkcv_0.1/feats.1.ark:4221141",
+                    "name": "input1",
+                    "shape": [
+                        715,
+                        80
+                    ]
+                }
+            ],
+            "output": [
+                {
+                    "name": "target1",
+                    "shape": [
+                        140,
+                        78
+                    ],
+                    "text": "'Then why,' retorted Fledgeby, with some slight tinge of a blush, 'don't you out with your reason for having your spoon in the soup at all?'",
+                    "token": "' T h e n <space> w h y , ' <space> r e t o r t e d <space> F l e d g e b y , <space> w i t h <space> s o m e <space> s l i g h t <space> t i n g e <space> o f <space> a <space> b l u s h , <space> ' d o n ' t <space> y o u <space> o u t <space> w i t h <space> y o u r <space> r e a s o n <space> f o r <space> h a v i n g <space> y o u r <space> s p o o n <space> i n <space> t h e <space> s o u p <space> a t <space> a l l ? '",
+                    "tokenid": "4 34 50 47 56 13 65 50 67 7 4 13 60 47 62 57 60 62 47 46 13 20 54 47 46 49 47 44 67 7 13 65 51 62 50 13 61 57 55 47 13 61 54 51 49 50 62 13 62 51 56 49 47 13 57 48 13 43 13 44 54 63 61 50 7 13 4 46 57 56 4 62 13 67 57 63 13 57 63 62 13 65 51 62 50 13 67 57 63 60 13 60 47 43 61 57 56 13 48 57 60 13 50 43 64 51 56 49 13 67 57 63 60 13 61 58 57 57 56 13 51 56 13 62 50 47 13 61 57 63 58 13 43 62 13 43 54 54 14 4"
+                },
+                {
+                    "name": "target2",
+                    "spklab": "13"
+                }
+            ],
+            "utt2spk": "1027_125147"
+        },
+        "1027_125147_000118_000001": {
+            "input": [
+                {
+                    "feat": "/export/b18/jcho/espnet3/egs/libritts/tts+spkid/dump/train_clean_460_spkcv_0.1/feats.1.ark:4279028",
+                    "name": "input1",
+                    "shape": [
+                        188,
+                        80
+                    ]
+                }
+            ],
+            "output": [
+                {
+                    "name": "target1",
+                    "shape": [
+                        30,
+                        78
+                    ],
+                    "text": "Honour bright,' said Fledgeby.",
+                    "token": "H o n o u r <space> b r i g h t , ' <space> s a i d <space> F l e d g e b y .",
+                    "tokenid": "22 57 56 57 63 60 13 44 60 51 49 50 62 7 4 13 61 43 51 46 13 20 54 47 46 49 47 44 67 9"
+                },
+                {
+                    "name": "target2",
+                    "spklab": "13"
+                }
+            ],
+            "utt2spk": "1027_125147"
+        }
+    }
+}

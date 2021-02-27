@@ -1,0 +1,33 @@
+0	disk_usage_20200901.txt
+0	spkid
+4.0K	disk_usage_20200318.3.txt
+4.0K	exclude.rsync.fromtts1.txt
+4.0K	list_run.txt
+4.0K	rsync.asrtts+spkid_voxcelebNaug_kaldiasr_phonealign_rf3.log
+4.0K	rsync.tts_featext.update.log
+4.0K	rsync.tts+spkid.update.log
+8.0K	Readme.txt
+76K	rsync.log
+57M	asrtts+spkid_voxceleb2Naug_phonealign
+171M	asrtts+spkid_voxceleb2_phonealign
+8.3G	deprecated
+18G	asrtts+spkid_libris_kaldiasr_phonealign_rf3_fs16k
+19G	asrtts+spkid_voxceleb2_kaldiasr_phonealign_rf3_pretrain_800spk
+25G	asrtts+spkid_libris_kaldiasr_phonealign_NOlm
+28G	asrtts+spkid_voxceleb2_kaldiasr_phonealign_rf3_pretrain_1600spk
+35G	asrtts+spkid_voxceleb1_kaldiasr_phonealign
+38G	asrtts+spkid_voxceleb2_kaldiasr_phonealign_rf3_pretrain_2400spk
+48G	tts1
+55G	tts+spkid
+90G	asrtts+spkid_voxceleb_phonealign
+92G	asrtts+spkid_voxceleb1_kaldiasr_phonealign_rf3_addpitch
+118G	asrtts+spkid_libris_kaldiasr_phonealign
+145G	asrtts+spkid_libris_kaldiasr
+194G	tts_featext
+289G	asrtts+spkid_libris_kaldiasr_phonealign_rf3
+(moved to c06) 291G	asrtts+spkid_libris_txf_asr
+425G	asrtts+spkid_voxcelebNaug_kaldiasr_phonealign_rf3
+(moved to c06) 572G	tts+spkid_final
+594G	asrtts+spkid
+852G	asrtts+spkid_voxceleb1_kaldiasr_phonealign_rf3
+3.9T	total

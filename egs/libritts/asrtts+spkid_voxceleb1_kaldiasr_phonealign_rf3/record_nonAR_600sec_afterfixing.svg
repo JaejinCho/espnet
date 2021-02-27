@@ -1,0 +1,419 @@
+<?xml version="1.0" standalone="no"?><!DOCTYPE svg PUBLIC "-//W3C//DTD SVG 1.1//EN" "http://www.w3.org/Graphics/SVG/1.1/DTD/svg11.dtd"><svg version="1.1" width="1200" height="374" onload="init(evt)" viewBox="0 0 1200 374" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink"><!--Flame graph stack visualization. See https://github.com/brendangregg/FlameGraph for latest version, and http://www.brendangregg.com/flamegraphs.html for examples.--><!--NOTES: --><defs><linearGradient id="background" y1="0" y2="1" x1="0" x2="0"><stop stop-color="#eeeeee" offset="5%"/><stop stop-color="#eeeeb0" offset="95%"/></linearGradient></defs><style type="text/css">
+text { font-family:"Verdana"; font-size:12px; fill:rgb(0,0,0); }
+#title { text-anchor:middle; font-size:17px; }
+#search { opacity:0.1; cursor:pointer; }
+#search:hover, #search.show { opacity:1; }
+#subtitle { text-anchor:middle; font-color:rgb(160,160,160); }
+#unzoom { cursor:pointer; }
+#frames > *:hover { stroke:black; stroke-width:0.5; cursor:pointer; }
+.hide { display:none; }
+.parent { opacity:0.5; }
+</style><script type="text/ecmascript"><![CDATA[var nametype = 'Function:';
+var fontsize = 12;
+var fontwidth = 0.59;
+var xpad = 10;
+var inverted = true;
+var searchcolor = 'rgb(230,0,230)';
+var fluiddrawing = true;
+var truncate_text_right = false;]]><![CDATA["use strict";
+var details, searchbtn, unzoombtn, matchedtxt, svg, searching, frames;
+function init(evt) {
+    details = document.getElementById("details").firstChild;
+    searchbtn = document.getElementById("search");
+    unzoombtn = document.getElementById("unzoom");
+    matchedtxt = document.getElementById("matched");
+    svg = document.getElementsByTagName("svg")[0];
+    frames = document.getElementById("frames");
+    searching = 0;
+
+    // Use GET parameters to restore a flamegraph's state.
+    var restore_state = function() {
+        var params = get_params();
+        if (params.x && params.y)
+            zoom(find_group(document.querySelector('[x="' + params.x + '"][y="' + params.y + '"]')));
+        if (params.s)
+            search(params.s);
+    };
+
+    if (fluiddrawing) {
+        // Make width dynamic so the SVG fits its parent's width.
+        svg.removeAttribute("width");
+        // Edge requires us to have a viewBox that gets updated with size changes.
+        var isEdge = /Edge\/\d./i.test(navigator.userAgent);
+        if (!isEdge) {
+          svg.removeAttribute("viewBox");
+        }
+        var update_for_width_change = function() {
+            if (isEdge) {
+                svg.attributes.viewBox.value = "0 0 " + svg.width.baseVal.value + " " + svg.height.baseVal.value;
+            }
+
+            // Keep consistent padding on left and right of frames container.
+            frames.attributes.width.value = svg.width.baseVal.value - xpad * 2;
+
+            // Text truncation needs to be adjusted for the current width.
+            var el = frames.children;
+            for(var i = 0; i < el.length; i++) {
+                update_text(el[i]);
+            }
+
+            // Keep search elements at a fixed distance from right edge.
+            var svgWidth = svg.width.baseVal.value;
+            searchbtn.attributes.x.value = svgWidth - xpad - 100;
+            matchedtxt.attributes.x.value = svgWidth - xpad - 100;
+        };
+        window.addEventListener('resize', function() {
+            update_for_width_change();
+        });
+        // This needs to be done asynchronously for Safari to work.
+        setTimeout(function() {
+            unzoom();
+            update_for_width_change();
+            restore_state();
+        }, 0);
+    } else {
+        restore_state();
+    }
+}
+// event listeners
+window.addEventListener("click", function(e) {
+    var target = find_group(e.target);
+    if (target) {
+        if (target.nodeName == "a") {
+            if (e.ctrlKey === false) return;
+            e.preventDefault();
+        }
+        if (target.classList.contains("parent")) unzoom();
+        zoom(target);
+
+        // set parameters for zoom state
+        var el = target.querySelector("rect");
+        if (el && el.attributes && el.attributes.y && el.attributes._orig_x) {
+            var params = get_params()
+            params.x = el.attributes._orig_x.value;
+            params.y = el.attributes.y.value;
+            history.replaceState(null, null, parse_params(params));
+        }
+    }
+    else if (e.target.id == "unzoom") {
+        unzoom();
+
+        // remove zoom state
+        var params = get_params();
+        if (params.x) delete params.x;
+        if (params.y) delete params.y;
+        history.replaceState(null, null, parse_params(params));
+    }
+    else if (e.target.id == "search") search_prompt();
+}, false)
+// mouse-over for info
+// show
+window.addEventListener("mouseover", function(e) {
+    var target = find_group(e.target);
+    if (target) details.nodeValue = nametype + " " + g_to_text(target);
+}, false)
+// clear
+window.addEventListener("mouseout", function(e) {
+    var target = find_group(e.target);
+    if (target) details.nodeValue = ' ';
+}, false)
+// ctrl-F for search
+window.addEventListener("keydown",function (e) {
+    if (e.keyCode === 114 || (e.ctrlKey && e.keyCode === 70)) {
+        e.preventDefault();
+        search_prompt();
+    }
+}, false)
+// functions
+function get_params() {
+    var params = {};
+    var paramsarr = window.location.search.substr(1).split('&');
+    for (var i = 0; i < paramsarr.length; ++i) {
+        var tmp = paramsarr[i].split("=");
+        if (!tmp[0] || !tmp[1]) continue;
+        params[tmp[0]]  = decodeURIComponent(tmp[1]);
+    }
+    return params;
+}
+function parse_params(params) {
+    var uri = "?";
+    for (var key in params) {
+        uri += key + '=' + encodeURIComponent(params[key]) + '&';
+    }
+    if (uri.slice(-1) == "&")
+        uri = uri.substring(0, uri.length - 1);
+    if (uri == '?')
+        uri = window.location.href.split('?')[0];
+    return uri;
+}
+function find_child(node, selector) {
+    var children = node.querySelectorAll(selector);
+    if (children.length) return children[0];
+    return;
+}
+function find_group(node) {
+    var parent = node.parentElement;
+    if (!parent) return;
+    if (parent.id == "frames") return node;
+    return find_group(parent);
+}
+function orig_save(e, attr, val) {
+    if (e.attributes["_orig_" + attr] != undefined) return;
+    if (e.attributes[attr] == undefined) return;
+    if (val == undefined) val = e.attributes[attr].value;
+    e.setAttribute("_orig_" + attr, val);
+}
+function orig_load(e, attr) {
+    if (e.attributes["_orig_"+attr] == undefined) return;
+    e.attributes[attr].value = e.attributes["_orig_" + attr].value;
+    e.removeAttribute("_orig_" + attr);
+}
+function g_to_text(e) {
+    var text = find_child(e, "title").firstChild.nodeValue;
+    return (text)
+}
+function g_to_func(e) {
+    var func = g_to_text(e);
+    // if there's any manipulation we want to do to the function
+    // name before it's searched, do it here before returning.
+    return (func);
+}
+function update_text(e) {
+    var r = find_child(e, "rect");
+    var t = find_child(e, "text");
+    var w = parseFloat(r.attributes.width.value) * frames.attributes.width.value / 100 - 3;
+    var txt = find_child(e, "title").textContent.replace(/\([^(]*\)$/,"");
+    t.attributes.x.value = format_percent((parseFloat(r.attributes.x.value) + (100 * 3 / frames.attributes.width.value)));
+    // Smaller than this size won't fit anything
+    if (w < 2 * fontsize * fontwidth) {
+        t.textContent = "";
+        return;
+    }
+    t.textContent = txt;
+    // Fit in full text width
+    if (/^ *\$/.test(txt) || t.getComputedTextLength() < w)
+        return;
+    if (truncate_text_right) {
+        // Truncate the right side of the text.
+        for (var x = txt.length - 2; x > 0; x--) {
+            if (t.getSubStringLength(0, x + 2) <= w) {
+                t.textContent = txt.substring(0, x) + "..";
+                return;
+            }
+        }
+    } else {
+        // Truncate the left side of the text.
+        for (var x = 2; x < txt.length; x++) {
+            if (t.getSubStringLength(x - 2, txt.length) <= w) {
+                t.textContent = ".." + txt.substring(x, txt.length);
+                return;
+            }
+        }
+    }
+    t.textContent = "";
+}
+// zoom
+function zoom_reset(e) {
+    if (e.attributes != undefined) {
+        orig_load(e, "x");
+        orig_load(e, "width");
+    }
+    if (e.childNodes == undefined) return;
+    for(var i = 0, c = e.childNodes; i < c.length; i++) {
+        zoom_reset(c[i]);
+    }
+}
+function zoom_child(e, x, ratio) {
+    if (e.attributes != undefined) {
+        if (e.attributes.x != undefined) {
+            orig_save(e, "x");
+            e.attributes.x.value = format_percent((parseFloat(e.attributes.x.value) - x) * ratio);
+            if (e.tagName == "text") {
+                e.attributes.x.value = format_percent(parseFloat(find_child(e.parentNode, "rect[x]").attributes.x.value) + (100 * 3 / frames.attributes.width.value));
+            }
+        }
+        if (e.attributes.width != undefined) {
+            orig_save(e, "width");
+            e.attributes.width.value = format_percent(parseFloat(e.attributes.width.value) * ratio);
+        }
+    }
+    if (e.childNodes == undefined) return;
+    for(var i = 0, c = e.childNodes; i < c.length; i++) {
+        zoom_child(c[i], x, ratio);
+    }
+}
+function zoom_parent(e) {
+    if (e.attributes) {
+        if (e.attributes.x != undefined) {
+            orig_save(e, "x");
+            e.attributes.x.value = "0.0%";
+        }
+        if (e.attributes.width != undefined) {
+            orig_save(e, "width");
+            e.attributes.width.value = "100.0%";
+        }
+    }
+    if (e.childNodes == undefined) return;
+    for(var i = 0, c = e.childNodes; i < c.length; i++) {
+        zoom_parent(c[i]);
+    }
+}
+function zoom(node) {
+    var attr = find_child(node, "rect").attributes;
+    var width = parseFloat(attr.width.value);
+    var xmin = parseFloat(attr.x.value);
+    var xmax = xmin + width;
+    var ymin = parseFloat(attr.y.value);
+    var ratio = 100 / width;
+    // XXX: Workaround for JavaScript float issues (fix me)
+    var fudge = 0.001;
+    unzoombtn.classList.remove("hide");
+    var el = frames.children;
+    for (var i = 0; i < el.length; i++) {
+        var e = el[i];
+        var a = find_child(e, "rect").attributes;
+        var ex = parseFloat(a.x.value);
+        var ew = parseFloat(a.width.value);
+        // Is it an ancestor
+        if (!inverted) {
+            var upstack = parseFloat(a.y.value) > ymin;
+        } else {
+            var upstack = parseFloat(a.y.value) < ymin;
+        }
+        if (upstack) {
+            // Direct ancestor
+            if (ex <= xmin && (ex+ew+fudge) >= xmax) {
+                e.classList.add("parent");
+                zoom_parent(e);
+                update_text(e);
+            }
+            // not in current path
+            else
+                e.classList.add("hide");
+        }
+        // Children maybe
+        else {
+            // no common path
+            if (ex < xmin || ex + fudge >= xmax) {
+                e.classList.add("hide");
+            }
+            else {
+                zoom_child(e, xmin, ratio);
+                update_text(e);
+            }
+        }
+    }
+}
+function unzoom() {
+    unzoombtn.classList.add("hide");
+    var el = frames.children;
+    for(var i = 0; i < el.length; i++) {
+        el[i].classList.remove("parent");
+        el[i].classList.remove("hide");
+        zoom_reset(el[i]);
+        update_text(el[i]);
+    }
+}
+// search
+function reset_search() {
+    var el = document.querySelectorAll("#frames rect");
+    for (var i = 0; i < el.length; i++) {
+        orig_load(el[i], "fill")
+    }
+    var params = get_params();
+    delete params.s;
+    history.replaceState(null, null, parse_params(params));
+}
+function search_prompt() {
+    if (!searching) {
+        var term = prompt("Enter a search term (regexp " +
+            "allowed, eg: ^ext4_)", "");
+        if (term != null) {
+            search(term)
+        }
+    } else {
+        reset_search();
+        searching = 0;
+        searchbtn.classList.remove("show");
+        searchbtn.firstChild.nodeValue = "Search"
+        matchedtxt.classList.add("hide");
+        matchedtxt.firstChild.nodeValue = ""
+    }
+}
+function search(term) {
+    var re = new RegExp(term);
+    var el = frames.children;
+    var matches = new Object();
+    var maxwidth = 0;
+    for (var i = 0; i < el.length; i++) {
+        var e = el[i];
+        var func = g_to_func(e);
+        var rect = find_child(e, "rect");
+        if (func == null || rect == null)
+            continue;
+        // Save max width. Only works as we have a root frame
+        var w = parseFloat(rect.attributes.width.value);
+        if (w > maxwidth)
+            maxwidth = w;
+        if (func.match(re)) {
+            // highlight
+            var x = parseFloat(rect.attributes.x.value);
+            orig_save(rect, "fill");
+            rect.attributes.fill.value = searchcolor;
+            // remember matches
+            if (matches[x] == undefined) {
+                matches[x] = w;
+            } else {
+                if (w > matches[x]) {
+                    // overwrite with parent
+                    matches[x] = w;
+                }
+            }
+            searching = 1;
+        }
+    }
+    if (!searching)
+        return;
+    var params = get_params();
+    params.s = term;
+    history.replaceState(null, null, parse_params(params));
+
+    searchbtn.classList.add("show");
+    searchbtn.firstChild.nodeValue = "Reset Search";
+    // calculate percent matched, excluding vertical overlap
+    var count = 0;
+    var lastx = -1;
+    var lastw = 0;
+    var keys = Array();
+    for (k in matches) {
+        if (matches.hasOwnProperty(k))
+            keys.push(k);
+    }
+    // sort the matched frames by their x location
+    // ascending, then width descending
+    keys.sort(function(a, b){
+        return a - b;
+    });
+    // Step through frames saving only the biggest bottom-up frames
+    // thanks to the sort order. This relies on the tree property
+    // where children are always smaller than their parents.
+    var fudge = 0.0001;    // JavaScript floating point
+    for (var k in keys) {
+        var x = parseFloat(keys[k]);
+        var w = matches[keys[k]];
+        if (x >= lastx + lastw - fudge) {
+            count += w;
+            lastx = x;
+            lastw = w;
+        }
+    }
+    // display matched percent
+    matchedtxt.classList.remove("hide");
+    var pct = 100 * count / maxwidth;
+    if (pct != 100) pct = pct.toFixed(1);
+    matchedtxt.firstChild.nodeValue = "Matched: " + pct + "%";
+}
+function format_percent(n) {
+    return n.toFixed(4) + "%";
+}
+]]></script><rect x="0" y="0" width="100%" height="374" fill="url(#background)"/><text id="title" x="50.0000%" y="24.00">py-spy</text><text id="details" x="10" y="357.00"> </text><text id="unzoom" class="hide" x="10" y="24.00">Reset Zoom</text><text id="search" x="1090" y="24.00">Search</text><text id="matched" x="1090" y="357.00"> </text><svg id="frames" x="10" width="1180"><g><title>&lt;module&gt; (tts_train_speakerid.py:18) (402 samples, 1.28%)</title><rect x="0.4064%" y="52" width="1.2762%" height="15" fill="rgb(227,0,7)"/><text x="0.6564%" y="62.50"></text></g><g><title>_find_and_load (&lt;frozen importlib._bootstrap&gt;:971) (402 samples, 1.28%)</title><rect x="0.4064%" y="68" width="1.2762%" height="15" fill="rgb(217,0,24)"/><text x="0.6564%" y="78.50"></text></g><g><title>_find_and_load_unlocked (&lt;frozen importlib._bootstrap&gt;:955) (360 samples, 1.14%)</title><rect x="0.5397%" y="84" width="1.1429%" height="15" fill="rgb(221,193,54)"/><text x="0.7897%" y="94.50"></text></g><g><title>_load_unlocked (&lt;frozen importlib._bootstrap&gt;:665) (360 samples, 1.14%)</title><rect x="0.5397%" y="100" width="1.1429%" height="15" fill="rgb(248,212,6)"/><text x="0.7897%" y="110.50"></text></g><g><title>exec_module (&lt;frozen importlib._bootstrap_external&gt;:678) (360 samples, 1.14%)</title><rect x="0.5397%" y="116" width="1.1429%" height="15" fill="rgb(208,68,35)"/><text x="0.7897%" y="126.50"></text></g><g><title>_call_with_frames_removed (&lt;frozen importlib._bootstrap&gt;:219) (360 samples, 1.14%)</title><rect x="0.5397%" y="132" width="1.1429%" height="15" fill="rgb(232,128,0)"/><text x="0.7897%" y="142.50"></text></g><g><title>&lt;module&gt; (tts_interface.py:8) (360 samples, 1.14%)</title><rect x="0.5397%" y="148" width="1.1429%" height="15" fill="rgb(207,160,47)"/><text x="0.7897%" y="158.50"></text></g><g><title>_find_and_load (&lt;frozen importlib._bootstrap&gt;:971) (360 samples, 1.14%)</title><rect x="0.5397%" y="164" width="1.1429%" height="15" fill="rgb(228,23,34)"/><text x="0.7897%" y="174.50"></text></g><g><title>_find_and_load_unlocked (&lt;frozen importlib._bootstrap&gt;:955) (360 samples, 1.14%)</title><rect x="0.5397%" y="180" width="1.1429%" height="15" fill="rgb(218,30,26)"/><text x="0.7897%" y="190.50"></text></g><g><title>_load_unlocked (&lt;frozen importlib._bootstrap&gt;:665) (360 samples, 1.14%)</title><rect x="0.5397%" y="196" width="1.1429%" height="15" fill="rgb(220,122,19)"/><text x="0.7897%" y="206.50"></text></g><g><title>exec_module (&lt;frozen importlib._bootstrap_external&gt;:678) (359 samples, 1.14%)</title><rect x="0.5429%" y="212" width="1.1397%" height="15" fill="rgb(250,228,42)"/><text x="0.7929%" y="222.50"></text></g><g><title>_call_with_frames_removed (&lt;frozen importlib._bootstrap&gt;:219) (359 samples, 1.14%)</title><rect x="0.5429%" y="228" width="1.1397%" height="15" fill="rgb(240,193,28)"/><text x="0.7929%" y="238.50"></text></g><g><title>&lt;module&gt; (e2e_tts_fastspeech_speakerid.py:12) (372 samples, 1.18%)</title><rect x="1.7016%" y="212" width="1.1810%" height="15" fill="rgb(216,20,37)"/><text x="1.9516%" y="222.50"></text></g><g><title>_find_and_load (&lt;frozen importlib._bootstrap&gt;:971) (372 samples, 1.18%)</title><rect x="1.7016%" y="228" width="1.1810%" height="15" fill="rgb(206,188,39)"/><text x="1.9516%" y="238.50"></text></g><g><title>_find_and_load_unlocked (&lt;frozen importlib._bootstrap&gt;:955) (372 samples, 1.18%)</title><rect x="1.7016%" y="244" width="1.1810%" height="15" fill="rgb(217,207,13)"/><text x="1.9516%" y="254.50"></text></g><g><title>_load_unlocked (&lt;frozen importlib._bootstrap&gt;:665) (372 samples, 1.18%)</title><rect x="1.7016%" y="260" width="1.1810%" height="15" fill="rgb(231,73,38)"/><text x="1.9516%" y="270.50"></text></g><g><title>exec_module (&lt;frozen importlib._bootstrap_external&gt;:678) (372 samples, 1.18%)</title><rect x="1.7016%" y="276" width="1.1810%" height="15" fill="rgb(225,20,46)"/><text x="1.9516%" y="286.50"></text></g><g><title>_call_with_frames_removed (&lt;frozen importlib._bootstrap&gt;:219) (372 samples, 1.18%)</title><rect x="1.7016%" y="292" width="1.1810%" height="15" fill="rgb(210,31,41)"/><text x="1.9516%" y="302.50"></text></g><g><title>main (tts_train_speakerid.py:144) (717 samples, 2.28%)</title><rect x="1.7016%" y="68" width="2.2763%" height="15" fill="rgb(221,200,47)"/><text x="1.9516%" y="78.50">m..</text></g><g><title>dynamic_import (dynamic_import.py:21) (717 samples, 2.28%)</title><rect x="1.7016%" y="84" width="2.2763%" height="15" fill="rgb(226,26,5)"/><text x="1.9516%" y="94.50">d..</text></g><g><title>import_module (importlib/__init__.py:126) (717 samples, 2.28%)</title><rect x="1.7016%" y="100" width="2.2763%" height="15" fill="rgb(249,33,26)"/><text x="1.9516%" y="110.50">i..</text></g><g><title>_gcd_import (&lt;frozen importlib._bootstrap&gt;:994) (717 samples, 2.28%)</title><rect x="1.7016%" y="116" width="2.2763%" height="15" fill="rgb(235,183,28)"/><text x="1.9516%" y="126.50">_..</text></g><g><title>_find_and_load (&lt;frozen importlib._bootstrap&gt;:971) (717 samples, 2.28%)</title><rect x="1.7016%" y="132" width="2.2763%" height="15" fill="rgb(221,5,38)"/><text x="1.9516%" y="142.50">_..</text></g><g><title>_find_and_load_unlocked (&lt;frozen importlib._bootstrap&gt;:955) (717 samples, 2.28%)</title><rect x="1.7016%" y="148" width="2.2763%" height="15" fill="rgb(247,18,42)"/><text x="1.9516%" y="158.50">_..</text></g><g><title>_load_unlocked (&lt;frozen importlib._bootstrap&gt;:665) (717 samples, 2.28%)</title><rect x="1.7016%" y="164" width="2.2763%" height="15" fill="rgb(241,131,45)"/><text x="1.9516%" y="174.50">_..</text></g><g><title>exec_module (&lt;frozen importlib._bootstrap_external&gt;:678) (717 samples, 2.28%)</title><rect x="1.7016%" y="180" width="2.2763%" height="15" fill="rgb(249,31,29)"/><text x="1.9516%" y="190.50">e..</text></g><g><title>_call_with_frames_removed (&lt;frozen importlib._bootstrap&gt;:219) (717 samples, 2.28%)</title><rect x="1.7016%" y="196" width="2.2763%" height="15" fill="rgb(225,111,53)"/><text x="1.9516%" y="206.50">_..</text></g><g><title>train (tts_speakerid.py:324) (559 samples, 1.77%)</title><rect x="4.3906%" y="84" width="1.7747%" height="15" fill="rgb(238,160,17)"/><text x="4.6406%" y="94.50">t..</text></g><g><title>to (torch/nn/modules/module.py:381) (559 samples, 1.77%)</title><rect x="4.3906%" y="100" width="1.7747%" height="15" fill="rgb(214,148,48)"/><text x="4.6406%" y="110.50">t..</text></g><g><title>_apply (torch/nn/modules/module.py:187) (559 samples, 1.77%)</title><rect x="4.3906%" y="116" width="1.7747%" height="15" fill="rgb(232,36,49)"/><text x="4.6406%" y="126.50">_..</text></g><g><title>_apply (torch/nn/modules/module.py:187) (559 samples, 1.77%)</title><rect x="4.3906%" y="132" width="1.7747%" height="15" fill="rgb(209,103,24)"/><text x="4.6406%" y="142.50">_..</text></g><g><title>_apply (torch/nn/modules/module.py:187) (559 samples, 1.77%)</title><rect x="4.3906%" y="148" width="1.7747%" height="15" fill="rgb(229,88,8)"/><text x="4.6406%" y="158.50">_..</text></g><g><title>_apply (torch/nn/modules/module.py:193) (551 samples, 1.75%)</title><rect x="4.4160%" y="164" width="1.7493%" height="15" fill="rgb(213,181,19)"/><text x="4.6660%" y="174.50"></text></g><g><title>convert (torch/nn/modules/module.py:379) (550 samples, 1.75%)</title><rect x="4.4192%" y="180" width="1.7461%" height="15" fill="rgb(254,191,54)"/><text x="4.6692%" y="190.50"></text></g><g><title>loads (json/__init__.py:349) (648 samples, 2.06%)</title><rect x="6.1716%" y="116" width="2.0572%" height="15" fill="rgb(241,83,37)"/><text x="6.4216%" y="126.50">l..</text></g><g><title>train (tts_speakerid.py:343) (938 samples, 2.98%)</title><rect x="6.1653%" y="84" width="2.9779%" height="15" fill="rgb(233,36,39)"/><text x="6.4153%" y="94.50">tra..</text></g><g><title>load (json/__init__.py:299) (938 samples, 2.98%)</title><rect x="6.1653%" y="100" width="2.9779%" height="15" fill="rgb(226,3,54)"/><text x="6.4153%" y="110.50">loa..</text></g><g><title>read (kaldiio/compression_header.py:139) (503 samples, 1.60%)</title><rect x="11.1369%" y="308" width="1.5969%" height="15" fill="rgb(245,192,40)"/><text x="11.3869%" y="318.50"></text></g><g><title>uint_to_float (kaldiio/compression_header.py:113) (434 samples, 1.38%)</title><rect x="11.3559%" y="324" width="1.3778%" height="15" fill="rgb(238,167,29)"/><text x="11.6059%" y="334.50"></text></g><g><title>read_matrix_or_vector (kaldiio/matio.py:383) (898 samples, 2.85%)</title><rect x="10.5464%" y="292" width="2.8509%" height="15" fill="rgb(232,182,51)"/><text x="10.7964%" y="302.50">re..</text></g><g><title>read_matrix_or_vector (kaldiio/matio.py:387) (3,274 samples, 10.39%)</title><rect x="13.5814%" y="292" width="10.3940%" height="15" fill="rgb(231,60,39)"/><text x="13.8314%" y="302.50">read_matrix_or_..</text></g><g><title>char_to_float (kaldiio/compression_header.py:226) (561 samples, 1.78%)</title><rect x="25.1468%" y="308" width="1.7810%" height="15" fill="rgb(208,69,12)"/><text x="25.3968%" y="318.50">c..</text></g><g><title>char_to_float (kaldiio/compression_header.py:227) (456 samples, 1.45%)</title><rect x="26.9278%" y="308" width="1.4477%" height="15" fill="rgb(235,93,37)"/><text x="27.1778%" y="318.50"></text></g><g><title>char_to_float (kaldiio/compression_header.py:228) (1,863 samples, 5.91%)</title><rect x="28.3755%" y="308" width="5.9145%" height="15" fill="rgb(213,116,39)"/><text x="28.6255%" y="318.50">char_to_..</text></g><g><title>char_to_float (kaldiio/compression_header.py:231) (738 samples, 2.34%)</title><rect x="34.3217%" y="308" width="2.3429%" height="15" fill="rgb(222,207,29)"/><text x="34.5717%" y="318.50">c..</text></g><g><title>char_to_float (kaldiio/compression_header.py:232) (375 samples, 1.19%)</title><rect x="36.6647%" y="308" width="1.1905%" height="15" fill="rgb(206,96,30)"/><text x="36.9147%" y="318.50"></text></g><g><title>read_matrix_or_vector (kaldiio/matio.py:393) (5,230 samples, 16.60%)</title><rect x="24.2389%" y="292" width="16.6037%" height="15" fill="rgb(218,138,4)"/><text x="24.4889%" y="302.50">read_matrix_or_vector (kal..</text></g><g><title>char_to_float (kaldiio/compression_header.py:233) (941 samples, 2.99%)</title><rect x="37.8552%" y="308" width="2.9874%" height="15" fill="rgb(250,191,14)"/><text x="38.1052%" y="318.50">cha..</text></g><g><title>__call__ (io_utils_speakerid.py:118) (9,818 samples, 31.17%)</title><rect x="9.6765%" y="212" width="31.1692%" height="15" fill="rgb(239,60,40)"/><text x="9.9265%" y="222.50">__call__ (io_utils_speakerid.py:118)</text></g><g><title>_get_from_loader (io_utils_speakerid.py:464) (9,817 samples, 31.17%)</title><rect x="9.6797%" y="228" width="31.1661%" height="15" fill="rgb(206,27,48)"/><text x="9.9297%" y="238.50">_get_from_loader (io_utils_speakerid.py:464)</text></g><g><title>load_mat (kaldiio/matio.py:203) (9,682 samples, 30.74%)</title><rect x="10.1083%" y="244" width="30.7375%" height="15" fill="rgb(225,35,8)"/><text x="10.3583%" y="254.50">load_mat (kaldiio/matio.py:203)</text></g><g><title>_load_mat (kaldiio/matio.py:262) (9,657 samples, 30.66%)</title><rect x="10.1876%" y="260" width="30.6581%" height="15" fill="rgb(250,213,24)"/><text x="10.4376%" y="270.50">_load_mat (kaldiio/matio.py:262)</text></g><g><title>read_kaldi (kaldiio/matio.py:339) (9,576 samples, 30.40%)</title><rect x="10.4448%" y="276" width="30.4010%" height="15" fill="rgb(247,123,22)"/><text x="10.6948%" y="286.50">read_kaldi (kaldiio/matio.py:339)</text></g><g><title>update_core (tts_speakerid.py:139) (9,993 samples, 31.72%)</title><rect x="9.6289%" y="132" width="31.7248%" height="15" fill="rgb(231,138,38)"/><text x="9.8789%" y="142.50">update_core (tts_speakerid.py:139)</text></g><g><title>__next__ (chainer/iterators/serial_iterator.py:77) (9,984 samples, 31.70%)</title><rect x="9.6574%" y="148" width="31.6962%" height="15" fill="rgb(231,145,46)"/><text x="9.9074%" y="158.50">__next__ (chainer/iterators/serial_iterator.py:77)</text></g><g><title>&lt;listcomp&gt; (chainer/iterators/serial_iterator.py:77) (9,983 samples, 31.69%)</title><rect x="9.6606%" y="164" width="31.6931%" height="15" fill="rgb(251,118,11)"/><text x="9.9106%" y="174.50">&lt;listcomp&gt; (chainer/iterators/serial_iterator.py:77)</text></g><g><title>__getitem__ (chainer/dataset/dataset_mixin.py:67) (9,983 samples, 31.69%)</title><rect x="9.6606%" y="180" width="31.6931%" height="15" fill="rgb(217,147,25)"/><text x="9.9106%" y="190.50">__getitem__ (chainer/dataset/dataset_mixin.py:67)</text></g><g><title>get_example (chainer/datasets/transform_dataset.py:52) (9,983 samples, 31.69%)</title><rect x="9.6606%" y="196" width="31.6931%" height="15" fill="rgb(247,81,37)"/><text x="9.9106%" y="206.50">get_example (chainer/datasets/transform_dataset.py:..</text></g><g><title>__call__ (tts_speakerid.py:224) (385 samples, 1.22%)</title><rect x="41.3537%" y="148" width="1.2223%" height="15" fill="rgb(209,12,38)"/><text x="41.6037%" y="158.50"></text></g><g><title>__call__ (tts_speakerid.py:230) (351 samples, 1.11%)</title><rect x="42.7029%" y="148" width="1.1143%" height="15" fill="rgb(227,1,9)"/><text x="42.9529%" y="158.50"></text></g><g><title>update_core (tts_speakerid.py:140) (948 samples, 3.01%)</title><rect x="41.3537%" y="132" width="3.0096%" height="15" fill="rgb(248,47,43)"/><text x="41.6037%" y="142.50">upd..</text></g><g><title>__call__ (torch/nn/modules/module.py:489) (343 samples, 1.09%)</title><rect x="45.8872%" y="276" width="1.0889%" height="15" fill="rgb(221,10,30)"/><text x="46.1372%" y="286.50"></text></g><g><title>forward (speakerid.py:108) (346 samples, 1.10%)</title><rect x="45.8808%" y="228" width="1.0984%" height="15" fill="rgb(210,229,1)"/><text x="46.1308%" y="238.50"></text></g><g><title>__call__ (torch/nn/modules/module.py:489) (346 samples, 1.10%)</title><rect x="45.8808%" y="244" width="1.0984%" height="15" fill="rgb(222,148,37)"/><text x="46.1308%" y="254.50"></text></g><g><title>forward (torch/nn/modules/container.py:92) (346 samples, 1.10%)</title><rect x="45.8808%" y="260" width="1.0984%" height="15" fill="rgb(234,67,33)"/><text x="46.1308%" y="270.50"></text></g><g><title>__call__ (torch/nn/modules/module.py:489) (500 samples, 1.59%)</title><rect x="46.9951%" y="276" width="1.5874%" height="15" fill="rgb(247,98,35)"/><text x="47.2451%" y="286.50"></text></g><g><title>forward (speakerid.py:110) (506 samples, 1.61%)</title><rect x="46.9793%" y="228" width="1.6064%" height="15" fill="rgb(247,138,52)"/><text x="47.2293%" y="238.50"></text></g><g><title>__call__ (torch/nn/modules/module.py:489) (506 samples, 1.61%)</title><rect x="46.9793%" y="244" width="1.6064%" height="15" fill="rgb(213,79,30)"/><text x="47.2293%" y="254.50"></text></g><g><title>forward (torch/nn/modules/container.py:92) (506 samples, 1.61%)</title><rect x="46.9793%" y="260" width="1.6064%" height="15" fill="rgb(246,177,23)"/><text x="47.2293%" y="270.50"></text></g><g><title>forward (speakerid.py:188) (1,464 samples, 4.65%)</title><rect x="44.7728%" y="196" width="4.6478%" height="15" fill="rgb(230,62,27)"/><text x="45.0228%" y="206.50">forwa..</text></g><g><title>__call__ (torch/nn/modules/module.py:489) (1,464 samples, 4.65%)</title><rect x="44.7728%" y="212" width="4.6478%" height="15" fill="rgb(216,154,8)"/><text x="45.0228%" y="222.50">__cal..</text></g><g><title>__call__ (torch/nn/modules/module.py:489) (1,682 samples, 5.34%)</title><rect x="44.7728%" y="180" width="5.3399%" height="15" fill="rgb(244,35,45)"/><text x="45.0228%" y="190.50">__call_..</text></g><g><title>forward (e2e_tts_fastspeech_speakerid.py:354) (1,685 samples, 5.35%)</title><rect x="44.7665%" y="164" width="5.3494%" height="15" fill="rgb(251,115,12)"/><text x="45.0165%" y="174.50">forward..</text></g><g><title>make_pad_mask (nets_utils.py:141) (1,205 samples, 3.83%)</title><rect x="50.1698%" y="228" width="3.8255%" height="15" fill="rgb(240,54,50)"/><text x="50.4198%" y="238.50">make..</text></g><g><title>make_non_pad_mask (nets_utils.py:247) (1,238 samples, 3.93%)</title><rect x="50.1381%" y="212" width="3.9303%" height="15" fill="rgb(233,84,52)"/><text x="50.3881%" y="222.50">make..</text></g><g><title>_source_mask (e2e_tts_fastspeech_speakerid.py:520) (1,249 samples, 3.97%)</title><rect x="50.1191%" y="196" width="3.9652%" height="15" fill="rgb(207,117,47)"/><text x="50.3691%" y="206.50">_sou..</text></g><g><title>_forward (e2e_tts_fastspeech_speakerid.py:303) (1,259 samples, 4.00%)</title><rect x="50.1191%" y="180" width="3.9970%" height="15" fill="rgb(249,43,39)"/><text x="50.3691%" y="190.50">_for..</text></g><g><title>__call__ (torch/nn/modules/module.py:489) (816 samples, 2.59%)</title><rect x="54.3827%" y="292" width="2.5906%" height="15" fill="rgb(209,38,44)"/><text x="54.6327%" y="302.50">__..</text></g><g><title>forward (encoder_layer.py:50) (854 samples, 2.71%)</title><rect x="54.2747%" y="276" width="2.7112%" height="15" fill="rgb(236,212,23)"/><text x="54.5247%" y="286.50">fo..</text></g><g><title>__call__ (torch/nn/modules/module.py:489) (370 samples, 1.17%)</title><rect x="57.4717%" y="292" width="1.1746%" height="15" fill="rgb(242,79,21)"/><text x="57.7217%" y="302.50"></text></g><g><title>forward (encoder_layer.py:57) (413 samples, 1.31%)</title><rect x="57.3447%" y="276" width="1.3112%" height="15" fill="rgb(211,96,35)"/><text x="57.5947%" y="286.50"></text></g><g><title>__call__ (torch/nn/modules/module.py:489) (1,487 samples, 4.72%)</title><rect x="54.2335%" y="228" width="4.7208%" height="15" fill="rgb(253,215,40)"/><text x="54.4835%" y="238.50">__call..</text></g><g><title>forward (repeat.py:9) (1,480 samples, 4.70%)</title><rect x="54.2557%" y="244" width="4.6986%" height="15" fill="rgb(211,81,21)"/><text x="54.5057%" y="254.50">forwa..</text></g><g><title>__call__ (torch/nn/modules/module.py:489) (1,476 samples, 4.69%)</title><rect x="54.2684%" y="260" width="4.6859%" height="15" fill="rgb(208,190,38)"/><text x="54.5184%" y="270.50">__cal..</text></g><g><title>__call__ (torch/nn/modules/module.py:489) (1,522 samples, 4.83%)</title><rect x="54.1255%" y="196" width="4.8319%" height="15" fill="rgb(235,213,38)"/><text x="54.3755%" y="206.50">__call..</text></g><g><title>forward (encoder.py:112) (1,490 samples, 4.73%)</title><rect x="54.2271%" y="212" width="4.7303%" height="15" fill="rgb(237,122,38)"/><text x="54.4771%" y="222.50">forwar..</text></g><g><title>_forward (e2e_tts_fastspeech_speakerid.py:304) (1,527 samples, 4.85%)</title><rect x="54.1160%" y="180" width="4.8478%" height="15" fill="rgb(244,218,35)"/><text x="54.3660%" y="190.50">_forwa..</text></g><g><title>make_pad_mask (nets_utils.py:141) (1,046 samples, 3.32%)</title><rect x="59.0400%" y="228" width="3.3207%" height="15" fill="rgb(240,68,47)"/><text x="59.2900%" y="238.50">mak..</text></g><g><title>make_non_pad_mask (nets_utils.py:247) (1,070 samples, 3.40%)</title><rect x="59.0241%" y="212" width="3.3969%" height="15" fill="rgb(210,16,53)"/><text x="59.2741%" y="222.50">mak..</text></g><g><title>_source_mask (e2e_tts_fastspeech_speakerid.py:520) (1,083 samples, 3.44%)</title><rect x="58.9955%" y="196" width="3.4382%" height="15" fill="rgb(235,124,12)"/><text x="59.2455%" y="206.50">_so..</text></g><g><title>_forward (e2e_tts_fastspeech_speakerid.py:315) (1,089 samples, 3.46%)</title><rect x="58.9955%" y="180" width="3.4573%" height="15" fill="rgb(224,169,11)"/><text x="59.2455%" y="190.50">_fo..</text></g><g><title>__call__ (torch/nn/modules/module.py:489) (891 samples, 2.83%)</title><rect x="63.0718%" y="292" width="2.8287%" height="15" fill="rgb(250,166,2)"/><text x="63.3218%" y="302.50">__..</text></g><g><title>forward (encoder_layer.py:50) (926 samples, 2.94%)</title><rect x="62.9671%" y="276" width="2.9398%" height="15" fill="rgb(242,216,29)"/><text x="63.2171%" y="286.50">fo..</text></g><g><title>forward (encoder_layer.py:57) (337 samples, 1.07%)</title><rect x="66.2402%" y="276" width="1.0699%" height="15" fill="rgb(230,116,27)"/><text x="66.4902%" y="286.50"></text></g><g><title>__call__ (torch/nn/modules/module.py:489) (1,478 samples, 4.69%)</title><rect x="62.9322%" y="228" width="4.6922%" height="15" fill="rgb(228,99,48)"/><text x="63.1822%" y="238.50">__cal..</text></g><g><title>forward (repeat.py:9) (1,473 samples, 4.68%)</title><rect x="62.9480%" y="244" width="4.6763%" height="15" fill="rgb(253,11,6)"/><text x="63.1980%" y="254.50">forwa..</text></g><g><title>__call__ (torch/nn/modules/module.py:489) (1,470 samples, 4.67%)</title><rect x="62.9576%" y="260" width="4.6668%" height="15" fill="rgb(247,143,39)"/><text x="63.2076%" y="270.50">__cal..</text></g><g><title>_forward (e2e_tts_fastspeech_speakerid.py:328) (1,500 samples, 4.76%)</title><rect x="62.8655%" y="180" width="4.7621%" height="15" fill="rgb(236,97,10)"/><text x="63.1155%" y="190.50">_forwa..</text></g><g><title>__call__ (torch/nn/modules/module.py:489) (1,499 samples, 4.76%)</title><rect x="62.8687%" y="196" width="4.7589%" height="15" fill="rgb(233,208,19)"/><text x="63.1187%" y="206.50">__call..</text></g><g><title>forward (encoder.py:112) (1,479 samples, 4.70%)</title><rect x="62.9322%" y="212" width="4.6954%" height="15" fill="rgb(216,164,2)"/><text x="63.1822%" y="222.50">forwa..</text></g><g><title>forward (e2e_tts_fastspeech_speakerid.py:356) (5,535 samples, 17.57%)</title><rect x="50.1159%" y="164" width="17.5720%" height="15" fill="rgb(220,129,5)"/><text x="50.3659%" y="174.50">forward (e2e_tts_fastspeech..</text></g><g><title>make_pad_mask (nets_utils.py:141) (7,501 samples, 23.81%)</title><rect x="67.7450%" y="196" width="23.8135%" height="15" fill="rgb(242,17,10)"/><text x="67.9950%" y="206.50">make_pad_mask (nets_utils.py:141)</text></g><g><title>forward (e2e_tts_fastspeech_speakerid.py:360) (7,554 samples, 23.98%)</title><rect x="67.6879%" y="164" width="23.9817%" height="15" fill="rgb(242,107,0)"/><text x="67.9379%" y="174.50">forward (e2e_tts_fastspeech_speakerid...</text></g><g><title>make_non_pad_mask (nets_utils.py:247) (7,546 samples, 23.96%)</title><rect x="67.7133%" y="180" width="23.9563%" height="15" fill="rgb(251,28,31)"/><text x="67.9633%" y="190.50">make_non_pad_mask (nets_utils.py:247)</text></g><g><title>update_core (tts_speakerid.py:146) (15,162 samples, 48.13%)</title><rect x="44.3633%" y="132" width="48.1349%" height="15" fill="rgb(233,223,10)"/><text x="44.6133%" y="142.50">update_core (tts_speakerid.py:146)</text></g><g><title>__call__ (torch/nn/modules/module.py:489) (15,152 samples, 48.10%)</title><rect x="44.3951%" y="148" width="48.1031%" height="15" fill="rgb(215,21,27)"/><text x="44.6451%" y="158.50">__call__ (torch/nn/modules/module.py:489)</text></g><g><title>clip_grad_norm_ (torch/nn/utils/clip_grad.py:32) (1,390 samples, 4.41%)</title><rect x="92.9585%" y="148" width="4.4128%" height="15" fill="rgb(232,23,21)"/><text x="93.2085%" y="158.50">clip_..</text></g><g><title>norm (torch/tensor.py:252) (1,373 samples, 4.36%)</title><rect x="93.0125%" y="164" width="4.3589%" height="15" fill="rgb(244,5,23)"/><text x="93.2625%" y="174.50">norm ..</text></g><g><title>norm (torch/functional.py:715) (1,368 samples, 4.34%)</title><rect x="93.0284%" y="180" width="4.3430%" height="15" fill="rgb(226,81,46)"/><text x="93.2784%" y="190.50">norm ..</text></g><g><title>update_core (tts_speakerid.py:156) (1,613 samples, 5.12%)</title><rect x="92.8188%" y="132" width="5.1208%" height="15" fill="rgb(247,70,30)"/><text x="93.0688%" y="142.50">update..</text></g><g><title>update_core (tts_speakerid.py:161) (578 samples, 1.83%)</title><rect x="97.9428%" y="132" width="1.8350%" height="15" fill="rgb(212,68,19)"/><text x="98.1928%" y="142.50">u..</text></g><g><title>step (optimizer.py:26) (578 samples, 1.83%)</title><rect x="97.9428%" y="148" width="1.8350%" height="15" fill="rgb(240,187,13)"/><text x="98.1928%" y="158.50">s..</text></g><g><title>update (tts_speakerid.py:166) (28,478 samples, 90.41%)</title><rect x="9.4797%" y="116" width="90.4092%" height="15" fill="rgb(223,113,26)"/><text x="9.7297%" y="126.50">update (tts_speakerid.py:166)</text></g><g><title>run (chainer/training/trainer.py:316) (28,479 samples, 90.41%)</title><rect x="9.4797%" y="100" width="90.4124%" height="15" fill="rgb(206,192,2)"/><text x="9.7297%" y="110.50">run (chainer/training/trainer.py:316)</text></g><g><title>&lt;module&gt; (tts_train_speakerid.py:193) (30,962 samples, 98.30%)</title><rect x="1.6826%" y="52" width="98.2952%" height="15" fill="rgb(241,108,4)"/><text x="1.9326%" y="62.50">&lt;module&gt; (tts_train_speakerid.py:193)</text></g><g><title>main (tts_train_speakerid.py:187) (30,237 samples, 95.99%)</title><rect x="3.9843%" y="68" width="95.9935%" height="15" fill="rgb(247,173,49)"/><text x="4.2343%" y="78.50">main (tts_train_speakerid.py:187)</text></g><g><title>train (tts_speakerid.py:487) (28,510 samples, 90.51%)</title><rect x="9.4670%" y="84" width="90.5108%" height="15" fill="rgb(224,114,35)"/><text x="9.7170%" y="94.50">train (tts_speakerid.py:487)</text></g><g><title>all (31,499 samples, 100%)</title><rect x="0.0000%" y="36" width="100.0000%" height="15" fill="rgb(245,159,27)"/><text x="0.2500%" y="46.50"></text></g></svg></svg>

@@ -1,0 +1,136 @@
+mkdir log
+
+# 0. Features extracted using espnet make_fbank.sh are in /export/b18/jcho/espnet3/egs/libritts/tts_featext
+
+
+
+# 1. Training
+(*** only for the first run ***) bash run.asrttsspkid.spkloss_weight.new.update.rf3.sh --ngpu 1 --n_average 0 --spkloss_weight 0 2>&1 | tee log/run.asrttsspkid.spkloss_weight.new.update.rf3.spkloss_weight0.log
+bash run.asrttsspkid.spkloss_weight.new.update.rf3.sh --stage 4 --stop_stage 4 --ngpu 1 --n_average 0 --spkloss_weight 0.03 2>&1 | tee log/run.asrttsspkid.spkloss_weight.new.update.rf3.spkloss_weight0.03.onlystage4.log
+## unsync experiments
+### 200 to 400 random chunks
+#### spkloss_weight 0.03
+(DONE) bash run.asrttsspkid.spkloss_weight.new.update.rf3.unsync.sh --stage 4 --stop_stage 4 --ngpu 1 --n_average 0 --spkloss_weight 0.03 2>&1 | tee log/run.asrttsspkid.spkloss_weight.new.update.rf3.unsync.spkloss_weight0.03.onlystage4.log
+#### spkloss_weight 0
+(DONE) bash run.asrttsspkid.spkloss_weight.new.update.rf3.unsync.sh --stage 4 --stop_stage 4 --ngpu 1 --n_average 0 --spkloss_weight 0 2>&1 | tee log/run.asrttsspkid.spkloss_weight.new.update.rf3.unsync.spkloss_weight0.onlystage4.log
+### fixed chunk_len (200 and 400)
+#### spkloss_weight 0.03
+(DONE) bash run.asrttsspkid.spkloss_weight.new.update.rf3.unsync.fixedchunk.sh --chunk_len 200 --stage 4 --stop_stage 4 --ngpu 1 --n_average 0 --spkloss_weight 0.03 2>&1 | tee log/run.asrttsspkid.spkloss_weight.new.update.rf3.unsync_chunklen200.spkloss_weight0.03.onlystage4.log
+(DONE) bash run.asrttsspkid.spkloss_weight.new.update.rf3.unsync.fixedchunk.sh --chunk_len 400 --stage 4 --stop_stage 4 --ngpu 1 --n_average 0 --spkloss_weight 0.03 2>&1 | tee log/run.asrttsspkid.spkloss_weight.new.update.rf3.unsync_chunklen400.spkloss_weight0.03.onlystage4.log
+
+## fully unsync. *** Refer to coding_progress.txt for how I edited codes
+### Newly generated codes (most of them are edited from some codes):
+### - run.asrttsspkid.spkloss_weight.new.update.rf3.fullyunsync.sh
+(ING) bash run.asrttsspkid.spkloss_weight.new.update.rf3.fullyunsync.sh --stage 4 --stop_stage 4 --ngpu 1 --n_average 0 --spkloss_weight 0 2>&1 | tee log/run.asrttsspkid.spkloss_weight.new.update.rf3.fullyunsync.spkloss_weight0.onlystage4.log
+(ING) bash run.asrttsspkid.spkloss_weight.new.update.rf3.fullyunsync.sh --stage 4 --stop_stage 4 --ngpu 1 --n_average 0 --spkloss_weight 0.03 2>&1 | tee log/run.asrttsspkid.spkloss_weight.new.update.rf3.fullyunsync.spkloss_weight0.03.onlystage4.log
+
+
+
+# 2. Backend training and evaluation
+## full length
+bash run_backendonly_cpuparallel.voxceleb1.sh --nj 70 --ngpu 0 --expdir exp/voxceleb1_train_filtered_train_pytorch_train_pytorch_tacotron2+spkemb_noatt_rf3_spkloss_weight0.03/ 2>&1 | tee log/backend.voxceleb1_train_filtered_train_pytorch_train_pytorch_tacotron2+spkemb_noatt_rf3_spkloss_weight0.03.log
+## chunks
+### 200 to 400 random chunks
+#### spkloss_weight 0.03 (best model in terms of validation/main/loss & best model in terms of validation/spkid_loss)
+(DONE) bash run_backendonly_cpuparallel.voxceleb1.sh --nj 70 --ngpu 0 --expdir exp/voxceleb1_train_filtered_train_pytorch_train_pytorch_tacotron2+spkemb_noatt_rf3_spkloss_weight0.03_unsync/ 2>&1 | tee log/backend.voxceleb1_train_filtered_train_pytorch_train_pytorch_tacotron2+spkemb_noatt_rf3_spkloss_weight0.03_unsync.log
+(DONE) bash run_backendonly_cpuparallel.voxceleb1.sh --model snapshot.ep.30 --nj 70 --ngpu 0 --expdir exp/voxceleb1_train_filtered_train_pytorch_train_pytorch_tacotron2+spkemb_noatt_rf3_spkloss_weight0.03_unsync/ 2>&1 | tee log/backend.voxceleb1_train_filtered_train_pytorch_train_pytorch_tacotron2+spkemb_noatt_rf3_spkloss_weight0.03_unsync.snapshot.ep.30.spkid_lossNaccbest.log
+#### spkloss_weight 0
+(DONE) bash run_backendonly_cpuparallel.voxceleb1.sh --nj 70 --ngpu 0 --expdir exp/voxceleb1_train_filtered_train_pytorch_train_pytorch_tacotron2+spkemb_noatt_rf3_spkloss_weight0_unsync/ 2>&1 | tee log/backend.voxceleb1_train_filtered_train_pytorch_train_pytorch_tacotron2+spkemb_noatt_rf3_spkloss_weight0_unsync.log
+### fixed chunk_len (200 and 400)
+#### spkloss_weight 0.03
+##### 200
+(DONE, best loss (also best spkid_acc), ep.26) bash run_backendonly_cpuparallel.voxceleb1.sh --nj 70 --ngpu 0 --expdir exp/voxceleb1_train_filtered_train_pytorch_train_pytorch_tacotron2+spkemb_noatt_rf3_spkloss_weight0.03_unsync_chunklen200/ 2>&1 | tee log/backend.voxceleb1_train_filtered_train_pytorch_train_pytorch_tacotron2+spkemb_noatt_rf3_spkloss_weight0_unsync_chunklen200.log # "validation/main/loss": 0.797301155225984, "validation/main/spkid_loss": 0.6057421535028723, "validation/main/spkid_acc": 0.981366738505747
+(DONE, best spkid_loss, ep.28) bash run_backendonly_cpuparallel.voxceleb1.sh --model snapshot.ep.28 --nj 70 --ngpu 0 --expdir exp/voxceleb1_train_filtered_train_pytorch_train_pytorch_tacotron2+spkemb_noatt_rf3_spkloss_weight0.03_unsync_chunklen200/ 2>&1 | tee log/backend.voxceleb1_train_filtered_train_pytorch_train_pytorch_tacotron2+spkemb_noatt_rf3_spkloss_weight0_unsync_chunklen200.snapshot.ep.28.spkid_lossbest.log # "validation/main/loss": 0.7998854446000067, "validation/main/spkid_loss": 0.6027245539047852, "validation/main/spkid_acc": 0.9804238505747125
+(DONE, best spkid_loss, ep.28) bash run_backendonly_cpuparallel.voxceleb1.sh --model snapshot.ep.28 --nj 70 --ngpu 0 --expdir exp/voxceleb1_train_filtered_train_pytorch_train_pytorch_tacotron2+spkemb_noatt_rf3_spkloss_weight0.03_unsync_chunklen200/ 2>&1 | tee log/backend.voxceleb1_train_filtered_train_pytorch_train_pytorch_tacotron2+spkemb_noatt_rf3_spkloss_weight0_unsync_chunklen200.snapshot.ep.28.spkid_lossbest.log # "validation/main/loss": 0.7998854446000067, "validation/main/spkid_loss": 0.6027245539047852, "validation/main/spkid_acc": 0.9804238505747125
+##### 400
+(DONE, best loss, ep.26) bash run_backendonly_cpuparallel.voxceleb1.sh --nj 70 --ngpu 0 --expdir exp/voxceleb1_train_filtered_train_pytorch_train_pytorch_tacotron2+spkemb_noatt_rf3_spkloss_weight0.03_unsync_chunklen400/ 2>&1 | tee log/backend.voxceleb1_train_filtered_train_pytorch_train_pytorch_tacotron2+spkemb_noatt_rf3_spkloss_weight0_unsync_chunklen400.log # validation/main/loss": 0.7911819111684273, validation/main/spkid_loss": 0.39276824531683313, validation/main/spkid_acc": 0.9897501026272577
+(DONE, best spkid_loss, ep.29) bash run_backendonly_cpuparallel.voxceleb1.sh --model snapshot.ep.29 --nj 70 --ngpu 0 --expdir exp/voxceleb1_train_filtered_train_pytorch_train_pytorch_tacotron2+spkemb_noatt_rf3_spkloss_weight0.03_unsync_chunklen400/ 2>&1 | tee log/backend.voxceleb1_train_filtered_train_pytorch_train_pytorch_tacotron2+spkemb_noatt_rf3_spkloss_weight0_unsync_chunklen400.snapshot.ep.29.spkid_lossbest.log # "validation/main/loss": 0.7922088208383528, "validation/main/spkid_loss": 0.3753188442687729, "validation/main/spkid_acc": 0.9904235940065681
+(DONE, best spkid_acc, ep.24) bash run_backendonly_cpuparallel.voxceleb1.sh --model snapshot.ep.24 --nj 70 --ngpu 0 --expdir exp/voxceleb1_train_filtered_train_pytorch_train_pytorch_tacotron2+spkemb_noatt_rf3_spkloss_weight0.03_unsync_chunklen400/ 2>&1 | tee log/backend.voxceleb1_train_filtered_train_pytorch_train_pytorch_tacotron2+spkemb_noatt_rf3_spkloss_weight0_unsync_chunklen400.snapshot.ep.24.spkid_lossbest.log # "validation/main/loss": 0.7958425054776257, "validation/main/spkid_loss": 0.4215573406164085, "validation/main/spkid_acc": 0.9906288485221674
+
+
+
+# 2. (+) Backend evaluation with short utterances (5s, 3s, and 1s): spkloss_weight 0 and 0.03
+## generate the data dir for those short utterances
+bash gen_short_utterances.sh 2>&1 | tee log/gen_short_utterances.log
+## run back-end evaluation only (******* SPKID ONLY ******* did NOT run here due to some path problems so did run them on /export/b18/jcho/espnet3/egs/libritts/asrtts+spkid)
+## ******* fullshort exp.s should be run after shortshort exp.s are run *******
+## shortshort config. (short enrollment utterances & short test chunks)
+### seg 500
+#### with TTS + SPKID
+##### utt-wise training
+(DONE) bash run_backendonly_cpuparallel.voxceleb1.shortshort_evalonly.sh --eval_set voxceleb1_test_seg500 --nj 70 --ngpu 0 --expdir exp/voxceleb1_train_filtered_train_pytorch_train_pytorch_tacotron2+spkemb_noatt_rf3_spkloss_weight0.03/ 2>&1 | tee log/backend.voxceleb1_train_filtered_train_pytorch_train_pytorch_tacotron2+spkemb_noatt_rf3_spkloss_weight0.03.seg500.shortshort.log
+##### chunk-wise training (length from 200 to 400 frames)
+(DONE) bash run_backendonly_cpuparallel.voxceleb1.shortshort_evalonly.sh --eval_set voxceleb1_test_seg500 --nj 70 --ngpu 0 --expdir exp/voxceleb1_train_filtered_train_pytorch_train_pytorch_tacotron2+spkemb_noatt_rf3_spkloss_weight0.03_unsync/ 2>&1 | tee log/backend.voxceleb1_train_filtered_train_pytorch_train_pytorch_tacotron2+spkemb_noatt_rf3_spkloss_weight0.03_unsync.seg500.shortshort.log
+##### chunk-wise training (fixed length 200)
+(DONE) bash run_backendonly_cpuparallel.voxceleb1.shortshort_evalonly.sh --eval_set voxceleb1_test_seg500 --nj 70 --ngpu 0 --expdir exp/voxceleb1_train_filtered_train_pytorch_train_pytorch_tacotron2+spkemb_noatt_rf3_spkloss_weight0.03_unsync_chunklen200/ 2>&1 | tee log/backend.voxceleb1_train_filtered_train_pytorch_train_pytorch_tacotron2+spkemb_noatt_rf3_spkloss_weight0.03_unsync_chunklen200.seg500.log
+#### with TTS only
+##### utt-wise training
+(DONE) bash run_backendonly_cpuparallel.voxceleb1.shortshort_evalonly.sh --eval_set voxceleb1_test_seg500 --nj 70 --ngpu 0 --expdir exp/voxceleb1_train_filtered_train_pytorch_train_pytorch_tacotron2+spkemb_noatt_rf3_spkloss_weight0/ 2>&1 | tee log/backend.voxceleb1_train_filtered_train_pytorch_train_pytorch_tacotron2+spkemb_noatt_rf3_spkloss_weight0.seg500.shortshort.log
+##### chunk-wise training (length from 200 to 400 frames)
+(DONE) bash run_backendonly_cpuparallel.voxceleb1.shortshort_evalonly.sh --eval_set voxceleb1_test_seg500 --nj 70 --ngpu 0 --expdir exp/voxceleb1_train_filtered_train_pytorch_train_pytorch_tacotron2+spkemb_noatt_rf3_spkloss_weight0_unsync/ 2>&1 | tee log/backend.voxceleb1_train_filtered_train_pytorch_train_pytorch_tacotron2+spkemb_noatt_rf3_spkloss_weight0_unsync.seg500.shortshort.log
+### seg 300
+#### with TTS + SPKID
+##### utt-wise training
+(DONE) bash run_backendonly_cpuparallel.voxceleb1.shortshort_evalonly.sh --eval_set voxceleb1_test_seg500_seg300 --nj 70 --ngpu 0 --expdir exp/voxceleb1_train_filtered_train_pytorch_train_pytorch_tacotron2+spkemb_noatt_rf3_spkloss_weight0.03/ 2>&1 | tee log/backend.voxceleb1_train_filtered_train_pytorch_train_pytorch_tacotron2+spkemb_noatt_rf3_spkloss_weight0.03.seg300.shortshort.log
+##### chunk-wise training (length from 200 to 400 frames)
+(DONE) bash run_backendonly_cpuparallel.voxceleb1.shortshort_evalonly.sh --eval_set voxceleb1_test_seg500_seg300 --nj 70 --ngpu 0 --expdir exp/voxceleb1_train_filtered_train_pytorch_train_pytorch_tacotron2+spkemb_noatt_rf3_spkloss_weight0.03_unsync/ 2>&1 | tee log/backend.voxceleb1_train_filtered_train_pytorch_train_pytorch_tacotron2+spkemb_noatt_rf3_spkloss_weight0.03_unsync.seg300.shortshort.log
+##### chunk-wise training (fixed length 200)
+(DONE) bash run_backendonly_cpuparallel.voxceleb1.shortshort_evalonly.sh --eval_set voxceleb1_test_seg500_seg300 --nj 70 --ngpu 0 --expdir exp/voxceleb1_train_filtered_train_pytorch_train_pytorch_tacotron2+spkemb_noatt_rf3_spkloss_weight0.03_unsync_chunklen200/ 2>&1 | tee log/backend.voxceleb1_train_filtered_train_pytorch_train_pytorch_tacotron2+spkemb_noatt_rf3_spkloss_weight0.03_unsync_chunklen200.seg300.log
+#### with TTS only
+##### utt-wise training
+(DONE) bash run_backendonly_cpuparallel.voxceleb1.shortshort_evalonly.sh --eval_set voxceleb1_test_seg500_seg300 --nj 70 --ngpu 0 --expdir exp/voxceleb1_train_filtered_train_pytorch_train_pytorch_tacotron2+spkemb_noatt_rf3_spkloss_weight0/ 2>&1 | tee log/backend.voxceleb1_train_filtered_train_pytorch_train_pytorch_tacotron2+spkemb_noatt_rf3_spkloss_weight0.seg300.shortshort.log
+##### chunk-wise training (length from 200 to 400 frames)
+(DONE) bash run_backendonly_cpuparallel.voxceleb1.shortshort_evalonly.sh --eval_set voxceleb1_test_seg500_seg300 --nj 70 --ngpu 0 --expdir exp/voxceleb1_train_filtered_train_pytorch_train_pytorch_tacotron2+spkemb_noatt_rf3_spkloss_weight0_unsync/ 2>&1 | tee log/backend.voxceleb1_train_filtered_train_pytorch_train_pytorch_tacotron2+spkemb_noatt_rf3_spkloss_weight0_unsync.seg300.shortshort.log
+### seg 100
+#### with TTS + SPKID
+##### utt-wise training
+(DONE) bash run_backendonly_cpuparallel.voxceleb1.shortshort_evalonly.sh --eval_set voxceleb1_test_seg500_seg300_seg100 --nj 70 --ngpu 0 --expdir exp/voxceleb1_train_filtered_train_pytorch_train_pytorch_tacotron2+spkemb_noatt_rf3_spkloss_weight0.03/ 2>&1 | tee log/backend.voxceleb1_train_filtered_train_pytorch_train_pytorch_tacotron2+spkemb_noatt_rf3_spkloss_weight0.03.seg100.shortshort.log
+##### chunk-wise training (length from 200 to 400 frames)
+(DONE) bash run_backendonly_cpuparallel.voxceleb1.shortshort_evalonly.sh --eval_set voxceleb1_test_seg500_seg300_seg100 --nj 70 --ngpu 0 --expdir exp/voxceleb1_train_filtered_train_pytorch_train_pytorch_tacotron2+spkemb_noatt_rf3_spkloss_weight0.03_unsync/ 2>&1 | tee log/backend.voxceleb1_train_filtered_train_pytorch_train_pytorch_tacotron2+spkemb_noatt_rf3_spkloss_weight0.03_unsync.seg100.shortshort.log
+##### chunk-wise training (fixed length 200)
+(DONE) bash run_backendonly_cpuparallel.voxceleb1.shortshort_evalonly.sh --eval_set voxceleb1_test_seg500_seg300_seg100 --nj 70 --ngpu 0 --expdir exp/voxceleb1_train_filtered_train_pytorch_train_pytorch_tacotron2+spkemb_noatt_rf3_spkloss_weight0.03_unsync_chunklen200/ 2>&1 | tee log/backend.voxceleb1_train_filtered_train_pytorch_train_pytorch_tacotron2+spkemb_noatt_rf3_spkloss_weight0.03_unsync_chunklen200.seg100.log
+#### with TTS only
+##### utt-wise training
+(DONE) bash run_backendonly_cpuparallel.voxceleb1.shortshort_evalonly.sh --eval_set voxceleb1_test_seg500_seg300_seg100 --nj 70 --ngpu 0 --expdir exp/voxceleb1_train_filtered_train_pytorch_train_pytorch_tacotron2+spkemb_noatt_rf3_spkloss_weight0/ 2>&1 | tee log/backend.voxceleb1_train_filtered_train_pytorch_train_pytorch_tacotron2+spkemb_noatt_rf3_spkloss_weight0.seg100.shortshort.log
+##### chunk-wise training (length from 200 to 400 frames)
+(DONE) bash run_backendonly_cpuparallel.voxceleb1.shortshort_evalonly.sh --eval_set voxceleb1_test_seg500_seg300_seg100 --nj 70 --ngpu 0 --expdir exp/voxceleb1_train_filtered_train_pytorch_train_pytorch_tacotron2+spkemb_noatt_rf3_spkloss_weight0_unsync/ 2>&1 | tee log/backend.voxceleb1_train_filtered_train_pytorch_train_pytorch_tacotron2+spkemb_noatt_rf3_spkloss_weight0_unsync.seg100.shortshort.log
+
+## fullshort config. (full enrollment utterances & short test chunks)
+### seg 500
+#### TTS + SPKID
+(DONE, utt-train) bash run_backendonly_cpuparallel.voxceleb1.fullshort_evalonly.sh --eval_set voxceleb1_test_seg500 --nj 70 --ngpu 0 --expdir exp/voxceleb1_train_filtered_train_pytorch_train_pytorch_tacotron2+spkemb_noatt_rf3_spkloss_weight0.03/ 2>&1 | tee log/backend.voxceleb1_train_filtered_train_pytorch_train_pytorch_tacotron2+spkemb_noatt_rf3_spkloss_weight0.03.seg500.fullshort.log
+(DONE, chunk-train) bash run_backendonly_cpuparallel.voxceleb1.fullshort_evalonly.sh --eval_set voxceleb1_test_seg500 --nj 70 --ngpu 0 --expdir exp/voxceleb1_train_filtered_train_pytorch_train_pytorch_tacotron2+spkemb_noatt_rf3_spkloss_weight0.03_unsync/ 2>&1 | tee log/backend.voxceleb1_train_filtered_train_pytorch_train_pytorch_tacotron2+spkemb_noatt_rf3_spkloss_weight0.03_unsync.seg500.fullshort.log
+#### TTS only
+(DONE, utt-train) bash run_backendonly_cpuparallel.voxceleb1.fullshort_evalonly.sh --eval_set voxceleb1_test_seg500 --nj 70 --ngpu 0 --expdir exp/voxceleb1_train_filtered_train_pytorch_train_pytorch_tacotron2+spkemb_noatt_rf3_spkloss_weight0/ 2>&1 | tee log/backend.voxceleb1_train_filtered_train_pytorch_train_pytorch_tacotron2+spkemb_noatt_rf3_spkloss_weight0.seg500.fullshort.log
+(DONE, chunk-train) bash run_backendonly_cpuparallel.voxceleb1.fullshort_evalonly.sh --eval_set voxceleb1_test_seg500 --nj 70 --ngpu 0 --expdir exp/voxceleb1_train_filtered_train_pytorch_train_pytorch_tacotron2+spkemb_noatt_rf3_spkloss_weight0_unsync/ 2>&1 | tee log/backend.voxceleb1_train_filtered_train_pytorch_train_pytorch_tacotron2+spkemb_noatt_rf3_spkloss_weight0_unsync.seg500.fullshort.log
+### seg 300
+#### TTS + SPKID
+(DONE, utt-train) bash run_backendonly_cpuparallel.voxceleb1.fullshort_evalonly.sh --eval_set voxceleb1_test_seg500_seg300 --nj 70 --ngpu 0 --expdir exp/voxceleb1_train_filtered_train_pytorch_train_pytorch_tacotron2+spkemb_noatt_rf3_spkloss_weight0.03/ 2>&1 | tee log/backend.voxceleb1_train_filtered_train_pytorch_train_pytorch_tacotron2+spkemb_noatt_rf3_spkloss_weight0.03.seg300.fullshort.log
+(DONE, chunk-train) bash run_backendonly_cpuparallel.voxceleb1.fullshort_evalonly.sh --eval_set voxceleb1_test_seg500_seg300 --nj 70 --ngpu 0 --expdir exp/voxceleb1_train_filtered_train_pytorch_train_pytorch_tacotron2+spkemb_noatt_rf3_spkloss_weight0.03_unsync/ 2>&1 | tee log/backend.voxceleb1_train_filtered_train_pytorch_train_pytorch_tacotron2+spkemb_noatt_rf3_spkloss_weight0.03_unsync.seg300.fullshort.log
+#### TTS only
+(DONE, utt-train) bash run_backendonly_cpuparallel.voxceleb1.fullshort_evalonly.sh --eval_set voxceleb1_test_seg500_seg300 --nj 70 --ngpu 0 --expdir exp/voxceleb1_train_filtered_train_pytorch_train_pytorch_tacotron2+spkemb_noatt_rf3_spkloss_weight0/ 2>&1 | tee log/backend.voxceleb1_train_filtered_train_pytorch_train_pytorch_tacotron2+spkemb_noatt_rf3_spkloss_weight0.seg300.fullshort.log
+(DONE, chunk-train) bash run_backendonly_cpuparallel.voxceleb1.fullshort_evalonly.sh --eval_set voxceleb1_test_seg500_seg300 --nj 70 --ngpu 0 --expdir exp/voxceleb1_train_filtered_train_pytorch_train_pytorch_tacotron2+spkemb_noatt_rf3_spkloss_weight0_unsync/ 2>&1 | tee log/backend.voxceleb1_train_filtered_train_pytorch_train_pytorch_tacotron2+spkemb_noatt_rf3_spkloss_weight0_unsync.seg300.fullshort.log
+### seg 100
+#### TTS + SPKID
+(DONE, utt-train) bash run_backendonly_cpuparallel.voxceleb1.fullshort_evalonly.sh --eval_set voxceleb1_test_seg500_seg300_seg100 --nj 70 --ngpu 0 --expdir exp/voxceleb1_train_filtered_train_pytorch_train_pytorch_tacotron2+spkemb_noatt_rf3_spkloss_weight0.03/ 2>&1 | tee log/backend.voxceleb1_train_filtered_train_pytorch_train_pytorch_tacotron2+spkemb_noatt_rf3_spkloss_weight0.03.seg100.fullshort.log
+(DONE, chunk-train) bash run_backendonly_cpuparallel.voxceleb1.fullshort_evalonly.sh --eval_set voxceleb1_test_seg500_seg300_seg100 --nj 70 --ngpu 0 --expdir exp/voxceleb1_train_filtered_train_pytorch_train_pytorch_tacotron2+spkemb_noatt_rf3_spkloss_weight0.03_unsync/ 2>&1 | tee log/backend.voxceleb1_train_filtered_train_pytorch_train_pytorch_tacotron2+spkemb_noatt_rf3_spkloss_weight0.03_unsync.seg100.fullshort.log
+#### TTS + only
+(DONE, utt-train) bash run_backendonly_cpuparallel.voxceleb1.fullshort_evalonly.sh --eval_set voxceleb1_test_seg500_seg300_seg100 --nj 70 --ngpu 0 --expdir exp/voxceleb1_train_filtered_train_pytorch_train_pytorch_tacotron2+spkemb_noatt_rf3_spkloss_weight0/ 2>&1 | tee log/backend.voxceleb1_train_filtered_train_pytorch_train_pytorch_tacotron2+spkemb_noatt_rf3_spkloss_weight0.seg100.fullshort.log
+(DONE, chunk-train) bash run_backendonly_cpuparallel.voxceleb1.fullshort_evalonly.sh --eval_set voxceleb1_test_seg500_seg300_seg100 --nj 70 --ngpu 0 --expdir exp/voxceleb1_train_filtered_train_pytorch_train_pytorch_tacotron2+spkemb_noatt_rf3_spkloss_weight0_unsync/ 2>&1 | tee log/backend.voxceleb1_train_filtered_train_pytorch_train_pytorch_tacotron2+spkemb_noatt_rf3_spkloss_weight0_unsync.seg100.fullshort.log
+
+
+
+
+
+
+
+## ***** Debug related *****
+### Debug were run as the log below (To check why the embeddings extracted from a same utterance were different in the full utterance extraction case)
+list_run.debug.emb.log
+### Writing and running a fixing code to deal with the problem found right above (this scripts will be used in *evalonly* scripts)
+python merge_fullNseg.py [full emb fname (in)] [seg emb fname (in)] [new combined merged emb (out)]
+
+### I/O debugg
+qlogin -l mem_free=20G -l gpu=1 -l "hostname=b1[12345678]*|c0[1345678]*|c1[01]*" -q i.q -now no
+bash run.asrttsspkid.spkloss_weight.new.update.rf3.unsync.debug.stage4.sh --gpu_ix $(free-gpu) --stage 4 --stop_stage 4
+bash run.asrttsspkid.spkloss_weight.new.update.rf3.fullyunsync.debug.stage4.sh --gpu_ix $(free-gpu) --stage 4 --stop_stage 4

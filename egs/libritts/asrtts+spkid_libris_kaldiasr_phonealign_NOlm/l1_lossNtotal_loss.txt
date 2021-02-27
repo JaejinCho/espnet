@@ -1,0 +1,33 @@
+-----exp/train_train_pytorch_train_pytorch_tacotron2+spkemb_spkloss_weight0.001/results/log-----
+8859:        "validation/main/l1_loss": 0.33769959407131167,
+8864:        "validation/main/loss": 0.453826952154619,
+-----exp/train_train_pytorch_train_pytorch_tacotron2+spkemb_spkloss_weight0.003/results/log-----
+10335:        "validation/main/l1_loss": 0.3386228382587433,
+10340:        "validation/main/loss": 0.4543501282260366,
+-----exp/train_train_pytorch_train_pytorch_tacotron2+spkemb_spkloss_weight0.01/results/log-----
+10335:        "validation/main/l1_loss": 0.3405841512836679,
+10340:        "validation/main/loss": 0.45815595614649085,
+-----exp/train_train_pytorch_train_pytorch_tacotron2+spkemb_spkloss_weight0.03/results/log-----
+8490:        "validation/main/l1_loss": 0.34255383484554985,
+8495:        "validation/main/loss": 0.46218780727282055,
+-----exp/train_train_pytorch_train_pytorch_tacotron2+spkemb_spkloss_weight0.1/results/log-----
+10704:        "validation/main/l1_loss": 0.3448043071875607,
+10709:        "validation/main/loss": 0.4717835805711955,
+-----exp/train_train_pytorch_train_pytorch_tacotron2+spkemb_spkloss_weight0.3/results/log-----
+10704:        "validation/main/l1_loss": 0.3533864713063205,
+10709:        "validation/main/loss": 0.496182921811612,
+-----exp/train_train_pytorch_train_pytorch_tacotron2+spkemb_spkloss_weight0_old_WOspkidacc/results/log-----
+9383:        "validation/main/l1_loss": 0.3351814703349649,
+9387:        "validation/main/loss": 0.44871314163625675,
+-----exp/train_train_pytorch_train_pytorch_tacotron2+spkemb_spkloss_weight0/results/log-----
+10335:        "validation/main/l1_loss": 0.33518146837714813,
+10340:        "validation/main/loss": 0.44871313750308794,
+-----exp/train_train_pytorch_train_pytorch_tacotron2+spkemb_spkloss_weight10/results/log-----
+10704:        "validation/main/l1_loss": 0.393176875627824,
+9602:        "validation/main/loss": 1.1566822289550391,
+-----exp/train_train_pytorch_train_pytorch_tacotron2+spkemb_spkloss_weight1/results/log-----
+10704:        "validation/main/l1_loss": 0.37044622167183533,
+10709:        "validation/main/loss": 0.5745546796026021,
+-----exp/train_train_pytorch_train_pytorch_tacotron2+spkemb_spkloss_weight3/results/log-----
+10704:        "validation/main/l1_loss": 0.37820475205887844,
+10709:        "validation/main/loss": 0.7114186900375533,

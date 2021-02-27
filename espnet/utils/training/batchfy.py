@@ -1,3 +1,5 @@
+# JJ: Original intact batchfy.py moved to ../../../espnet/utils/training/batchfy_ori.py
+# This changed script is anyway compatible from the original one
 import itertools
 import logging
 
@@ -50,7 +52,8 @@ def batchfy_by_seq(
         if shortest_first:
             minibatch.reverse()
 
-        # check each batch is more than minimum batchsize
+        # check each batch is more than minimum batchsize (JJ: when I get into
+        # this if block?)
         if len(minibatch) < min_batch_size:
             mod = min_batch_size - len(minibatch) % min_batch_size
             additional_minibatch = [sorted_data[i]
@@ -261,7 +264,7 @@ def make_batchset(data, batch_size=0, max_length_in=float("inf"), max_length_out
                   num_batches=0, min_batch_size=1, shortest_first=False, batch_sort_key="input",
                   swap_io=False, mt=False, count="auto",
                   batch_bins=0, batch_frames_in=0, batch_frames_out=0, batch_frames_inout=0,
-                  iaxis=0, oaxis=0):
+                  iaxis=0, oaxis=0, sample_uniform_spk=False, total_num_utt_inbatches=0):
     """Make batch set from json dictionary
 
     if utts have "category" value,
@@ -342,14 +345,41 @@ def make_batchset(data, batch_size=0, max_length_in=float("inf"), max_length_out
     if count != "seq" and batch_sort_key == "shuffle":
         raise ValueError(f"batch_sort_key=shuffle is only available if batch_count=seq")
 
-    category2data = {}  # Dict[str, dict]
+    category2data = {}  # Dict[str, dict]. (JJ) I think this means category2data[None] is a dictionary composed of str and dict pairs
     for k, v in data.items():
         category2data.setdefault(v.get('category'), {})[k] = v
 
     batches_list = []  # List[List[List[Tuple[str, dict]]]]
     for d in category2data.values():
         if batch_sort_key == 'shuffle':
-            batches = batchfy_shuffle(d, batch_size, min_batch_size, num_batches, shortest_first)
+            ### JJ add (uniform sampling of speaker) - start
+            # (TODO JJ: Add arguments to this function: sample_uniform_spk, total_num_utt_inbatches)
+            if sample_uniform_spk:
+                # (TOOD JJ (for fix later): Currently we discard samples but I
+                # could work on to keep all samples but use only some portion of
+                # them per epoch)
+                # 1. spk2utt (spklab to uttlist dictionary)
+                spk2utt = {}
+                for k in d:
+                    spkid = d[k]['output'][-1]['spklab']
+                    if spkid in spk2utt:
+                        spk2utt[spkid].append(k)
+                    else:
+                        spk2utt[spkid] = []
+                # 2. calculate the consistent number of utts to sample per speaker
+                # (for now, to make the total # samples to match nolab # samples)
+                total_num_spk = len(spk2utt)
+                num_uttperspk = int(total_num_utt_inbatches / float(total_num_spk))
+                logging.warning("Sampling {} utterances per speaker for training".format(num_uttperspk))
+                # 3. compose d_unispk by sampling speaker uniformly from d
+                import random
+                d_unispk = {}
+                for spk in spk2utt:
+                    temp_utts = random.choices(spk2utt[spk], k=num_uttperspk) # sampling with replacement
+                    for uttix, utt in enumerate(temp_utts):
+                        d_unispk[spk + '_' + str(uttix)] = d[utt] # differnt keys could have the same utterance
+                ### JJ add - end
+            batches = batchfy_shuffle(d_unispk if sample_uniform_spk else d, batch_size, min_batch_size, num_batches, shortest_first)
             batches_list.append(batches)
             continue
 

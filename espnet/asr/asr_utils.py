@@ -408,37 +408,60 @@ def torch_load(path, model):
     del model_state_dict
 
 
-def torch_resume(snapshot_path, trainer):
+def torch_resume(snapshot_path, trainer, trainer_update=True):
     """Resume from snapshot for pytorch.
 
     Args:
         snapshot_path (str): Snapshot file path.
         trainer (chainer.training.Trainer): Chainer's trainer instance.
-
+        trainer_update (bool): When resuming from a snapshot (NOT model.*.best), whether to update the 'trainer' from snapshot_dict
     """
     # load snapshot
     snapshot_dict = torch.load(snapshot_path, map_location=lambda storage, loc: storage)
 
-    # restore trainer states
-    d = NpzDeserializer(snapshot_dict['trainer'])
-    d.load(trainer)
 
-    # restore model states
-    if hasattr(trainer.updater.model, "model"):
-        # (for TTS model)
-        if hasattr(trainer.updater.model.model, "module"):
-            trainer.updater.model.model.module.load_state_dict(snapshot_dict['model'])
-        else:
-            trainer.updater.model.model.load_state_dict(snapshot_dict['model'])
-    else:
-        # (for ASR model)
-        if hasattr(trainer.updater.model, "module"):
-            trainer.updater.model.module.load_state_dict(snapshot_dict['model'])
-        else:
-            trainer.updater.model.load_state_dict(snapshot_dict['model'])
 
-    # retore optimizer states
-    trainer.updater.get_optimizer('main').load_state_dict(snapshot_dict['optimizer'])
+    # JJ added - start
+    if not 'snapshot' in snapshot_path: # In this case, only get parameters for the best 'model' and do not update anything for 'trainer' and 'optimizer'
+        model_dict = trainer.updater.model.state_dict()
+        snapshot_dict = {k: v for k, v in snapshot_dict.items() if ((k in model_dict) and (v.shape == model_dict[k].shape))}
+        trainer.updater.model.load_state_dict(snapshot_dict, strict=False) # in this case snapshot_dict == snapshot_dict['model']
+    else: # when resuming from snapshot
+        # restore trainer states
+        # (JJ: It seems the epoch information is copied from this stage,
+        # meaning the epoch information is stored in trainer. This explains the
+        # starting epoch is the same as the epoch stopped in the resummed model
+        # even when the optimizer is not copied in resumming below. Refer to
+        # trainer.updater.get_iterator('main')._state if needed)
+        if trainer_update:
+            d = NpzDeserializer(snapshot_dict['trainer'])
+            d.load(trainer)
+        else:
+            logging.warning('Resuming from a snapshot but NOT updating trainer states')
+
+        # restore model states
+        if hasattr(trainer.updater.model, "model"):
+            # (for TTS model)
+            if hasattr(trainer.updater.model.model, "module"):
+                trainer.updater.model.model.module.load_state_dict(snapshot_dict['model'])
+            else:
+                trainer.updater.model.model.load_state_dict(snapshot_dict['model'])
+        else:
+            # (for ASR model)
+            if hasattr(trainer.updater.model, "module"):
+                trainer.updater.model.module.load_state_dict(snapshot_dict['model'])
+            else:
+                #model_dict = trainer.updater.model.state_dict()
+                #snapshot_dict['model'] = {k: v for k, v in snapshot_dict['model'].items() if ((k in model_dict) and (v.shape == model_dict[k].shape))}
+                trainer.updater.model.load_state_dict(snapshot_dict['model'])
+
+        # retore optimizer states
+        if trainer.updater.get_optimizer('main').param_groups[0]['lr'] == snapshot_dict['optimizer']['param_groups'][0]['lr']:
+            trainer.updater.get_optimizer('main').load_state_dict(snapshot_dict['optimizer'])
+            logging.warning('Resuming from a snapshot Also with copying its optimizer status. *** Initialized lr = {}'.format(trainer.updater.get_optimizer('main').param_groups[0]['lr']))
+        else:
+            logging.warning('Resuming from a snapshot WITHOUT copying its optimizer status. *** lr change from {0} to {1}'.format(snapshot_dict['optimizer']['param_groups'][0]['lr'],trainer.updater.get_optimizer('main').param_groups[0]['lr']))
+    # JJ added - end
 
     # delete opened snapshot
     del snapshot_dict

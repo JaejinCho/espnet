@@ -1,0 +1,61 @@
+*** Run these commands on a corpus root directory, e.g /export/b18/jcho/espnet3/egs/libritts/tts1 ***
+
+# # # From tts1/ directory # # #
+# run tts for libritts
+bash run.sh --datadir /export/a15/jcho/data 2>&1 | tee log/run.datadir.log
+bash run.sh --stage 4 --datadir /export/a15/jcho/data 2>&1 | tee log/run.datadir.stage4.log # after changing to "cmd_backend='jhu'" in cmd.sh
+
+# For debug
+bash run.debug.sh --stage 4 --gpu_ix 1 
+
+# To generated speaker id added (instead of xvector features) data.json
+bash update_json.temp.sh 2>&1 | tee log/update_json.spkid.temp.sh
+
+
+# # # From this, tts+spkid/, directory # # #
+# data prep.
+bash run.ttsspkid.sh --stop_stage 2 --datadir /export/a15/jcho/data 2>&1 | tee log/run.dataprep.log
+
+# debug (must NOT append "2>&1 | tee [log file]" when using ipdb) after setting proper break points for (i)pdb
+## debug for stage 4
+bash run.ttsspkid.debug.sh --stage 4 --gpu_ix [gpu_index]
+bash run.ttsspkid.smallset.debug.sh --train_config conf/train_pytorch_tacotron2+spkemb_debug.yaml --gpu_ix $(free-gpu) --stage 4 --stop_stage 4
+### (Working) addpitch version (below parts are not finished for coding. not able to run them yet. Use /export/b18/jcho/espnet3/egs/libritts/asrtts+spkid_voxceleb1_kaldiasr_phonealign_rf3_addpitch/run.asrttsspkid.spkloss_weight.new.update.rf3.unsync.addpitch.debug.stage4.sh instead)
+(*** only once ***) bash run.asrttsspkid.spkloss_weight.new.update.rf3.unsync.addpitch.smallset.debug.sh --stage 1 --stop_stage 1
+bash run.asrttsspkid.spkloss_weight.new.update.rf3.unsync.addpitch.smallset.debug.sh --gpu_ix $(free-gpu) --stage 4 --stop_stage 4
+###
+bash run.ttsspkid.smallset.consistencyloss.debug.sh --gpu_ix 1 --stage 4 --stop_stage 4
+## debug for stage 5
+bash run.ttsspkid.smallset.stage5.debug.sh --stage 5
+
+# Running after finishing coding
+#bash run.ttsspkid.sh --ngpu 1 --stage 4 --datadir /export/a15/jcho/data 2>&1 | tee log/run.ttsspkid.datadir.stage4.log
+bash run.ttsspkid.sh --ngpu 1 --stage 4 --stop_stage 4 2>&1 | tee log/run.ttsspkid.onlystage4.log # I am fixing the stages later than 4
+## smallset experiments for checking/debugging
+bash run.ttsspkid.smallset.sh --ngpu 1 --stage 4 2>&1 | tee log/run.ttsspkid.smallset.stage4.log
+bash run.ttsspkid.smallset.sh --ngpu 0 --stage 5 2>&1 | tee log/run.ttsspkid.smallset.stage5.log
+
+# debug again (to fix a bug at the end of each epoch)
+## 1. get a small subet
+for subdir in `ls dump/`;do
+    mkdir -p dump_debug/${subdir}
+    python extract100_fordebug.py dump/${subdir}/data.json --num-example 100 > dump_debug/${subdir}/data.json
+done
+## 2. run debug script
+bash run.ttsspkid.debug.smallset.sh --stage 4 --gpu_ix [gpu_index]
+## 3. run debug for spkid classification eval
+bash run.ttsspkid.debug.smallset.sh --stage 7 --gpu_ix [gpu_indx] --n_average 0
+
+
+# To run tts only training to compare the loss with tts + spkid (0.1) system
+## 1. copy needed files from ../tts1 or ./dump
+cp -r dump dump_ttsonly && mv dump_ttsonly/train_clean_460_spktrain_0.9/.backup/data.json dump_ttsonly/train_clean_460_spktrain_0.9/data.json && mv dump_ttsonly/train_clean_460_spkcv_0.1/.backup/data.json dump_ttsonly/train_clean_460_spkcv_0.1/data.json
+cp -r ../tts1/exp/xvector_nnet_1a ./exp/
+## 2. fix run.diffsubset.sh from run.sh
+## 3. run from stage 3 (to add xvector data links to json files)
+bash run.diffsubset.sh --ngpu 1 --stage 3 2>&1 | tee log/run.diffsubset.fromstage3.log
+
+
+
+# Utility command (to list each errors to compare between different experiments)
+for ltype in $(basename -a `grep validation ${dname} | head -n4 | awk -F'"' '{print $2}'`);do echo ${ltype};grep validation ${dname} | grep -w ${ltype} | sort -r | tail -n5; done | less

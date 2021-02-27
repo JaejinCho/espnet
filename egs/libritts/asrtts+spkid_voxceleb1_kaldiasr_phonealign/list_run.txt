@@ -1,0 +1,17 @@
+# voxceleb1 with kaldi asr phone alignment
+
+# 0. Features extracted using espnet make_fbank.sh are in /export/b18/jcho/espnet3/egs/libritts/tts_featext
+# 1. Training
+(*** only for the first run ***) bash run.asrttsspkid.spkloss_weight.new.update.rf1.sh --stop_stage 4 --ngpu 1 --n_average 0 --spkloss_weight 0 2>&1 | tee log/run.asrttsspkid.spkloss_weight.new.update.rf1.spkloss_weight0.untilstage4.log
+bash run.asrttsspkid.spkloss_weight.new.update.rf1.sh --stage 4 --stop_stage 4 --ngpu 1 --n_average 0 --spkloss_weight 0.03 2>&1 | tee log/run.asrttsspkid.spkloss_weight.new.update.rf1.spkloss_weight0.03.onlystage4.log
+
+***** Backend exp while running *****
+# 1. copy needed files
+cp ../asrtts+spkid/run.eer_mindcf.voxceleb1.sh ../asrtts+spkid/run_backendonly_cpuparallel.voxceleb1.sh .
+# 2. run the script (run_backendonly_cpuparallel.voxceleb1.sh fixed just a little in the beginning)
+(DONE, spkloss_weight=0.03, (based on snapshot.ep.6)) bash run_backendonly_cpuparallel.voxceleb1.sh --model snapshot.ep.6 --nj 70 --ngpu 0 --expdir exp/voxceleb1_train_filtered_train_pytorch_train_pytorch_tacotron2+spkemb_noatt_rf1_spkloss_weight0.03/ 2>&1 | tee log/backend.voxceleb1_train_filtered_train_pytorch_train_pytorch_tacotron2+spkemb_noatt_rf1_spkloss_weight0.03.snapshot.ep.6.log
+(DONE, spkloss_weight=0, (based on snapshot.ep.6)) bash run_backendonly_cpuparallel.voxceleb1.sh --model snapshot.ep.6 --nj 70 --ngpu 0 --expdir exp/voxceleb1_train_filtered_train_pytorch_train_pytorch_tacotron2+spkemb_noatt_rf1_spkloss_weight0/ 2>&1 | tee log/backend.voxceleb1_train_filtered_train_pytorch_train_pytorch_tacotron2+spkemb_noatt_rf1_spkloss_weight0.snapshot.ep.6.log
+(WILL RUN, spkloss_weight=0 with ep.5 (this has better {mse,l1}_loss than ep.6))
+*** After all 30 epochs
+(DONE) bash run_backendonly_cpuparallel.voxceleb1.sh --nj 70 --ngpu 0 --expdir exp/voxceleb1_train_filtered_train_pytorch_train_pytorch_tacotron2+spkemb_noatt_rf1_spkloss_weight0/ 2>&1 | tee log/backend.voxceleb1_train_filtered_train_pytorch_train_pytorch_tacotron2+spkemb_noatt_rf1_spkloss_weight0.log
+(DONE) bash run_backendonly_cpuparallel.voxceleb1.sh --nj 70 --ngpu 0 --expdir exp/voxceleb1_train_filtered_train_pytorch_train_pytorch_tacotron2+spkemb_noatt_rf1_spkloss_weight0.03/ 2>&1 | tee log/backend.voxceleb1_train_filtered_train_pytorch_train_pytorch_tacotron2+spkemb_noatt_rf1_spkloss_weight0.03.log

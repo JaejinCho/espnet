@@ -1,0 +1,16 @@
+# experiment directory
+exp
+
+# features
+mfcc
+fbank
+dump
+dump_spkidadd
+data
+
+# outputs
+tensorboard
+log
+
+# misc
+deprecated

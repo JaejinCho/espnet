@@ -1,0 +1,19 @@
+# 1. Training
+mkdir log
+(STOPPED, only first run) bash run.asrttsspkid.spkloss_weight.new.update.rf3.sh --ngpu 1 --n_average 0 --spkloss_weight 0 2>&1 | tee log/run.asrttsspkid.spkloss_weight.new.update.rf3.spkloss_weight0.log
+(DONE) bash run.asrttsspkid.spkloss_weight.new.update.rf3.sh --stage 4 --ngpu 1 --n_average 0 --spkloss_weight 0 2>&1 | tee log/run.asrttsspkid.spkloss_weight.new.update.rf3.spkloss_weight0.fromstage4.log
+(DONE) bash run.asrttsspkid.spkloss_weight.new.update.rf3.sh --stage 4 --ngpu 1 --n_average 0 --spkloss_weight 0.03 2>&1 | tee log/run.asrttsspkid.spkloss_weight.new.update.rf3.spkloss_weight0.03.fromstage4.log
+
+# 2. Backend Training and Evaluation
+***** After 1. Training finished *****
+(DONE) bash run_backendonly_cpuparallel.sh --nj 70 --ngpu 0 --expdir exp/train_train_pytorch_train_pytorch_tacotron2+spkemb_noatt_rf3_spkloss_weight0/ 2>&1 | tee log/backend.train_train_pytorch_train_pytorch_tacotron2+spkemb_noatt_rf3_spkloss_weight0.log
+(DONE) bash run_backendonly_cpuparallel.sh --nj 70 --ngpu 0 --expdir exp/train_train_pytorch_train_pytorch_tacotron2+spkemb_noatt_rf3_spkloss_weight0.03/ 2>&1 | tee log/backend.train_train_pytorch_train_pytorch_tacotron2+spkemb_noatt_rf3_spkloss_weight0.03.log
+
+***** Backend exp while running *****
+(DONE) bash run_backendonly_cpuparallel.sh --model snapshot.ep.15 --nj 70 --ngpu 0 --expdir exp/train_train_pytorch_train_pytorch_tacotron2+spkemb_noatt_rf3_spkloss_weight0/ 2>&1 | tee log/backend.train_train_pytorch_train_pytorch_tacotron2+spkemb_noatt_rf3_spkloss_weight0.snapshot.ep.15.log
+(DONE) bash run_backendonly_cpuparallel.sh --model snapshot.ep.15 --nj 70 --ngpu 0 --expdir exp/train_train_pytorch_train_pytorch_tacotron2+spkemb_noatt_rf3_spkloss_weight0.03/ 2>&1 | tee log/backend.train_train_pytorch_train_pytorch_tacotron2+spkemb_noatt_rf3_spkloss_weight0.03.snapshot.ep.15.log
+
+# (+) Check Model Selection: Run step 2. above for every epoch to compare SV results
+(ING) check_modelselection.sh --expdir exp/train_train_pytorch_train_pytorch_tacotron2+spkemb_noatt_rf3_spkloss_weight0/
+(ING) check_modelselection.sh --expdir exp/train_train_pytorch_train_pytorch_tacotron2+spkemb_noatt_rf3_spkloss_weight0.03/
+

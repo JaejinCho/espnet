@@ -1,0 +1,4 @@
+Traceback (most recent call last):
+  File "separate_trainNdev_uttlists_startspkidx.py", line 24, in <module>
+    start_spkidx = int(sys.argv[5])
+ValueError: invalid literal for int() with base 10: '#'

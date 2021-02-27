@@ -21,6 +21,13 @@ shellcheck*
 check_shellcheck*
 test_spm.vocab
 test_spm.model
+.*.sw?
+*.log
+*.wav
+*.ark
+*.scp
+*.ark.*
+*.scp.*
 
 # recipe related
 egs/*/*/data*

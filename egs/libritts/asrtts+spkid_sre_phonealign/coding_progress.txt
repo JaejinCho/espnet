@@ -1,0 +1,9 @@
+< Getting one chunk for phone ali. + target chunk for reconstruction and the other chunk for spkemb )
+******* Do the same to the config. w/o addpitch
+1. Where I get chunks for target chunks from utterances:
+    - Possible places:
+        1) (X) in data prep. -> less flexibility.
+        2) (X, TODO later) in DataLoader. -> Most intuitive (since the process I am adding is regarding how I compose the batches although there could be some changes also in how a model is trained) and memory efficient
+        3) (O) in forward function -> The easiest way
+    - Conclusion (for now):
+        Fix according to 3) but later I have TODO on 2) for better codes

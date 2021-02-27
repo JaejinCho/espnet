@@ -1,0 +1,138 @@
+NOLAB: babel_amharic
+88184 data/babel_amharic/segments
+88184
+NOLAB: babel_assamese
+111362 data/babel_assamese/segments
+111362
+NOLAB: babel_bengali
+104672 data/babel_bengali/segments
+104672
+NOLAB: babel_cantonese
+115187 data/babel_cantonese/segments
+115187
+NOLAB: babel_cebuano
+93456 data/babel_cebuano/segments
+93456
+NOLAB: babel_dholuo
+83817 data/babel_dholuo/segments
+83817
+NOLAB: babel_georgian
+160440 data/babel_georgian/segments
+160440
+NOLAB: babel_guarani
+90666 data/babel_guarani/segments
+90666
+NOLAB: babel_haitian
+104496 data/babel_haitian/segments
+104496
+NOLAB: babel_igbo
+89862 data/babel_igbo/segments
+89862
+NOLAB: babel_javanese
+97665 data/babel_javanese/segments
+97665
+NOLAB: babel_kazakh
+93138 data/babel_kazakh/segments
+93138
+NOLAB: babel_kurmanji
+94524 data/babel_kurmanji/segments
+94524
+NOLAB: babel_lao
+113526 data/babel_lao/segments
+113526
+NOLAB: babel_lithuanian
+90153 data/babel_lithuanian/segments
+90153
+NOLAB: babel_mongolian
+91993 data/babel_mongolian/segments
+91993
+NOLAB: babel_pashto
+83917 data/babel_pashto/segments
+83917
+NOLAB: babel_swahili
+88141 data/babel_swahili/segments
+88141
+NOLAB: babel_tagalog
+123111 data/babel_tagalog/segments
+123111
+NOLAB: babel_tamil
+171552 data/babel_tamil/segments
+171552
+NOLAB: babel_telugu
+86481 data/babel_telugu/segments
+86481
+NOLAB: babel_tokpisin
+86920 data/babel_tokpisin/segments
+86920
+NOLAB: babel_turkish
+36238 data/babel_turkish/segments
+36238
+NOLAB: babel_vietnamese
+169614 data/babel_vietnamese/segments
+169614
+NOLAB: babel_zulu
+104462 data/babel_zulu/segments
+104462
+LAB: fisher_spa
+train subset
+139118 data/fisher_spa_train/segments
+139118
+dev subset
+5800 data/fisher_spa_dev/segments
+5800
+LAB: sre16_eval_tr60_tgl
+train subset
+43837 data/sre16_eval_tr60_tgl_train/segments
+43837
+dev subset
+1827 data/sre16_eval_tr60_tgl_dev/segments
+1827
+LAB: sre16_eval_tr60_yue
+train subset
+39480 data/sre16_eval_tr60_yue_train/segments
+39480
+dev subset
+1644 data/sre16_eval_tr60_yue_dev/segments
+1644
+LAB: sre16_train_dev_ceb
+train subset
+6520 data/sre16_train_dev_ceb_train/segments
+6520
+dev subset
+273 data/sre16_train_dev_ceb_dev/segments
+273
+LAB: sre18_cmn2_train_lab
+train subset
+167106 data/sre18_cmn2_train_lab_train/segments
+167106
+dev subset
+6967 data/sre18_cmn2_train_lab_dev/segments
+6967
+LAB: sre_tel
+train subset
+3414287 data/sre_tel_train/segments
+3414287
+dev subset
+142239 data/sre_tel_dev/segments
+142239
+LAB: swbd
+train subset
+1197949 data/swbd_train/segments
+1197949
+dev subset
+49911 data/swbd_dev/segments
+49911
+LAB: voxcelebcat_tel
+train subset
+1527186 data/voxcelebcat_tel_train/segments
+1527186
+dev subset
+63640 data/voxcelebcat_tel_dev/segments
+63640
+LAB: sre16_train_dev_cmn
+train subset
+6371 data/sre16_train_dev_cmn_train/segments
+6371
+dev subset
+265 data/sre16_train_dev_cmn_dev/segments
+265

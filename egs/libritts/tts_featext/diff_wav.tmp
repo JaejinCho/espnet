@@ -1,0 +1,126 @@
+---------- sre_tel ----------
+86982 /export/b16/jcho/hyperion_trials/egs/sre20-cts/v1/data/sre_tel/wav.scp
+596
+---------- sre16_eval_tr60_tgl ----------
+3063 /export/b16/jcho/hyperion_trials/egs/sre20-cts/v1/data/sre16_eval_tr60_tgl/wav.scp
+0
+---------- sre16_eval_tr60_yue ----------
+3309 /export/b16/jcho/hyperion_trials/egs/sre20-cts/v1/data/sre16_eval_tr60_yue/wav.scp
+0
+---------- sre16_train_dev_ceb ----------
+659 /export/b16/jcho/hyperion_trials/egs/sre20-cts/v1/data/sre16_train_dev_ceb/wav.scp
+28
+---------- sre16_train_dev_cmn ----------
+668 /export/b16/jcho/hyperion_trials/egs/sre20-cts/v1/data/sre16_train_dev_cmn/wav.scp
+18
+---------- sre18_cmn2_train_lab ----------
+15192 /export/b16/jcho/hyperion_trials/egs/sre20-cts/v1/data/sre18_cmn2_train_lab/wav.scp
+2
+---------- swbd ----------
+28175 /export/b16/jcho/hyperion_trials/egs/sre20-cts/v1/data/swbd/wav.scp
+51
+---------- fisher_spa ----------
+1638 /export/b16/jcho/hyperion_trials/egs/sre20-cts/v1/data/fisher_spa/wav.scp
+0
+---------- voxcelebcat_tel ----------
+171599 /export/b16/jcho/hyperion_trials/egs/sre20-cts/v1/data/voxcelebcat_tel/wav.scp
+300928
+---------- babel_amharic ----------
+1104 /export/b16/jcho/hyperion_trials/egs/sre20-cts/v1/data/babel_amharic/wav.scp
+0
+---------- babel_assamese ----------
+1364 /export/b16/jcho/hyperion_trials/egs/sre20-cts/v1/data/babel_assamese/wav.scp
+0
+---------- babel_bengali ----------
+1324 /export/b16/jcho/hyperion_trials/egs/sre20-cts/v1/data/babel_bengali/wav.scp
+2
+---------- babel_cantonese ----------
+1306 /export/b16/jcho/hyperion_trials/egs/sre20-cts/v1/data/babel_cantonese/wav.scp
+0
+---------- babel_cebuano ----------
+1110 /export/b16/jcho/hyperion_trials/egs/sre20-cts/v1/data/babel_cebuano/wav.scp
+0
+---------- babel_dholuo ----------
+1084 /export/b16/jcho/hyperion_trials/egs/sre20-cts/v1/data/babel_dholuo/wav.scp
+0
+---------- babel_georgian ----------
+2031 /export/b16/jcho/hyperion_trials/egs/sre20-cts/v1/data/babel_georgian/wav.scp
+0
+---------- babel_guarani ----------
+1101 /export/b16/jcho/hyperion_trials/egs/sre20-cts/v1/data/babel_guarani/wav.scp
+0
+---------- babel_haitian ----------
+1248 /export/b16/jcho/hyperion_trials/egs/sre20-cts/v1/data/babel_haitian/wav.scp
+4
+---------- babel_igbo ----------
+1111 /export/b16/jcho/hyperion_trials/egs/sre20-cts/v1/data/babel_igbo/wav.scp
+0
+---------- babel_javanese ----------
+1059 /export/b16/jcho/hyperion_trials/egs/sre20-cts/v1/data/babel_javanese/wav.scp
+0
+---------- babel_kazakh ----------
+1163 /export/b16/jcho/hyperion_trials/egs/sre20-cts/v1/data/babel_kazakh/wav.scp
+0
+---------- babel_kurmanji ----------
+1117 /export/b16/jcho/hyperion_trials/egs/sre20-cts/v1/data/babel_kurmanji/wav.scp
+0
+---------- babel_lao ----------
+1281 /export/b16/jcho/hyperion_trials/egs/sre20-cts/v1/data/babel_lao/wav.scp
+0
+---------- babel_lithuanian ----------
+1056 /export/b16/jcho/hyperion_trials/egs/sre20-cts/v1/data/babel_lithuanian/wav.scp
+0
+---------- babel_mongolian ----------
+1099 /export/b16/jcho/hyperion_trials/egs/sre20-cts/v1/data/babel_mongolian/wav.scp
+0
+---------- babel_pashto ----------
+1164 /export/b16/jcho/hyperion_trials/egs/sre20-cts/v1/data/babel_pashto/wav.scp
+2
+---------- babel_swahili ----------
+1148 /export/b16/jcho/hyperion_trials/egs/sre20-cts/v1/data/babel_swahili/wav.scp
+0
+---------- babel_tagalog ----------
+1531 /export/b16/jcho/hyperion_trials/egs/sre20-cts/v1/data/babel_tagalog/wav.scp
+22
+---------- babel_tamil ----------
+2020 /export/b16/jcho/hyperion_trials/egs/sre20-cts/v1/data/babel_tamil/wav.scp
+2
+---------- babel_telugu ----------
+1067 /export/b16/jcho/hyperion_trials/egs/sre20-cts/v1/data/babel_telugu/wav.scp
+2
+---------- babel_tokpisin ----------
+1103 /export/b16/jcho/hyperion_trials/egs/sre20-cts/v1/data/babel_tokpisin/wav.scp
+3
+---------- babel_turkish ----------
+404 /export/b16/jcho/hyperion_trials/egs/sre20-cts/v1/data/babel_turkish/wav.scp
+0
+---------- babel_vietnamese ----------
+2155 /export/b16/jcho/hyperion_trials/egs/sre20-cts/v1/data/babel_vietnamese/wav.scp
+0
+---------- babel_zulu ----------
+1356 /export/b16/jcho/hyperion_trials/egs/sre20-cts/v1/data/babel_zulu/wav.scp
+4
+---------- sre16_eval40_yue_enroll ----------
+236 /export/b16/jcho/hyperion_trials/egs/sre20-cts/v1/data/sre16_eval40_yue_enroll/wav.scp
+0
+---------- sre16_eval40_yue_test ----------
+1904 /export/b16/jcho/hyperion_trials/egs/sre20-cts/v1/data/sre16_eval40_yue_test/wav.scp
+0
+---------- sre16_eval40_tgl_enroll ----------
+240 /export/b16/jcho/hyperion_trials/egs/sre20-cts/v1/data/sre16_eval40_tgl_enroll/wav.scp
+0
+---------- sre16_eval40_tgl_test ----------
+1744 /export/b16/jcho/hyperion_trials/egs/sre20-cts/v1/data/sre16_eval40_tgl_test/wav.scp
+0
+---------- sre19_eval_enroll_cmn2 ----------
+1364 /export/b16/jcho/hyperion_trials/egs/sre20-cts/v1/data/sre19_eval_enroll_cmn2/wav.scp
+0
+---------- sre19_eval_test_cmn2 ----------
+13581 /export/b16/jcho/hyperion_trials/egs/sre20-cts/v1/data/sre19_eval_test_cmn2/wav.scp
+6
+---------- sre20cts_eval_enroll ----------
+1757 /export/b16/jcho/hyperion_trials/egs/sre20-cts/v1/data/sre20cts_eval_enroll/wav.scp
+0
+---------- sre20cts_eval_test ----------
+20423 /export/b16/jcho/hyperion_trials/egs/sre20-cts/v1/data/sre20cts_eval_test/wav.scp
+0

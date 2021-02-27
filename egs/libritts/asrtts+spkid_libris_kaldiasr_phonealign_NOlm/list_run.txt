@@ -1,0 +1,6 @@
+# 1. Training
+## run the command right below after "rm -r data/ exp/ dump/"
+***** only for the first run (STOPPED AT STAGE 4 and corresponding exp/[this exp] was REMOVED (TO RUN rf1)) ***** bash run.asrttsspkid.spkloss_weight.new.update.sh --ngpu 1 --n_average 0 --spkloss_weight 0 2>&1 | tee log/run.asrttsspkid.spkloss_weight.new.update.spkloss_weight0.log
+bash run.asrttsspkid.spkloss_weight.new.update.rf1.sh --stage 4 --ngpu 1 --n_average 0 --spkloss_weight 0 2>&1 | tee log/run.asrttsspkid.spkloss_weight.new.update.rf1.spkloss_weight0.fromstage4.log
+bash run.asrttsspkid.spkloss_weight.new.update.rf1.sh --stage 4 --ngpu 1 --n_average 0 --spkloss_weight 0.03 2>&1 | tee log/run.asrttsspkid.spkloss_weight.new.update.rf1.spkloss_weight0.03.fromstage4.log
+

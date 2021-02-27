@@ -1,0 +1,18 @@
+# 1. copied the zip from local mac to clsp grid
+scp train_960_pytorch_train_pytorch_transformer_large_ngpu4_specaug.tar.gz jcho@login.clsp.jhu.edu:/export/b18/jcho/espnet3/egs/librispeech/asr1
+# 2. unzip the file
+cd /export/b18/jcho/espnet3/egs/librispeech/asr1/
+tar xvzf train_960_pytorch_train_pytorch_transformer_large_ngpu4_specaug.tar.gz
+##### output start #####
+#conf/tuning/train_pytorch_transformer_large_ngpu4.yaml
+#conf/tuning/decode_pytorch_transformer_large.yaml
+#data/train_960/cmvn.ark
+#exp/train_960_pytorch_train_pytorch_transformer.v1_aheads8_batch-bins15000000_specaug/results/model.val5.avg.best
+#exp/train_960_pytorch_train_pytorch_transformer.v1_aheads8_batch-bins15000000_specaug/results/model.json
+#exp/irielm.ep11.last5.avg/rnnlm.model.best
+#exp/irielm.ep11.last5.avg/model.json
+##### output end #####
+# 3. add files I got from Tomoki (related to bpe) to generate data.json files to data/lang_char/
+train_960_unigram5000.model  train_960_unigram5000.vocab  train_960_unigram5000_units.txt
+# 4. run decoding
+bash run_decode_transformer.gpu.sh --ngpu 1 2>&1 | tee log/run_decode_transformer.gpu.log

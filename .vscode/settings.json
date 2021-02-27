@@ -1,0 +1,15 @@
+{
+    "python.pythonPath": "/export/b16/jcho/espnet/tools/venv/bin/python",
+    "python.linting.pylintEnabled": true,
+    "python.linting.enabled": true,
+    "python.linting.flake8Enabled": false,
+    "files.exclude": {
+        "egs": true
+    },
+    "search.exclude": {
+        "egs": true
+    },
+    "files.watcherExclude": {
+        "/export/b18/jcho/espnet3/{egs,tools}": true
+    }
+}

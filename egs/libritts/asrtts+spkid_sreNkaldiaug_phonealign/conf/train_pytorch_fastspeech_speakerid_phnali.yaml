@@ -1,0 +1,58 @@
+# Edited from conf/train_pytorch_fastspeech_speakerid.yaml
+
+# log/report related
+num-save-attention: 0 # (JJ): for now, do not write attention plot to avoid an error. (TODO later (JJ): fix the error) 
+
+# network architecture related
+model-module: espnet.nets.pytorch_backend.e2e_tts_fastspeech_speakerid:FeedForwardTransformer
+adim: 384
+aheads: 2
+elayers: 6
+eunits: 1536
+dlayers: 6
+dunits: 1536
+#duration-predictor-layers: 2
+#duration-predictor-chans: 256
+#duration-predictor-kernel-size: 3
+positionwise-layer-type: conv1d
+positionwise-conv-kernel-size: 3
+use-scaled-pos-enc: True
+encoder-normalize-before: False
+decoder-normalize-before: False
+encoder-concat-after: False
+decoder-concat-after: False
+reduction-factor: 1
+use-speaker-embedding: true
+spk-embed-integration-type: add # (JJ): I can play with this
+
+# minibatch related
+# 8 * (764.1 * 80 + 255 * 366)
+batch-sort-key: output # shuffle or input or output. (JJ) With phn. ali. as inputs, there is no difference between setting to input and output
+batch-bins: 1235664    # avg batch-size * (mean_out * dim_out + mean_in * dim_in)
+
+# training related
+transformer-init: pytorch
+transformer-warmup-steps: 4000
+transformer-lr: 1.0
+initial-encoder-alpha: 1.0
+initial-decoder-alpha: 1.0
+transformer-enc-dropout-rate: 0.1
+transformer-enc-positional-dropout-rate: 0.1
+transformer-enc-attn-dropout-rate: 0.1
+transformer-dec-dropout-rate: 0.1
+transformer-dec-positional-dropout-rate: 0.1
+transformer-dec-attn-dropout-rate: 0.1
+transformer-enc-dec-attn-dropout-rate: 0.1
+#duration-predictor-dropout-rate: 0.1
+#transfer-encoder-from-teacher: False
+#transferred-encoder-module: embed
+
+# optimization related
+opt: noam
+accum-grad: 8
+grad-clip: 1.0
+weight-decay: 0.0
+patience: 0
+epochs: 1000  # 1000 epochs * 115 batches / 1 accum-grad = 115,000 iters
+# other
+save-interval-epoch: 50

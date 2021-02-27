@@ -1,0 +1,1 @@
+sid/compute_min_dcf.py --p-target 0.01 exp/scores_libritts_train_eval_embnametrain_train_pytorch_train_pytorch_tacotron2+spkemb_spkidonly_speakeridonly_ttslossw0_spklossw1_final data/train_eval/trials

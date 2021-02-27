@@ -1,0 +1,72 @@
+------------------------------ data/rir_check ------------------------------
+  3309 data/rir_check/reco2dur
+    60 data/rir_check/spk2utt
+  3309 data/rir_check/utt2num_frames
+  3309 data/rir_check/utt2spk
+  3309 data/rir_check/wav.scp
+ 13296 total
+==> data/rir_check/reco2dur <==
+131763-eebpzvc_sre16 131.98
+
+==> data/rir_check/spk2utt <==
+131763 131763-eebpzvc_sre16 131763-eefrldj_sre16 131763-eeigmnp_sre16 131763-eemoqwp_sre16 131763-eettauh_sre16 131763-eevtukp_sre16 131763-etaeshy_sre16 131763-etajrtx_sre16 131763-etapdde_sre16 131763-etbdtaa_sre16 131763-etbipfb_sre16 131763-etccgpp_sre16 131763-etcggcj_sre16 131763-etcxbii_sre16 131763-etelwaz_sre16 131763-etfhvss_sre16 131763-etfqfru_sre16 131763-etfvzpd_sre16 131763-etgjkup_sre16 131763-etgopkt_sre16 131763-etgqzqq_sre16 131763-etiijkt_sre16 131763-etijnzq_sre16 131763-etinzum_sre16 131763-etivwgi_sre16 131763-etjliuq_sre16 131763-etldlaw_sre16 131763-etlmqbr_sre16 131763-etlpyyy_sre16 131763-etlvwec_sre16 131763-etmrxwc_sre16 131763-etmxmsb_sre16 131763-etnbvoi_sre16 131763-etnisdj_sre16 131763-etnmjos_sre16 131763-etoiwxh_sre16 131763-etokadf_sre16 131763-etomigp_sre16 131763-etonosu_sre16 131763-etoqfdt_sre16 131763-etphzfa_sre16 131763-etqeoyx_sre16 131763-etqrwpn_sre16 131763-etsalho_sre16 131763-ettghzb_sre16 131763-etulqhh_sre16 131763-etvlnjv_sre16 131763-etwfaqu_sre16 131763-etwyjts_sre16 131763-etxplgx_sre16 131763-etxqywl_sre16 131763-etxteab_sre16 131763-etynrkv_sre16 131763-etzdnks_sre16 131763-etzygpz_sre16
+
+==> data/rir_check/utt2num_frames <==
+131763-eebpzvc_sre16 13198 
+
+==> data/rir_check/utt2spk <==
+131763-eebpzvc_sre16 131763
+
+==> data/rir_check/wav.scp <==
+131763-eebpzvc_sre16 sph2pipe -f wav -p -c 1 /export/corpora5/LDC/LDC2018E30/data/eval/R149_0_1/data/enrollment/eeaaeih-eezzfam/eebpzvc_sre16.sph |
+------------------------------ data/rir_check_noise ------------------------------
+   3309 data/rir_check_noise/reco2dur
+     60 data/rir_check_noise/spk2utt
+   3309 data/rir_check_noise/utt2spk
+   3309 data/rir_check_noise/wav.scp
+   9987 total
+==> data/rir_check_noise/reco2dur <==
+131763-eebpzvc_sre16-noise 131.98
+
+==> data/rir_check_noise/spk2utt <==
+131763 131763-eebpzvc_sre16-noise 131763-eefrldj_sre16-noise 131763-eeigmnp_sre16-noise 131763-eemoqwp_sre16-noise 131763-eettauh_sre16-noise 131763-eevtukp_sre16-noise 131763-etaeshy_sre16-noise 131763-etajrtx_sre16-noise 131763-etapdde_sre16-noise 131763-etbdtaa_sre16-noise 131763-etbipfb_sre16-noise 131763-etccgpp_sre16-noise 131763-etcggcj_sre16-noise 131763-etcxbii_sre16-noise 131763-etelwaz_sre16-noise 131763-etfhvss_sre16-noise 131763-etfqfru_sre16-noise 131763-etfvzpd_sre16-noise 131763-etgjkup_sre16-noise 131763-etgopkt_sre16-noise 131763-etgqzqq_sre16-noise 131763-etiijkt_sre16-noise 131763-etijnzq_sre16-noise 131763-etinzum_sre16-noise 131763-etivwgi_sre16-noise 131763-etjliuq_sre16-noise 131763-etldlaw_sre16-noise 131763-etlmqbr_sre16-noise 131763-etlpyyy_sre16-noise 131763-etlvwec_sre16-noise 131763-etmrxwc_sre16-noise 131763-etmxmsb_sre16-noise 131763-etnbvoi_sre16-noise 131763-etnisdj_sre16-noise 131763-etnmjos_sre16-noise 131763-etoiwxh_sre16-noise 131763-etokadf_sre16-noise 131763-etomigp_sre16-noise 131763-etonosu_sre16-noise 131763-etoqfdt_sre16-noise 131763-etphzfa_sre16-noise 131763-etqeoyx_sre16-noise 131763-etqrwpn_sre16-noise 131763-etsalho_sre16-noise 131763-ettghzb_sre16-noise 131763-etulqhh_sre16-noise 131763-etvlnjv_sre16-noise 131763-etwfaqu_sre16-noise 131763-etwyjts_sre16-noise 131763-etxplgx_sre16-noise 131763-etxqywl_sre16-noise 131763-etxteab_sre16-noise 131763-etynrkv_sre16-noise 131763-etzdnks_sre16-noise 131763-etzygpz_sre16-noise
+
+==> data/rir_check_noise/utt2spk <==
+131763-eebpzvc_sre16-noise 131763
+
+==> data/rir_check_noise/wav.scp <==
+131763-eebpzvc_sre16-noise sph2pipe -f wav -p -c 1 /export/corpora5/LDC/LDC2018E30/data/eval/R149_0_1/data/enrollment/eeaaeih-eezzfam/eebpzvc_sre16.sph | wav-reverberate --shift-output=true --additive-signals='/export/corpora/JHU/musan/noise/free-sound/noise-free-sound-0053.wav,/export/corpora/JHU/musan/noise/free-sound/noise-free-sound-0089.wav,/export/corpora/JHU/musan/noise/free-sound/noise-free-sound-0272.wav,/export/corpora/JHU/musan/noise/sound-bible/noise-sound-bible-0015.wav,/export/corpora/JHU/musan/noise/free-sound/noise-free-sound-0388.wav,/export/corpora/JHU/musan/noise/free-sound/noise-free-sound-0348.wav' --start-times='0,6.271937,21.142937,63.201057000000006,86.43105700000001,91.813432' --snrs='5,0,15,15,5,15' - - |
+------------------------------ data/rir_check_noise_2 ------------------------------
+   3309 data/rir_check_noise_2/reco2dur
+     60 data/rir_check_noise_2/spk2utt
+   3309 data/rir_check_noise_2/utt2spk
+   3309 data/rir_check_noise_2/wav.scp
+   9987 total
+==> data/rir_check_noise_2/reco2dur <==
+131763-eebpzvc_sre16-suffix2bremoved 131.98
+
+==> data/rir_check_noise_2/spk2utt <==
+131763 131763-eebpzvc_sre16-suffix2bremoved 131763-eefrldj_sre16-suffix2bremoved 131763-eeigmnp_sre16-suffix2bremoved 131763-eemoqwp_sre16-suffix2bremoved 131763-eettauh_sre16-suffix2bremoved 131763-eevtukp_sre16-suffix2bremoved 131763-etaeshy_sre16-suffix2bremoved 131763-etajrtx_sre16-suffix2bremoved 131763-etapdde_sre16-suffix2bremoved 131763-etbdtaa_sre16-suffix2bremoved 131763-etbipfb_sre16-suffix2bremoved 131763-etccgpp_sre16-suffix2bremoved 131763-etcggcj_sre16-suffix2bremoved 131763-etcxbii_sre16-suffix2bremoved 131763-etelwaz_sre16-suffix2bremoved 131763-etfhvss_sre16-suffix2bremoved 131763-etfqfru_sre16-suffix2bremoved 131763-etfvzpd_sre16-suffix2bremoved 131763-etgjkup_sre16-suffix2bremoved 131763-etgopkt_sre16-suffix2bremoved 131763-etgqzqq_sre16-suffix2bremoved 131763-etiijkt_sre16-suffix2bremoved 131763-etijnzq_sre16-suffix2bremoved 131763-etinzum_sre16-suffix2bremoved 131763-etivwgi_sre16-suffix2bremoved 131763-etjliuq_sre16-suffix2bremoved 131763-etldlaw_sre16-suffix2bremoved 131763-etlmqbr_sre16-suffix2bremoved 131763-etlpyyy_sre16-suffix2bremoved 131763-etlvwec_sre16-suffix2bremoved 131763-etmrxwc_sre16-suffix2bremoved 131763-etmxmsb_sre16-suffix2bremoved 131763-etnbvoi_sre16-suffix2bremoved 131763-etnisdj_sre16-suffix2bremoved 131763-etnmjos_sre16-suffix2bremoved 131763-etoiwxh_sre16-suffix2bremoved 131763-etokadf_sre16-suffix2bremoved 131763-etomigp_sre16-suffix2bremoved 131763-etonosu_sre16-suffix2bremoved 131763-etoqfdt_sre16-suffix2bremoved 131763-etphzfa_sre16-suffix2bremoved 131763-etqeoyx_sre16-suffix2bremoved 131763-etqrwpn_sre16-suffix2bremoved 131763-etsalho_sre16-suffix2bremoved 131763-ettghzb_sre16-suffix2bremoved 131763-etulqhh_sre16-suffix2bremoved 131763-etvlnjv_sre16-suffix2bremoved 131763-etwfaqu_sre16-suffix2bremoved 131763-etwyjts_sre16-suffix2bremoved 131763-etxplgx_sre16-suffix2bremoved 131763-etxqywl_sre16-suffix2bremoved 131763-etxteab_sre16-suffix2bremoved 131763-etynrkv_sre16-suffix2bremoved 131763-etzdnks_sre16-suffix2bremoved 131763-etzygpz_sre16-suffix2bremoved
+
+==> data/rir_check_noise_2/utt2spk <==
+131763-eebpzvc_sre16-suffix2bremoved 131763
+
+==> data/rir_check_noise_2/wav.scp <==
+131763-eebpzvc_sre16-suffix2bremoved sph2pipe -f wav -p -c 1 /export/corpora5/LDC/LDC2018E30/data/eval/R149_0_1/data/enrollment/eeaaeih-eezzfam/eebpzvc_sre16.sph | wav-reverberate --shift-output=true --additive-signals='/export/corpora5/JHU/musan/noise/free-sound/noise-free-sound-0053.wav,/export/corpora5/JHU/musan/noise/free-sound/noise-free-sound-0089.wav,/export/corpora5/JHU/musan/noise/free-sound/noise-free-sound-0272.wav,/export/corpora5/JHU/musan/noise/sound-bible/noise-sound-bible-0015.wav,/export/corpora5/JHU/musan/noise/free-sound/noise-free-sound-0388.wav,/export/corpora5/JHU/musan/noise/free-sound/noise-free-sound-0348.wav' --start-times='0,6.271937,21.142937,63.201057000000006,86.43105700000001,91.813432' --snrs='5,0,15,15,5,15' - - |
+------------------------------ data/rir_check_reverb ------------------------------
+     60 data/rir_check_reverb/spk2utt
+   3309 data/rir_check_reverb/utt2spk
+   3309 data/rir_check_reverb/utt2uniq
+   3309 data/rir_check_reverb/wav.scp
+   9987 total
+==> data/rir_check_reverb/spk2utt <==
+131763 131763-eebpzvc_sre16-reverb 131763-eefrldj_sre16-reverb 131763-eeigmnp_sre16-reverb 131763-eemoqwp_sre16-reverb 131763-eettauh_sre16-reverb 131763-eevtukp_sre16-reverb 131763-etaeshy_sre16-reverb 131763-etajrtx_sre16-reverb 131763-etapdde_sre16-reverb 131763-etbdtaa_sre16-reverb 131763-etbipfb_sre16-reverb 131763-etccgpp_sre16-reverb 131763-etcggcj_sre16-reverb 131763-etcxbii_sre16-reverb 131763-etelwaz_sre16-reverb 131763-etfhvss_sre16-reverb 131763-etfqfru_sre16-reverb 131763-etfvzpd_sre16-reverb 131763-etgjkup_sre16-reverb 131763-etgopkt_sre16-reverb 131763-etgqzqq_sre16-reverb 131763-etiijkt_sre16-reverb 131763-etijnzq_sre16-reverb 131763-etinzum_sre16-reverb 131763-etivwgi_sre16-reverb 131763-etjliuq_sre16-reverb 131763-etldlaw_sre16-reverb 131763-etlmqbr_sre16-reverb 131763-etlpyyy_sre16-reverb 131763-etlvwec_sre16-reverb 131763-etmrxwc_sre16-reverb 131763-etmxmsb_sre16-reverb 131763-etnbvoi_sre16-reverb 131763-etnisdj_sre16-reverb 131763-etnmjos_sre16-reverb 131763-etoiwxh_sre16-reverb 131763-etokadf_sre16-reverb 131763-etomigp_sre16-reverb 131763-etonosu_sre16-reverb 131763-etoqfdt_sre16-reverb 131763-etphzfa_sre16-reverb 131763-etqeoyx_sre16-reverb 131763-etqrwpn_sre16-reverb 131763-etsalho_sre16-reverb 131763-ettghzb_sre16-reverb 131763-etulqhh_sre16-reverb 131763-etvlnjv_sre16-reverb 131763-etwfaqu_sre16-reverb 131763-etwyjts_sre16-reverb 131763-etxplgx_sre16-reverb 131763-etxqywl_sre16-reverb 131763-etxteab_sre16-reverb 131763-etynrkv_sre16-reverb 131763-etzdnks_sre16-reverb 131763-etzygpz_sre16-reverb
+
+==> data/rir_check_reverb/utt2spk <==
+131763-eebpzvc_sre16-reverb 131763
+
+==> data/rir_check_reverb/utt2uniq <==
+131763-eebpzvc_sre16-reverb 131763-eebpzvc_sre16
+
+==> data/rir_check_reverb/wav.scp <==
+131763-eebpzvc_sre16-reverb sph2pipe -f wav -p -c 1 /export/corpora5/LDC/LDC2018E30/data/eval/R149_0_1/data/enrollment/eeaaeih-eezzfam/eebpzvc_sre16.sph | wav-reverberate --shift-output=true --impulse-response="sox RIRS_NOISES/simulated_rirs/smallroom/Room110/Room110-00049.wav -r 8000 -t wav - |" - - |

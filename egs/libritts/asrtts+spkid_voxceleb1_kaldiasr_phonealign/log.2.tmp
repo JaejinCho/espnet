@@ -1,0 +1,6 @@
+error connecting to /tmp/tmux-61077/default (No such file or directory)
+/export/b18/jcho/espnet3/egs/libritts/asrtts+spkid_voxceleb1_kaldiasr_phonealign/../../../utils/data2json_kaldiali.sh --cmd queue.pl --mem 2G --nj 70 --kaldiali true --feat dump/voxceleb1_train_filtered_train/feats.scp data/voxceleb1_train_filtered_train data/lang_1char/voxceleb1_train_filtered_train_units.txt
+/export/b18/jcho/espnet3/egs/libritts/asrtts+spkid_voxceleb1_kaldiasr_phonealign/../../../utils/data2json_kaldiali.sh: invalid option --mem
+error connecting to /tmp/tmux-61077/default (No such file or directory)
+/export/b18/jcho/espnet3/egs/libritts/asrtts+spkid_voxceleb1_kaldiasr_phonealign/../../../utils/data2json_kaldiali.sh --cmd queue.pl --mem 2G --nj 70 --kaldiali true --feat dump/voxceleb1_train_filtered_train/feats.scp data/voxceleb1_train_filtered_train data/lang_1char/voxceleb1_train_filtered_train_units.txt
+/export/b18/jcho/espnet3/egs/libritts/asrtts+spkid_voxceleb1_kaldiasr_phonealign/../../../utils/feat_to_shape.sh --cmd queue.pl --mem 2G --nj 70 --filetype  --preprocess-conf  --verbose 0 dump/voxceleb1_train_filtered_train/feats.scp data/voxceleb1_train_filtered_train/tmp-GSE7b/input_1/shape.scp

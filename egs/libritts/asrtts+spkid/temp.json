@@ -1,0 +1,200 @@
+{
+    "utts": {
+        "100_121669_000001_000000": {
+            "input": [
+                {
+                    "feat": "/export/b18/jcho/espnet3/egs/libritts/tts1/dump/train_clean_460/feats.1.ark:25",
+                    "name": "input1",
+                    "shape": [
+                        139,
+                        80
+                    ]
+                },
+                {
+                    "feat": "exp/xvector_nnet_1a/xvectors_train_clean_460/xvector.1.ark:25",
+                    "name": "input2",
+                    "shape": [
+                        512
+                    ]
+                }
+            ],
+            "output": [
+                {
+                    "name": "target1",
+                    "shape": [
+                        20,
+                        78
+                    ],
+                    "text": "Tom, the Piper's Son",
+                    "token": "T o m , <space> t h e <space> P i p e r ' s <space> S o n",
+                    "tokenid": "34 57 55 7 13 62 50 47 13 30 51 58 47 60 4 61 13 33 57 56"
+                }
+            ],
+            "utt2spk": "100_121669"
+        },
+        "100_121669_000003_000000": {
+            "input": [
+                {
+                    "feat": "/export/b18/jcho/espnet3/egs/libritts/tts1/dump/train_clean_460/feats.1.ark:11831",
+                    "name": "input1",
+                    "shape": [
+                        793,
+                        80
+                    ]
+                },
+                {
+                    "feat": "exp/xvector_nnet_1a/xvectors_train_clean_460/xvector.1.ark:2108",
+                    "name": "input2",
+                    "shape": [
+                        512
+                    ]
+                }
+            ],
+            "output": [
+                {
+                    "name": "target1",
+                    "shape": [
+                        124,
+                        78
+                    ],
+                    "text": "Tom, Tom, the piper's son, Stole a pig and away he run; The pig was eat and Tom was beat And Tom ran crying down the street.",
+                    "token": "T o m , <space> T o m , <space> t h e <space> p i p e r ' s <space> s o n , <space> S t o l e <space> a <space> p i g <space> a n d <space> a w a y <space> h e <space> r u n ; <space> T h e <space> p i g <space> w a s <space> e a t <space> a n d <space> T o m <space> w a s <space> b e a t <space> A n d <space> T o m <space> r a n <space> c r y i n g <space> d o w n <space> t h e <space> s t r e e t .",
+                    "tokenid": "34 57 55 7 13 34 57 55 7 13 62 50 47 13 58 51 58 47 60 4 61 13 61 57 56 7 13 33 62 57 54 47 13 43 13 58 51 49 13 43 56 46 13 43 65 43 67 13 50 47 13 60 63 56 12 13 34 50 47 13 58 51 49 13 65 43 61 13 47 43 62 13 43 56 46 13 34 57 55 13 65 43 61 13 44 47 43 62 13 15 56 46 13 34 57 55 13 60 43 56 13 45 60 67 51 56 49 13 46 57 65 56 13 62 50 47 13 61 62 60 47 47 62 9"
+                }
+            ],
+            "utt2spk": "100_121669"
+        },
+        "100_121669_000004_000000": {
+            "input": [
+                {
+                    "feat": "/export/b18/jcho/espnet3/egs/libritts/tts1/dump/train_clean_460/feats.1.ark:75957",
+                    "name": "input1",
+                    "shape": [
+                        375,
+                        80
+                    ]
+                },
+                {
+                    "feat": "exp/xvector_nnet_1a/xvectors_train_clean_460/xvector.1.ark:4191",
+                    "name": "input2",
+                    "shape": [
+                        512
+                    ]
+                }
+            ],
+            "output": [
+                {
+                    "name": "target1",
+                    "shape": [
+                        71,
+                        78
+                    ],
+                    "text": "There was not a worse vagabond in Shrewsbury than old Barney the piper.",
+                    "token": "T h e r e <space> w a s <space> n o t <space> a <space> w o r s e <space> v a g a b o n d <space> i n <space> S h r e w s b u r y <space> t h a n <space> o l d <space> B a r n e y <space> t h e <space> p i p e r .",
+                    "tokenid": "34 50 47 60 47 13 65 43 61 13 56 57 62 13 43 13 65 57 60 61 47 13 64 43 49 43 44 57 56 46 13 51 56 13 33 50 60 47 65 61 44 63 60 67 13 62 50 43 56 13 57 54 46 13 16 43 60 56 47 67 13 62 50 47 13 58 51 58 47 60 9"
+                }
+            ],
+            "utt2spk": "100_121669"
+        },
+        "100_121669_000004_000001": {
+            "input": [
+                {
+                    "feat": "/export/b18/jcho/espnet3/egs/libritts/tts1/dump/train_clean_460/feats.1.ark:106643",
+                    "name": "input1",
+                    "shape": [
+                        739,
+                        80
+                    ]
+                },
+                {
+                    "feat": "exp/xvector_nnet_1a/xvectors_train_clean_460/xvector.1.ark:6274",
+                    "name": "input2",
+                    "shape": [
+                        512
+                    ]
+                }
+            ],
+            "output": [
+                {
+                    "name": "target1",
+                    "shape": [
+                        124,
+                        78
+                    ],
+                    "text": "He never did any work except to play the pipes, and he played so badly that few pennies ever found their way into his pouch.",
+                    "token": "H e <space> n e v e r <space> d i d <space> a n y <space> w o r k <space> e x c e p t <space> t o <space> p l a y <space> t h e <space> p i p e s , <space> a n d <space> h e <space> p l a y e d <space> s o <space> b a d l y <space> t h a t <space> f e w <space> p e n n i e s <space> e v e r <space> f o u n d <space> t h e i r <space> w a y <space> i n t o <space> h i s <space> p o u c h .",
+                    "tokenid": "22 47 13 56 47 64 47 60 13 46 51 46 13 43 56 67 13 65 57 60 53 13 47 66 45 47 58 62 13 62 57 13 58 54 43 67 13 62 50 47 13 58 51 58 47 61 7 13 43 56 46 13 50 47 13 58 54 43 67 47 46 13 61 57 13 44 43 46 54 67 13 62 50 43 62 13 48 47 65 13 58 47 56 56 51 47 61 13 47 64 47 60 13 48 57 63 56 46 13 62 50 47 51 60 13 65 43 67 13 51 56 62 57 13 50 51 61 13 58 57 63 45 50 9"
+                }
+            ],
+            "utt2spk": "100_121669"
+        },
+        "100_121669_000004_000002": {
+            "input": [
+                {
+                    "feat": "/export/b18/jcho/espnet3/egs/libritts/tts1/dump/train_clean_460/feats.1.ark:166449",
+                    "name": "input1",
+                    "shape": [
+                        1349,
+                        80
+                    ]
+                },
+                {
+                    "feat": "exp/xvector_nnet_1a/xvectors_train_clean_460/xvector.1.ark:8357",
+                    "name": "input2",
+                    "shape": [
+                        512
+                    ]
+                }
+            ],
+            "output": [
+                {
+                    "name": "target1",
+                    "shape": [
+                        237,
+                        78
+                    ],
+                    "text": "It was whispered around that old Barney was not very honest, but he was so sly and cautious that no one had ever caught him in the act of stealing, although a good many things had been missed after they had fallen into the old man's way.",
+                    "token": "I t <space> w a s <space> w h i s p e r e d <space> a r o u n d <space> t h a t <space> o l d <space> B a r n e y <space> w a s <space> n o t <space> v e r y <space> h o n e s t , <space> b u t <space> h e <space> w a s <space> s o <space> s l y <space> a n d <space> c a u t i o u s <space> t h a t <space> n o <space> o n e <space> h a d <space> e v e r <space> c a u g h t <space> h i m <space> i n <space> t h e <space> a c t <space> o f <space> s t e a l i n g , <space> a l t h o u g h <space> a <space> g o o d <space> m a n y <space> t h i n g s <space> h a d <space> b e e n <space> m i s s e d <space> a f t e r <space> t h e y <space> h a d <space> f a l l e n <space> i n t o <space> t h e <space> o l d <space> m a n ' s <space> w a y .",
+                    "tokenid": "23 62 13 65 43 61 13 65 50 51 61 58 47 60 47 46 13 43 60 57 63 56 46 13 62 50 43 62 13 57 54 46 13 16 43 60 56 47 67 13 65 43 61 13 56 57 62 13 64 47 60 67 13 50 57 56 47 61 62 7 13 44 63 62 13 50 47 13 65 43 61 13 61 57 13 61 54 67 13 43 56 46 13 45 43 63 62 51 57 63 61 13 62 50 43 62 13 56 57 13 57 56 47 13 50 43 46 13 47 64 47 60 13 45 43 63 49 50 62 13 50 51 55 13 51 56 13 62 50 47 13 43 45 62 13 57 48 13 61 62 47 43 54 51 56 49 7 13 43 54 62 50 57 63 49 50 13 43 13 49 57 57 46 13 55 43 56 67 13 62 50 51 56 49 61 13 50 43 46 13 44 47 47 56 13 55 51 61 61 47 46 13 43 48 62 47 60 13 62 50 47 67 13 50 43 46 13 48 43 54 54 47 56 13 51 56 62 57 13 62 50 47 13 57 54 46 13 55 43 56 4 61 13 65 43 67 9"
+                }
+            ],
+            "utt2spk": "100_121669"
+        },
+        "100_121669_000005_000000": {
+            "input": [
+                {
+                    "feat": "/export/b18/jcho/espnet3/egs/libritts/tts1/dump/train_clean_460/feats.1.ark:275055",
+                    "name": "input1",
+                    "shape": [
+                        888,
+                        80
+                    ]
+                },
+                {
+                    "feat": "exp/xvector_nnet_1a/xvectors_train_clean_460/xvector.1.ark:10440",
+                    "name": "input2",
+                    "shape": [
+                        512
+                    ]
+                }
+            ],
+            "output": [
+                {
+                    "name": "target1",
+                    "shape": [
+                        156,
+                        78
+                    ],
+                    "text": "Barney had one son, named Tom; and they lived all alone in a little hut away at the end of the village street, for Tom's mother had died when he was a baby.",
+                    "token": "B a r n e y <space> h a d <space> o n e <space> s o n , <space> n a m e d <space> T o m ; <space> a n d <space> t h e y <space> l i v e d <space> a l l <space> a l o n e <space> i n <space> a <space> l i t t l e <space> h u t <space> a w a y <space> a t <space> t h e <space> e n d <space> o f <space> t h e <space> v i l l a g e <space> s t r e e t , <space> f o r <space> T o m ' s <space> m o t h e r <space> h a d <space> d i e d <space> w h e n <space> h e <space> w a s <space> a <space> b a b y .",
+                    "tokenid": "16 43 60 56 47 67 13 50 43 46 13 57 56 47 13 61 57 56 7 13 56 43 55 47 46 13 34 57 55 12 13 43 56 46 13 62 50 47 67 13 54 51 64 47 46 13 43 54 54 13 43 54 57 56 47 13 51 56 13 43 13 54 51 62 62 54 47 13 50 63 62 13 43 65 43 67 13 43 62 13 62 50 47 13 47 56 46 13 57 48 13 62 50 47 13 64 51 54 54 43 49 47 13 61 62 60 47 47 62 7 13 48 57 60 13 34 57 55 4 61 13 55 57 62 50 47 60 13 50 43 46 13 46 51 47 46 13 65 50 47 56 13 50 47 13 65 43 61 13 43 13 44 43 44 67 9"
+                }
+            ],
+            "utt2spk": "100_121669"
+        },
+        "100_121669_000005_000001": {
+            "input": [
+                {
+                    "feat": "/export/b18/jcho/espnet3/egs/libritts/tts1/dump/train_clean_460/feats.1.ark:346781",
+                    "name": "input1",
+                    "shape": [

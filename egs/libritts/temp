@@ -1,0 +1,12 @@
+text_filtered
+temp_wav
+log
+temp.ark
+featlen.temp
+tensorboard
+dump_pretrained_xvector
+prep4eer.temp
+feat_cmpr
+data
+dump
+exp

@@ -1,0 +1,2 @@
+- This directory is a storage for fbank features over multiple corpora extracted by ESPnet tool.
+- fbank features here are extracted using ESPnet make_fbank.sh with stft's center=False (that correspondings to --snip-edges=true in kaldi version)
