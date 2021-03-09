@@ -1,3 +1,5 @@
+## Latest note: this branch will no longer be used for further updates since a merging toolkit, hyperion, is a private repo. From now on, I push updates into a branch having the same name but within a priviate repo: https://github.com/JaejinCho/espnet_hyperion.git.
+
 ## This is to utilize git for better tracking of codes at least from this moment (as of 20210226) starting after the commit (bb05e992aa84677c882e0c444889acb9c0baef1e). Note that most of the codes in that commit were NOT written in an orginized way, most of which were generated in a messy way. ****** I need to spare some time to combine relevant codes to reduce # scripts.
 
 ### How I did add/commit/push all changes that have NOT been staged for a long time to this new branch (the commit id is as above). After the push, I start tracking changes normally with GIT at leasat from that point.
